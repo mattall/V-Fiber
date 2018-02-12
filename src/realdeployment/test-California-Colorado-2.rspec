@@ -1,0 +1,38 @@
+<rspec xmlns:client="http://www.protogeni.net/resources/rspec/ext/client/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.geni.net/resources/rspec/3" xsi:schemaLocation="http://www.geni.net/resources/rspec/3 http://www.geni.net/resources/rspec/3/request.xsd" type="request">
+  <node client_id="ig-California" exclusive="false" component_manager_id="urn:publicid:IDN+instageni.nps.edu+authority+cm">
+    <sliver_type name="emulab-xen"/>
+    <interface client_id="ig-California:if0">
+      <ip address="66.180.55.1" netmask="255.255.255.0" type="ipv4"/>
+    </interface>
+    <interface client_id="ig-California:if1">
+      <ip address="66.180.55.2" netmask="255.255.255.0" type="ipv4"/>
+    </interface>
+    <services>
+      <execute shell="sh" command="sudo yum install iperf -y"/>
+    </services>
+  </node>
+  <node client_id="ig-Colorado" exclusive="false" component_manager_id="urn:publicid:IDN+instageni.colorado.edu+authority+cm">
+    <sliver_type name="emulab-xen"/>
+    <interface client_id="ig-Colorado:if0">
+      <ip address="66.181.55.1" netmask="255.255.255.0" type="ipv4"/>
+    </interface>
+    <interface client_id="ig-Colorado:if1">
+      <ip address="66.181.55.2" netmask="255.255.255.0" type="ipv4"/>
+    </interface>
+    <services>
+      <execute shell="sh" command="sudo yum install iperf -y"/>
+    </services>
+  </node>
+  <link client_id="link0">
+    <interface_ref client_id="ig-California:if0"/>
+    <interface_ref client_id="ig-Colorado:if0"/>
+    <property source_id="ig-Colorado:if0" dest_id="ig-California:if0" capacity="200000"/>
+    <property source_id="ig-California:if0" dest_id="ig-Colorado:if0" capacity="200000"/>
+  </link>
+  <link client_id="link1">
+    <interface_ref client_id="ig-California:if1"/>
+    <interface_ref client_id="ig-Colorado:if1"/>
+    <property source_id="ig-Colorado:if1" dest_id="ig-California:if1" capacity="200000"/>
+    <property source_id="ig-California:if1" dest_id="ig-Colorado:if1" capacity="200000"/>
+  </link>
+</rspec>

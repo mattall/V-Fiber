@@ -1,0 +1,10 @@
+omni createslice -a http://www.emulab.net:12369/protogeni/xmlrpc/am testSlice
+omni createsliver -a rutgers-ig testSlice1 click-example.rspec
+
+omni createslice -a rutgers-ig test
+omni createsliver -a rutgers-ig test click-example.rspec
+omni sliverstatus -a rutgers-ig test
+
+# for using geni-lib
+context-from-bundle --bundle ~/Downloads/omni.bundle
+

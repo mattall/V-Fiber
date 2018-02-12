@@ -1,0 +1,6 @@
+H1-s:pc11.utahddc.geniracks.net##33850
+H2-d:pc7.utahddc.geniracks.net##33850
+H3-s:pc1.utahddc.geniracks.net##33850
+H4-d:pc5.utahddc.geniracks.net##33850
+Router1:pc2.utahddc.geniracks.net##33850
+Router2:pc14.utahddc.geniracks.net##33850

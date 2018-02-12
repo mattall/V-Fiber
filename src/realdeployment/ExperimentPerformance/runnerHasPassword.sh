@@ -1,0 +1,7 @@
+# python runExperiment.py --number 2 --key "/Users/ram/.ssh/id_geni_ssh_rsa" \
+#                         --username "durairaj" --password "Ram_ceg@88" \
+#                         --timewait 60 --interval 1 --intfuptime 10
+
+python runExperiment.py --number 5 --key "/Users/ram/.ssh/id_geni_ssh_rsa" \
+                        --username "durairaj" --password "Ram_ceg@88" \
+                        --timewait 150 --interval 1 --intfuptime 30

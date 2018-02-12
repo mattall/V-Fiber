@@ -1,0 +1,11 @@
+CREATE TABLE `IPAllocation` (
+ `ID` int(11) NOT NULL AUTO_INCREMENT,
+ `ClientName` varchar(5) DEFAULT NULL,
+ `PrefixA` varchar(45) DEFAULT NULL,
+ `IPAddressA` int(10) unsigned zerofill DEFAULT NULL,
+ `PrefixB` varchar(45) DEFAULT NULL,
+ `IPAddressB` int(10) unsigned zerofill DEFAULT NULL,
+ `PortA` smallint(5) unsigned zerofill DEFAULT NULL,
+ `PortB` smallint(5) unsigned zerofill DEFAULT NULL,
+ PRIMARY KEY (`ID`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1

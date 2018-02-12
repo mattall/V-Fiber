@@ -1,0 +1,114 @@
+<rspec xmlns:client="http://www.protogeni.net/resources/rspec/ext/client/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.geni.net/resources/rspec/3" xsi:schemaLocation="http://www.geni.net/resources/rspec/3 http://www.geni.net/resources/rspec/3/request.xsd" type="request">
+  <node client_id="A" exclusive="false">
+    <sliver_type name="emulab-xen"/>
+    <interface client_id="A:if_AH0">
+      <ip address="192.165.1.1" netmask="255.255.255.0" type="ipv4"/>
+    </interface>
+    <interface client_id="A:if_AR0">
+      <ip address="192.166.1.1" netmask="255.255.255.0" type="ipv4"/>
+    </interface>
+    <interface client_id="A:if_AR1">
+      <ip address="192.166.2.1" netmask="255.255.255.0" type="ipv4"/>
+    </interface>
+    <services>
+      <install url="http://pages.cs.wisc.edu/~rkrish/GENI/ospf-script-3intf.tar.gz" install_path="/local"/>
+      <execute shell="sh" command="/local/ospf-script-3intf.sh"/>
+    </services>
+  </node>
+  <node client_id="B" exclusive="false">
+    <sliver_type name="emulab-xen"/>
+    <interface client_id="B:if_BR0">
+      <ip address="192.167.1.1" netmask="255.255.255.0" type="ipv4"/>
+    </interface>
+    <interface client_id="B:if_BH0">
+      <ip address="192.168.1.1" netmask="255.255.255.0" type="ipv4"/>
+    </interface>
+    <interface client_id="B:if_BR1">
+      <ip address="192.167.2.1" netmask="255.255.255.0" type="ipv4"/>
+    </interface>
+    <services>
+      <install url="http://pages.cs.wisc.edu/~rkrish/GENI/ospf-script-3intf.tar.gz" install_path="/local"/>
+      <execute shell="sh" command="/local/ospf-script-3intf.sh"/>
+    </services>
+  </node>
+  <node client_id="Router1" exclusive="false">
+    <sliver_type name="emulab-xen"/>
+    <interface client_id="Router1:if_RA0">
+      <ip address="192.166.1.2" netmask="255.255.255.0" type="ipv4"/>
+    </interface>
+    <interface client_id="Router1:if_RB0">
+      <ip address="192.167.1.2" netmask="255.255.255.0" type="ipv4"/>
+    </interface>
+    <services>
+      <install url="http://pages.cs.wisc.edu/~rkrish/GENI/ospf-script-2intf.tar.gz" install_path="/local"/>
+      <execute shell="sh" command="/local/ospf-script-2intf.sh"/>
+    </services>
+  </node>
+  <node client_id="H1" exclusive="false">
+    <sliver_type name="emulab-xen"/>
+    <interface client_id="H1:if_HA0">
+      <ip address="192.165.1.2" netmask="255.255.255.0" type="ipv4"/>
+    </interface>
+    <services>
+      <execute shell="sh" command="sudo apt-get update; sudo apt-get install iperf"/>
+    </services>
+  </node>
+  <node client_id="H2" exclusive="false">
+    <sliver_type name="emulab-xen"/>
+    <interface client_id="H2:if_HB0">
+      <ip address="192.168.1.2" netmask="255.255.255.0" type="ipv4"/>
+    </interface>
+    <services>
+      <execute shell="sh" command="sudo apt-get update; sudo apt-get install iperf"/>
+    </services>
+  </node>
+  <node client_id="Router2" exclusive="false">
+    <sliver_type name="emulab-xen"/>
+    <interface client_id="Router2:if_RA1">
+      <ip address="192.166.2.2" netmask="255.255.255.0" type="ipv4"/>
+    </interface>
+    <interface client_id="Router2:if_RB1">
+      <ip address="192.167.2.2" netmask="255.255.255.0" type="ipv4"/>
+    </interface>
+    <services>
+      <install url="http://pages.cs.wisc.edu/~rkrish/GENI/ospf-script-2intf.tar.gz" install_path="/local"/>
+      <execute shell="sh" command="/local/ospf-script-2intf.sh"/>
+    </services>
+  </node>
+  <link client_id="linkHA0">
+    <interface_ref client_id="H1:if_HA0"/>
+    <interface_ref client_id="A:if_AH0"/>
+    <property source_id="A:if_AH0" dest_id="H1:if_HA0" capacity="20000"/>
+    <property source_id="H1:if_HA0" dest_id="A:if_AH0" capacity="20000"/>
+  </link>
+  <link client_id="linkHB0">
+    <interface_ref client_id="H2:if_HB0"/>
+    <interface_ref client_id="B:if_BH0"/>
+    <property source_id="B:if_BH0" dest_id="H2:if_HB0" capacity="20000"/>
+    <property source_id="H2:if_HB0" dest_id="B:if_BH0" capacity="20000"/>
+  </link>
+  <link client_id="linkRA0">
+    <interface_ref client_id="Router1:if_RA0"/>
+    <interface_ref client_id="A:if_AR0"/>
+    <property source_id="A:if_AR0" dest_id="Router1:if_RA0" capacity="20000"/>
+    <property source_id="Router1:if_RA0" dest_id="A:if_AR0" capacity="20000"/>
+  </link>
+  <link client_id="linkRB0">
+    <interface_ref client_id="Router1:if_RB0"/>
+    <interface_ref client_id="B:if_BR0"/>
+    <property source_id="B:if_BR0" dest_id="Router1:if_RB0" capacity="20000"/>
+    <property source_id="Router1:if_RB0" dest_id="B:if_BR0" capacity="20000"/>
+  </link>
+  <link client_id="linkRA1">
+    <interface_ref client_id="Router2:if_RA1"/>
+    <interface_ref client_id="A:if_AR1"/>
+    <property source_id="A:if_AR1" dest_id="Router2:if_RA1" capacity="20000"/>
+    <property source_id="Router2:if_RA1" dest_id="A:if_AR1" capacity="20000"/>
+  </link>
+  <link client_id="linkRB1">
+    <interface_ref client_id="Router2:if_RB1"/>
+    <interface_ref client_id="B:if_BR1"/>
+    <property source_id="B:if_BR1" dest_id="Router2:if_RB1" capacity="20000"/>
+    <property source_id="Router2:if_RB1" dest_id="B:if_BR1" capacity="20000"/>
+  </link>
+</rspec>

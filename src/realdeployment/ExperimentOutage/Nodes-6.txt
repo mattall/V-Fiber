@@ -1,0 +1,16 @@
+H1-s:pc1.geni.it.cornell.edu##32314
+H2-d:pc3.geni.it.cornell.edu##32316
+H3-s:pc2.geni.it.cornell.edu##32315
+H4-d:pc3.geni.it.cornell.edu##32317
+H5-s:pc2.geni.it.cornell.edu##32316
+H6-d:pc3.geni.it.cornell.edu##32318
+H7-s:pc2.geni.it.cornell.edu##32317
+H8-d:pc3.geni.it.cornell.edu##32319
+H9-s:pc2.geni.it.cornell.edu##32318
+H10-d:pc3.geni.it.cornell.edu##32315
+Router1:pc3.geni.it.cornell.edu##32320
+Router2:pc3.geni.it.cornell.edu##32321
+Router3:pc3.geni.it.cornell.edu##32322
+Router4:pc2.geni.it.cornell.edu##32319
+Router5:pc3.geni.it.cornell.edu##32323
+Router6:pc2.geni.it.cornell.edu##32320

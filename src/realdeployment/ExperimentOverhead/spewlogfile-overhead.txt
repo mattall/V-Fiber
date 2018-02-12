@@ -1,0 +1,879 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf200
+{\fonttbl\f0\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\fs24 \cf0 URN:            urn:publicid:IDN+ch.geni.net+user+durairaj\
+Module:         am\
+Method:         CreateSliver\
+Version:        2.0\
+StartTime:      17:14:28:037266\
+slice_urn:      urn:publicid:IDN+ch.geni.net:Quick_connect+slice+TestScaling\
+slice_idx:      17093\
+slice_uuid:     2ad67f93-2c27-491d-9088-52fc3883c85e\
+EndTime:        17:16:01:909956\
+Elapsed:        93.87\
+LogURN:         urn:publicid:IDN+instageni.rnet.missouri.edu+log+22579781070516a453273c1534621512\
+LogURL:         https://www.instageni.rnet.missouri.edu/spewlogfile.php3?logfile=22579781070516a453273c1534621512\
+Return:         0\
+\
+---------------------\
+Updating certificate for [GeniUser: ch.geni.net.durairaj, IDX: 15320] to [GeniCertificate: urn:publicid:IDN+ch.geni.net+user+durairaj]\
+<rspec xmlns:client="http://www.protogeni.net/resources/rspec/ext/client/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.geni.net/resources/rspec/3" xsi:schemaLocation="http://www.geni.net/resources/rspec/3 http://www.geni.net/resources/rspec/3/request.xsd" type="request">\
+  <node client_id="A" exclusive="false">\
+    <sliver_type name="emulab-xen"/>\
+    <interface client_id="A:if_AH0">\
+      <ip address="192.165.1.1" netmask="255.255.255.0" type="ipv4"/>\
+    </interface>\
+  </node>\
+  <node client_id="B" exclusive="false">\
+    <sliver_type name="emulab-xen"/>\
+    <interface client_id="B:if_BH0">\
+      <ip address="192.168.1.1" netmask="255.255.255.0" type="ipv4"/>\
+    </interface>\
+  </node>\
+  <link client_id="link0">\
+    <interface_ref client_id="A:if_AH0"/>\
+    <interface_ref client_id="B:if_BH0"/>\
+    <property source_id="B:if_BH0" dest_id="A:if_AH0" capacity="20000"/>\
+    <property source_id="A:if_AH0" dest_id="B:if_BH0" capacity="20000"/>\
+  </link>\
+</rspec>[VirtExperiment: ch-geni-net/TestScaling/17094]\
+  dpdb : 0\
+  allowfixnode : 0\
+  delay_capacity : NULL\
+  nonfsmounts : 0\
+  wa_bw_solverweight : 0\
+  usemodelnet : 0\
+  elabinelab_cvstag : NULL\
+  elabinelab_eid : NULL\
+  delay_osname : NULL\
+  uselinkdelays : 0\
+  usewatunnels : 1\
+  packing_strategy : NULL\
+  multiplex_factor : 10\
+  forcelinkdelays : 0\
+  security_level : 0\
+  wa_delay_solverweight : 0\
+  elab_in_elab : 0\
+  ipassign_args : NULL\
+  mem_usage : 0\
+  elabinelab_singlenet : 0\
+  jail_osname : NULL\
+  modelnet_cores : 0\
+  modelnet_edges : 0\
+  wa_plr_solverweight : 0\
+  nfsmounts : genidefault\
+  cpu_usage : 0\
+  uselatestwadata : 0\
+  sync_server : A\
+  use_ipassign : 0\
+  encap_style : vlan\
+[virt_node_desires: ch-geni-net/TestScaling/17094 A,pcshared]\
+  weight : 0.95\
+  desire : pcshared\
+  vname : A\
+[virt_node_desires: ch-geni-net/TestScaling/17094 B,pcshared]\
+  weight : 0.95\
+  desire : pcshared\
+  vname : B\
+[virt_nodes: ch-geni-net/TestScaling/17094 A]\
+  ips : \
+  cmd_line : \
+  osname : UBUNTU14-64-STD\
+  fixed : \
+  routertype : static-ddijk\
+  type : pcvm\
+  vname : A\
+[virt_nodes: ch-geni-net/TestScaling/17094 B]\
+  ips : \
+  cmd_line : \
+  osname : UBUNTU14-64-STD\
+  fixed : \
+  routertype : static-ddijk\
+  type : pcvm\
+  vname : B\
+[virt_lan_lans: ch-geni-net/TestScaling/17094 link0]\
+  vname : link0\
+[virt_lans: ch-geni-net/TestScaling/17094 link0,A,0]\
+  protocol : ethernet\
+  vnode : A\
+  ip : 192.165.1.1\
+  rdelay : 0\
+  vport : 0\
+  emulated : 0\
+  delay : 0\
+  trivial_ok : 1\
+  lossrate : 0\
+  est_bandwidth : NULL\
+  uselinkdelay : 1\
+  rest_bandwidth : NULL\
+  rbandwidth : 20000\
+  mask : 255.255.255.0\
+  bridge_vname : NULL\
+  nobwshaping : 0\
+  member : A:0\
+  fixed_iface : \
+  bandwidth : 20000\
+  vindex : 0\
+  nointerswitch : 0\
+  rlossrate : 0\
+  vname : link0\
+  encap_style : default\
+[virt_lans: ch-geni-net/TestScaling/17094 link0,B,0]\
+  protocol : ethernet\
+  vnode : B\
+  ip : 192.168.1.1\
+  rdelay : 0\
+  vport : 0\
+  emulated : 0\
+  delay : 0\
+  trivial_ok : 1\
+  lossrate : 0\
+  est_bandwidth : NULL\
+  uselinkdelay : 1\
+  rest_bandwidth : NULL\
+  rbandwidth : 20000\
+  mask : 255.255.255.0\
+  bridge_vname : NULL\
+  nobwshaping : 0\
+  member : B:0\
+  fixed_iface : \
+  bandwidth : 20000\
+  vindex : 1\
+  nointerswitch : 0\
+  rlossrate : 0\
+  vname : link0\
+  encap_style : default\
+[virt_programs: ch-geni-net/TestScaling/17094 A-program,A]\
+  vnode : A\
+  timeout : 0\
+  expected_exit_code : 0\
+  vname : A-program\
+  command : \
+  dir : \
+[virt_programs: ch-geni-net/TestScaling/17094 B-program,B]\
+  vnode : B\
+  timeout : 0\
+  expected_exit_code : 0\
+  vname : B-program\
+  command : \
+  dir : \
+[virt_agents: ch-geni-net/TestScaling/17094 ns,ns,*]\
+  vnode : *\
+  objecttype : 6\
+  vname : ns\
+[virt_agents: ch-geni-net/TestScaling/17094 linktest,linktest,*]\
+  vnode : *\
+  objecttype : 7\
+  vname : linktest\
+[virt_agents: ch-geni-net/TestScaling/17094 A-program,A-program,A]\
+  vnode : A\
+  objecttype : 4\
+  vname : A-program\
+[virt_agents: ch-geni-net/TestScaling/17094 B-program,B-program,B]\
+  vnode : B\
+  objecttype : 4\
+  vname : B-program\
+8 1 0 1\
+0 0 10.0.0.1\
+0 1 10.0.0.2\
+Info for A:\
+  IPS: 0:10.0.0.1\
+  IP: link0 0 10.0.0.1\
+Info for B:\
+  IPS: 0:10.0.0.2\
+  IP: link0 0 10.0.0.2\
+Image rendering proceeding in background mode ...\
+Checking for feature NewAssign.\
+Checking for feature ControlNetVlans.\
+Checking for feature LibVtopTest.\
+Using test version of libvtop ...\
+Starting the new and improved mapper wrapper.\
+TIMESTAMP: 17:14:45:429655 Create libvtop started\
+TIMESTAMP: 17:14:45:472855 Create libvtop ended\
+TIMESTAMP: 17:14:45:473490 vtopgen started\
+Loading physical info\
+Interface Speeds:\
+ ctrlnode:ethernet - 100000\
+ dl360:ethernet - 1000000\
+ pc:ethernet - 1000000\
+ interconnect:ethernet - 1000000\
+ pcvm:ethernet - 1000000\
+ misc:ethernet - 100000\
+ interconnect-vm:ethernet - 1000000\
+Loading virtual nodes\
+  A type:pcvm ips:0:10.0.0.1\
+         isrem:0 isvirt:1\
+Setting VM memsize to 1024 for A\
+  B type:pcvm ips:0:10.0.0.2\
+         isrem:0 isvirt:1\
+Setting VM memsize to 1024 for B\
+Loading virtual lans\
+  link0 A:0 portbw:1000000 - 0.00 20000 0.00000000 0.00 20000 0.00000000\
+  link0 B:0 portbw:1000000 - 0.00 20000 0.00000000 0.00 20000 0.00000000\
+link0: A:0 B:0\
+link0: members = 2 real/virt/sim = 0/2/0 mlink/veth-ne/veth-en/vlan/ldelay/rbstore = 2/0/0/2/2/2\
+link0: global/link = vlan/default => vlan\
+requires_delay:1 [vnode:A], [vlan:link0], 20000\
+Delay link linksimple/link0/A:0,B:0 = 0 20000 0 0 0 20000 0 0 0\
+Minimum nodes   = 0\
+Maximum nodes   = 0\
+Virtual nodes     = 2\
+<= 1G links       = 0\
+ > 1G links       = 0\
+TIMESTAMP: 17:14:45:506599 vtopgen finished\
+TIMESTAMP: 17:14:45:507200 mapper loop started\
+Mapper loop 1\
+ptopargs: '-p ch-geni-net -m 10 -v -h -z '\
+TIMESTAMP: 17:14:45:526393 ptopgen started\
+TIMESTAMP: 17:14:46:176428 ptopgen finished\
+assign command: 'assign -uod -c .75 -H 3 -F -f text ch-geni-net-TestScaling-41629.ptop ch-geni-net-TestScaling-41629.vtop'\
+TIMESTAMP: 17:14:46:178227 assign started\
+TIMESTAMP: 17:14:57:539060 assign finished\
+Reading assign results.\
+TIMESTAMP: 17:14:57:568009 ReadSolution started\
+Nodes:\
+  A pc4\
+  B pc4\
+Edges:\
+  linksimple/link0/A:0,B:0 trivial\
+TIMESTAMP: 17:14:57:575554 ReadSolution ended\
+TIMESTAMP: 17:14:57:576721 Map Geni Resources Started\
+TIMESTAMP: 17:14:57:577802 Map Geni Resources ended\
+TIMESTAMP: 17:14:57:578817 InterpNodes Started\
+pc4, A, [vnode:A]\
+pc4, B, [vnode:B]\
+Checking IP Address Reservations.\
+TIMESTAMP: 17:14:57:585691 InterpNodes ended, AllocNodes Started\
+Trying to allocate \
+On pnode pc4: vnodes A B\
+A is reserving 1024 MB on [Node: pc4]\
+B is reserving 1024 MB on [Node: pc4]\
+Jail IP for pcvm4-24 is 172.17.4.24\
+Allocating pcvm4-24 on pc4 (pcvm, 10016)\
+Jail IP for pcvm4-33 is 172.17.4.33\
+Allocating pcvm4-33 on pc4 (pcvm, 10016)\
+  Mapping B to pcvm4-33 on pc4\
+  Mapping A to pcvm4-24 on pc4\
+SetPortRange: 31536,31791\
+sshdport: Using 31546 on [Node: pcvm4-24]\
+sshdport: Using 31547 on [Node: pcvm4-33]\
+v2pmap: A pcvm4-24\
+v2pmap: B pcvm4-33\
+TIMESTAMP: 17:14:58:083696 AllocNodes ended, InterpLinks Started\
+Interpreting link/lan results from assign\
+plink linksimple/link0/A:0,B:0 - trivial\
+[VInterface: pc4:0:pcvm4-24]: A:0, isvdev:1, isveth:0\
+[VInterface: pc4:1:pcvm4-33]: B:0, isvdev:1, isveth:0\
+LINK simple (trivial): A:0,B:0 - pc4:vlan0,pc4:vlan1\
+  LinkDelay: [110,120,[vlan:link0],0,20000,0,0]\
+  LinkDelay: [130,140,[vlan:link0],0,20000,0,0]\
+Setting speeds for MLE virtlans...\
+mle virtlans: \
+Done setting speeds for MLE virtlans.\
+Dumping protolans before merging.\
+ProtoLan: link0 type:trivial,role:link/lan,, A:0:pc4:vlan0, B:0:pc4:vlan1, \
+Merging vlans ...\
+Dumping final protolans table.\
+ProtoLan: link0 type:trivial,role:link/lan,, A:0:pc4:vlan0, B:0:pc4:vlan1, \
+IP(v): A:0 - pc4:A:vlan0 10.0.0.1\
+IP(v): B:0 - pc4:B:vlan1 10.0.0.2\
+TIMESTAMP: 17:14:58:098447 InterpLinks ended, InitializePhysNodes Started\
+pc4\
+InitPnode: Skipping shared host pc4\
+InitPnode: pcvm4-24,node,A\
+InitPnode: Storing info for pcvm4-24,A\
+  def_boot_cmd_line='',loadlist='',failureaction='fatal',routertype='static-ddijk',ready='0',startstatus='none',startupcmd='',bootstatus='unknown',deltas=''\
+  erole='node',plab_role='none',vname='A'\
+  pretending to os_select [OS 10067:0 emulab-ops,UBUNTU14-64-STD]\
+InitPnode: pcvm4-33,node,B\
+InitPnode: Storing info for pcvm4-33,B\
+  def_boot_cmd_line='',failureaction='fatal',loadlist='',routertype='static-ddijk',startstatus='none',ready='0',startupcmd='',deltas='',bootstatus='unknown'\
+  erole='node',plab_role='none',vname='B'\
+  pretending to os_select [OS 10067:0 emulab-ops,UBUNTU14-64-STD]\
+TIMESTAMP: 17:14:58:108142 InitializePhysNodes ended\
+TIMESTAMP: 17:14:58:109397 mapper loop finished\
+No such slot '_pport' field in class VirtExperiment::VirtTableRow::virt_lans\
+No such slot '_pport' field in class VirtExperiment::VirtTableRow::virt_lans\
+<rspec xmlns:rspec="http://www.protogeni.net/resources/rspec/0.1" pid="ch-geni-net" eid="TestScaling">\
+  <node virtual_id="A" component_uuid="819eb70e-79ff-11e6-9fd5-000000000000" sliver_type="pcvm"/>\
+  <node virtual_id="B" component_uuid="81a08619-79ff-11e6-9fd5-000000000000" sliver_type="pcvm"/>\
+  <link virtual_id="link0">\
+    <interface_ref virtual_node_id="A" virtual_port_id="0"/>\
+    <interface_ref virtual_node_id="B" virtual_port_id="0"/>\
+  </link>\
+</rspec>[VirtExperiment: ch-geni-net/TestScaling/17094]\
+  dpdb : 0\
+  allowfixnode : 0\
+  delay_capacity : NULL\
+  nonfsmounts : 0\
+  wa_bw_solverweight : 0\
+  usemodelnet : 0\
+  elabinelab_cvstag : NULL\
+  elabinelab_eid : NULL\
+  delay_osname : NULL\
+  uselinkdelays : 0\
+  usewatunnels : 1\
+  packing_strategy : NULL\
+  multiplex_factor : 10\
+  forcelinkdelays : 0\
+  security_level : 0\
+  wa_delay_solverweight : 0\
+  elab_in_elab : 0\
+  ipassign_args : NULL\
+  mem_usage : 0\
+  elabinelab_singlenet : 0\
+  jail_osname : NULL\
+  modelnet_cores : 0\
+  modelnet_edges : 0\
+  wa_plr_solverweight : 0\
+  nfsmounts : genidefault\
+  cpu_usage : 0\
+  uselatestwadata : 0\
+  sync_server : A\
+  use_ipassign : 0\
+  encap_style : vlan\
+[virt_node_desires: ch-geni-net/TestScaling/17094 A,pcshared]\
+  weight : 0.95\
+  desire : pcshared\
+  vname : A\
+[virt_node_desires: ch-geni-net/TestScaling/17094 B,pcshared]\
+  weight : 0.95\
+  desire : pcshared\
+  vname : B\
+[virt_nodes: ch-geni-net/TestScaling/17094 A]\
+  ips : \
+  cmd_line : \
+  osname : UBUNTU14-64-STD\
+  fixed : pc4\
+  routertype : static-ddijk\
+  type : pcvm\
+  vname : A\
+[virt_nodes: ch-geni-net/TestScaling/17094 B]\
+  ips : \
+  cmd_line : \
+  osname : UBUNTU14-64-STD\
+  fixed : pc4\
+  routertype : static-ddijk\
+  type : pcvm\
+  vname : B\
+[virt_lan_lans: ch-geni-net/TestScaling/17094 link0]\
+  vname : link0\
+[virt_lans: ch-geni-net/TestScaling/17094 link0,A,0]\
+  protocol : ethernet\
+  vnode : A\
+  ip : 192.165.1.1\
+  rdelay : 0\
+  vport : 0\
+  emulated : 0\
+  delay : 0\
+  trivial_ok : 1\
+  lossrate : 0\
+  est_bandwidth : NULL\
+  uselinkdelay : 1\
+  rest_bandwidth : NULL\
+  rbandwidth : 20000\
+  mask : 255.255.255.0\
+  bridge_vname : NULL\
+  nobwshaping : 0\
+  member : A:0\
+  fixed_iface : \
+  bandwidth : 20000\
+  vindex : 0\
+  nointerswitch : 0\
+  rlossrate : 0\
+  vname : link0\
+  encap_style : default\
+[virt_lans: ch-geni-net/TestScaling/17094 link0,B,0]\
+  protocol : ethernet\
+  vnode : B\
+  ip : 192.168.1.1\
+  rdelay : 0\
+  vport : 0\
+  emulated : 0\
+  delay : 0\
+  trivial_ok : 1\
+  lossrate : 0\
+  est_bandwidth : NULL\
+  uselinkdelay : 1\
+  rest_bandwidth : NULL\
+  rbandwidth : 20000\
+  mask : 255.255.255.0\
+  bridge_vname : NULL\
+  nobwshaping : 0\
+  member : B:0\
+  fixed_iface : \
+  bandwidth : 20000\
+  vindex : 1\
+  nointerswitch : 0\
+  rlossrate : 0\
+  vname : link0\
+  encap_style : default\
+[virt_programs: ch-geni-net/TestScaling/17094 A-program,A]\
+  vnode : A\
+  timeout : 0\
+  expected_exit_code : 0\
+  vname : A-program\
+  command : \
+  dir : \
+[virt_programs: ch-geni-net/TestScaling/17094 B-program,B]\
+  vnode : B\
+  timeout : 0\
+  expected_exit_code : 0\
+  vname : B-program\
+  command : \
+  dir : \
+[virt_agents: ch-geni-net/TestScaling/17094 ns,ns,*]\
+  vnode : *\
+  objecttype : 6\
+  vname : ns\
+[virt_agents: ch-geni-net/TestScaling/17094 linktest,linktest,*]\
+  vnode : *\
+  objecttype : 7\
+  vname : linktest\
+[virt_agents: ch-geni-net/TestScaling/17094 A-program,A-program,A]\
+  vnode : A\
+  objecttype : 4\
+  vname : A-program\
+[virt_agents: ch-geni-net/TestScaling/17094 B-program,B-program,B]\
+  vnode : B\
+  objecttype : 4\
+  vname : B-program\
+<rspec xmlns:client="http://www.protogeni.net/resources/rspec/ext/client/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.geni.net/resources/rspec/3" xsi:schemaLocation="http://www.geni.net/resources/rspec/3 http://www.geni.net/resources/rspec/3/request.xsd" type="request">\
+  <node client_id="A" exclusive="false" component_id="urn:publicid:IDN+instageni.rnet.missouri.edu+node+pc4" component_manager_id="urn:publicid:IDN+instageni.rnet.missouri.edu+authority+cm" sliver_id="urn:publicid:IDN+instageni.rnet.missouri.edu+sliver+40006">\
+    <sliver_type name="emulab-xen"/>\
+    <interface client_id="A:if_AH0" component_id="lo0">\
+      <ip address="192.165.1.1" netmask="255.255.255.0" type="ipv4"/>\
+    </interface>\
+  <rs:vnode xmlns:rs="http://www.protogeni.net/resources/rspec/ext/emulab/1" name="pcvm4-24" hardware_type="pcvm"/></node>\
+  <node client_id="B" exclusive="false" component_id="urn:publicid:IDN+instageni.rnet.missouri.edu+node+pc4" component_manager_id="urn:publicid:IDN+instageni.rnet.missouri.edu+authority+cm" sliver_id="urn:publicid:IDN+instageni.rnet.missouri.edu+sliver+40007">\
+    <sliver_type name="emulab-xen"/>\
+    <interface client_id="B:if_BH0" component_id="lo0">\
+      <ip address="192.168.1.1" netmask="255.255.255.0" type="ipv4"/>\
+    </interface>\
+  <rs:vnode xmlns:rs="http://www.protogeni.net/resources/rspec/ext/emulab/1" name="pcvm4-33" hardware_type="pcvm"/></node>\
+  <link client_id="link0">\
+    <interface_ref client_id="A:if_AH0"/>\
+    <interface_ref client_id="B:if_BH0"/>\
+    <property source_id="B:if_BH0" dest_id="A:if_AH0" capacity="20000"/>\
+    <property source_id="A:if_AH0" dest_id="B:if_BH0" capacity="20000"/>\
+  </link>\
+</rspec><rspec xmlns:client="http://www.protogeni.net/resources/rspec/ext/client/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.geni.net/resources/rspec/3" xsi:schemaLocation="http://www.geni.net/resources/rspec/3 http://www.geni.net/resources/rspec/3/request.xsd" type="request">\
+  <node client_id="A" exclusive="false" component_id="urn:publicid:IDN+instageni.rnet.missouri.edu+node+pc4" component_manager_id="urn:publicid:IDN+instageni.rnet.missouri.edu+authority+cm" sliver_id="urn:publicid:IDN+instageni.rnet.missouri.edu+sliver+40006">\
+    <sliver_type name="emulab-xen"/>\
+    <interface client_id="A:if_AH0" component_id="lo0">\
+      <ip address="192.165.1.1" netmask="255.255.255.0" type="ipv4"/>\
+    </interface>\
+  <rs:vnode xmlns:rs="http://www.protogeni.net/resources/rspec/ext/emulab/1" name="pcvm4-24" hardware_type="pcvm"/></node>\
+  <node client_id="B" exclusive="false" component_id="urn:publicid:IDN+instageni.rnet.missouri.edu+node+pc4" component_manager_id="urn:publicid:IDN+instageni.rnet.missouri.edu+authority+cm" sliver_id="urn:publicid:IDN+instageni.rnet.missouri.edu+sliver+40007">\
+    <sliver_type name="emulab-xen"/>\
+    <interface client_id="B:if_BH0" component_id="lo0">\
+      <ip address="192.168.1.1" netmask="255.255.255.0" type="ipv4"/>\
+    </interface>\
+  <rs:vnode xmlns:rs="http://www.protogeni.net/resources/rspec/ext/emulab/1" name="pcvm4-33" hardware_type="pcvm"/></node>\
+  <link client_id="link0">\
+    <interface_ref client_id="A:if_AH0"/>\
+    <interface_ref client_id="B:if_BH0"/>\
+    <property source_id="B:if_BH0" dest_id="A:if_AH0" capacity="20000"/>\
+    <property source_id="A:if_AH0" dest_id="B:if_BH0" capacity="20000"/>\
+  </link>\
+</rspec>$VAR1 = \{\
+          'email' => 'testbed-ops@ops.instageni.rnet.missouri.edu',\
+          'hrn' => 'instageni.rnet.missouri.edu.TestScaling',\
+          'urn' => 'urn:publicid:IDN+instageni.rnet.missouri.edu+sliver+40008'\
+        \};\
+/usr/testbed/sbin/mksyscert   -n -i "urn:publicid:IDN+instageni.rnet.missouri.edu+sliver+40008"  -e "testbed-ops@ops.instageni.rnet.missouri.edu" instageni.rnet.missouri.edu.TestScaling \
+Generating RSA private key, 1024 bit long modulus\
+...............................................................................................++++++\
+..++++++\
+unable to write 'random state'\
+e is 65537 (0x10001)\
+Checking for feature NewAssign.\
+Checking for feature ControlNetVlans.\
+Checking for feature LibVtopTest.\
+Using test version of libvtop ...\
+Starting the new and improved mapper wrapper.\
+TIMESTAMP: 17:14:59:311502 Create libvtop started\
+TIMESTAMP: 17:14:59:354391 Create libvtop ended\
+TIMESTAMP: 17:14:59:355027 vtopgen started\
+Loading current resources\
+current v2p: pcvm4-24 (pc4) -> A\
+current v2p: pcvm4-33 (pc4) -> B\
+Loading physical info\
+Interface Speeds:\
+ ctrlnode:ethernet - 100000\
+ dl360:ethernet - 1000000\
+ pc:ethernet - 1000000\
+ interconnect:ethernet - 1000000\
+ pcvm:ethernet - 1000000\
+ misc:ethernet - 100000\
+ interconnect-vm:ethernet - 1000000\
+Loading virtual nodes\
+  A type:pcvm ips:\
+         isrem:0 isvirt:1 fixed:pc4\
+Setting VM memsize to 1024 for A\
+  B type:pcvm ips:\
+         isrem:0 isvirt:1 fixed:pc4\
+Setting VM memsize to 1024 for B\
+Loading virtual lans\
+  link0 A:0 portbw:1000000 - 0.00 20000 0.00000000 0.00 20000 0.00000000\
+  link0 B:0 portbw:1000000 - 0.00 20000 0.00000000 0.00 20000 0.00000000\
+link0: A:0 B:0\
+link0: members = 2 real/virt/sim = 0/2/0 mlink/veth-ne/veth-en/vlan/ldelay/rbstore = 2/0/0/2/2/2\
+link0: global/link = vlan/default => vlan\
+requires_delay:1 [vnode:A], [vlan:link0], 20000\
+Delay link linksimple/link0/A:0,B:0 = 0 20000 0 0 0 20000 0 0 0\
+Minimum nodes   = 0\
+Maximum nodes   = 0\
+Virtual nodes     = 2\
+Reserved vnodes   = 2\
+<= 1G links       = 0\
+ > 1G links       = 0\
+TIMESTAMP: 17:15:01:665141 vtopgen finished\
+Clearing physical state before updating.\
+TIMESTAMP: 17:15:02:108959 mapper loop started\
+Mapper loop 1\
+ptopargs: '-p ch-geni-net -e TestScaling -m 10 -v -h -z '\
+TIMESTAMP: 17:15:03:129633 ptopgen started\
+TIMESTAMP: 17:15:06:099825 ptopgen finished\
+assign command: 'assign -uod -c .75 -H 3 -f text ch-geni-net-TestScaling-41746.ptop ch-geni-net-TestScaling-41746.vtop'\
+TIMESTAMP: 17:15:06:101654 assign started\
+TIMESTAMP: 17:15:10:119051 assign finished\
+Reading assign results.\
+TIMESTAMP: 17:15:10:148099 ReadSolution started\
+Nodes:\
+  A pc4\
+  B pc4\
+Edges:\
+  linksimple/link0/A:0,B:0 trivial\
+TIMESTAMP: 17:15:10:155725 ReadSolution ended\
+TIMESTAMP: 17:15:10:156828 Map Geni Resources Started\
+TIMESTAMP: 17:15:10:157911 Map Geni Resources ended\
+TIMESTAMP: 17:15:10:159029 InterpNodes Started\
+pc4, A, [vnode:A]\
+pc4, B, [vnode:B]\
+Checking IP Address Reservations.\
+TIMESTAMP: 17:15:10:163819 InterpNodes ended, AllocNodes Started\
+[Node: pcvm4-33] already reserved in holding reservation.\
+[Node: pcvm4-24] already reserved in holding reservation.\
+Trying to allocate \
+On pnode pc4: vnodes A B\
+On pnode pc4: oldvlist: A B\
+On pnode pc4: newvlist: \
+On pnode pc4: curvlist: A B\
+On pnode pc4: delvlist: \
+Reusing vnodes pcvm4-24 pcvm4-33\
+  Mapping B to pcvm4-33 on pc4\
+  Mapping A to pcvm4-24 on pc4\
+SetPortRange: 31536,31791\
+sshdport: Using 31546 on [Node: pcvm4-24]\
+sshdport: Using 31547 on [Node: pcvm4-33]\
+v2pmap: A pcvm4-24\
+v2pmap: B pcvm4-33\
+TIMESTAMP: 17:15:11:156815 AllocNodes ended, InterpLinks Started\
+Interpreting link/lan results from assign\
+plink linksimple/link0/A:0,B:0 - trivial\
+[VInterface: pc4:68:pcvm4-24]: A:0, isvdev:1, isveth:0\
+[VInterface: pc4:69:pcvm4-33]: B:0, isvdev:1, isveth:0\
+LINK simple (trivial): A:0,B:0 - pc4:vlan68,pc4:vlan69\
+  LinkDelay: [110,120,[vlan:link0],0,20000,0,0]\
+  LinkDelay: [130,140,[vlan:link0],0,20000,0,0]\
+Setting speeds for MLE virtlans...\
+mle virtlans: \
+Done setting speeds for MLE virtlans.\
+Dumping protolans before merging.\
+ProtoLan: link0 type:trivial,role:link/lan,, A:0:pc4:vlan68, B:0:pc4:vlan69, \
+Merging vlans ...\
+Uploading protolans table.\
+ProtoLan: link0 type:trivial,role:link/lan,, A:0:pc4:vlan68, B:0:pc4:vlan69, \
+IP(v): A:0 - pc4:A:vlan68 192.165.1.1\
+IP(v): B:0 - pc4:B:vlan69 192.168.1.1\
+TIMESTAMP: 17:15:11:215904 InterpLinks ended, InitializePhysNodes Started\
+pc4\
+InitPnode: Skipping shared host pc4\
+InitPnode: pcvm4-24,node,A\
+InitPnode: Storing info for pcvm4-24,A\
+  def_boot_cmd_line='',failureaction='fatal',loadlist='',routertype='static-ddijk',ready='0',startupcmd='',deltas='',bootstatus='unknown'\
+  erole='node',plab_role='none',vname='A'\
+  os_select [OS 10067:0 emulab-ops,UBUNTU14-64-STD]\
+Current opmode for pcvm4-24 is PCVM.\
+Setting def_boot_osid for pcvm4-24 to [OS 10067:0 emulab-ops,UBUNTU14-64-STD].\
+Bootwhat says: pcvm4-24 => 10067,NORMALv2\
+InitPnode: pcvm4-33,node,B\
+InitPnode: Storing info for pcvm4-33,B\
+  def_boot_cmd_line='',failureaction='fatal',loadlist='',routertype='static-ddijk',ready='0',startupcmd='',deltas='',bootstatus='unknown'\
+  erole='node',plab_role='none',vname='B'\
+  os_select [OS 10067:0 emulab-ops,UBUNTU14-64-STD]\
+Current opmode for pcvm4-33 is PCVM.\
+Setting def_boot_osid for pcvm4-33 to [OS 10067:0 emulab-ops,UBUNTU14-64-STD].\
+Bootwhat says: pcvm4-33 => 10067,NORMALv2\
+TIMESTAMP: 17:15:11:238647 InitializePhysNodes ended\
+TIMESTAMP: 17:15:11:239263 ReserveSharedBandwidth started\
+TIMESTAMP: 17:15:11:241919 ReserveSharedBandwidth ended\
+TIMESTAMP: 17:15:11:243577 mapper loop finished\
+snmpit: ch-geni-net/TestScaling has no VLANs to create, skipping\
+Could not find a vlan for link0\
+\
+-------------- Request -----------------\
+$VAR1 = '<?xml version=\\'1.0\\'?>\
+<methodCall>\
+<methodName>CreateSliver</methodName>\
+<params>\
+<param>\
+<value><string>urn:publicid:IDN+ch.geni.net:Quick_connect+slice+TestScaling</string></value>\
+</param>\
+<param>\
+<value><array><data>\
+<value><string>&lt;?xml version="1.0" encoding="utf-8"?&gt;\
+&lt;signed-credential xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.planet-lab.org/resources/sfa/credential.xsd" xsi:schemaLocation="http://www.planet-lab.org/resources/sfa/ext/policy/1 http://www.planet-lab.org/resources/sfa/ext/policy/1/policy.xsd"&gt;&lt;credential xml:id="ref0"&gt;&lt;type&gt;privilege&lt;/type&gt;&lt;serial&gt;8&lt;/serial&gt;&lt;owner_gid&gt;-----BEGIN CERTIFICATE-----\
+MIIDPTCCAqagAwIBAgICPhEwDQYJKoZIhvcNAQEFBQAwgYkxFDASBgNVBAoTC2No\
+LmdlbmkubmV0MRIwEAYDVQQLEwlhdXRob3JpdHkxCzAJBgNVBAsTAm1hMS0wKwYD\
+VQQDEyQzMWMwZjA5Zi05NWY3LTQ1MTAtYTMwYi1kOTNkZjJiZDAyYzkxITAfBgkq\
+hkiG9w0BCQEWEmNoLWFkbWluc0BnZW5pLm5ldDAeFw0xNjA3MjYyMDA1MjBaFw0x\
+NzA3MjYyMDA1MjBaMFMxLTArBgNVBAMTJDA0MWIwY2M2LWJkNDItNDE5YS04YTU0\
+LTVjZDExODRkNTdjYTEiMCAGCSqGSIb3DQEJARYTRFVSQUlSQUpBTkBXSVNDLkVE\
+VTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAoszLwFAlFfqIeDCHBj0HQnuu\
+3X6EvkWyOi0T8O3JlgssBPR6Eygs02s1pVvvDdSMLkhs5XrTruDJdugCt3pwCvKW\
+QxM7ibzcxjNJMNaqmY5nbiLkSeviHa0/aQfTWdOWu2/BaGCmcEguKKNRxapIFh2J\
+BIsR9dM8rByOB848C0kCAwEAAaOB6DCB5TAdBgNVHQ4EFgQUyyeScRECTmz8PECh\
+UAR4yZNtUvswPgYDVR0jBDcwNYAUcaWC5h7xtNAri6aFj+gaXWJ9Ma6hGqQYMBYx\
+FDASBgNVBAMTC2NoLmdlbmkubmV0ggEDMAkGA1UdEwQCMAAweQYDVR0RBHIwcIET\
+RFVSQUlSQUpBTkBXSVNDLkVEVYYqdXJuOnB1YmxpY2lkOklETitjaC5nZW5pLm5l\
+dCt1c2VyK2R1cmFpcmFqhi11cm46dXVpZDowNDFiMGNjNi1iZDQyLTQxOWEtOGE1\
+NC01Y2QxMTg0ZDU3Y2EwDQYJKoZIhvcNAQEFBQADgYEALh/iKxFDmkgkALQ/2wXw\
+fJSvJHRI9HjDvIPCKRxqrtlJtLtQtGHAFPRInrs0I7t6FVp9R/hcR+28iofMyudd\
+bOoAKFek2RVBE3RbKXDG9VGEJir08ffrhYJCYZpoEsCOszWABvu+qfTA+fFdHxFQ\
+TACclrE8B0fl66Va47szQ7w=\
+-----END CERTIFICATE-----\
+-----BEGIN CERTIFICATE-----\
+MIIDTzCCArigAwIBAgIBAzANBgkqhkiG9w0BAQUFADAWMRQwEgYDVQQDEwtjaC5n\
+ZW5pLm5ldDAeFw0xMzA1MjAxMzE4MjdaFw0xODA1MTkxMzE4MjdaMIGJMRQwEgYD\
+VQQKEwtjaC5nZW5pLm5ldDESMBAGA1UECxMJYXV0aG9yaXR5MQswCQYDVQQLEwJt\
+YTEtMCsGA1UEAxMkMzFjMGYwOWYtOTVmNy00NTEwLWEzMGItZDkzZGYyYmQwMmM5\
+MSEwHwYJKoZIhvcNAQkBFhJjaC1hZG1pbnNAZ2VuaS5uZXQwgZ8wDQYJKoZIhvcN\
+AQEBBQADgY0AMIGJAoGBALgsb1eXa96jn5nLV8OLjtqOKdi76a/xBgPJrYd/yU+i\
+VDKWcYUVBEzH8mxsbUEFDzoWpJ5Ra28A2FjWdGWujO604F6D0QR+Ff4le9V2EQpD\
+j8A2WILRXVRHcY4ke1BqP/qqgb+rTVtY/sQmB/5k99N0KAKQnz2/yi2HWbdSMLFx\
+AgMBAAGjggE3MIIBMzAdBgNVHQ4EFgQUcaWC5h7xtNAri6aFj+gaXWJ9Ma4wRgYD\
+VR0jBD8wPYAURTbZXVj/QvUrCWpueR08gwTLmFGhGqQYMBYxFDASBgNVBAMTC2No\
+LmdlbmkubmV0ggkAm8fd1mgH3tswRwYIKwYBBQUHAQEEOzA5MDcGFGmDzJOAqJjM\
+qMe9saeAgKqu14obhh9odHRwczovL2NoLmdlbmkubmV0L2NhaW5mby5odG1sMHMG\
+A1UdEQRsMGqBEmNoLWFkbWluc0BnZW5pLm5ldIYpdXJuOnB1YmxpY2lkOklETitj\
+aC5nZW5pLm5ldCthdXRob3JpdHkrbWGGKXV1aWQ6MzFjMGYwOWYtOTVmNy00NTEw\
+LWEzMGItZDkzZGYyYmQwMmM5MAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQAD\
+gYEAeCu1E6Nt9RPodAJkKXVe4ARlA+x7f/FPayYLcvMAfhRSPeAQGrbtW/FurNrN\
+0FAJJ4ESXZFR34qgPOaEbm8FsDIe2dQGpaOk/xQTqzc/tjGCg1hOV3QkcHnCrdcV\
+FpoZt5WCjYC4r1L9DfAwPatVhxdYiHMxNFbbVrny0s/nPAo=\
+-----END CERTIFICATE-----\
+&lt;/owner_gid&gt;&lt;owner_urn&gt;urn:publicid:IDN+ch.geni.net+user+durairaj&lt;/owner_urn&gt;&lt;target_gid&gt;-----BEGIN CERTIFICATE-----\
+MIIDRTCCAq6gAwIBAgIBAzANBgkqhkiG9w0BAQsFADCBiTEUMBIGA1UEChMLY2gu\
+Z2VuaS5uZXQxEjAQBgNVBAsTCWF1dGhvcml0eTELMAkGA1UECxMCc2ExLTArBgNV\
+BAMTJDEzNmI0ZTRhLTllNTctNGNkZC1iMjY1LTc0Njc1NzYwOTQ5ZTEhMB8GCSqG\
+SIb3DQEJARYSY2gtYWRtaW5zQGdlbmkubmV0MB4XDTE2MDkxMjIwMjE1N1oXDTI2\
+MDkxNzIwMjE1N1owNzE1MDMGA1UEAxQsY2guZ2VuaS5uZXQvL1F1aWNrX2Nvbm5l\
+Y3Quc2xpY2UuVGVzdFNjYWxpbmcwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK\
+AoIBAQC8F80QFkYxat9oapd+MOzCghQUhj3+9hdkTLpBTi17hNiAtJ1crpOhnLbJ\
+0HTGT088mq1Ty6tVNCALTjLOoGP0j2z3muJmJS8P1XD/dX7iI97fuJp6ywv+u1Yo\
+C51wM3WQEvfSsuCEtSozSxzP2jjaBvh3aek3HSnzy1qUA9XaX5FM496EPsfwGR6H\
+w9N2VRjhdWueiTYpjON/43bi4aeR53KOpcMj8Elhrme3MfvvNfahc+iJZ6zghuVV\
+evNcQ71fUEr6M7E63ZQEgaIlC8KfkAC23FCaG/QbyvqtJUlYhIcOiwW4yaTmApUx\
+HX+BCzJ/w38YnSGIXuFIKLWmVUPrAgMBAAGjgYkwgYYwDAYDVR0TAQH/BAIwADB2\
+BgNVHREEbzBthjx1cm46cHVibGljaWQ6SUROK2NoLmdlbmkubmV0OlF1aWNrX2Nv\
+bm5lY3Qrc2xpY2UrVGVzdFNjYWxpbmeGLXVybjp1dWlkOjJhZDY3ZjkzLTJjMjct\
+NDkxZC05MDg4LTUyZmMzODgzYzg1ZTANBgkqhkiG9w0BAQsFAAOBgQCyIEpJFWDx\
+0KSImCSoTIo5cebuVx1anYhDbfy+hL5HL9RuO4OBX95LaAOuFn1k9MnyJYfMbqCm\
+OHZmdgNP9NyAE3OBqXcSjqRsACBfpP8WdF31F9Yi4lb1CBPBI1aa7xbGscrsrqDl\
+rvY7orOYlWUx7lTWAGCGv1WIo2i/oSrqBw==\
+-----END CERTIFICATE-----\
+-----BEGIN CERTIFICATE-----\
+MIIDTzCCArigAwIBAgIBATANBgkqhkiG9w0BAQUFADAWMRQwEgYDVQQDEwtjaC5n\
+ZW5pLm5ldDAeFw0xMzA1MjAxMzE4MjdaFw0xODA1MTkxMzE4MjdaMIGJMRQwEgYD\
+VQQKEwtjaC5nZW5pLm5ldDESMBAGA1UECxMJYXV0aG9yaXR5MQswCQYDVQQLEwJz\
+YTEtMCsGA1UEAxMkMTM2YjRlNGEtOWU1Ny00Y2RkLWIyNjUtNzQ2NzU3NjA5NDll\
+MSEwHwYJKoZIhvcNAQkBFhJjaC1hZG1pbnNAZ2VuaS5uZXQwgZ8wDQYJKoZIhvcN\
+AQEBBQADgY0AMIGJAoGBAMmvJqmEOC1J5awqGy4mBIMafnX2Y+aS22IOPNQQqcve\
+iGHJKRtDhLOxcp7zN06lbLt4iDwWAE0QNk2HjlX9Rx2PgycMXOLxUFQ/+NQf9a9M\
+Nlo21BtTfSXpASX7b6mf8P768ASkKO5grd+TnU8KnLTbn6iGJK1Boqn/A4Ple3tN\
+AgMBAAGjggE3MIIBMzAdBgNVHQ4EFgQU1YjjwRxXQ9dbHL20ZWbcJwb3jYkwRgYD\
+VR0jBD8wPYAURTbZXVj/QvUrCWpueR08gwTLmFGhGqQYMBYxFDASBgNVBAMTC2No\
+LmdlbmkubmV0ggkAm8fd1mgH3tswRwYIKwYBBQUHAQEEOzA5MDcGFGmDzJOAqJjM\
+qMe9saeAgKqu14obhh9odHRwczovL2NoLmdlbmkubmV0L2NhaW5mby5odG1sMHMG\
+A1UdEQRsMGqBEmNoLWFkbWluc0BnZW5pLm5ldIYpdXJuOnB1YmxpY2lkOklETitj\
+aC5nZW5pLm5ldCthdXRob3JpdHkrc2GGKXV1aWQ6MTM2YjRlNGEtOWU1Ny00Y2Rk\
+LWIyNjUtNzQ2NzU3NjA5NDllMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQAD\
+gYEAJ4IeTCnFtWpsFjT1G0UY6OVT/7RtobvWC6xYJw9Yh+rjRExKeVGW8YT2zfMc\
+c3hOb4b6wwyQr1H4nwqZU+0Vgwcc9gNn8gAXmdMXaWhdzoRE8kfpwVaTbQ+liWn5\
+soax9R01/qTT24zx+reOdcaKSfv0RjGWO9giqiDMW1iFFIc=\
+-----END CERTIFICATE-----\
+&lt;/target_gid&gt;&lt;target_urn&gt;urn:publicid:IDN+ch.geni.net:Quick_connect+slice+TestScaling&lt;/target_urn&gt;&lt;uuid/&gt;&lt;expires&gt;2016-09-19T20:21:57Z&lt;/expires&gt;&lt;privileges&gt;&lt;privilege&gt;&lt;name&gt;refresh&lt;/name&gt;&lt;can_delegate&gt;true&lt;/can_delegate&gt;&lt;/privilege&gt;&lt;privilege&gt;&lt;name&gt;embed&lt;/name&gt;&lt;can_delegate&gt;true&lt;/can_delegate&gt;&lt;/privilege&gt;&lt;privilege&gt;&lt;name&gt;bind&lt;/name&gt;&lt;can_delegate&gt;true&lt;/can_delegate&gt;&lt;/privilege&gt;&lt;privilege&gt;&lt;name&gt;control&lt;/name&gt;&lt;can_delegate&gt;true&lt;/can_delegate&gt;&lt;/privilege&gt;&lt;privilege&gt;&lt;name&gt;info&lt;/name&gt;&lt;can_delegate&gt;true&lt;/can_delegate&gt;&lt;/privilege&gt;&lt;/privileges&gt;&lt;/credential&gt;&lt;signatures&gt;&lt;Signature xmlns="http://www.w3.org/2000/09/xmldsig#" xml:id="Sig_ref0"&gt;\
+  &lt;SignedInfo&gt;\
+    &lt;CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/&gt;\
+    &lt;SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/&gt;\
+    &lt;Reference URI="#ref0"&gt;\
+      &lt;Transforms&gt;\
+        &lt;Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/&gt;\
+      &lt;/Transforms&gt;\
+      &lt;DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/&gt;\
+      &lt;DigestValue&gt;qx06DA7Ikw1RBS3692vA1CxxfxU=&lt;/DigestValue&gt;\
+    &lt;/Reference&gt;\
+  &lt;/SignedInfo&gt;\
+  &lt;SignatureValue&gt;ifnpH9SHZJp3/biS4SS2eJTEjh0ls98AqLjPxfpLMG6TQdFaSCUO6EGoF17Pki8X\
+Hh7Ny1T0kwUK72bYLeFyxTgfUi41ZsWldtIsxu70FBQQpq1JDGQLD+QFDHu1FGDg\
+YaXJwGkOHyy25qowjSu8F3kz0ldAipramE2/6pfpbbU=&lt;/SignatureValue&gt;\
+  &lt;KeyInfo&gt;\
+    &lt;X509Data&gt;\
+      \
+      \
+      \
+    &lt;X509Certificate&gt;MIIDTzCCArigAwIBAgIBATANBgkqhkiG9w0BAQUFADAWMRQwEgYDVQQDEwtjaC5n\
+ZW5pLm5ldDAeFw0xMzA1MjAxMzE4MjdaFw0xODA1MTkxMzE4MjdaMIGJMRQwEgYD\
+VQQKEwtjaC5nZW5pLm5ldDESMBAGA1UECxMJYXV0aG9yaXR5MQswCQYDVQQLEwJz\
+YTEtMCsGA1UEAxMkMTM2YjRlNGEtOWU1Ny00Y2RkLWIyNjUtNzQ2NzU3NjA5NDll\
+MSEwHwYJKoZIhvcNAQkBFhJjaC1hZG1pbnNAZ2VuaS5uZXQwgZ8wDQYJKoZIhvcN\
+AQEBBQADgY0AMIGJAoGBAMmvJqmEOC1J5awqGy4mBIMafnX2Y+aS22IOPNQQqcve\
+iGHJKRtDhLOxcp7zN06lbLt4iDwWAE0QNk2HjlX9Rx2PgycMXOLxUFQ/+NQf9a9M\
+Nlo21BtTfSXpASX7b6mf8P768ASkKO5grd+TnU8KnLTbn6iGJK1Boqn/A4Ple3tN\
+AgMBAAGjggE3MIIBMzAdBgNVHQ4EFgQU1YjjwRxXQ9dbHL20ZWbcJwb3jYkwRgYD\
+VR0jBD8wPYAURTbZXVj/QvUrCWpueR08gwTLmFGhGqQYMBYxFDASBgNVBAMTC2No\
+LmdlbmkubmV0ggkAm8fd1mgH3tswRwYIKwYBBQUHAQEEOzA5MDcGFGmDzJOAqJjM\
+qMe9saeAgKqu14obhh9odHRwczovL2NoLmdlbmkubmV0L2NhaW5mby5odG1sMHMG\
+A1UdEQRsMGqBEmNoLWFkbWluc0BnZW5pLm5ldIYpdXJuOnB1YmxpY2lkOklETitj\
+aC5nZW5pLm5ldCthdXRob3JpdHkrc2GGKXV1aWQ6MTM2YjRlNGEtOWU1Ny00Y2Rk\
+LWIyNjUtNzQ2NzU3NjA5NDllMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQAD\
+gYEAJ4IeTCnFtWpsFjT1G0UY6OVT/7RtobvWC6xYJw9Yh+rjRExKeVGW8YT2zfMc\
+c3hOb4b6wwyQr1H4nwqZU+0Vgwcc9gNn8gAXmdMXaWhdzoRE8kfpwVaTbQ+liWn5\
+soax9R01/qTT24zx+reOdcaKSfv0RjGWO9giqiDMW1iFFIc=&lt;/X509Certificate&gt;\
+&lt;X509SubjectName&gt;emailAddress=ch-admins@geni.net,CN=136b4e4a-9e57-4cdd-b265-74675760949e,OU=sa,OU=authority,O=ch.geni.net&lt;/X509SubjectName&gt;\
+&lt;X509IssuerSerial&gt;\
+&lt;X509IssuerName&gt;CN=ch.geni.net&lt;/X509IssuerName&gt;\
+&lt;X509SerialNumber&gt;1&lt;/X509SerialNumber&gt;\
+&lt;/X509IssuerSerial&gt;\
+&lt;/X509Data&gt;\
+    &lt;KeyValue&gt;\
+&lt;RSAKeyValue&gt;\
+&lt;Modulus&gt;\
+ya8mqYQ4LUnlrCobLiYEgxp+dfZj5pLbYg481BCpy96IYckpG0OEs7FynvM3TqVs\
+u3iIPBYATRA2TYeOVf1HHY+DJwxc4vFQVD/41B/1r0w2WjbUG1N9JekBJftvqZ/w\
+/vrwBKQo7mCt35OdTwqctNufqIYkrUGiqf8Dg+V7e00=\
+&lt;/Modulus&gt;\
+&lt;Exponent&gt;\
+AQAB\
+&lt;/Exponent&gt;\
+&lt;/RSAKeyValue&gt;\
+&lt;/KeyValue&gt;\
+  &lt;/KeyInfo&gt;\
+&lt;/Signature&gt;&lt;/signatures&gt;&lt;/signed-credential&gt;\
+</string></value>\
+</data></array></value>\
+</param>\
+<param>\
+<value><string>&lt;rspec xmlns:client="http://www.protogeni.net/resources/rspec/ext/client/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.geni.net/resources/rspec/3" xsi:schemaLocation="http://www.geni.net/resources/rspec/3 http://www.geni.net/resources/rspec/3/request.xsd" type="request"&gt;\
+  &lt;node client_id="A" exclusive="false"&gt;\
+    &lt;sliver_type name="emulab-xen"/&gt;\
+    &lt;interface client_id="A:if_AH0"&gt;\
+      &lt;ip address="192.165.1.1" netmask="255.255.255.0" type="ipv4"/&gt;\
+    &lt;/interface&gt;\
+  &lt;/node&gt;\
+  &lt;node client_id="B" exclusive="false"&gt;\
+    &lt;sliver_type name="emulab-xen"/&gt;\
+    &lt;interface client_id="B:if_BH0"&gt;\
+      &lt;ip address="192.168.1.1" netmask="255.255.255.0" type="ipv4"/&gt;\
+    &lt;/interface&gt;\
+  &lt;/node&gt;\
+  &lt;link client_id="link0"&gt;\
+    &lt;interface_ref client_id="A:if_AH0"/&gt;\
+    &lt;interface_ref client_id="B:if_BH0"/&gt;\
+    &lt;property source_id="B:if_BH0" dest_id="A:if_AH0" capacity="20000"/&gt;\
+    &lt;property source_id="A:if_AH0" dest_id="B:if_BH0" capacity="20000"/&gt;\
+  &lt;/link&gt;\
+&lt;/rspec&gt;\
+</string></value>\
+</param>\
+<param>\
+<value><array><data>\
+<value><struct>\
+<member>\
+<name>keys</name>\
+<value><array><data>\
+</data></array></value>\
+</member>\
+<member>\
+<name>urn</name>\
+<value><string>urn:publicid:IDN+ch.geni.net+user+pb</string></value>\
+</member>\
+</struct></value>\
+<value><struct>\
+<member>\
+<name>keys</name>\
+<value><array><data>\
+<value><string>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCrxPVJceWc3lQq6nltLgV9GgOWlVm/Sy0OOIDLIVSNT5mEkxB+Md3gy46j1a1FFgOy1wp1FfnBRehQ+/Q+xX1sMy77DJjYlehJFEUHJOwzUmiVMkIW/JnQijE6HJPtwJNWJRwyQlCHCEzL4RvC1DUgcsmeUEwDYcxTB7IvNACFp6dwtWhN1zaCuTrow6JgdlWfs6bt53F6JhNstUsrjaBNp2LglwDUabqcm8Xu1HXJSMuCIMS+nu6q4RysewQo7J1ZtuSkvW25GRS/C5iEFPk2gOMG3Eq0HHn3by2avGGX+hXOQJHIqIGGvJV4HvJsshtFKZcrSFdl7JqY17NsDNSr durairaj</string></value>\
+</data></array></value>\
+</member>\
+<member>\
+<name>urn</name>\
+<value><string>urn:publicid:IDN+ch.geni.net+user+durairaj</string></value>\
+</member>\
+</struct></value>\
+</data></array></value>\
+</param>\
+<param>\
+<value><struct>\
+</struct></value>\
+</param>\
+</params>\
+</methodCall>\
+';\
+\
+-------------- Result ------------------\
+$VAR1 = '<rspec xmlns:client="http://www.protogeni.net/resources/rspec/ext/client/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.geni.net/resources/rspec/3" xsi:schemaLocation="http://www.geni.net/resources/rspec/3 http://www.geni.net/resources/rspec/3/manifest.xsd" type="manifest" expires="2016-09-19T20:21:57Z">\
+  <node client_id="A" exclusive="false" component_id="urn:publicid:IDN+instageni.rnet.missouri.edu+node+pc4" component_manager_id="urn:publicid:IDN+instageni.rnet.missouri.edu+authority+cm" sliver_id="urn:publicid:IDN+instageni.rnet.missouri.edu+sliver+40006">\
+    <sliver_type name="emulab-xen"/>\
+    <interface client_id="A:if_AH0" component_id="urn:publicid:IDN+instageni.rnet.missouri.edu+interface+pc4:lo0" sliver_id="urn:publicid:IDN+instageni.rnet.missouri.edu+sliver+40010" mac_address="02023dc4e8b9">\
+      <ip address="192.165.1.1" netmask="255.255.255.0" type="ipv4"/>\
+    </interface>\
+  <rs:vnode xmlns:rs="http://www.protogeni.net/resources/rspec/ext/emulab/1" name="pcvm4-24" hardware_type="pcvm"/><host name="A.TestScaling.ch-geni-net.instageni.rnet.missouri.edu"/><services><login authentication="ssh-keys" hostname="pc4.instageni.rnet.missouri.edu" port="31546" username="pb"/><login authentication="ssh-keys" hostname="pc4.instageni.rnet.missouri.edu" port="31546" username="durairaj"/><rs:console xmlns:rs="http://www.protogeni.net/resources/rspec/ext/emulab/1" server="pc4.instageni.rnet.missouri.edu"/></services></node>\
+  <node client_id="B" exclusive="false" component_id="urn:publicid:IDN+instageni.rnet.missouri.edu+node+pc4" component_manager_id="urn:publicid:IDN+instageni.rnet.missouri.edu+authority+cm" sliver_id="urn:publicid:IDN+instageni.rnet.missouri.edu+sliver+40007">\
+    <sliver_type name="emulab-xen"/>\
+    <interface client_id="B:if_BH0" component_id="urn:publicid:IDN+instageni.rnet.missouri.edu+interface+pc4:lo0" sliver_id="urn:publicid:IDN+instageni.rnet.missouri.edu+sliver+40011" mac_address="02e303f0f4af">\
+      <ip address="192.168.1.1" netmask="255.255.255.0" type="ipv4"/>\
+    </interface>\
+  <rs:vnode xmlns:rs="http://www.protogeni.net/resources/rspec/ext/emulab/1" name="pcvm4-33" hardware_type="pcvm"/><host name="B.TestScaling.ch-geni-net.instageni.rnet.missouri.edu"/><services><login authentication="ssh-keys" hostname="pc4.instageni.rnet.missouri.edu" port="31547" username="pb"/><login authentication="ssh-keys" hostname="pc4.instageni.rnet.missouri.edu" port="31547" username="durairaj"/><rs:console xmlns:rs="http://www.protogeni.net/resources/rspec/ext/emulab/1" server="pc4.instageni.rnet.missouri.edu"/></services></node>\
+  <link client_id="link0" sliver_id="urn:publicid:IDN+instageni.rnet.missouri.edu+sliver+40009">\
+    <interface_ref client_id="A:if_AH0" component_id="urn:publicid:IDN+instageni.rnet.missouri.edu+interface+pc4:lo0" sliver_id="urn:publicid:IDN+instageni.rnet.missouri.edu+sliver+40010"/>\
+    <interface_ref client_id="B:if_BH0" component_id="urn:publicid:IDN+instageni.rnet.missouri.edu+interface+pc4:lo0" sliver_id="urn:publicid:IDN+instageni.rnet.missouri.edu+sliver+40011"/>\
+    <property source_id="B:if_BH0" dest_id="A:if_AH0" capacity="20000"/>\
+    <property source_id="A:if_AH0" dest_id="B:if_BH0" capacity="20000"/>\
+  </link>\
+<rs:site_info xmlns:rs="http://www.protogeni.net/resources/rspec/ext/site-info/1"><rs:location country="US" latitude="38.946767" longitude="-92.331461"/></rs:site_info></rspec>';\
+\
+----------------------------------------\
+\
+Debugging is on.\
+[Node: pcvm4-33] wants to boot [OS 10067:0 emulab-ops,UBUNTU14-64-STD].\
+Setting [Node: pcvm4-33] to load [Image 10067:0 emulab-ops,UBUNTU14-64-STD]\
+[Node: pcvm4-24] wants to boot [OS 10067:0 emulab-ops,UBUNTU14-64-STD].\
+Setting [Node: pcvm4-24] to load [Image 10067:0 emulab-ops,UBUNTU14-64-STD]\
+Checking for feature NewOsload.\
+osload (pcvm4-24): Changing default OS to [OS 10067:0 emulab-ops,UBUNTU14-64-STD]\
+Setting up reload for pcvm4-24 (mode: Frisbee)\
+osload (pcvm4-33): Changing default OS to [OS 10067:0 emulab-ops,UBUNTU14-64-STD]\
+Setting up reload for pcvm4-33 (mode: Frisbee)\
+osload: Done! There were 0 failures.\
+snmpit: ch-geni-net/TestScaling has no VLANs to create, skipping\
+vnode_setup running at parallelization: 10 wait_time: 3000\
+Doing setup of vnode pcvm4-24 on pc4 ...\
+Running: '/usr/testbed/bin/sshtb -n -host pc4   /usr/local/etc/emulab/vnodesetup  -jVt pcvm4-24 '\
+Doing setup of vnode pcvm4-33 on pc4 ...\
+Running: '/usr/testbed/bin/sshtb -n -host pc4   /usr/local/etc/emulab/vnodesetup  -jVt pcvm4-33 '\
+Child return 0\
+Child return 0\
+Vnode setup initiated on all nodes ...\
+Checking for feature NewEventScheduler.\
+\
+Debugging is on.\
+[Node: pcvm4-33] switches to RELOADING at 0 minutes (1473804962)\
+[Node: pcvm4-24] switches to BOOTING at 0 minutes (1473804962)\
+[Node: pcvm4-24] switches to RELOADING at 0 minutes (1473804982)}

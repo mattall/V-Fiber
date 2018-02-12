@@ -1,0 +1,15 @@
+H1-s:pc4.instageni.gpolab.bbn.com##32315
+H2-d:pc1.instageni.gpolab.bbn.com##32315
+H3-s:pc4.instageni.gpolab.bbn.com##32316
+H4-d:pc1.instageni.gpolab.bbn.com##32316
+H5-s:pc4.instageni.gpolab.bbn.com##32317
+H6-d:pc1.instageni.gpolab.bbn.com##32317
+H7-s:pc4.instageni.gpolab.bbn.com##32318
+H8-d:pc1.instageni.gpolab.bbn.com##32318
+H9-s:pc4.instageni.gpolab.bbn.com##32319
+H10-d:pc5.instageni.gpolab.bbn.com##32314
+Router1:pc4.instageni.gpolab.bbn.com##32320
+Router2:pc1.instageni.gpolab.bbn.com##32319
+Router3:pc4.instageni.gpolab.bbn.com##32321
+Router4:pc4.instageni.gpolab.bbn.com##32322
+Router5:pc4.instageni.gpolab.bbn.com##32323
