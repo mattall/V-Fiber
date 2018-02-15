@@ -13,19 +13,21 @@ destinations = sellers['LinkB']
 
 # Get request file ready
 requests = int(raw_input("How many requests should we make?\n> "))
-print("requests: {}".format(requests))
 
-filename = "clientRequests_{}".format(requests)
+filename = "clientRequests_{}.txt".format(requests)
 
 with open(filename, "w") as requestFile:
+    heading = "#{:26}|{:27}|{:3}|{:8}|{:5}|{:3}\n#".format("Source", "Destination", "Total Strands", "Capacity", "Bid", "Client")
+    requestFile.write(heading)
+    requestFile.write("="*len(heading)+"\n")
     for r in xrange(requests):
-        print("r = {}".format(r))
         source = rand.choice(sources)
         dest = rand.choice(destinations)
+        while dest.strip() == source.strip():
+            dest = rand.choice(destinations)
         strands = rand.randint(1, 10)
         capacity = rand.randint(1, 100)
         bid = rand.randint(600, 1000)
 
-        request = "{};{};{};{};{}\n".format(source, dest, strands, capacity, bid, r)
-        print("Writing request {}: ".format(request))
+        request = "{:27};{:27};{:13};{:8};{:5};{:6}\n".format(source, dest, strands, capacity, bid, r)
         requestFile.write(request)
