@@ -197,5 +197,4 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
         except Exception, e:
             self.__dbConnection.close()
             #self.__sshConnection.close()
-            #print("Exception upon message reception: %e", format(str(e)))
             self.__logger.error("Exception upon message reception: %s", str(e))
