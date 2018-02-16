@@ -9,7 +9,7 @@ class TCPClient(threading.Thread):
     '''
      JSON/TCP client thread
     '''
-    def __init__(self):
+    def __init__(self, buyer_data = TEST_PARAMS['buyer_file_name']):
         '''
          Class constructor
         '''
@@ -23,7 +23,7 @@ class TCPClient(threading.Thread):
         # Compression helper
         self.__compression = Utility()
         self.__resourcepath = TEST_PARAMS['path']
-        self.__buyerFile = TEST_PARAMS['buyer_file_name']
+        self.__buyerFile = buyer_data
         self.__client_request_type = TEST_PARAMS['client_request_type']
         self.__client_request_code = TEST_PARAMS['client_request_code']
         self.__logger = get_logger("TCPClient")
