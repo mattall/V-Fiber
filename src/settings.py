@@ -18,8 +18,9 @@ CONTEXT = {
 
 # Useful parameters for test purposes
 TEST_PARAMS = {
-    'path': '../data/',
+    'path': '/Users/TomNason/Dropbox/VFiber_code/VFiber/data/',
     'buyer_file_name': 'clientRequest.txt',
+    #'buyer_file_name': 'clientRequests_10.txt',
     'seller_file_name': 'sellerData.txt',
     'client_request_type': 'BUYER',                 # or SDX
     'client_request_code': 100,                     # or 001
