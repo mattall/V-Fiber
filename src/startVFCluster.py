@@ -6,6 +6,8 @@ from settings import SERVER_BINDING, ADEX, TEST_PARAMS, SELLER
 from common import get_logger
 from math import floor
 from random import randint
+from threading import Thread
+from time import sleep
 
 class VFiber(object):
 
@@ -20,7 +22,28 @@ class VFiber(object):
         self.server.sellerObject = self.get_leader(self.sellerObjects)
         self.server.sellerObject.populateSellerInfo()
 
-        self.server.dbConnection = DBConnection()
+        # Create Daemon process for keeping leader current.
+        self.adex_leader_daemon = Thread(target = self.__adex_leader_daemon)
+        self.adex_leader_daemon.setDaemon(True)
+        self.adex_leader_daemon.start()
+
+        self.seller_leader_deamon = Thread(target = self.__seller_leader_daemon)
+        self.seller_leader_deamon.setDaemon(True)
+        self.seller_leader_deamon.start()
+
+    def __adex_leader_daemon(self):
+        while True:
+            if self.server.adExObject._isLeader():
+                pass
+            else:
+                self.server.adExObject = self.get_leader(self.adExObjects)
+
+    def __seller_leader_daemon(self):
+        while True:
+            if self.server.adExObject._isLeader():
+                pass
+            else:
+                self.server.adExObject = self.get_leader(self.adExObjects)
 
     def init_cluster(self, bindings_list, object_constructor):
         '''

@@ -4,6 +4,7 @@ from base.model.datamodel import Request, Data, Utility
 from adexchange.adexchange import AdExchange
 from adexchange.seller import Seller
 from adexchange.layer3 import Layer3
+from adexchange.dbConnection import DBConnection
 from settings import CONTEXT, SERVER_BINDING, DB_PARAMS, TEST_PARAMS
 from collections import defaultdict
 from common import get_logger, Timer
@@ -44,7 +45,7 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
         self.__adExObject = server.adExObject
 
         # Initialize the DB connection
-        self.__dbConnection = server.dbConnection
+        self.__dbConnection = DBConnection()
 
         if DB_PARAMS['truncate']:
             self.__dbConnection.query("truncate table `VirtualFiber`.`IPAllocation`")
@@ -71,6 +72,7 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
         '''
         try:
             self.__logger.debug("[TCPRequestHandler][handle]Connection accepted... processing")
+
             # Reading request (assuming a small amount of bytes)
             data = self.request.recv(self.__size).strip()
 
@@ -195,6 +197,8 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
             # plotTimeline(a, CONTEXT['meas_to_location']+"overhead.eps")
 
         except Exception, e:
-            self.__dbConnection.close()
-            #self.__sshConnection.close()
+            #self.__dbConnection.close()
+            self.__sshConnection.close()
             self.__logger.error("Exception upon message reception: %s", str(e))
+        finally:
+            self.__dbConnection.close()
