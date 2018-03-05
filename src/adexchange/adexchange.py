@@ -102,7 +102,7 @@ class AdExchange(SyncObj):
                 self.llerGraph(sellerGraph, shortestPath, v)
                 self.__logger.debug("After > {}".format(self.availableAttributes(shortestPath, sellerGraph)))
             else:
-                self.__logger.info("Link does not exists")
+                self.__logger.info("Link does not exists between {} and {}".format(k1, k2))
         return self.updateRequestList(reqList, allocationDict)
 
     def runSecondPriceAuction(self, reqList, seller):
@@ -143,7 +143,7 @@ class AdExchange(SyncObj):
                 self.updateSellerGraph(seller, shortestPath, v)
                 self.__logger.debug("After > {}".format(self.availableAttributes(shortestPath, sellerGraph)))
             else:
-                self.__logger.info("Link does not exists or No resources available for the request")
+                self.__logger.info("Link does not exists between {} and {}. No resource available for request".format(k1, k2))
         return self.updateRequestList(reqList, allocationDict)
 
     def processClientRequests(self, reqList, sellerObj):
