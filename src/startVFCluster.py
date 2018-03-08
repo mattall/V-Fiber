@@ -13,37 +13,39 @@ class VFiber(object):
 
     def __init__(self):
         self.logger = get_logger("main")
-
         self.server = TCPServer((SERVER_BINDING['address'], int(SERVER_BINDING['port'])), TCPRequestHandler)
-        self.adExObjects = self.init_cluster(ADEX['bindings'], AdExchange)
-        self.server.adExObject = self.get_leader(self.adExObjects)
+        # self.adExObjects = self.init_cluster(ADEX['bindings'], AdExchange)
+        # self.server.adExObject = self.get_leader(self.adExObjects)
+        self.server.adExObject = AdExchange(ADEX['bindings'][0], ADEX['bindings'][1:])
 
-        self.sellerObjects = self.init_cluster(SELLER['bindings'], Seller)
-        self.server.sellerObject = self.get_leader(self.sellerObjects)
+        # self.sellerObjects = self.init_cluster(SELLER['bindings'], Seller)
+        # self.server.sellerObject = self.get_leader(self.sellerObjects)
+        self.server.sellerObject = Seller(SELLER['bindings'][0], SELLER['bindings'][1:])
         self.server.sellerObject.populateSellerInfo()
 
-        # Create Daemon process for keeping leader current.
-        self.adex_leader_daemon = Thread(target = self.__adex_leader_daemon)
-        self.adex_leader_daemon.setDaemon(True)
-        self.adex_leader_daemon.start()
 
-        self.seller_leader_deamon = Thread(target = self.__seller_leader_daemon)
-        self.seller_leader_deamon.setDaemon(True)
-        self.seller_leader_deamon.start()
+        # # Create Daemon process for keeping leader current.
+        # self.adex_leader_daemon = Thread(target = self.__adex_leader_daemon)
+        # self.adex_leader_daemon.setDaemon(True)
+        # self.adex_leader_daemon.start()
+        #
+        # self.seller_leader_deamon = Thread(target = self.__seller_leader_daemon)
+        # self.seller_leader_deamon.setDaemon(True)
+        # self.seller_leader_deamon.start()
 
-    def __adex_leader_daemon(self):
-        while True:
-            if self.server.adExObject._isLeader():
-                pass
-            else:
-                self.server.adExObject = self.get_leader(self.adExObjects)
-
-    def __seller_leader_daemon(self):
-        while True:
-            if self.server.adExObject._isLeader():
-                pass
-            else:
-                self.server.adExObject = self.get_leader(self.adExObjects)
+    # def __adex_leader_daemon(self):
+    #     while True:
+    #         if self.server.adExObject._isLeader():
+    #             pass
+    #         else:
+    #             self.server.adExObject = self.get_leader(self.adExObjects)
+    #
+    # def __seller_leader_daemon(self):
+    #     while True:
+    #         if self.server.adExObject._isLeader():
+    #             pass
+    #         else:
+    #             self.server.adExObject = self.get_leader(self.adExObjects)
 
     def init_cluster(self, bindings_list, object_constructor):
         '''
