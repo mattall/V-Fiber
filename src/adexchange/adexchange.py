@@ -99,7 +99,7 @@ class AdExchange(SyncObj):
 
                 # Updates sellerGraph with the allocation
                 self.__logger.debug("Before > {}".format(self.availableAttributes(shortestPath, sellerGraph)))
-                self.llerGraph(sellerGraph, shortestPath, v)
+                self.updateSellerGraph(sellerGraph, shortestPath, v)
                 self.__logger.debug("After > {}".format(self.availableAttributes(shortestPath, sellerGraph)))
             else:
                 self.__logger.info("Link does not exists between {} and {}".format(k1, k2))
