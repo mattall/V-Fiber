@@ -1,6 +1,6 @@
 # Server bindings
 SERVER_BINDING = {
-    'address': '127.0.0.1',
+    'address': '192.168.57.4',
     'port': '10000',
     'service_alias': 'VirtualFiber'
 }
@@ -18,7 +18,7 @@ CONTEXT = {
 
 # Useful parameters for test purposes
 TEST_PARAMS = {
-    'path': '/Users/TomNason/Dropbox/VFiber_code/VFiber/data/',
+    'path': '../data/',
     'buyer_file_name': 'clientRequest.txt',
     #'buyer_file_name': 'clientRequests_10.txt',
     'seller_file_name': 'sellerData.txt',
@@ -49,10 +49,10 @@ ADEX = {
     # bids below this reserved price are ignored -- just to ensure that everyone makes money.
     'reserve': 500,
     # server port combinations for distributed adExObject
-    'bindings': ['127.0.0.1:7000', '127.0.0.1:7001', '127.0.0.1:7002']
+    'bindings': ['192.168.57.4:7000', '192.168.57.3:7000', '192.168.57.5:7000']
 }
 
 SELLER = {
     # server port combination for distributed seller object
-    'bindings': ['127.0.0.1:7100', '127.0.0.1:7101', '127.0.0.1:7102']
+    'bindings': ['192.168.57.4:7100', '192.168.57.3:7100', '192.168.57.5:7100']
 }
