@@ -5,12 +5,7 @@ switch_pw = "cisco"
 port_in = "GigabitEthernet 0/1"
 port_out = "GigabitEthernet 0/28"
 vlan_id = 100
-
-child = pexpect.spawn("telnet %s", switch_ip)
-child.logfile = sys.stdout
-child.timeout = 4
 verbose = True
-
 
 try:
     try:
