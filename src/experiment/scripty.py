@@ -24,16 +24,16 @@ bits = megabytes * 8 * 1000000
 # ports are GigabitEthernet, so max bandwithd is 125.
 request = int(float(megabytes) // 125 * 100)
 
-try:
-    try:
-        child = pexpect.spawn('telnet %s' % (switch_ip))
-        if verbose:
-            child.logfile = sys.stdout
-        child.timeout = 4
-        child.expect('Password:')
-    except pexpect.TIMEOUT:
-        raise OurException("Couldn't log on to the switch")
 
+try:
+    child = pexpect.spawn('telnet %s' % (switch_ip))
+    if verbose:
+        child.logfile = sys.stdout
+    child.timeout = 4
+    child.expect('Password:')
+except pexpect.TIMEOUT:
+    raise Exception("Couldn't log on to the switch")
+try:
     child.sendline(switch_pw)
     child.expect('>')
     child.sendline('terminal length 0')
@@ -42,8 +42,6 @@ try:
     child.expect('Password:')
     child.sendline(switch_pw)
     child.expect('#')
-    child.sendline('configure terminal')
-    child.expect('\(config\)#')
 
     # Create a vlan
     # try:
@@ -76,6 +74,7 @@ try:
         child.sendline("show mls qos interface {} queueing | include bandwidth".format(p))
         rate_description = child.readline();
         rate = re.findall("\d+", rate_description)[0]
+        child.sendline('configure terminal')
         child.expect('\(config\)#')
         child.sendline('interface %s' % (p))
         o = child.expect(['\(config-if\)#', '% Invalid'])
@@ -102,6 +101,7 @@ try:
         child.sendline('wr mem')
         child.expect('[OK]')
         child.expect('#')
-        child.sendline('quit')
+        child.sendline('end')
 except (pexpect.EOF, pexpect.TIMEOUT), e:
-    raise error("Error while trying to move the vlan on the switch.")
+    child.close()
+    raise Exception("Error while trying to move the vlan on the switch.")
