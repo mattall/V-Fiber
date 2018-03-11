@@ -91,7 +91,7 @@ def addLink(switch_ip, megabytes):
                 if new_rate > 90:
                     child.sendline('no srr-queue bandwidth limit')
                     child.expect('\(config-if\)#')
-                elif new_rate >= 10
+                elif new_rate >= 10:
                     child.sendline('srr-queue bandwidth limit {}'.format(new_rate))
                     child.expect('\(config-if\)#')
                 else:
