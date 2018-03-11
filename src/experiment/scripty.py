@@ -73,7 +73,7 @@ try:
     for p in ports:
         child.sendline("show mls qos interface {} queueing | include bandwidth".format(p))
         rate_description = child.readline();
-        rate = re.findall("\d+", rate_description)[0]
+        int(rate) = re.findall("\d+", rate_description)[0]
         child.sendline('configure terminal')
         child.expect('\(config\)#')
         child.sendline('interface %s' % (p))
