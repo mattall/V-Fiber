@@ -81,7 +81,6 @@ try:
         if o != 0:
             raise Exception("Unknown switch port '%s'" % (port))
         # child.sendline('switchport access vlan %s' % (vlan_id))
-        child.expect('\(config-if\)#')
         child.sendline('no shutdown')
         child.expect('\(config-if\)#')
         try:
