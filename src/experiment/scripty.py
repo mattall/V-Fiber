@@ -1,5 +1,6 @@
 import pexpect
 import sys
+import re
 
 '''
 script modified from Ferry Boender's blog
