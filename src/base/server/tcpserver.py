@@ -9,6 +9,7 @@ from settings import CONTEXT, SERVER_BINDING, DB_PARAMS, TEST_PARAMS
 from collections import defaultdict
 from common import get_logger, Timer
 #from realdeployment.configureTestbedAndCircuit import two_nodes_rspec_simple
+from realdeployment.lab_testbed import addLink
 #from realdeployment.ExperimentOverhead.plotTimeline import *
 from subprocess import call
 from StringIO import StringIO
@@ -123,21 +124,7 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                         self.__logger.debug(u)
 
                     # Create e-2-e path for client
-                    if self.__infra_tested == 'MININET':
-                        self.__logger.info("Launching mininet experiments.")
-                        for item in updatedList:
-                            if item.winnerFlag == 1:
-                                # Create circuits
-                                flowTuples = self.getFlowTuples(item)
-
-                                # Push circuits
-                                # TODO: write installation logic for mininet
-                                self.__logger.info("Circuit pushed into networks by VirtualFiber for winner: {0}".format(item.clientName))
-                    elif self.__infra_tested == 'REAL':
-                        # sleep for two seconds
-                        print "Geni stuff is happening..."
-                        sleep(2)
-                        """
+                    if self.__infra_tested == 'REAL':
                         context = geni.util.loadContext()
                         self.__logger.info("Launching real network experiments.")
                         with Timer() as tCircuitCreation:
@@ -149,22 +136,16 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                                     # Push circuits
                                     locationA = (item.linkA.split(",")[1]).strip()
                                     locationB = (item.linkB.split(",")[1]).strip()
-                                    capacity = item.capacityPerStrand * 1000
+                                    capacity = item.capacityPerStrand
                                     with Timer() as tGeneration:
-                                        rspecName = two_nodes_rspec_simple(context, TEST_PARAMS['geni_slice_name'], locationA, locationB, \
-                                                                    item.ipA, item.ipB, item.portA, item.portB, capacity, TEST_PARAMS['geni_rspec_location'], item.numberOfStrands)
-                                    val = tGeneration.printTime("ConfigGeneration", tGeneration, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
-                                    overheadList.append(val)
-                                    with Timer() as tCreation:
-                                        # call("/Applications/omniTools-2.10/stitcher.app/Contents/MacOS/stitcher createsliver %s %s" % (TEST_PARAMS['geni_slice_name'], rspecName), shell=True)
-                                        call("/Applications/omniTools-2.10/omni.app/Contents/MacOS/omni createsliver -a missouri-ig %s %s" % (TEST_PARAMS['geni_slice_name'], rspecName), shell=True)
-                                        # print "circuit creation", rspecName
+                                        switch_ips = ["192.168.57.100", "192.168.57.101"]
+                                        for ip in switch_ips:
+                                            addLink(ip, capacity)
                                     val = tCreation.printTime("CircuitCreation", tCreation, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
                                     overheadList.append(val)
-                                    self.__logger.info("Circuit pushed into networks by VirtualFiber for winner: {0}".format(item.clientName))
+                                    self.__logger.info("Circuit pushed into networks by vFiber for winner: {0}".format(item.clientName))
                         val = tCircuitCreation.printTime("TotalGenerationAndCreation", tCircuitCreation, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
                         overheadList.append(val)
-                        """
                     else:
                         raise ValueError('Wrong configuration parameter in TEST_PARAMS')
 
