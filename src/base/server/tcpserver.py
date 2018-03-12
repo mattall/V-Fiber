@@ -125,9 +125,6 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
 
                     # Create e-2-e path for client
                     if self.__infra_tested == 'REAL':
-                        self.__logger.info("Launching mock network experiments.")
-                        sleep(1)
-                        '''
                         context = geni.util.loadContext()
                         self.__logger.info("Launching real network experiments.")
                         with Timer() as tCircuitCreation:
@@ -149,7 +146,11 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                                     self.__logger.info("Circuit pushed into networks by vFiber for winner: {0}".format(item.clientName))
                         val = tCircuitCreation.printTime("TotalGenerationAndCreation", tCircuitCreation, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
                         overheadList.append(val)
-                        '''                    
+
+                    elif self.__infra_tested == 'MOCK':
+                        self.__logger.info("Launching mock network experiments.")
+                        sleep(1)
+                        
                     else:
                         raise ValueError('Wrong configuration parameter in TEST_PARAMS')
 
@@ -182,8 +183,8 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
             # plotTimeline(a, CONTEXT['meas_to_location']+"overhead.eps")
 
         except Exception, e:
-            #self.__dbConnection.close()
-            self.__sshConnection.close()
+            # self.__dbConnection.close()
+            # self.__sshConnection.close()
             self.__logger.error("Exception upon message reception: %s", str(e))
         finally:
             self.__dbConnection.close()
