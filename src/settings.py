@@ -1,6 +1,6 @@
 # Server bindings
 SERVER_BINDING = {
-    'address': '192.168.57.4',
+    'address': ['192.168.57.102','192.168.57.103','192.168.57.103'],
     'port': '10000',
     'service_alias': 'VirtualFiber'
 }
@@ -25,8 +25,8 @@ TEST_PARAMS = {
     'client_request_type': 'BUYER',                 # or SDX
     'client_request_code': 100,                     # or 001
     # change this according to the experiment
-    #'infra_tested': 'MININET',                       # or REAL
-    'infra_tested': 'REAL',
+    'infra_tested': 'MOCK',                       # or REAL
+    #'infra_tested': 'REAL',
     'geni_slice_name': 'TestScaling',
     'geni_rspec_location': '/Users/ram/Desktop/RAM/Project/GreyFiber/ClientServer/src/realdeployment/'
 }
@@ -49,10 +49,15 @@ ADEX = {
     # bids below this reserved price are ignored -- just to ensure that everyone makes money.
     'reserve': 500,
     # server port combinations for distributed adExObject
-    'bindings': ['192.168.57.4:7000', '192.168.57.3:7000', '192.168.57.5:7000']
+    'bindings1': ['192.168.57.102:7000', '192.168.57.104:7000', '192.168.57.103:7000'],
+    'bindings2': ['192.168.57.103:7000', '192.168.57.102:7000', '192.168.57.104:7000'],
+    'bindings3': ['192.168.57.104:7000', '192.168.57.103:7000', '192.168.57.102:7000'],
 }
 
 SELLER = {
     # server port combination for distributed seller object
-    'bindings': ['192.168.57.4:7100', '192.168.57.3:7100', '192.168.57.5:7100']
+    'bindings1': ['192.168.57.102:7000', '192.168.57.104:7000', '192.168.57.103:7000'],
+    'bindings2': ['192.168.57.103:7000', '192.168.57.102:7000', '192.168.57.104:7000'],
+    'bindings3': ['192.168.57.104:7000', '192.168.57.103:7000', '192.168.57.102:7000'],
+
 }
