@@ -1,7 +1,7 @@
 import socket, time, threading, sys, gzip
 
 from base.model.datamodel import Request, Data, Utility
-from settings import CONTEXT, SERVER_BINDING, TEST_PARAMS
+from client_settings import CONTEXT, SERVER_BINDING, TEST_PARAMS
 from threading import Thread
 from common import get_logger
 
@@ -21,7 +21,7 @@ class TCPClient(threading.Thread):
         Thread.__init__(self)
 
         # Remote service bindings
-        self.__serverhost = SERVER_BINDING['address']
+        self.__serverhosts = SERVER_BINDING['address']
         self.__serverport = int(SERVER_BINDING['port'])
         # Buffer settings
         self.__bufferdim = int(CONTEXT['client_socket_buffer'])
@@ -32,6 +32,8 @@ class TCPClient(threading.Thread):
         self.__client_request_type = TEST_PARAMS['client_request_type']
         self.__client_request_code = TEST_PARAMS['client_request_code']
         self.__logger = get_logger("TCPClient")
+        self.__conn_timeout = 1
+        self.__recv_timeout = 10
 
         self.testReq = testReq
 
@@ -40,6 +42,7 @@ class TCPClient(threading.Thread):
          Thread handler
         '''
         try:
+            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             # Request creation
             if self.testReq:
                 bidList = [self.testReq]
@@ -67,8 +70,23 @@ class TCPClient(threading.Thread):
             data = Request(self.__client_request_type, self.__client_request_code, bidList)
 
             # Client socket binding
-            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            sock.connect((self.__serverhost, self.__serverport))
+            connected = False
+            hosts = self.__serverhosts[:]
+            while not connected and hosts:
+                host = hosts.pop();
+                try:
+                    self.__logger.debug("[TCPClient][run]Trying to connect to host {0}".format(host))
+                    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                    sock.settimeout(self.__conn_timeout)
+                    sock.connect((host, self.__serverport))
+                    print(connected)
+                    connected = True
+                    sock.settimeout(self.__recv_timeout)
+                except socket.error as e:
+                    self.__logger.debug("[TCPClient][run]Failed to connect to host {0}".format(host))
+                    if not hosts:
+                        self.__logger.error("Error::NET::No hosts available")
+                        raise Exception
 
             # Sending JSON data over the socket
             sock.send(data.to_json())
