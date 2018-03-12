@@ -72,7 +72,7 @@ def main():
     parser = ArgumentParser()
     parser.add_argument('server_num',\
         help="number 1,2,3... to distinguish whcih server is to begin running"\
-        tyoe=int)
+        type=int)
     args = parse_args
     vFiber = VFiber(args.server_num)
 
