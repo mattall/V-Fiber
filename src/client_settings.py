@@ -3,7 +3,7 @@ SERVER_BINDING = {
     #local test
     #'address': '127.0.0.1',
     #Virtual Box test
-    'address': ['192.168.57.3','192.168.57.4','192.168.57.5'],
+    'address': ['192.168.57.104','192.168.56.102','192.168.56.103'],
     'port': '10000',
     'service_alias': 'VirtualFiber'
 }
