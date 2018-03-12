@@ -1,6 +1,6 @@
 # Server bindings
 SERVER_BINDING = {
-    'address': ['192.168.57.102','192.168.57.103','192.168.57.103'],
+    'address': ['192.168.57.102','192.168.57.103','192.168.57.104'],
     'port': '10000',
     'service_alias': 'VirtualFiber'
 }
