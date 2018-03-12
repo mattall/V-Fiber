@@ -8,11 +8,13 @@ from math import floor
 from random import randint
 from threading import Thread
 from time import sleep
-from argparse import ArgumentParser, add_argument, parse_args
+from argparse import ArgumentParser
+# from argparse.ArgumentParser import add_argument, parse_args
 
 class VFiber(object):
 
     def __init__(self, id):
+        self.__id = id
         bindings = 'bindings' + str(id)
         self.logger = get_logger("main")
         self.server = TCPServer((SERVER_BINDING['address'][id-1], int(SERVER_BINDING['port'])), TCPRequestHandler)
@@ -70,10 +72,8 @@ class VFiber(object):
 
 def main():
     parser = ArgumentParser()
-    parser.add_argument('server_num',\
-        help="number 1,2,3... to distinguish whcih server is to begin running"\
-        type=int)
-    args = parse_args
+    parser.add_argument('server_num', help="number 1,2,3... to distinguish whcih server is to begin running", type=int)
+    args = parser.parse_args()
     vFiber = VFiber(args.server_num)
 
     if ADEX['status'] == "open":
