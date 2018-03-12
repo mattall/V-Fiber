@@ -7,7 +7,8 @@ import pandas as pd
 import random as rand
 
 # Get seller information
-sellers = pd.read_csv("sellerData.txt", sep=';')
+
+sellers = pd.read_csv("/Users/TomNason/Dropbox/VFiber_code/VFiber/data/sellerData.txt", sep=';')    
 sources = sellers['#LinkA']
 destinations = sellers['LinkB']
 
