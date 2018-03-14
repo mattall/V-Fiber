@@ -165,9 +165,9 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                                     locationA = (item.linkA.split(",")[1]).strip()
                                     locationB = (item.linkB.split(",")[1]).strip()
                                     capacity = item.capacityPerStrand
-                                    with Timer() as tCreation:
-                                        val = tCreation.printTime("CircuitCreation", tCreation, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
-                                    overheadList.append(val)
+                                    # with Timer() as tCreation:
+                                    #     val = tCreation.printTime("CircuitCreation", tCreation, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
+                                    # overheadList.append(val)
 
                                     self.__logger.info("Circuit pushed into networks by vFiber for winner: {0}".format(item.clientName))
                         val = tCircuitCreation.printTime("TotalGenerationAndCreation", tCircuitCreation, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
