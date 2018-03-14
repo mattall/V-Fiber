@@ -7,19 +7,19 @@ SERVER_BINDING = {
 
 # Contextual settings
 CONTEXT = {
-    'debug': False,
+    'debug': True,
     'client_socket_buffer': 8192,
     'compressed_content': False,
     'request_size': 1024,
     'meas_format': "d",
     'meas_to_file': True,
-    'meas_to_location': '/Users/ram/Desktop/RAM/Project/GreyFiber/ClientServer/src/realdeployment/Outputs/'
+    'meas_to_location': '/Users/TomNason/Dropbox/VFiber_code/VFiber/src/experiment/'
 }
 
 # Useful parameters for test purposes
 TEST_PARAMS = {
     'path': '../data/',
-    'buyer_file_name': 'clientRequests_1200.txt',
+    'buyer_file_name': 'clientRequest.txt',
     #'buyer_file_name': 'clientRequests_10.txt',
     'seller_file_name': 'sellerData.txt',
     'client_request_type': 'BUYER',                 # or SDX
