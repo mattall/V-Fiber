@@ -132,7 +132,6 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
 
                     # Create e-2-e path for client
                     if self.__infra_tested == 'REAL':
-                        context = geni.util.loadContext()
                         self.__logger.info("Launching real network experiments.")
                         with Timer() as tCircuitCreation:
                             for item in updatedList:
@@ -156,8 +155,23 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
 
                     elif self.__infra_tested == 'MOCK':
                         self.__logger.info("Launching mock network experiments.")
-                        sleep(1)
+                        with Timer() as tCircuitCreation:
+                            for item in updatedList:
+                                if item.winnerFlag == 1:
+                                    # Create circuits
+                                    flowTuples = self.wTuples(item)
 
+                                    # Push circuits
+                                    locationA = (item.linkA.split(",")[1]).strip()
+                                    locationB = (item.linkB.split(",")[1]).strip()
+                                    capacity = item.capacityPerStrand
+                                    with Timer() as tCreation:
+                                        val = tCreation.printTime("CircuitCreation", tCreation, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
+                                    overheadList.append(val)
+
+                                    self.__logger.info("Circuit pushed into networks by vFiber for winner: {0}".format(item.clientName))
+                        val = tCircuitCreation.printTime("TotalGenerationAndCreation", tCircuitCreation, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
+                        overheadList.append(val)
                     else:
                         raise ValueError('Wrong configuration parameter in TEST_PARAMS')
 
