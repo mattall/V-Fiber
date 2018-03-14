@@ -16,6 +16,7 @@ from StringIO import StringIO
 #import geni.util
 from time import sleep
 from sys import exc_info
+from traceback import print_exception
 
 class TCPServer(SocketServer.ThreadingTCPServer):
     '''
