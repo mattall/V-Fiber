@@ -159,7 +159,7 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                             for item in updatedList:
                                 if item.winnerFlag == 1:
                                     # Create circuits
-                                    flowTuples = self.wTuples(item)
+                                    flowTuples = self.getFlowTuples(item)
 
                                     # Push circuits
                                     locationA = (item.linkA.split(",")[1]).strip()
