@@ -15,6 +15,7 @@ from subprocess import call
 from StringIO import StringIO
 #import geni.util
 from time import sleep
+from sys import exc_info
 
 class TCPServer(SocketServer.ThreadingTCPServer):
     '''
@@ -150,7 +151,7 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                     elif self.__infra_tested == 'MOCK':
                         self.__logger.info("Launching mock network experiments.")
                         sleep(1)
-                        
+
                     else:
                         raise ValueError('Wrong configuration parameter in TEST_PARAMS')
 
@@ -186,5 +187,8 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
             # self.__dbConnection.close()
             # self.__sshConnection.close()
             self.__logger.error("Exception upon message reception: %s", str(e))
+            exc_type, exc_value, exc_traceback = exc_info()
+            print_exception(exc_type, exc_value, exc_traceback)
+
         finally:
             self.__dbConnection.close()
