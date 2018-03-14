@@ -81,6 +81,7 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
 
             # Unmarshall the request
             request = Request('', 0, '')
+            self.__logger.debug("[TCPRequestHandler][handle]Received json data: %s", str(data))
             request.from_json(data)
             # Print data out, if debug
 
