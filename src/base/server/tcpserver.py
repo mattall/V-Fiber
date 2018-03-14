@@ -81,7 +81,7 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
             while True:
                 new_data = self.request.recv(self.__size).strip()
                 data += new_data
-                if ']' in new_data: break
+                if '}' in new_data: break
 
             # Unmarshall the request
             request = Request('', 0, '')
