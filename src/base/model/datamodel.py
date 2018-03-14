@@ -26,11 +26,11 @@ class Request(object):
 
         return json.dumps(self.__dict__, indent=4)
 
-    def from_json(self, sting):
+    def from_json(self, string):
         '''
          Convert the JSON representation to a this instance
         '''
-        dict = json.loads(sting)
+        dict = json.loads(string)
         self.__dict__ = dict
         self.name = dict['name']
         self.code = dict['code']
