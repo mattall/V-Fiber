@@ -1,7 +1,7 @@
 import socket, time, threading, sys, gzip
 
 from base.model.datamodel import Request, Data, Utility
-from client_settings import CONTEXT, SERVER_BINDING, TEST_PARAMS
+from settings import CONTEXT, SERVER_BINDING, TEST_PARAMS
 from threading import Thread
 from common import get_logger
 
@@ -9,7 +9,7 @@ class TCPClient(threading.Thread):
     '''
      JSON/TCP client thread
     '''
-    def __init__(self, buyer_data = TEST_PARAMS['buyer_file_name']):
+    def __init__(self):
         '''
          Class constructor
         '''
@@ -24,7 +24,7 @@ class TCPClient(threading.Thread):
         # Compression helper
         self.__compression = Utility()
         self.__resourcepath = TEST_PARAMS['path']
-        self.__buyerFile = buyer_data
+        self.__buyerFile = TEST_PARAMS['buyer_file_name']
         self.__client_request_type = TEST_PARAMS['client_request_type']
         self.__client_request_code = TEST_PARAMS['client_request_code']
         self.__logger = get_logger("TCPClient")
@@ -36,6 +36,7 @@ class TCPClient(threading.Thread):
          Thread handler
         '''
         try:
+            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             # Request creation
             resource = []
             resource.append(self.__resourcepath)
@@ -76,7 +77,7 @@ class TCPClient(threading.Thread):
                         raise Exception
 
             # Sending JSON data over the socket
-            sock.send(data.to_json())
+            sock.sendall(data.to_json())
             self.__logger.info("[TCPClient][run]Request sent...")
             start = time.time()
             response = self.__receive_data(sock)

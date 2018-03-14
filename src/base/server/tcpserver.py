@@ -77,7 +77,11 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
             self.__logger.debug("[TCPRequestHandler][handle]Connection accepted... processing")
 
             # Reading request (assuming a small amount of bytes)
-            data = self.request.recv(self.__size).strip()
+            data = ""
+            while True:
+                new_data = self.request.recv(self.__size).strip()
+                data += new_data
+                if not new_data: break
 
             # Unmarshall the request
             request = Request('', 0, '')
