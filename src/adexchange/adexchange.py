@@ -4,7 +4,7 @@ from gsp import GSP
 from vcg import VCG
 import networkx as nx
 from common import get_logger
-from pysyncobj import SyncObj, replicated
+from pysyncobj import SyncObj, replicated, SyncObjConf
 
 class AdExchange(SyncObj):
     def __init__(self, selfAddress, partnerAddresses):
