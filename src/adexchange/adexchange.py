@@ -145,7 +145,7 @@ class AdExchange(SyncObj):
                     self.__logger.debug("After > {}".format(self.availableAttributes(shortestPath, sellerGraph)))
                 else:
                     self.__logger.info("Link does not exists between {} and {}. No resource available for request".format(k1, k2))
-            except NodeNotFound:
+            except nx.NodeNotFound:
                 self.__logger.info("Link does not exists between {} and {}. No resource available for request".format(k1, k2))
                 allocationDict = {}
                 break;
