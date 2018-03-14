@@ -11,7 +11,7 @@ class AdExchange(SyncObj):
         '''
         Add connection object here if exchange is physically located in a separate server
         '''
-         cfg = SyncObjConf(logCompactionMinEntries = 2147483647, logCompactionMinTime = 2147483647)
+        cfg = SyncObjConf(logCompactionMinEntries = 2147483647, logCompactionMinTime = 2147483647)
         super(AdExchange, self).__init__(selfAddress, partnerAddresses, cfg)
         self.__logger = get_logger("AdExchange")
         self.__logger.info("### Starting Ad Exchange...")
