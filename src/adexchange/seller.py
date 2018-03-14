@@ -2,7 +2,7 @@ import gzip
 from settings import CONTEXT, TEST_PARAMS, SELLER
 import networkx as nx
 from common import get_logger
-from pysyncobj import SyncObj, replicated_sync, replicated
+from pysyncobj import SyncObj, replicated_sync, replicated, SyncObjConf
 
 class Seller(SyncObj):
     def __init__(self, selfAddress, partnerAddresses):
