@@ -3,3 +3,4 @@ Denver, Colorado; Salt Lake City, Utah; 100000; 100; 800; Level3; 94.31.44.0/24;
 San Francisco, California; Denver, Colorado; 80000; 100; 850; Verizon; 66.180.55.0/24; 66.181.55.0/24
 Kansas City, Missouri; Madison, Wisconsin; 100000; 100; 700; ATT; 192.168.1.0/24; 192.168.2.0/24
 Salt Lake City, Utah; Kansas City, Missouri; 100000; 100; 700; ATT; 192.168.100.0/24; 192.168.101.0/24
+Salt Lake City, Utah; Denver, Colorado; 80000; 100; 850; Cox; 64.170.55.0/24; 64.170.55.0/24
