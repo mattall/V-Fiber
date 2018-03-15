@@ -1,2 +1,2 @@
 #LinkA;LinkB;FiberStrands;CapacityPerStrand (GBps);AmountPerStrand;ISP;PrefixA;PrefixB
-host1, host2; 5; 5; 100; ONRG; 192.168.60.1; 192.168.60.2
+host1; host2; 5; 5; 100; ONRG; 192.168.60.1; 192.168.60.2
