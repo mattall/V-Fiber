@@ -7,7 +7,7 @@ SERVER_BINDING = {
 
 # Contextual settings
 CONTEXT = {
-    'debug': True,
+    'debug': False,
     'client_socket_buffer': 8192,
     'compressed_content': False,
     'request_size': 1024,
@@ -18,7 +18,7 @@ CONTEXT = {
 
 # Useful parameters for test purposes
 TEST_PARAMS = {
-    'path': '../data/',
+    'path': '../../data/',
     'buyer_file_name': 'clientRequest.txt',
     #'buyer_file_name': 'clientRequests_10.txt',
     'seller_file_name': 'sellerData.txt',
