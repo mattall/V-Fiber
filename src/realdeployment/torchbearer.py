@@ -4,7 +4,7 @@ import re
 from a_timer import Timer
 
 '''
-Toarchbearer lights an end-to-end path of dark fiber
+Torchbearer lights an end-to-end path of dark fiber
 '''
 def light_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthernet 0/28"):
     switches = ips
