@@ -99,5 +99,5 @@ if __name__ == "__main__":
 
     time_log['lighting_time'] = lighting_time.interval
 
-    for t in time_log:
-        print("{15}: {}".format(t, time_log[t]))
+    for k, v in time_log.items():
+        print("{15}: {}".format(k, v))
