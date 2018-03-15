@@ -93,8 +93,11 @@ if __name__ == "__main__":
     with Timer() as extinguishing_time:
         extinguish_path(["192.168.57.200", "192.168.57.201"], "GigabitEthernet 0/28")
 
-    time_log['et'] = extinguishing_time
+    time_log['extinguishing_time'] = extinguishing_time
     with Timer() as lighting_time:
         light_path(["192.168.57.200", "192.168.57.201"], "GigabitEthernet 0/28")
 
-    time_log['lt'] = lighting_time
+    time_log['lighting_time'] = lighting_time
+
+    for t in time_log:
+        print("{}:{}".format(t, time_log[t]))
