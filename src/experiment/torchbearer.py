@@ -11,7 +11,7 @@ def light_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthern
     swith_port = port
     verbose = True
 
-    for addr = switches:
+    for addr in switches:
         try:
             child = pexpect.spawn('telnet %s' % (addr))
             if verbose:
