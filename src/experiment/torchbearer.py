@@ -1,6 +1,7 @@
 import pexpect
 import sys
 import re
+from a_timer import Timer
 
 '''
 Toarchbearer lights an end-to-end path of dark fiber
@@ -86,3 +87,14 @@ def extinguish_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitE
             except (pexpect.EOF, pexpect.TIMEOUT), e:
                 child.close()
                 raise Exception("Error while trying to move the vlan on the switch.")
+
+if __name__ == "__main__":
+    time_log  = {}
+    with Timer() as extinguishing_time:
+        extinguish_path(["192.168.57.200", "192.168.57.201"], "GigabitEthernet 0/28")
+
+    time_log['et'] = extinguishing_time
+    with Timer() as lighting_time:
+        light_path(["192.168.57.200", "192.168.57.201"], "GigabitEthernet 0/28")
+
+    time_log['lt'] = lighting_time
