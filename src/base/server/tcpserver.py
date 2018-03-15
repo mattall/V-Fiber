@@ -10,6 +10,7 @@ from collections import defaultdict
 from common import get_logger, Timer
 #from realdeployment.configureTestbedAndCircuit import two_nodes_rspec_simple
 from realdeployment.lab_testbed import addLink
+from realdeployment.torchbearer import light_path
 #from realdeployment.ExperimentOverhead.plotTimeline import *
 from subprocess import call
 from StringIO import StringIO
@@ -145,8 +146,9 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                                     capacity = item.capacityPerStrand
                                     with Timer() as tGeneration:
                                         switch_ips = ["192.168.57.100", "192.168.57.101"]
-                                        for ip in switch_ips:
-                                            addLink(ip, capacity)
+                                    val = tGeneration.printTime("CircuitCreation", tCreation, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
+                                    with Timer() as tCreation:
+                                        light_path(switch_ips)
                                     val = tCreation.printTime("CircuitCreation", tCreation, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
                                     overheadList.append(val)
                                     self.__logger.info("Circuit pushed into networks by vFiber for winner: {0}".format(item.clientName))
