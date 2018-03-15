@@ -1,3 +1,4 @@
 # ignore all .pyc files
 *.pyc
 clientRequests*
+server_details.py
