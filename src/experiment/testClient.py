@@ -1,7 +1,7 @@
 import socket, time, threading, sys, gzip
 
 from base.model.datamodel import Request, Data, Utility
-from client_settings import CONTEXT, SERVER_BINDING, TEST_PARAMS
+from settings import CONTEXT, SERVER_BINDING, TEST_PARAMS
 from threading import Thread
 from common import get_logger
 
@@ -14,7 +14,7 @@ class TCPClient(threading.Thread):
     '''
      JSON/TCP client thread
     '''
-    def __init__(self, buyer_data = TEST_PARAMS['buyer_file_name'], testReq = None):
+    def __init__(self, buyer_data = TEST_PARAMS['buyer_file_name'], totalReqs = -1):
         '''
          Class constructor
         '''
@@ -32,10 +32,10 @@ class TCPClient(threading.Thread):
         self.__client_request_type = TEST_PARAMS['client_request_type']
         self.__client_request_code = TEST_PARAMS['client_request_code']
         self.__logger = get_logger("TCPClient")
-        self.__conn_timeout = 1
-        self.__recv_timeout = 10
+        self.__conn_timeout = 6000
+        self.__recv_timeout = 6000
 
-        self.testReq = testReq
+        self.totalReqs = totalReqs
 
     def run(self):
         '''
@@ -44,28 +44,31 @@ class TCPClient(threading.Thread):
         try:
             sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             # Request creation
-            if self.testReq:
-                bidList = [self.testReq]
-                testfile = None
-                zippedfile = None
-            else:
-                resource = []
-                resource.append(self.__resourcepath)
-                resource.append(self.__buyerFile)
-                self.__logger.debug("[TCPClient][run]Resource read: {}\n".format(resource))
+            resource = []
+            resource.append(self.__resourcepath)
+            resource.append(self.__buyerFile)
+            self.__logger.debug("[TCPClient][run]Resource read: {}\n".format(resource))
 
-                # Test if compressed content is needed
-                bidList = []
-                zippedfile = None
-                testfile = None
-                if (self.__compression):
-                    zippedfile = gzip.open(''.join(resource)+".gz", "r+")
-                    bidList = zippedfile.readlines()
-                    self.__logger.info("[TCPClient][run](Compressed) Content size {0}".format(sys.getsizeof(bidList)))
+            # Test if compressed content is needed
+            bidList = []
+            zippedfile = None
+            testfile = None
+            if (self.__compression):
+                zippedfile = gzip.open(''.join(resource)+".gz", "r+")
+                if self.totalReqs > 0:
+                    for i in range(self.totalReqs):
+                        bidList.append(zippedfile.readline())
                 else:
-                    testfile = open(''.join(resource), 'r')
+                    bidList = zippedfile.readlines()
+                self.__logger.info("[TCPClient][run](Compressed) Content size {0}".format(sys.getsizeof(bidList)))
+            else:
+                testfile = open(''.join(resource), 'r')
+                if self.totalReqs > 0:
+                    for i in range(self.totalReqs):
+                        bidList.append(testfile.readline())
+                else:
                     bidList = testfile.readlines()
-                    self.__logger.info("[TCPClient][run](Uncompressed) Content size {0}".format(sys.getsizeof(bidList)))
+                self.__logger.info("[TCPClient][run](Uncompressed) Content size {0}".format(sys.getsizeof(bidList)))
 
             data = Request(self.__client_request_type, self.__client_request_code, bidList)
 
@@ -79,9 +82,9 @@ class TCPClient(threading.Thread):
                     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
                     sock.settimeout(self.__conn_timeout)
                     sock.connect((host, self.__serverport))
-                    print(connected)
                     connected = True
                     sock.settimeout(self.__recv_timeout)
+                    self.__logger.debug("[TCPClient][run]Connection Success! {0}".format(host))
                 except socket.error as e:
                     self.__logger.debug("[TCPClient][run]Failed to connect to host {0}".format(host))
                     if not hosts:
@@ -89,7 +92,7 @@ class TCPClient(threading.Thread):
                         raise Exception
 
             # Sending JSON data over the socket
-            sock.send(data.to_json())
+            sock.sendall(data.to_json())
             self.__logger.info("[TCPClient][run]Request sent...")
             start = time.time()
             response = self.__receive_data(sock)
@@ -107,6 +110,8 @@ class TCPClient(threading.Thread):
                 self.__logger.info("[TCPClient][run]Allocations")
                 for allocation in data.vector:
                     self.__logger.info(allocation)
+            else:
+                self.__logger.debug("[TCPClient][run]Data from json: {0}".format(data))
 
         except Exception, e:
             self.__logger.error("Error::NET::sending exception {0}".format(e))
