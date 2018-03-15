@@ -67,7 +67,6 @@ class TCPClient(threading.Thread):
                     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
                     sock.settimeout(self.__conn_timeout)
                     sock.connect((host, self.__serverport))
-                    print(connected)
                     connected = True
                     sock.settimeout(self.__recv_timeout)
                 except socket.error as e:
@@ -85,6 +84,9 @@ class TCPClient(threading.Thread):
 
             self.__logger.debug("[TCPClient][run]Reception::Time Elapsed: {0}".format(end - start))
             self.__logger.debug("[TCPClient][run](Compressed) Dimension:: {0}".format(sys.getsizeof(response)))
+            self.__logger.debug("[TCPClient][run]Raw Response: {0}".format(response))
+
+
 
             # Treating compressed data
             result = self.__compression.decompress(response)
@@ -95,6 +97,9 @@ class TCPClient(threading.Thread):
                 self.__logger.info("[TCPClient][run]Allocations")
                 for allocation in data.vector:
                     self.__logger.info(allocation)
+            else:
+                self.__logger.debug("[TCPClient][run]Data from json: {0}".format(data))
+
 
         except Exception, e:
             self.__logger.error("Error::NET::sending exception {0}".format(e))
