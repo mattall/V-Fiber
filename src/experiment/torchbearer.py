@@ -51,7 +51,7 @@ def fast_extinguish_path(ips = ["192.168.57.200", "192.168.57.201"], port = "Gig
         switches = ips
         switch_pw = "cisco"
         swith_port = port
-        verbose = True
+        verbose = False
 
         for addr in switches:
             try:
@@ -90,7 +90,7 @@ def extinguish_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitE
         switches = ips
         switch_pw = "cisco"
         swith_port = port
-        verbose = True
+        verbose = False
 
         for addr in switches:
             try:
