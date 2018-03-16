@@ -176,7 +176,6 @@ if __name__ == "__main__":
         with Timer() as extinguishing_time:
             fast_extinguish_path(["192.168.57.200", "192.168.57.201"], "GigabitEthernet 0/28")
 
-        time_log['extinguishing_time'] = extinguishing_time.interval
         with Timer() as lighting_time:
             light_path(["192.168.57.200", "192.168.57.201"], "GigabitEthernet 0/28")
 
