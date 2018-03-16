@@ -2,6 +2,7 @@ import pexpect
 import sys
 import re
 from a_timer import Timer
+from time import sleep
 
 '''
 Toarchbearer lights an end-to-end path of dark fiber
@@ -171,15 +172,14 @@ def fast_off_and_on(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitE
 
 
 if __name__ == "__main__":
-    time_log  = {}
-    with Timer() as extinguishing_time:
-        fast_extinguish_path(["192.168.57.200", "192.168.57.201"], "GigabitEthernet 0/28")
+    for i in range(50):
+        with Timer() as extinguishing_time:
+            fast_extinguish_path(["192.168.57.200", "192.168.57.201"], "GigabitEthernet 0/28")
 
-    time_log['extinguishing_time'] = extinguishing_time.interval
-    with Timer() as lighting_time:
-        light_path(["192.168.57.200", "192.168.57.201"], "GigabitEthernet 0/28")
+        time_log['extinguishing_time'] = extinguishing_time.interval
+        with Timer() as lighting_time:
+            light_path(["192.168.57.200", "192.168.57.201"], "GigabitEthernet 0/28")
 
-    time_log['lighting_time'] = lighting_time.interval
-
-    print("extinguishing time:\n", str(extinguishing_time.interval))
-    print("lighting time:\n", str(lighting_time.interval))
+        print("extinguishing time:\n", str(extinguishing_time.interval))
+        print("lighting time:\n", str(lighting_time.interval))
+        sleep(40)
