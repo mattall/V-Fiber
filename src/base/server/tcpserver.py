@@ -3,18 +3,14 @@ from SocketServer import BaseRequestHandler
 from base.model.datamodel import Request, Data, Utility
 from adexchange.adexchange import AdExchange
 from adexchange.seller import Seller
-from adexchange.layer3 import Layer3
 from adexchange.dbConnection import DBConnection
 from settings import CONTEXT, SERVER_BINDING, DB_PARAMS, TEST_PARAMS
 from collections import defaultdict
 from common import get_logger, Timer
-#from realdeployment.configureTestbedAndCircuit import two_nodes_rspec_simple
 from realdeployment.lab_testbed import addLink
 from realdeployment.torchbearer import light_path
-#from realdeployment.ExperimentOverhead.plotTimeline import *
 from subprocess import call
 from StringIO import StringIO
-#import geni.util
 from time import sleep
 from sys import exc_info
 from traceback import print_exception
@@ -87,9 +83,6 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
             # Unmarshall the request
             request = Request('', 0, '')
             request.from_json(data)
-            # Print data out, if debug
-
-            layer3 = Layer3()
 
             overheadList = []
             with Timer() as tTotalProcessing:
@@ -125,17 +118,17 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                     overheadList.append(val)
                     self.__logger.debug("[TCPRequestHandler][handle]Received list from Fiber Exchange...{}".format(allocationList))
                     # Allocate IP address for circuits
-                    updatedList = layer3.allocateIPAddresses(self.__sellerObj.getSellerGraph(), allocationList, self.__dbConnection)
+                    # allocationList = layer3.allocateIPAddresses(self.__sellerObj.getSellerGraph(), allocationList, self.__dbConnection)
 
                     self.__logger.debug("IP address and interface allocations decisions.")
-                    for u in updatedList:
+                    for u in allocationList:
                         self.__logger.debug(u)
 
                     # Create e-2-e path for client
                     if self.__infra_tested == 'REAL':
                         self.__logger.info("Launching real network experiments.")
                         with Timer() as tCircuitCreation:
-                            for item in updatedList:
+                            for item in allocationList:
                                 if item.winnerFlag == 1:
                                     # Create circuits
                                     flowTuples = self.getFlowTuples(item)
@@ -158,7 +151,7 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                     elif self.__infra_tested == 'MOCK':
                         self.__logger.info("Launching mock network experiments.")
                         with Timer() as tCircuitCreation:
-                            for item in updatedList:
+                            for item in allocationList:
                                 if item.winnerFlag == 1:
                                     # Create circuits
                                     flowTuples = self.getFlowTuples(item)
@@ -179,8 +172,8 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
 
                     # Prepare the response data
                     response = Data(True, [], 0)
-                    response.vector = updatedList
-                    response.nrbytes = int(sys.getsizeof(updatedList))
+                    response.vector = allocationList
+                    response.nrbytes = int(sys.getsizeof(allocationList))
 
                     # Marshall JSON representation
                     json_str = response.to_json()
