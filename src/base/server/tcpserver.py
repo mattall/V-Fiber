@@ -86,7 +86,6 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
 
             # Unmarshall the request
             request = Request('', 0, '')
-            self.__logger.debug("[TCPRequestHandler][handle]Received json data: %s", str(data))
             request.from_json(data)
             # Print data out, if debug
 
@@ -119,11 +118,12 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                         crDict[key].append(cr)
 
                     # Dispatch the request to the Adex
-                    self.__logger.debug("[TCPRequestHandler][handle]Dispatching request to the Ad Exchange...")
+                    self.__logger.debug("[TCPRequestHandler][handle]Dispatching request to the Fiber Exchange...")
                     with Timer() as tAd:
                         allocationList = self.__adExObject.processClientRequests(crDict, self.__sellerObj)
-                    val = tAd.printTime("AdExchange", tAd, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
+                    val = tAd.printTime("FiberExchange", tAd, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
                     overheadList.append(val)
+                    self.__logger.debug("[TCPRequestHandler][handle]Received list from Fiber Exchange...{}".format(allocationList))
                     # Allocate IP address for circuits
                     updatedList = layer3.allocateIPAddresses(self.__sellerObj.getSellerGraph(), allocationList, self.__dbConnection)
 
