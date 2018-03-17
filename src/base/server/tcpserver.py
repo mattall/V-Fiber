@@ -134,8 +134,15 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                                     flowTuples = self.getFlowTuples(item)
 
                                     # Push circuits
-                                    locationA = (item.linkA.split(",")[1]).strip()
-                                    locationB = (item.linkB.split(",")[1]).strip()
+                                    self.__logger.info("Launching real network experiments.",item.linkA)
+                                    if "," in item.linkA:
+                                        locationA = (item.linkA.split(",")[1]).strip()
+                                    else
+                                        locationA = item.linkA[1].strip()
+                                    if "," in item.LinkB:
+                                        locationB = (item.linkB.split(",")[1]).strip()
+                                    else:
+                                        locationB = item.linkB[1].strip()
                                     capacity = item.capacityPerStrand
                                     with Timer() as tGeneration:
                                         switch_ips = ["192.168.57.100", "192.168.57.101"]
