@@ -134,7 +134,7 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                                     flowTuples = self.getFlowTuples(item)
 
                                     # Push circuits
-                                    self.__logger.info("Launching real network experiments. connecting {} and {}",item.linkA, item.linkB)
+                                    self.__logger.info("Launching real network experiments. connecting {} and {}".format(item.linkA, item.linkB))
                                     if "," in item.linkA:
                                         locationA = (item.linkA.split(",")[1]).strip()
                                     else:
@@ -146,7 +146,7 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                                     capacity = item.capacityPerStrand
                                     with Timer() as tGeneration:
                                         switch_ips = ["192.168.57.100", "192.168.57.101"]
-                                    val = tGeneration.printTime("CircuitCreation", tCreation, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
+                                    val = tGeneration.printTime("CircuitCreation", tGeneration, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
                                     with Timer() as tCreation:
                                         light_path(switch_ips)
                                     val = tCreation.printTime("CircuitCreation", tCreation, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
