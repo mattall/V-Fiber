@@ -137,7 +137,7 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                                     self.__logger.info("Launching real network experiments.",item.linkA)
                                     if "," in item.linkA:
                                         locationA = (item.linkA.split(",")[1]).strip()
-                                    else
+                                    else:
                                         locationA = item.linkA[1].strip()
                                     if "," in item.LinkB:
                                         locationB = (item.linkB.split(",")[1]).strip()
