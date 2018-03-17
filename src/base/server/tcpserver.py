@@ -134,7 +134,7 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                                     flowTuples = self.getFlowTuples(item)
 
                                     # Push circuits
-                                    self.__logger.info("Launching real network experiments.",item.linkA)
+                                    self.__logger.info("Launching real network experiments. connecting {} and {}",item.linkA, item.linkB)
                                     if "," in item.linkA:
                                         locationA = (item.linkA.split(",")[1]).strip()
                                     else:
