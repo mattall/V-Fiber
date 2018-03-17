@@ -139,7 +139,7 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                                         locationA = (item.linkA.split(",")[1]).strip()
                                     else:
                                         locationA = item.linkA[1].strip()
-                                    if "," in item.LinkB:
+                                    if "," in item.linkB:
                                         locationB = (item.linkB.split(",")[1]).strip()
                                     else:
                                         locationB = item.linkB[1].strip()
