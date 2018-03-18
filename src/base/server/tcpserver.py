@@ -145,7 +145,7 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                                         locationB = item.linkB[1].strip()
                                     capacity = item.capacityPerStrand
                                     with Timer() as tGeneration:
-                                        switch_ips = ["192.168.57.200", "192.168.60.201"]
+                                        switch_ips = ["192.168.57.200", "192.168.57.201"]
                                     val = tGeneration.printTime("CircuitCreation", tGeneration, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
                                     with Timer() as tCreation:
                                         light_path(ips = switch_ips)
