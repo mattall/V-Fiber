@@ -208,7 +208,7 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
             self.__logger.debug("[TCPRequestHandler][handle] Overhead list :\n".format(strVal))
             # plotTimeline(a, CONTEXT['meas_to_location']+"overhead.eps")
             with open(CONTEXT['meas_to_location']+"overhead.txt", "w") as file:
-                file.write(a)
+                file.write(strVal)
 
         except Exception, e:
             self.__logger.error("Exception upon message reception: %s", str(e))
