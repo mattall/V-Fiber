@@ -1,7 +1,7 @@
 import pexpect
 import sys
 import re
-if __name__ == "__main__": 
+if __name__ == "__main__":
     from a_timer import Timer
 from time import sleep
 
@@ -22,7 +22,7 @@ def light_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthern
             child.timeout = 4
             child.expect('Password:')
         except pexpect.TIMEOUT:
-            raise Exception("Couldn't log on to the switch")
+            raise Exception("Couldn't log on to the switch: %s", addr)
 
         try:
             child.sendline(switch_pw)
