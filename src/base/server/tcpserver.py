@@ -115,6 +115,7 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                     with Timer() as tAd:
                         allocationList = self.__adExObject.processClientRequests(crDict, self.__sellerObj)
                     val = tAd.printTime("FiberExchange", tAd, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
+                    self.__logger.debug("[TCPRequestHandler][handle]Elapsed Time {}".format(val))
                     overheadList.append(val)
                     self.__logger.debug("[TCPRequestHandler][handle]Received list from Fiber Exchange...{}".format(allocationList))
                     # Allocate IP address for circuits
@@ -150,9 +151,11 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                                     with Timer() as tCreation:
                                         light_path(ips = switch_ips)
                                     val = tCreation.printTime("CircuitCreation", tCreation, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
+                                    self.__logger.debug("[TCPRequestHandler][handle]Elapsed Time {}".format(val))
                                     overheadList.append(val)
                                     self.__logger.info("Circuit pushed into networks by vFiber for winner: {0}".format(item.clientName))
                         val = tCircuitCreation.printTime("TotalGenerationAndCreation", tCircuitCreation, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
+                        self.__logger.debug("[TCPRequestHandler][handle]Elapsed Time {}".format(val))
                         overheadList.append(val)
 
                     elif self.__infra_tested == 'MOCK':
@@ -173,6 +176,7 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
 
                                     self.__logger.info("Circuit pushed into networks by vFiber for winner: {0}".format(item.clientName))
                         val = tCircuitCreation.printTime("TotalGenerationAndCreation", tCircuitCreation, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
+                        self.__logger.debug("[TCPRequestHandler][handle]Elapsed Time {}".format(val))
                         overheadList.append(val)
                     else:
                         raise ValueError('Wrong configuration parameter in TEST_PARAMS')
@@ -197,6 +201,7 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                     self.__sshConnection.close()
                     raise ValueError('Bad request name and code. Either should be from SDX or from Buyer.')
             val = tTotalProcessing.printTime("ProcessClientRequest", tTotalProcessing, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
+            self.__logger.debug("[TCPRequestHandler][handle]Elapsed Time {}".format(val))
             overheadList.append(val)
 
             strVal = "\n".join(overheadList)
@@ -208,7 +213,7 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
         except Exception, e:
             self.__logger.error("Exception upon message reception: %s", str(e))
             exc_type, exc_value, exc_traceback = exc_info()
-            print_exception(exc_type, exc_value, exc_traceback)
+            print_exception(exc_type, exc_value, exc_trceback)
 
         finally:
             self.__dbConnection.close()
