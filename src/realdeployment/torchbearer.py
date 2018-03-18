@@ -1,7 +1,8 @@
 import pexpect
 import sys
 import re
-from a_timer import Timer
+if __name__ == "__main__": 
+    from a_timer import Timer
 from time import sleep
 
 '''
