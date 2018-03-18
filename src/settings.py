@@ -13,7 +13,7 @@ CONTEXT = {
     'request_size': 1024,
     'meas_format': "d",
     'meas_to_file': True,
-    'meas_to_location': '~/vFiber/V-Fiber/src/experiment'
+    'meas_to_location': '~/vFiber/V-Fiber/src/experiment/'
 }
 
 # Useful parameters for test purposes
