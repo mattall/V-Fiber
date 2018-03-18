@@ -22,7 +22,7 @@ def light_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthern
             child.timeout = 4
             child.expect('Password:')
         except pexpect.TIMEOUT:
-            raise Exception("Couldn't log on to the switch: %s", addr)
+            raise Exception("Couldn't log on to the switch: %s" % addr)
 
         try:
             child.sendline(switch_pw)
