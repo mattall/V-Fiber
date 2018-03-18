@@ -49,6 +49,7 @@ def light_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthern
             raise Exception("Error while trying to move the vlan on the switch.")
 
 def fast_extinguish_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthernet 0/28"):
+        ''' Doesn't write config to memory '''
         switches = ips
         switch_pw = "cisco"
         swith_port = port
