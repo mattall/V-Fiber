@@ -148,7 +148,7 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                                         switch_ips = ["192.168.57.200", "192.168.60.201"]
                                     val = tGeneration.printTime("CircuitCreation", tGeneration, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
                                     with Timer() as tCreation:
-                                        light_path(switch_ips)
+                                        light_path(ips = switch_ips)
                                     val = tCreation.printTime("CircuitCreation", tCreation, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
                                     overheadList.append(val)
                                     self.__logger.info("Circuit pushed into networks by vFiber for winner: {0}".format(item.clientName))
