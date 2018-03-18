@@ -200,10 +200,9 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
             overheadList.append(val)
 
             strVal = "\n".join(overheadList)
-            # call only when a coarse grained plot is needed
-            a = StringIO(strVal)
+            self.__logger.debug("[TCPRequestHandler][handle] Overhead list :\n".format(strVal))
             # plotTimeline(a, CONTEXT['meas_to_location']+"overhead.eps")
-            with open(CONTEXT['meas_to_location']+"overhead.txt", "a") as file:
+            with open(CONTEXT['meas_to_location']+"overhead.txt", "w") as file:
                 file.write(a)
 
         except Exception, e:
