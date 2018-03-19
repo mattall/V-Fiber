@@ -5,10 +5,12 @@ from adexchange.adexchange import AdExchange
 from adexchange.seller import Seller
 from adexchange.dbConnection import DBConnection
 from settings import CONTEXT, SERVER_BINDING, DB_PARAMS, TEST_PARAMS
+
 from collections import defaultdict
 from common import get_logger, Timer
 from realdeployment.lab_testbed import addLink
 from realdeployment.torchbearer import light_path
+from realdeployment.ExperimentOverhead.plotTimeline import *
 from subprocess import call
 from StringIO import StringIO
 from time import sleep
@@ -205,8 +207,10 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
             overheadList.append(val)
 
             strVal = "\n".join(overheadList)
+            print strVal
             self.__logger.debug("[TCPRequestHandler][handle] Overhead list :\n".format(strVal))
-            # plotTimeline(a, CONTEXT['meas_to_location']+"overhead.eps")
+            a = StringIO(strVal)
+            plotTimeline(a, CONTEXT['meas_to_location']+"overhead.eps")
             with open(CONTEXT['meas_to_location']+"overhead.txt", "w") as file:
                 file.write(strVal)
 
