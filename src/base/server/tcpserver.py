@@ -5,7 +5,6 @@ from adexchange.adexchange import AdExchange
 from adexchange.seller import Seller
 from adexchange.dbConnection import DBConnection
 from settings import CONTEXT, SERVER_BINDING, DB_PARAMS, TEST_PARAMS
-
 from collections import defaultdict
 from common import get_logger, Timer
 from realdeployment.lab_testbed import addLink
