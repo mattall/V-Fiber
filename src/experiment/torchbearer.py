@@ -13,6 +13,10 @@ def light_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthern
     # what percent of 125 is the request
     # ports are GigabitEthernet, so max bandwithd is 125 megabytes.
     request = int(megabytes / 125.0 * 100) # request expressed as percent of max bandwidth.
+    print("======================")
+    print("Requested Rate  " + str(request))
+    print("======================")
+
 
     switches = ips
     switch_pw = "cisco"
