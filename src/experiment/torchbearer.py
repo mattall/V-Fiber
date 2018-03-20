@@ -16,7 +16,7 @@ def light_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthern
 
     switches = ips
     switch_pw = "cisco"
-    swith_port = port
+    switch_port = port
     verbose = False
 
     for addr in switches:
@@ -57,7 +57,7 @@ def light_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthern
                     child.sendline('no shutdown')
                     child.expect('\(config-if\)#')
                 else:
-                    child.sendline("show mls qos interface {} queueing | include bandwidth".format(swith_port))
+                    child.sendline("show mls qos interface {} queueing | include bandwidth".format(switch_port))
                     rate_description = child.read();
                     rate = int(re.findall("\d+", rate_description)[0])
                     child.expect('#')
@@ -94,7 +94,7 @@ def fast_extinguish_path(ips = ["192.168.57.200", "192.168.57.201"], port = "Gig
         ''' Doesn't write config to memory '''
         switches = ips
         switch_pw = "cisco"
-        swith_port = port
+        switch_port = port
         verbose = False
 
         for addr in switches:
@@ -118,7 +118,7 @@ def fast_extinguish_path(ips = ["192.168.57.200", "192.168.57.201"], port = "Gig
                 child.expect('#')
                 child.sendline('conf t')
                 child.expect('\(config\)#')
-                child.sendline('interface %s' % (swith_port))
+                child.sendline('interface %s' % (switch_port))
                 child.expect('\(config-if\)#')
                 child.sendline('shut')
                 child.expect('\(config-if\)#')
@@ -133,7 +133,7 @@ def fast_extinguish_path(ips = ["192.168.57.200", "192.168.57.201"], port = "Gig
 def extinguish_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthernet 0/28"):
         switches = ips
         switch_pw = "cisco"
-        swith_port = port
+        switch_port = port
         verbose = False
 
         for addr in switches:
@@ -157,7 +157,7 @@ def extinguish_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitE
                 child.expect('#')
                 child.sendline('conf t')
                 child.expect('\(config\)#')
-                child.sendline('interface %s' % (swith_port))
+                child.sendline('interface %s' % (switch_port))
                 child.expect('\(config-if\)#')
                 child.sendline('shut')
                 child.expect('\(config-if\)#')
@@ -174,7 +174,7 @@ def extinguish_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitE
 def fast_off_and_on(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthernet 0/28"):
     switches = ips
     switch_pw = "cisco"
-    swith_port = port
+    switch_port = port
     verbose = False
 
     for addr in switches:
@@ -198,7 +198,7 @@ def fast_off_and_on(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitE
             child.expect('#')
             child.sendline('conf t')
             child.expect('\(config\)#')
-            child.sendline('int %s' % (swith_port))
+            child.sendline('int %s' % (switch_port))
             child.expect('\(config-if\)#')
             child.sendline('shut')
             child.expect('\(config-if\)#')
