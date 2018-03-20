@@ -17,7 +17,7 @@ def light_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthern
     switches = ips
     switch_pw = "cisco"
     switch_port = port
-    verbose = False
+    verbose = True:
 
     for addr in switches:
         try:
