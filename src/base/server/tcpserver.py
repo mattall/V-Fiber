@@ -5,7 +5,7 @@ from adexchange.adexchange import AdExchange
 from adexchange.seller import Seller
 from adexchange.dbConnection import DBConnection
 from settings import CONTEXT, SERVER_BINDING, DB_PARAMS, TEST_PARAMS
-from collections import defaultdict
+from collections import defaultdict, namedtuple
 from common import get_logger, Timer
 from realdeployment.lab_testbed import addLink
 from realdeployment.torchbearer import light_path
@@ -91,7 +91,7 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
 
                 if (request.name == "BUYER" and request.code == 100):
                     self.__logger.info("Request from Buyer received.")
-                    ClientRequest = collections.namedtuple('ClientRequest','linkA linkB numberOfStrands \
+                    ClientRequest = namedtuple('ClientRequest','linkA linkB numberOfStrands \
                                                                             capacityPerStrand bidPerStrand \
                                                                             clientName winnerFlag toPay \
                                                                             ipA ipB portA portB \
