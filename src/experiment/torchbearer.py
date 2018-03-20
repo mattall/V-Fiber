@@ -76,7 +76,7 @@ def light_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthern
                     raise Exception("Error determining if switch port is up.")
 
                 new_rate = rate + request
-                assert new_rate <=
+                assert new_rate <= 100
                 print("======================")
                 print("Current Rate:   " + str(rate))
                 print("Requested Rate  " + str(request))
