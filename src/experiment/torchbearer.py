@@ -48,7 +48,7 @@ def light_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthern
                 if index == 0: # port is shutdown.
                     rate = 0
                     child.sendline('configure terminal')
-                    child.expect('\(config)#')
+                    child.expect('\(config\)#')
                     child.sendline('interface %s' % (switch_port))
                     o = child.expect(['\(config-if\)#', '% Invalid'])
                     if o != 0:
@@ -60,7 +60,7 @@ def light_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthern
                     child.sendline("show mls qos interface {} queueing | include bandwidth".format(switch_port))
                     rate = int(child.expect('\d+'))
                     child.sendline('configure terminal')
-                    child.expect('\(config)#')
+                    child.expect('\(config\)#')
                     child.sendline('interface %s' % (switch_port))
                     o = child.expect(['\(config-if\)#', '% Invalid'])
                     if o != 0:
@@ -118,7 +118,7 @@ def fast_extinguish_path(ips = ["192.168.57.200", "192.168.57.201"], port = "Gig
                 child.sendline(switch_pw)
                 child.expect('#')
                 child.sendline('conf t')
-                child.expect('\(config)#')
+                child.expect('\(config\)#')
                 child.sendline('interface %s' % (switch_port))
                 child.expect('\(config-if\)#')
                 child.sendline('shut')
@@ -159,6 +159,8 @@ def extinguish_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitE
                 child.sendline('conf t')
                 child.expect('\(config\)#')
                 child.sendline('interface %s' % (switch_port))
+                child.expect('\(config-if\)#')
+                child.sendline('no srr-queue bandwidth limit')
                 child.expect('\(config-if\)#')
                 child.sendline('shut')
                 child.expect('\(config-if\)#')
