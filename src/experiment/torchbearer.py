@@ -45,10 +45,8 @@ def light_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthern
                 If it is on, find the rate limit and increase it appropriatly.
                 '''
                 child.sendline("show running-config int {}".format(switch_port))
-                status = child.read()
-                print("printing status \n ====================={}".format(status))
-                print("=====================")
-                if "shutdown" in status:
+                index = child.expect(['shutdown', '#'])
+                if index == 0: # port is shutdown.
                     rate = 0
                     child.sendline('configure terminal')
                     child.expect('\(config\)#')
@@ -58,7 +56,8 @@ def light_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthern
                         raise Exception("Unknown switch port '%s'" % (port))
                     child.sendline('no shutdown')
                     child.expect('\(config-if\)#')
-                else:
+
+                elif index == 1: # port is not shutdown
                     child.sendline("show mls qos interface {} queueing | include bandwidth".format(switch_port))
                     rate_description = child.read();
                     rate = int(re.findall("\d+", rate_description)[0])
@@ -69,6 +68,9 @@ def light_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthern
                     o = child.expect(['\(config-if\)#', '% Invalid'])
                     if o != 0:
                         raise Exception("Unknown switch port '%s'" % (port))
+                        
+                else: # something bad happened
+                    raise Exception("Error determining if switch port is up.")
                 new_rate = rate + request
                 assert new_rate <= 100
                 if new_rate > 90:
