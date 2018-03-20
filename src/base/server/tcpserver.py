@@ -133,6 +133,7 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                             for item in allocationList:
                                 if item.winnerFlag == 1:
                                     # Create circuits
+                                    with Timer() as tGeneration:
                                     flowTuples = self.getFlowTuples(item)
 
                                     # Push circuits
@@ -146,11 +147,11 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                                     else:
                                         locationB = item.linkB[1].strip()
                                     capacity = item.capacityPerStrand
-                                    with Timer() as tGeneration:
+
                                         switch_ips = ["192.168.57.200", "192.168.57.201"]
                                     val = tGeneration.printTime("CircuitCreation", tGeneration, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
                                     with Timer() as tCreation:
-                                        light_path(ips = switch_ips)
+                                        light_path(ips = switch_ips, request_size = capacity)
                                     val = tCreation.printTime("CircuitCreation", tCreation, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
                                     self.__logger.debug("[TCPRequestHandler][handle]Elapsed Time {}".format(val))
                                     overheadList.append(val)
