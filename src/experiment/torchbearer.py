@@ -50,25 +50,25 @@ def light_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthern
                     rate = 0
                     child.sendline('configure terminal')
                     child.expect('\(config\)#')
-                    child.sendline('interface %s' % (p))
+                    child.sendline('interface %s' % (switch_port))
                     o = child.expect(['\(config-if\)#', '% Invalid'])
                     if o != 0:
-                        raise Exception("Unknown switch port '%s'" % (port))
+                        raise Exception("Unknown switch port '%s'" % (switch_port))
                     child.sendline('no shutdown')
                     child.expect('\(config-if\)#')
 
                 elif index == 1: # port is not shutdown
                     child.sendline("show mls qos interface {} queueing | include bandwidth".format(switch_port))
+                    child.expect('#')
                     rate_description = child.read();
                     rate = int(re.findall("\d+", rate_description)[0])
-                    child.expect('#')
                     child.sendline('configure terminal')
                     child.expect('\(config\)#')
-                    child.sendline('interface %s' % (p))
+                    child.sendline('interface %s' % (switch_port))
                     o = child.expect(['\(config-if\)#', '% Invalid'])
                     if o != 0:
-                        raise Exception("Unknown switch port '%s'" % (port))
-                        
+                        raise Exception("Unknown switch port '%s'" % (switch_port))
+
                 else: # something bad happened
                     raise Exception("Error determining if switch port is up.")
                 new_rate = rate + request
@@ -80,10 +80,10 @@ def light_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthern
                     child.sendline('srr-queue bandwidth limit {}'.format(new_rate))
                     child.expect('\(config-if\)#')
                 else:
-                    raise Exception("Error encoutered allocating bandwidth on port {}".format(p))
+                    raise Exception("Error encoutered allocating bandwidth on port {}".format(switch_port))
             except AssertionError:
                 raise Exception("Error configuring switch port")
-                child.sendline("show mls qos interface {} queueing | include bandwidth".format(p))
+                child.sendline("show mls qos interface {} queueing | include bandwidth".format(switch_port))
             child.sendline('end')
             child.expect('#')
             child.sendline('wr mem')
