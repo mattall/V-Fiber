@@ -8,7 +8,7 @@ from settings import CONTEXT, SERVER_BINDING, DB_PARAMS, TEST_PARAMS
 from collections import defaultdict, namedtuple
 from common import get_logger, Timer
 from realdeployment.lab_testbed import addLink
-from realdeployment.torchbearer import light_path
+from experiment.torchbearer import light_path
 from realdeployment.ExperimentOverhead.plotTimeline import *
 from subprocess import call
 from StringIO import StringIO
