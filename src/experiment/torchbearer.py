@@ -3,7 +3,10 @@ import sys
 import re
 from a_timer import Timer
 from time import sleep
-
+'''
+from torchbearer import light_path as lp
+from torchbearer import extinguish_path as ep
+'''
 '''
 Toarchbearer lights an end-to-end path of dark fiber
 '''
@@ -58,8 +61,9 @@ def light_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthern
 
                 elif index == 1: # port is not shutdown
                     child.sendline("show mls qos interface {} queueing | include bandwidth".format(switch_port))
-                    rate = int(child.expect('\d+'))
-                    child.sendline('echo %d' % rate)
+                    child.expect('\d+')
+                    data = child.read()
+                    child.sendline('echo %d' % data)
                     child.expect('\(config\)#')
                     child.sendline('configure terminal')
                     child.expect('\(config\)#')
