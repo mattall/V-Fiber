@@ -7,12 +7,12 @@ from time import sleep
 '''
 Toarchbearer lights an end-to-end path of dark fiber
 '''
-def light_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthernet 0/28", request_size = 1):
+def light_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthernet 0/28", request_size = 25):
     megabytes = request_size
-    bits = megabytes * 8 * 1000000
+    # bits = megabytes * 8 * 1000000
     # what percent of 125 is the request
     # ports are GigabitEthernet, so max bandwithd is 125 megabytes.
-    request = int(float(megabytes) // 125 * 100) # request expressed as percent of max bandwidth.
+    request = int(megabytes / 125.0 * 100) # request expressed as percent of max bandwidth.
 
     switches = ips
     switch_pw = "cisco"
@@ -29,7 +29,6 @@ def light_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthern
                 child.expect('Password:')
             except pexpect.TIMEOUT:
                 raise Exception("Couldn't log on to the switch")
-
 
             try:
                 child.sendline(switch_pw)
@@ -79,7 +78,6 @@ def light_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthern
                 print("Requested Rate  " + str(request))
                 print("New rate        " + str(new_rate)
                 print("======================")
-
                 if new_rate > 90:
                     child.sendline('no srr-queue bandwidth limit')
                     child.expect('\(config-if\)#')
