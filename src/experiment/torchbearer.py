@@ -78,7 +78,7 @@ def light_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthern
                     child.sendline('srr-queue bandwidth limit {}'.format(new_rate))
                     child.expect('\(config-if\)#')
                 else:
-                    raise Exception("Error encoutered allocating bandwidth on port {}".format(switch_port))
+                    raise Exception("Error encoutered allocating bandwidth on port {}".format(switch_port, new_rate))
             except AssertionError:
                 raise Exception("Error configuring switch port")
                 child.sendline("show mls qos interface {} queueing | include bandwidth".format(switch_port))
