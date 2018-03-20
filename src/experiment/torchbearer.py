@@ -46,6 +46,8 @@ def light_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthern
                 '''
                 child.sendline("show running-config int {}".format(switch_port))
                 status = child.read()
+                print("printing status \n ====================={}".format(status))
+                print("=====================")
                 if "shutdown" in status:
                     rate = 0
                     child.sendline('configure terminal')
