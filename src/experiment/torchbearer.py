@@ -25,7 +25,7 @@ def light_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthern
     for addr in switches:
         try:
             try:
-                child = pexpect.spawn('telnet %s' % (addr))
+                child = pexpect.spawn('telnet %s' % (addr), maxread=1)
                 if verbose:
                     child.logfile = sys.stdout
                 child.timeout = 4
