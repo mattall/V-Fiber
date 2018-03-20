@@ -59,6 +59,8 @@ def light_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthern
                 elif index == 1: # port is not shutdown
                     child.sendline("show mls qos interface {} queueing | include bandwidth".format(switch_port))
                     rate = int(child.expect('\d+'))
+                    child.sendline('echo %d' % rate)
+                    child.expect('\(config\)#')
                     child.sendline('configure terminal')
                     child.expect('\(config\)#')
                     child.sendline('interface %s' % (switch_port))
