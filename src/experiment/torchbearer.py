@@ -62,9 +62,7 @@ def light_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthern
 
                 elif index == 1: # port is not shutdown
                     child.sendline("show mls qos interface {} queueing | include bandwidth".format(switch_port))
-                    child.expect('#')
-                    rate_description = child.read();
-                    rate = int(re.findall("\d+", rate_description)[0])
+                    rate = int(child.expect('\d+'))
                     child.sendline('configure terminal')
                     child.expect('\(config\)#')
                     child.sendline('interface %s' % (switch_port))
@@ -77,11 +75,6 @@ def light_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthern
 
                 new_rate = rate + request
                 assert new_rate <= 100
-                print("======================")
-                print("Current Rate:   " + str(rate))
-                print("Requested Rate  " + str(request))
-                print("New rate        " + str(new_rate)
-                print("======================")
                 if new_rate > 90:
                     child.sendline('no srr-queue bandwidth limit')
                     child.expect('\(config-if\)#')
