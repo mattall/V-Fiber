@@ -48,21 +48,21 @@ def light_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthern
                 if index == 0: # port is shutdown.
                     rate = 0
                     child.sendline('configure terminal')
-                    child.expect('(config)#')
+                    child.expect('\(config)#')
                     child.sendline('interface %s' % (switch_port))
-                    o = child.expect(['(config-if)#', '% Invalid'])
+                    o = child.expect(['\(config-if\)#', '% Invalid'])
                     if o != 0:
                         raise Exception("Unknown switch port '%s'" % (switch_port))
                     child.sendline('no shutdown')
-                    child.expect('(config-if)#')
+                    child.expect('\(config-if\)#')
 
                 elif index == 1: # port is not shutdown
                     child.sendline("show mls qos interface {} queueing | include bandwidth".format(switch_port))
                     rate = int(child.expect('\d+'))
                     child.sendline('configure terminal')
-                    child.expect('(config)#')
+                    child.expect('\(config)#')
                     child.sendline('interface %s' % (switch_port))
-                    o = child.expect(['(config-if)#', '% Invalid'])
+                    o = child.expect(['\(config-if\)#', '% Invalid'])
                     if o != 0:
                         raise Exception("Unknown switch port '%s'" % (switch_port))
 
@@ -73,10 +73,10 @@ def light_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthern
                 assert new_rate <= 100
                 if new_rate > 90:
                     child.sendline('no srr-queue bandwidth limit')
-                    child.expect('(config-if)#')
+                    child.expect('\(config-if\)#')
                 elif new_rate >= 10:
                     child.sendline('srr-queue bandwidth limit {}'.format(new_rate))
-                    child.expect('(config-if)#')
+                    child.expect('\(config-if\)#')
                 else:
                     raise Exception("Error encoutered allocating bandwidth on port {}".format(switch_port))
             except AssertionError:
@@ -119,11 +119,11 @@ def fast_extinguish_path(ips = ["192.168.57.200", "192.168.57.201"], port = "Gig
                 child.sendline(switch_pw)
                 child.expect('#')
                 child.sendline('conf t')
-                child.expect('(config)#')
+                child.expect('\(config)#')
                 child.sendline('interface %s' % (switch_port))
-                child.expect('(config-if)#')
+                child.expect('\(config-if\)#')
                 child.sendline('shut')
-                child.expect('(config-if)#')
+                child.expect('\(config-if\)#')
                 child.sendline('end')
                 child.expect('#')
                 child.sendline('quit')
