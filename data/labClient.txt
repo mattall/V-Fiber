@@ -1,2 +1,2 @@
 #LinkA;LinkB;FiberStrands;CapacityNeededPerStrand (MBps);BidAmountPerStrand;ClientName
-host1; host2; 5; 10; 900; C1
+host1; host2; 25; 10; 900; C1
