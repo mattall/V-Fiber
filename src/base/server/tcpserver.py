@@ -134,22 +134,22 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                                 if item.winnerFlag == 1:
                                     # Create circuits
                                     with Timer() as tGeneration:
-                                    flowTuples = self.getFlowTuples(item)
+                                        flowTuples = self.getFlowTuples(item)
 
-                                    # Push circuits
-                                    self.__logger.info("Launching real network experiments. connecting {} and {}".format(item.linkA, item.linkB))
-                                    if "," in item.linkA:
-                                        locationA = (item.linkA.split(",")[1]).strip()
-                                    else:
-                                        locationA = item.linkA[1].strip()
-                                    if "," in item.linkB:
-                                        locationB = (item.linkB.split(",")[1]).strip()
-                                    else:
-                                        locationB = item.linkB[1].strip()
-                                    capacity = item.capacityPerStrand
+                                        # Push circuits
+                                        self.__logger.info("Launching real network experiments. connecting {} and {}".format(item.linkA, item.linkB))
+                                        if "," in item.linkA:
+                                            locationA = (item.linkA.split(",")[1]).strip()
+                                        else:
+                                            locationA = item.linkA[1].strip()
+                                        if "," in item.linkB:
+                                            locationB = (item.linkB.split(",")[1]).strip()
+                                        else:
+                                            locationB = item.linkB[1].strip()
+                                        capacity = item.capacityPerStrand
 
                                         switch_ips = ["192.168.57.200", "192.168.57.201"]
-                                    val = tGeneration.printTime("CircuitCreation", tGeneration, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
+                                    val = tGeneration.printTime("Configuration Generation", tGeneration, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
                                     with Timer() as tCreation:
                                         light_path(ips = switch_ips, request_size = capacity)
                                     val = tCreation.printTime("CircuitCreation", tCreation, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
