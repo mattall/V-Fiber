@@ -164,12 +164,12 @@ class AdExchange(SyncObj):
         self.__logger.debug("[AdExchange][processClientRequest]Auction Type: {}".format(self.__auction))
         self.__logger.debug("[AdExchange][processClientRequest]Reserve Price: {}".format(self.__reserve))
 
-        '''
+
         # Commented -- vague code
         for k, v in reqList.items():
             for item in v:
                 self.__logger.info(item)
-        '''
+        
         # check for auction type and call the corresponding functions
         if self.__auction == "vcg":
             return self.runVickreyAuction(reqList, sellerObj)
