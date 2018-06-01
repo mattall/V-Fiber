@@ -8,7 +8,7 @@ from settings import CONTEXT, SERVER_BINDING, DB_PARAMS, TEST_PARAMS
 from collections import defaultdict, namedtuple
 from common import get_logger, Timer
 from realdeployment.lab_testbed import addLink
-from experiment.torchbearer import light_path
+from realdeployment.torchbearer import light_path
 from realdeployment.ExperimentOverhead.plotTimeline import *
 from subprocess import call
 from StringIO import StringIO
@@ -149,10 +149,10 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                                             locationB = item.linkB[1].strip()
                                         capacity = item.capacityPerStrand
 
-                                        switch_ips = ["192.168.57.200", "192.168.57.201"]
+                                        # switch_ips = ["192.168.57.200", "192.168.57.201"]
                                     val = tGeneration.printTime("Configuration Generation", tGeneration, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
                                     with Timer() as tCreation:
-                                        light_path(ips = switch_ips, request_size = capacity)
+                                        light_path(ip_port_pairs)
                                     val = tCreation.printTime("CircuitCreation", tCreation, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
                                     self.__logger.debug("[TCPRequestHandler][handle]Elapsed Time {}".format(val))
                                     overheadList.append(val)
