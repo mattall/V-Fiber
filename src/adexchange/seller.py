@@ -30,24 +30,46 @@ class Seller(SyncObj):
 
         if self.__compressed:
             zFile = gzip.open(''.join(resource)+".gz", "r+")
-            for line in zFile.readlines():
-                if line.startswith("#"): continue
-                line = line.strip()
-                vals = line.split(";")
-                self.__sellerGraph.add_edge(vals[0].strip(),vals[1].strip(),numberOfStrands=int(vals[2]), \
-                                            capacityPerStrand=int(vals[3]), costPerStrand=int(vals[4]), \
-                                            ISP=vals[5].strip(), prefixA=vals[6].strip(), prefixB=vals[7].strip())
-            zFile.close()
         else:
-            tFile = open(''.join(resource), 'r')
-            for line in tFile.readlines():
+            zFile = open(''.join(resource), 'r')
+        while True:
+            line = zFile.readline()
+            if line:
                 if line.startswith("#"): continue
                 line = line.strip()
                 vals = line.split(";")
-                self.__sellerGraph.add_edge(vals[0].strip(),vals[1].strip(),numberOfStrands=int(vals[2]), \
-                                            capacityPerStrand=int(vals[3]), costPerStrand=int(vals[4]), \
-                                            ISP=vals[5].strip(), prefixA=vals[6].strip(), prefixB=vals[7].strip())
-            tFile.close()
+
+                if len(vals) == 8:
+                    point_A = vals[0].strip()
+                    point_B = vals[1].strip()
+                    strands = int(vals[2])
+                    strand_cap = int(vals[3])
+                    strand_cost = int(vals[4])
+                    provider = vals[5].strip()
+                    ip_A = vals[6].strip()
+                    ip_B = vals[7].strip()
+                    interfaces = []
+                    if strands:
+                        for x in range(strands):
+                            line_str = zFile.readline()
+                            line_str = line_str.strip()
+                            strand_data = line_str.split(';')
+                            interface_a = strand_data[1].strip()
+                            interface_b = strand_data[2].strip()
+                            interfaces.append((interface_a, interface_b))
+
+                    self.__sellerGraph.add_edge(point_A, point_B, \
+                                                numberOfStrands = strands, \
+                                                capacityPerStrand = strand_cap,\
+                                                costPerStrand = strand_cost, \
+                                                ISP = provider, prefixA = ip_A,\
+                                                prefixB = ip_B,
+                                                available_interfaces = interfaces, \
+                                                unavailable_interfaces = [])
+            else: # no line to read
+                break
+
+        zFile.close()
         self.__logger.info("### Seller Information populated...")
 
     def getSellerGraph(self):
@@ -58,4 +80,13 @@ class Seller(SyncObj):
 
     @replicated_sync
     def release_strand(self, u, v, num_to_release):
+        # update edge info
         self.__sellerGraph[u][v]['numberOfStrands'] -= num_to_release
+        buyer_interface = self.__sellerGraph[u][v]['available_interfaces'].pop()
+        self.__sellerGraph[u][v]['unavailable_interfaces'].append(buyer_interface)
+
+        # send list of two ip/port pairs for link
+        link_a = (sellerGraph[u][v]['prefixA'], buyer_interface[0])
+        link_b = (sellerGraph[u][v]['prefixB'], buyer_interface[1])
+        resource = [link_a, link_b]
+        return resource
