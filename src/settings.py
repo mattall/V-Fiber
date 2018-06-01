@@ -25,8 +25,8 @@ TEST_PARAMS = {
     'client_request_type': 'BUYER',                 # or SDX
     'client_request_code': 100,                     # or 001
     # change this according to the experiment
-    #'infra_tested': 'MOCK',                       # or REAL
-    'infra_tested': 'REAL',
+    'infra_tested': 'MOCK',                       # or REAL
+    #'infra_tested': 'REAL',
 }
 
 # Database parameters
