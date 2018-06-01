@@ -167,11 +167,14 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                             for item in allocationList:
                                 if item.winnerFlag == 1:
                                     # Create circuits
-                                    flowTuples = self.getFlowTuples(item)
+                                    #flowTuples = self.getFlowTuples(item)
+
+                                    for ip, port in ip_port_pairs:
+                                        self.__logger.info("Pushing circuit to {} interface {}".format(ip, port))
 
                                     # Push circuits
-                                    locationA = (item.linkA.split(",")[1]).strip()
-                                    locationB = (item.linkB.split(",")[1]).strip()
+                                    # locationA = (item.linkA.split(",")[1]).strip()
+                                    # locationB = (item.linkB.split(",")[1]).strip()
                                     capacity = item.capacityPerStrand
                                     # with Timer() as tCreation:
                                     #     val = tCreation.printTime("CircuitCreation", tCreation, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
