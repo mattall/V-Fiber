@@ -23,11 +23,12 @@ class AdExchange(SyncObj):
                        G[u][v]['costPerStrand'], G[u][v]['ISP'], G[u][v]['prefixA'], G[u][v]['prefixB']\
                  ) for (u,v) in zip(path[0:],path[1:])]
 
-    def updateSellerGraph(self, S, path, reqValues):
+    def updateSellerGraph_and_getResources(self, S, path, reqValues):
+        ip_port_pairs = []
         for (u,v) in zip(path[0:], path[1:]):
             for item in reqValues:
-                #G[u][v]['numberOfStrands'] -= item.numberOfStrands
-                S.release_strand(u, v, item.numberOfStrands);
+                ip_port_pairs.append(S.release_strand(u, v, item.numberOfStrands))
+        return ip_port_pairs
 
     def resourceAvailable(self, G, path, reqValues):
         pathHasCapacity = True
@@ -100,11 +101,11 @@ class AdExchange(SyncObj):
 
                 # Updates sellerGraph with the allocation
                 self.__logger.debug("Before > {}".format(self.availableAttributes(shortestPath, sellerGraph)))
-                self.updateSellerGraph(sellerGraph, shortestPath, v)
+                ip_port_pairs = self.updateSellerGraph_and_getResources(sellerGraph, shortestPath, v)
                 self.__logger.debug("After > {}".format(self.availableAttributes(shortestPath, sellerGraph)))
             else:
                 self.__logger.info("Link does not exists between {} and {}".format(k1, k2))
-        return self.updateRequestList(reqList, allocationDict)
+        return (self.updateRequestList(reqList, allocationDict), ip_port_pairs)
 
     def runSecondPriceAuction(self, reqList, seller):
         '''
@@ -142,15 +143,17 @@ class AdExchange(SyncObj):
 
                     # Updates sellerGraph with the allocation
                     self.__logger.debug("Before > {}".format(self.availableAttributes(shortestPath, sellerGraph)))
-                    self.updateSellerGraph(seller, shortestPath, v)
+                    ip_port_pairs = self.updateSellerGraph_and_getResources(seller, shortestPath, v)
                     self.__logger.debug("After > {}".format(self.availableAttributes(shortestPath, sellerGraph)))
+
                 else:
                     self.__logger.info("Link does not exists between {} and {}. No resource available for request".format(k1, k2))
+
             except nx.NodeNotFound:
                 self.__logger.info("Link does not exists between {} and {}. No resource available for request".format(k1, k2))
                 allocationDict = {}
                 break;
-        return self.updateRequestList(reqList, allocationDict)
+        return (self.updateRequestList(reqList, allocationDict), ip_port_pairs)
 
     def processClientRequests(self, reqList, sellerObj):
         '''
@@ -167,7 +170,6 @@ class AdExchange(SyncObj):
             for item in v:
                 self.__logger.info(item)
         '''
-        sellerObj
         # check for auction type and call the corresponding functions
         if self.__auction == "vcg":
             return self.runVickreyAuction(reqList, sellerObj)
