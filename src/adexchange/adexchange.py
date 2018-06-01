@@ -27,7 +27,7 @@ class AdExchange(SyncObj):
         ip_port_pairs = []
         for (u,v) in zip(path[0:], path[1:]):
             for item in reqValues:
-                ip_port_pairs.append(S.release_strand(u, v, item.numberOfStrands))
+                ip_port_pairs.extend(S.release_strand(u, v, item.numberOfStrands))
         return ip_port_pairs
 
     def resourceAvailable(self, G, path, reqValues):
