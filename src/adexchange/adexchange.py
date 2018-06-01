@@ -150,7 +150,7 @@ class AdExchange(SyncObj):
                     self.__logger.info("Link does not exists between {} and {}. No resource available for request".format(k1, k2))
 
             except nx.NodeNotFound:
-                self.__logger.info("Link does not exists between {} and {}. No resource available for request".format(k1, k2))
+                self.__logger.info("Path does not exists between {} and {}. No resource available for request".format(k1, k2))
                 allocationDict = {}
                 break;
         return (self.updateRequestList(reqList, allocationDict), ip_port_pairs)
