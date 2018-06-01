@@ -218,7 +218,7 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
         except Exception, e:
             self.__logger.error("Exception upon message reception: %s", str(e))
             exc_type, exc_value, exc_traceback = exc_info()
-            print_exception(exc_type, exc_value, exc_trceback)
+            print_exception(exc_type, exc_value, exc_traceback)
 
         finally:
             self.__dbConnection.close()
