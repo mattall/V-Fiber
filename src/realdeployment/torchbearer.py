@@ -1,28 +1,21 @@
-import pexpect
-import sys
-import re
-if __name__ == "__main__":
-    from a_timer import Timer
-from time import sleep
-
 '''
 Toarchbearer lights an end-to-end path of dark fiber
 '''
-def light_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthernet 0/28"):
-    switches = ips
+def light_path(ip_port_pairs = [("192.168.57.200", "GigabitEthernet 0/28"), ("192.168.57.201","GigabitEthernet 0/28")]):
+    switches = [ip for ip, port in ip_port_pairs]
+    interfaces = [port for ip, port in ip_port_pairs]
     switch_pw = "cisco"
-    swith_port = port
     verbose = False
 
-    for addr in switches:
+    for switch_addr, switch_port in switches, interfaces:
         try:
-            child = pexpect.spawn('telnet %s' % (addr))
+            child = pexpect.spawn('telnet %s' % (switch_addr))
             if verbose:
                 child.logfile = sys.stdout
             child.timeout = 4
             child.expect('Password:')
         except pexpect.TIMEOUT:
-            raise Exception("Couldn't log on to the switch: %s" % addr)
+            raise Exception("Couldn't log on to the switch: %s" % switch_addr)
 
         try:
             child.sendline(switch_pw)
@@ -35,7 +28,7 @@ def light_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthern
             child.expect('#')
             child.sendline('conf t')
             child.expect('\(config\)#')
-            child.sendline('int %s' % (swith_port))
+            child.sendline('int %s' % (switch_port))
             child.expect('\(config-if\)#')
             child.sendline('no shut')
             child.expect('\(config-if\)#')
@@ -49,102 +42,33 @@ def light_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthern
             child.close()
             raise Exception("Error while trying to move the vlan on the switch.")
 
-def fast_extinguish_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthernet 0/28"):
-        ''' Doesn't write config to memory '''
-        switches = ips
-        switch_pw = "cisco"
-        swith_port = port
-        verbose = False
+def extinguish_path(ip_port_pairs = [("192.168.57.200", "GigabitEthernet 0/25"), ("192.168.57.201","GigabitEthernet 0/25"),\
+                                        ("192.168.57.200", "GigabitEthernet 0/26"), ("192.168.57.201","GigabitEthernet 0/26"),\
+                                        ("192.168.57.200", "GigabitEthernet 0/27"), ("192.168.57.201","GigabitEthernet 0/27"),\
+                                        ("192.168.57.200", "GigabitEthernet 0/28"), ("192.168.57.201","GigabitEthernet 0/28")],\
+                                        save = False):
+    ''' Doesn't write config to memory '''
+    switches = [ip for ip, port in ip_port_pairs]
+    interfaces = [port for ip, port in ip_port_pairs]
+    print("ip_port_pairs")
+    print(ip_port_pairs)
+    print("switches")
+    print(switches)
+    print("interfaces")
+    print(interfaces)
 
-        for addr in switches:
-            try:
-                child = pexpect.spawn('telnet %s' % (addr))
-                if verbose:
-                    child.logfile = sys.stdout
-                child.timeout = 4
-                child.expect('Password:')
-            except pexpect.TIMEOUT:
-                raise Exception("Couldn't log on to the switch")
-
-            try:
-                child.sendline(switch_pw)
-                child.expect('>')
-                child.sendline('term length 0')
-                child.expect('>')
-                child.sendline('enable')
-                child.expect('Password:')
-                child.sendline(switch_pw)
-                child.expect('#')
-                child.sendline('conf t')
-                child.expect('\(config\)#')
-                child.sendline('interface %s' % (swith_port))
-                child.expect('\(config-if\)#')
-                child.sendline('shut')
-                child.expect('\(config-if\)#')
-                child.sendline('end')
-                child.expect('#')
-                child.sendline('quit')
-            except (pexpect.EOF, pexpect.TIMEOUT), e:
-                child.close()
-                raise Exception("Error while trying to move the vlan on the switch.")
-
-
-def extinguish_path(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthernet 0/28"):
-        switches = ips
-        switch_pw = "cisco"
-        swith_port = port
-        verbose = False
-
-        for addr in switches:
-            try:
-                child = pexpect.spawn('telnet %s' % (addr))
-                if verbose:
-                    child.logfile = sys.stdout
-                child.timeout = 4
-                child.expect('Password:')
-            except pexpect.TIMEOUT:
-                raise Exception("Couldn't log on to the switch")
-
-            try:
-                child.sendline(switch_pw)
-                child.expect('>')
-                child.sendline('term length 0')
-                child.expect('>')
-                child.sendline('enable')
-                child.expect('Password:')
-                child.sendline(switch_pw)
-                child.expect('#')
-                child.sendline('conf t')
-                child.expect('\(config\)#')
-                child.sendline('interface %s' % (swith_port))
-                child.expect('\(config-if\)#')
-                child.sendline('shut')
-                child.expect('\(config-if\)#')
-                child.sendline('end')
-                child.expect('#')
-                child.sendline('wr mem')
-                child.expect('[OK]')
-                child.expect('#')
-                child.sendline('quit')
-            except (pexpect.EOF, pexpect.TIMEOUT), e:
-                child.close()
-                raise Exception("Error while trying to move the vlan on the switch.")
-
-def fast_off_and_on(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitEthernet 0/28"):
-    switches = ips
     switch_pw = "cisco"
-    swith_port = port
     verbose = False
 
-    for addr in switches:
+    for switch_addr, switch_port in ip_port_pairs:
         try:
-            child = pexpect.spawn('telnet %s' % (addr))
+            child = pexpect.spawn('telnet %s' % (switch_addr))
             if verbose:
                 child.logfile = sys.stdout
             child.timeout = 4
             child.expect('Password:')
         except pexpect.TIMEOUT:
-            raise Exception("Couldn't log on to the switch")
+            raise Exception("Couldn't log in to the switch")
 
         try:
             child.sendline(switch_pw)
@@ -157,26 +81,27 @@ def fast_off_and_on(ips = ["192.168.57.200", "192.168.57.201"], port = "GigabitE
             child.expect('#')
             child.sendline('conf t')
             child.expect('\(config\)#')
-            child.sendline('int %s' % (swith_port))
+            child.sendline('interface %s' % (switch_port))
             child.expect('\(config-if\)#')
             child.sendline('shut')
             child.expect('\(config-if\)#')
-            child.sendline('no shut')
             child.sendline('end')
             child.expect('#')
-            child.sendline('wr mem')
-            child.expect('[OK]')
-            child.expect('#')
+            if save:
+                child.sendline('wr mem')
+                child.expect('[OK]')
+                child.expect('#')
             child.sendline('quit')
         except (pexpect.EOF, pexpect.TIMEOUT), e:
             child.close()
             raise Exception("Error while trying to move the vlan on the switch.")
+
 
 
 if __name__ == "__main__":
     for i in range(50):
         with Timer() as extinguishing_time:
-            fast_extinguish_path(["192.168.57.200", "192.168.57.201"], "GigabitEthernet 0/28")
+            extinguish_path(["192.168.57.200", "192.168.57.201"], "GigabitEthernet 0/28")
 
         with Timer() as lighting_time:
             light_path(["192.168.57.200", "192.168.57.201"], "GigabitEthernet 0/28")
