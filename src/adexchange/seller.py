@@ -86,7 +86,7 @@ class Seller(SyncObj):
         self.__sellerGraph[u][v]['unavailable_interfaces'].append(buyer_interface)
 
         # send list of two ip/port pairs for link
-        link_a = (sellerGraph[u][v]['prefixA'], buyer_interface[0])
-        link_b = (sellerGraph[u][v]['prefixB'], buyer_interface[1])
+        link_a = (self.__sellerGraph[u][v]['prefixA'], buyer_interface[0])
+        link_b = (self.__sellerGraph[u][v]['prefixB'], buyer_interface[1])
         resource = [link_a, link_b]
         return resource
