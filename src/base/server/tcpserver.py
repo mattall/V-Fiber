@@ -114,11 +114,12 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                     # Dispatch the request to the Adex
                     self.__logger.debug("[TCPRequestHandler][handle]Dispatching request to the Fiber Exchange...")
                     with Timer() as tAd:
-                        allocationList = self.__adExObject.processClientRequests(crDict, self.__sellerObj)
+                        allocationList, ip_port_pairs = self.__adExObject.processClientRequests(crDict, self.__sellerObj)
                     val = tAd.printTime("FiberExchange", tAd, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
                     self.__logger.debug("[TCPRequestHandler][handle]Elapsed Time {}".format(val))
                     overheadList.append(val)
-                    self.__logger.debug("[TCPRequestHandler][handle]Received list from Fiber Exchange...{}".format(allocationList))
+                    self.__logger.debug("[TCPRequestHandler][handle]Received allocation List from Fiber Exchange...{}".format(allocationList))
+                    self.__logger.debug("[TCPRequestHandler][handle]Received ip_port_pairs from Fiber Exchange...{}".format(ip_port_pairs))
                     # Allocate IP address for circuits
                     # allocationList = layer3.allocateIPAddresses(self.__sellerObj.getSellerGraph(), allocationList, self.__dbConnection)
 
