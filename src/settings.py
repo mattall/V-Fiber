@@ -18,15 +18,15 @@ CONTEXT = {
 
 # Useful parameters for test purposes
 TEST_PARAMS = {
-    'path': '../data/',
+    'path': '/Users/TomNason/Dropbox/VFiber_code/VFiber/data/',
     'buyer_file_name': 'labClient.txt',
     #'buyer_file_name': 'clientRequests_10.txt',
     'seller_file_name': 'labSeller.txt',
     'client_request_type': 'BUYER',                 # or SDX
     'client_request_code': 100,                     # or 001
     # change this according to the experiment
-    'infra_tested': 'MOCK',                       # or REAL
-    #'infra_tested': 'REAL',
+    #'infra_tested': 'MOCK',                       # or REAL
+    'infra_tested': 'REAL',
 }
 
 # Database parameters
