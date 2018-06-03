@@ -1,13 +1,18 @@
+import pexpect
+import sys
+import re
+if __name__ == "__main__":
+    from a_timer import Timer
+from time import sleep
+
 '''
 Toarchbearer lights an end-to-end path of dark fiber
 '''
 def light_path(ip_port_pairs = [("192.168.57.200", "GigabitEthernet 0/28"), ("192.168.57.201","GigabitEthernet 0/28")]):
-    switches = [ip for ip, port in ip_port_pairs]
-    interfaces = [port for ip, port in ip_port_pairs]
     switch_pw = "cisco"
-    verbose = False
+    verbose = True
 
-    for switch_addr, switch_port in switches, interfaces:
+    for switch_addr, switch_port in ip_port_pairs:
         try:
             child = pexpect.spawn('telnet %s' % (switch_addr))
             if verbose:
@@ -47,18 +52,10 @@ def extinguish_path(ip_port_pairs = [("192.168.57.200", "GigabitEthernet 0/25"),
                                         ("192.168.57.200", "GigabitEthernet 0/27"), ("192.168.57.201","GigabitEthernet 0/27"),\
                                         ("192.168.57.200", "GigabitEthernet 0/28"), ("192.168.57.201","GigabitEthernet 0/28")],\
                                         save = False):
-    ''' Doesn't write config to memory '''
-    switches = [ip for ip, port in ip_port_pairs]
-    interfaces = [port for ip, port in ip_port_pairs]
-    print("ip_port_pairs")
-    print(ip_port_pairs)
-    print("switches")
-    print(switches)
-    print("interfaces")
-    print(interfaces)
+    ''' Doesn't write config to memory by default '''
 
     switch_pw = "cisco"
-    verbose = False
+    verbose = True
 
     for switch_addr, switch_port in ip_port_pairs:
         try:
