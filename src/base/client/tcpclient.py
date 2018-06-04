@@ -29,7 +29,7 @@ class TCPClient(threading.Thread):
         self.__client_request_code = TEST_PARAMS['client_request_code']
         self.__logger = get_logger("TCPClient")
         self.__conn_timeout = 1
-        self.__recv_timeout = 10
+        self.__recv_timeout = 60
 
     def run(self):
         '''
