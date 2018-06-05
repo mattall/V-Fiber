@@ -8,16 +8,17 @@ from time import sleep
 '''
 Toarchbearer lights an end-to-end path of dark fiber
 '''
-def light_path(ip_port_pairs = [("192.168.57.200", "GigabitEthernet 0/28"), ("192.168.57.201","GigabitEthernet 0/28")]):
+def light_path(ip_port_pairs = [("192.168.57.200", "GigabitEthernet 0/28"), ("192.168.57.201","GigabitEthernet 0/28")],
+                verbose = True, Save = False):
     switch_pw = "cisco"
-    verbose = True
+
 
     for switch_addr, switch_port in ip_port_pairs:
         try:
             child = pexpect.spawn('telnet %s' % (switch_addr))
             if verbose:
                 child.logfile = sys.stdout
-            child.timeout = 4
+            child.timeout = 30
             child.expect('Password:')
         except pexpect.TIMEOUT:
             raise Exception("Couldn't log on to the switch: %s" % switch_addr)
@@ -39,9 +40,10 @@ def light_path(ip_port_pairs = [("192.168.57.200", "GigabitEthernet 0/28"), ("19
             child.expect('\(config-if\)#')
             child.sendline('end')
             child.expect('#')
-            child.sendline('wr mem')
-            child.expect('[OK]')
-            child.expect('#')
+            if save:
+                child.sendline('wr mem')
+                child.expect('[OK]')
+                child.expect('#')
             child.sendline('quit')
         except (pexpect.EOF, pexpect.TIMEOUT), e:
             child.close()
