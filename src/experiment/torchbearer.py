@@ -9,16 +9,17 @@ from time import sleep
 Toarchbearer lights an end-to-end path of dark fiber
 '''
 def light_path(ip_port_pairs = [("192.168.57.200", "GigabitEthernet 0/28"), ("192.168.57.201","GigabitEthernet 0/28")],
-                verbose = True, Save = False):
-    switch_pw = "cisco"
+                save = False, password = 'cisco', disply_output = True):
+    switch_pw = password
+    verbose = disply_output
 
 
     for switch_addr, switch_port in ip_port_pairs:
         try:
-            child = pexpect.spawn('telnet %s' % (switch_addr))
+            child = pexpect.spawn('telnet %s -s 192.168.57.7' % (switch_addr))
             if verbose:
                 child.logfile = sys.stdout
-            child.timeout = 30
+            child.timeout = 4
             child.expect('Password:')
         except pexpect.TIMEOUT:
             raise Exception("Couldn't log on to the switch: %s" % switch_addr)
@@ -53,15 +54,15 @@ def extinguish_path(ip_port_pairs = [("192.168.57.200", "GigabitEthernet 0/25"),
                                         ("192.168.57.200", "GigabitEthernet 0/26"), ("192.168.57.201","GigabitEthernet 0/26"),\
                                         ("192.168.57.200", "GigabitEthernet 0/27"), ("192.168.57.201","GigabitEthernet 0/27"),\
                                         ("192.168.57.200", "GigabitEthernet 0/28"), ("192.168.57.201","GigabitEthernet 0/28")],\
-                                        save = False):
-    ''' Doesn't write config to memory by default '''
+                                        save = False, password = "cisco", disply_output = True):
+    ''' Doesn't write config to memory if save is False '''
 
-    switch_pw = "cisco"
-    verbose = True
+    switch_pw = password
+    verbose = disply_output
 
     for switch_addr, switch_port in ip_port_pairs:
         try:
-            child = pexpect.spawn('telnet %s' % (switch_addr))
+            child = pexpect.spawn('telnet %s -s 192.168.57.7' % (switch_addr))
             if verbose:
                 child.logfile = sys.stdout
             child.timeout = 4
@@ -94,8 +95,6 @@ def extinguish_path(ip_port_pairs = [("192.168.57.200", "GigabitEthernet 0/25"),
         except (pexpect.EOF, pexpect.TIMEOUT), e:
             child.close()
             raise Exception("Error while trying to move the vlan on the switch.")
-
-
 
 if __name__ == "__main__":
     for i in range(50):
