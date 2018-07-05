@@ -145,10 +145,9 @@ class AdExchange(SyncObj):
                     self.__logger.debug("Before > {}".format(self.availableAttributes(shortestPath, sellerGraph)))
                     ip_port_pairs = self.updateSellerGraph_and_getResources(seller, shortestPath, v)
                     self.__logger.debug("After > {}".format(self.availableAttributes(shortestPath, sellerGraph)))
-
                 else:
                     self.__logger.info("Link does not exists between {} and {}. No resource available for request".format(k1, k2))
-
+                    ip_port_pairs = []
             except nx.NodeNotFound:
                 self.__logger.info("Path does not exists between {} and {}. No resource available for request".format(k1, k2))
                 allocationDict = {}
