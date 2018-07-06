@@ -58,7 +58,7 @@ class Seller(SyncObj):
                             interface_b = strand_data[2].strip()
                             interfaces.append((interface_a, interface_b))
 
-                    self.__logger.debug("[TCPClient][run]Adding Link: {0}|{1} with {2} lambdas".format(point_A, point_B, len(available_interfaces)))
+                    self.__logger.debug("[TCPClient][run]Adding Link: {0}|{1} with {2} lambdas".format(point_A, point_B, len(interfaces)))
                     self.__sellerGraph.add_edge(point_A, point_B, \
                                                 numberOfStrands = strands, \
                                                 capacityPerStrand = strand_cap,\
