@@ -2001,7 +2001,7 @@ San Francisco, California; Denver, Colorado; 1000; 4000; 850; Verizon; 66.180.55
 997; Gi 0/997; Gi 0/997
 998; Gi 0/998; Gi 0/998
 999; Gi 0/999; Gi 0/999
-Kansas City, Missouri; Madison, Wisconsin; 10000; 4000; 700; ATT; 192.168.1.0; 192.168.2.0
+Kansas City, Missouri; Madison, Wisconsin; 1000; 4000; 700; ATT; 192.168.1.0; 192.168.2.0
 0; Gi 0/0; Gi 0/0
 1; Gi 0/1; Gi 0/1
 2; Gi 0/2; Gi 0/2
@@ -3002,7 +3002,7 @@ Kansas City, Missouri; Madison, Wisconsin; 10000; 4000; 700; ATT; 192.168.1.0; 1
 997; Gi 0/997; Gi 0/997
 998; Gi 0/998; Gi 0/998
 999; Gi 0/999; Gi 0/999
-Salt Lake City, Utah; Kansas City, Missouri; 10000; 4000; 700; ATT; 192.168.100.0; 192.168.101.0
+Salt Lake City, Utah; Kansas City, Missouri; 1000; 4000; 700; ATT; 192.168.100.0; 192.168.101.0
 0; Gi 0/0; Gi 0/0
 1; Gi 0/1; Gi 0/1
 2; Gi 0/2; Gi 0/2
