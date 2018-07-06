@@ -19,9 +19,9 @@ from numpy import median
 #
 # logging.getLogger("paramiko").setLevel(logging.WARNING)
 
-def client_thread(req):
-    print("Thread is initializing client")
-    client = TCPClient(totalReqs = req)
+def client_thread(req, req_path = None, req_file = None):
+    print("Thread is initializing client with totalReqs = {}, buyer_data = {}".format(req, req_file))
+    client = TCPClient(totalReqs = req, buyer_data = req_file, path_to_data = req_path)
     client.start()
     return client
 
@@ -121,7 +121,8 @@ def main(args):
     TEST_DURRATION = args.length    # senconds
     DELTA = args.delta              # number of seconds between requests
     REQUESTS_PER_TIC = args.volume
-    REQ_FILE = args.filename
+    REQ_PATH = "/Users/TomNason/Dropbox/VFiber_code/VFiber/data/"
+    REQ_FILE = "clientRequest.txt"
     failure_testing = True if args.failure_testing == 'y' else False
     use_poisson = True if args.use_poisson == 'y' else False
     log = ''
@@ -162,7 +163,7 @@ def main(args):
             req_count = REQUESTS_PER_TIC
         print("[experiment][main]Requests sent {0}".format(req_count))
 
-        t = client_thread(req_count)
+        t = client_thread(req_count, REQ_PATH, REQ_FILE)
         thread_reqs.append((t, req_count))
         reqs_sent += req_count
         threads_working = update_activity_log(activity_log, thread_reqs, reqs_sent, START_TIME)
