@@ -118,6 +118,7 @@ class AdExchange(SyncObj):
         self.__logger.debug("Fiber allocation decisions.")
 
         allocationDict = {}
+        ip_port_pairs = []
         for key, v in reqList.items():
             k1,k2=key.split("#")
             # n denotes the number of customers bidding for that conduit
@@ -147,11 +148,9 @@ class AdExchange(SyncObj):
                     self.__logger.debug("After > {}".format(self.availableAttributes(shortestPath, sellerGraph)))
                 else:
                     self.__logger.info("Link does not exists between {} and {}. No resource available for request".format(k1, k2))
-                    ip_port_pairs = []
             except nx.NodeNotFound:
                 self.__logger.info("Path does not exists between {} and {}. No resource available for request".format(k1, k2))
                 allocationDict = {}
-                ip_port_pairs = []
                 break;
         return (self.updateRequestList(reqList, allocationDict), ip_port_pairs)
 
