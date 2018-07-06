@@ -21,7 +21,7 @@ TEST_PARAMS = {
     'path': '../data/',
     'buyer_file_name': 'labClient.txt',
     #'buyer_file_name': 'clientRequests_10.txt',
-    'seller_file_name': 'sellerData.txt',
+    'seller_file_name': 'mega_seller.txt',
     'client_request_type': 'BUYER',                 # or SDX
     'client_request_code': 100,                     # or 001
     # change this according to the experiment
