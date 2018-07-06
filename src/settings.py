@@ -7,7 +7,7 @@ SERVER_BINDING = {
 
 # Contextual settings
 CONTEXT = {
-    'debug': True,
+    'debug': False,
     'client_socket_buffer': 8192,
     'compressed_content': False,
     'request_size': 1024,
