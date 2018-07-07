@@ -4,6 +4,7 @@ from base.model.datamodel import Request, Data, Utility
 from settings import CONTEXT, SERVER_BINDING, TEST_PARAMS
 from threading import Thread
 from common import get_logger
+from random import shuffle
 
 """
 This client differs from the core clinet in that it accepts a string parameter
@@ -14,7 +15,7 @@ class TCPClient(threading.Thread):
     '''
      JSON/TCP client thread
     '''
-    def __init__(self, buyer_data = TEST_PARAMS['buyer_file_name'], totalReqs = -1):
+    def __init__(self, buyer_data = TEST_PARAMS['buyer_file_name'], path_to_data = TEST_PARAMS['path'], totalReqs = -1):
         '''
          Class constructor
         '''
@@ -27,12 +28,12 @@ class TCPClient(threading.Thread):
         self.__bufferdim = int(CONTEXT['client_socket_buffer'])
         # Compression helper
         self.__compression = Utility()
-        self.__resourcepath = TEST_PARAMS['path']
+        self.__resourcepath = path_to_data
         self.__buyerFile = buyer_data
         self.__client_request_type = TEST_PARAMS['client_request_type']
         self.__client_request_code = TEST_PARAMS['client_request_code']
         self.__logger = get_logger("TCPClient")
-        self.__conn_timeout = 6000
+        self.__conn_timeout = 1
         self.__recv_timeout = 6000
 
         self.totalReqs = totalReqs
@@ -75,6 +76,7 @@ class TCPClient(threading.Thread):
             # Client socket binding
             connected = False
             hosts = self.__serverhosts[:]
+            shuffle(hosts)
             while not connected and hosts:
                 host = hosts.pop();
                 try:
@@ -84,9 +86,9 @@ class TCPClient(threading.Thread):
                     sock.connect((host, self.__serverport))
                     connected = True
                     sock.settimeout(self.__recv_timeout)
-                    self.__logger.debug("[TCPClient][run]Connection Success! {0}".format(host))
+                    self.__logger.info("[TCPClient][run]Connection Success! {0}".format(host))
                 except socket.error as e:
-                    self.__logger.debug("[TCPClient][run]Failed to connect to host {0}".format(host))
+                    self.__logger.info("[TCPClient][run]Failed to connect to host {0}".format(host))
                     if not hosts:
                         self.__logger.error("Error::NET::No hosts available")
                         raise Exception

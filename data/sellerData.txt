@@ -1,5 +1,5 @@
 #LinkA;LinkB;FiberStrands;CapacityPerStrand (GBps);AmountPerStrand;ISP;PrefixA;PrefixB
 San Francisco, California; Denver, Colorado; 8000; 100; 850; Verizon; 66.180.55.0; 66.181.55.0
-Kansas City, Missouri; Madison, Wisconsin; 10000; 100; 700; ATT; 192.168.1.0/24; 192.168.2.0/24
-Salt Lake City, Utah; Kansas City, Missouri; 10000; 100; 700; ATT; 192.168.100.0/24; 192.168.101.0/24
-Salt Lake City, Utah; Denver, Colorado; 8000; 100; 850; Cox; 64.170.55.0/24; 64.170.55.0/24
+Kansas City, Missouri; Madison, Wisconsin; 10000; 100; 700; ATT; 192.168.1.0; 192.168.2.0
+Salt Lake City, Utah; Kansas City, Missouri; 10000; 100; 700; ATT; 192.168.100.0; 192.168.101.0
+Salt Lake City, Utah; Denver, Colorado; 8000; 100; 850; Cox; 64.170.55.0; 64.170.55.0
