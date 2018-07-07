@@ -113,7 +113,7 @@ if __name__ == "__main__":
 
         mode=args.mode
         address_one=args.a1
-        address_two=args.address_two
+        address_two=args.a2
         interface_one=args.i1
         interface_two=args.i2
         save=True if args.save == 'y' else False
