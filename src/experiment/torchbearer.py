@@ -107,7 +107,7 @@ if __name__ == "__main__":
         parser.add_argument("-i2", "--interface_two", help="interface for second network device in link", dest="i2", type=str)
         parser.add_argument("-s", "--save", help="save configuration to NVM (y or n)", dest="save", type=str)
         parser.add_argument("-v", "--verbose", help="view network device output (y or n)", dest="verbose", type=str)
-        parser.add_argument("-p", "--password", help="network device password", dest=pw, type=str)
+        parser.add_argument("-p", "--password", help="network device password", dest="pw", type=str)
         mode=args.mode
         address_one=args.a1
         address_two=args.address_two
