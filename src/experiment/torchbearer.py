@@ -18,7 +18,7 @@ def light_path(ip_port_pairs = [("192.168.57.200", "GigabitEthernet 0/28"), ("19
 
     for switch_addr, switch_port in ip_port_pairs:
         try:
-            child = pexpect.spawn('telnet %s -s 192.168.57.7' % (switch_addr))
+            child = pexpect.spawn('telnet %s' % (switch_addr))
             if verbose:
                 child.logfile = sys.stdout
             child.timeout = 4
@@ -64,7 +64,7 @@ def extinguish_path(ip_port_pairs = [("192.168.57.200", "GigabitEthernet 0/25"),
 
     for switch_addr, switch_port in ip_port_pairs:
         try:
-            child = pexpect.spawn('telnet %s -s 192.168.57.7' % (switch_addr))
+            child = pexpect.spawn('telnet %s' % (switch_addr))
             if verbose:
                 child.logfile = sys.stdout
             child.timeout = 4
