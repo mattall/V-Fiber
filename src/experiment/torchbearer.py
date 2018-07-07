@@ -109,7 +109,7 @@ if __name__ == "__main__":
         parser.add_argument("-v", "--verbose", help="view network device output (y or n)", dest="verbose", type=str)
         parser.add_argument("-p", "--password", help="network device password", dest="pw", type=str)
 
-        args = argparse.parse_args
+        args = parser.parse_args()
 
         mode=args.mode
         address_one=args.a1
