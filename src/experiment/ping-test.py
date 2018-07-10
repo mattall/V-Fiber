@@ -65,62 +65,69 @@ def main(args):
     ssh = get_ssh_connection('matt', '192.168.57.102', 'onrgserver1')
     test_tuple = (ssh, debug, "192.168.57.200", "192.168.57.201", "GigabitEthernet 0/25", "GigabitEthernet 0/25", "cisco")
 
-    light_path(test_tuple)
-    sleep(10)
-
-    # print("*~* Ping Controlled Test Beginning (path continuously lit) *~*")
-    # sleep(delta)
-    # always_on = True
-    # file_num = 0
-    # # begin experiment
-    # for _ in range(runs):
-    #     p = Process(target=ping, args=(always_on, sourcepoint, endpoint, delta, file_num))
-    #     file_num += 1
-    #     p.start()
-    #     p.join()
 
     print("*~* Link Benchmark Test Beginning (path ignighting and extinguishing) *~*")
     always_on = False
+    file_num = 0
+    # begin experiment
+    for i in range(runs):
+        p = Process(target=ping, args=(always_on, sourcepoint, endpoint, delta, file_num))
+        file_num += 1
+        p.start()
+        if i == 0:
+            pass # no need to extinguish on first run.
+
+        else:
+            sleep(1)
+            extinguish_path(test_tuple)
+
+        sleep(time_between_extinguish_and_light)
+        light_path(test_tuple)
+        p.join()
+
+        light_path(test_tuple)
+        sleep(10)
+
+    print("*~* Ping Controlled Test Beginning (path continuously lit) *~*")
+    sleep(delta)
+    always_on = True
     file_num = 0
     # begin experiment
     for _ in range(runs):
         p = Process(target=ping, args=(always_on, sourcepoint, endpoint, delta, file_num))
         file_num += 1
         p.start()
-        sleep(1)
-        extinguish_path(test_tuple)
-        sleep(time_between_extinguish_and_light)
-        light_path(test_tuple)
         p.join()
+
 
     ssh.close()
 
     messages_sent = delta*10*runs
 
-    # # Count the number of time out messages in each ping file
-    # files = ["ping_control/ping_controled_{}".format(x) for x in range(file_num)]
-    # timeouts = []
-    # for f in files:
-    #     print("f = {}".format(f))
-    #     with open(f,'r') as ping_file:
-    #         ping_data = ping_file.readlines()
-    #
-    #     timeout_count = 0
-    #     for line in ping_data:
-    #         if "Request timeout for icmp_seq" in line:
-    #             timeout_count += 1
-    #
-    #     timeouts.append(timeout_count)
-    #
-    # times = [float(tc)/10.0 for tc in timeouts]
-    # average = mean(times)
-    # standard_deviation = std(times)
-    # print("mean: {}".format(average))
-    # print("standard deviation: {}".format(standard_deviation))
-    # with open("./ping_control/0_ping_controled_Results", 'w') as resultsFile:
-    #     resultsFile.write("messages set: {}\n".format(messages_sent))
-    #     resultsFile.write("mean timeouts: {}\n".format(average))
-    #     resultsFile.write("standard deviation: {}".format(standard_deviation))
+    # Count the number of time out messages in each ping file
+    files = ["ping_control/ping_controled_{}".format(x) for x in range(file_num)]
+    timeouts = []
+    for f in files:
+        print("f = {}".format(f))
+        with open(f,'r') as ping_file:
+            ping_data = ping_file.readlines()
+
+        timeout_count = 0
+        for line in ping_data:
+            if "Request timeout for icmp_seq" in line:
+                timeout_count += 1
+
+        timeouts.append(timeout_count)
+
+    times = [float(tc)/10.0 for tc in timeouts]
+    average = mean(times)
+    standard_deviation = std(times)
+    print("mean: {}".format(average))
+    print("standard deviation: {}".format(standard_deviation))
+    with open("./ping_control/0_ping_controled_Results", 'w') as resultsFile:
+        resultsFile.write("messages set: {}\n".format(messages_sent))
+        resultsFile.write("mean timeouts: {}\n".format(average))
+        resultsFile.write("standard deviation: {}".format(standard_deviation))
 
 
     # Count the number of time out messages in each ping file

@@ -1,0 +1,605 @@
+PING 192.168.60.7 (192.168.60.7) from 192.168.60.35: 56 data bytes
+64 bytes from 192.168.60.7: icmp_seq=0 ttl=64 time=0.437 ms
+64 bytes from 192.168.60.7: icmp_seq=1 ttl=64 time=0.607 ms
+64 bytes from 192.168.60.7: icmp_seq=2 ttl=64 time=0.578 ms
+64 bytes from 192.168.60.7: icmp_seq=3 ttl=64 time=0.619 ms
+64 bytes from 192.168.60.7: icmp_seq=4 ttl=64 time=0.477 ms
+64 bytes from 192.168.60.7: icmp_seq=5 ttl=64 time=0.653 ms
+64 bytes from 192.168.60.7: icmp_seq=6 ttl=64 time=0.640 ms
+64 bytes from 192.168.60.7: icmp_seq=7 ttl=64 time=0.571 ms
+64 bytes from 192.168.60.7: icmp_seq=8 ttl=64 time=0.591 ms
+64 bytes from 192.168.60.7: icmp_seq=9 ttl=64 time=0.682 ms
+64 bytes from 192.168.60.7: icmp_seq=10 ttl=64 time=0.353 ms
+64 bytes from 192.168.60.7: icmp_seq=11 ttl=64 time=0.591 ms
+64 bytes from 192.168.60.7: icmp_seq=12 ttl=64 time=0.544 ms
+64 bytes from 192.168.60.7: icmp_seq=13 ttl=64 time=0.484 ms
+64 bytes from 192.168.60.7: icmp_seq=14 ttl=64 time=0.559 ms
+64 bytes from 192.168.60.7: icmp_seq=15 ttl=64 time=0.672 ms
+64 bytes from 192.168.60.7: icmp_seq=16 ttl=64 time=0.478 ms
+Request timeout for icmp_seq 17
+Request timeout for icmp_seq 18
+Request timeout for icmp_seq 19
+Request timeout for icmp_seq 20
+Request timeout for icmp_seq 21
+Request timeout for icmp_seq 22
+Request timeout for icmp_seq 23
+Request timeout for icmp_seq 24
+Request timeout for icmp_seq 25
+Request timeout for icmp_seq 26
+Request timeout for icmp_seq 27
+Request timeout for icmp_seq 28
+Request timeout for icmp_seq 29
+Request timeout for icmp_seq 30
+Request timeout for icmp_seq 31
+Request timeout for icmp_seq 32
+Request timeout for icmp_seq 33
+Request timeout for icmp_seq 34
+Request timeout for icmp_seq 35
+Request timeout for icmp_seq 36
+Request timeout for icmp_seq 37
+Request timeout for icmp_seq 38
+Request timeout for icmp_seq 39
+Request timeout for icmp_seq 40
+Request timeout for icmp_seq 41
+Request timeout for icmp_seq 42
+Request timeout for icmp_seq 43
+Request timeout for icmp_seq 44
+Request timeout for icmp_seq 45
+Request timeout for icmp_seq 46
+Request timeout for icmp_seq 47
+Request timeout for icmp_seq 48
+Request timeout for icmp_seq 49
+Request timeout for icmp_seq 50
+Request timeout for icmp_seq 51
+Request timeout for icmp_seq 52
+Request timeout for icmp_seq 53
+Request timeout for icmp_seq 54
+Request timeout for icmp_seq 55
+Request timeout for icmp_seq 56
+Request timeout for icmp_seq 57
+Request timeout for icmp_seq 58
+Request timeout for icmp_seq 59
+Request timeout for icmp_seq 60
+Request timeout for icmp_seq 61
+Request timeout for icmp_seq 62
+Request timeout for icmp_seq 63
+Request timeout for icmp_seq 64
+Request timeout for icmp_seq 65
+Request timeout for icmp_seq 66
+Request timeout for icmp_seq 67
+Request timeout for icmp_seq 68
+Request timeout for icmp_seq 69
+Request timeout for icmp_seq 70
+Request timeout for icmp_seq 71
+Request timeout for icmp_seq 72
+Request timeout for icmp_seq 73
+Request timeout for icmp_seq 74
+Request timeout for icmp_seq 75
+Request timeout for icmp_seq 76
+Request timeout for icmp_seq 77
+Request timeout for icmp_seq 78
+Request timeout for icmp_seq 79
+Request timeout for icmp_seq 80
+Request timeout for icmp_seq 81
+Request timeout for icmp_seq 82
+Request timeout for icmp_seq 83
+Request timeout for icmp_seq 84
+Request timeout for icmp_seq 85
+Request timeout for icmp_seq 86
+Request timeout for icmp_seq 87
+Request timeout for icmp_seq 88
+Request timeout for icmp_seq 89
+Request timeout for icmp_seq 90
+Request timeout for icmp_seq 91
+Request timeout for icmp_seq 92
+Request timeout for icmp_seq 93
+Request timeout for icmp_seq 94
+Request timeout for icmp_seq 95
+Request timeout for icmp_seq 96
+Request timeout for icmp_seq 97
+Request timeout for icmp_seq 98
+Request timeout for icmp_seq 99
+Request timeout for icmp_seq 100
+Request timeout for icmp_seq 101
+Request timeout for icmp_seq 102
+Request timeout for icmp_seq 103
+Request timeout for icmp_seq 104
+Request timeout for icmp_seq 105
+Request timeout for icmp_seq 106
+Request timeout for icmp_seq 107
+Request timeout for icmp_seq 108
+Request timeout for icmp_seq 109
+Request timeout for icmp_seq 110
+Request timeout for icmp_seq 111
+Request timeout for icmp_seq 112
+Request timeout for icmp_seq 113
+Request timeout for icmp_seq 114
+Request timeout for icmp_seq 115
+Request timeout for icmp_seq 116
+Request timeout for icmp_seq 117
+Request timeout for icmp_seq 118
+Request timeout for icmp_seq 119
+Request timeout for icmp_seq 120
+Request timeout for icmp_seq 121
+Request timeout for icmp_seq 122
+Request timeout for icmp_seq 123
+Request timeout for icmp_seq 124
+Request timeout for icmp_seq 125
+Request timeout for icmp_seq 126
+Request timeout for icmp_seq 127
+Request timeout for icmp_seq 128
+Request timeout for icmp_seq 129
+Request timeout for icmp_seq 130
+Request timeout for icmp_seq 131
+Request timeout for icmp_seq 132
+Request timeout for icmp_seq 133
+Request timeout for icmp_seq 134
+Request timeout for icmp_seq 135
+Request timeout for icmp_seq 136
+Request timeout for icmp_seq 137
+Request timeout for icmp_seq 138
+Request timeout for icmp_seq 139
+Request timeout for icmp_seq 140
+Request timeout for icmp_seq 141
+Request timeout for icmp_seq 142
+Request timeout for icmp_seq 143
+Request timeout for icmp_seq 144
+Request timeout for icmp_seq 145
+Request timeout for icmp_seq 146
+Request timeout for icmp_seq 147
+Request timeout for icmp_seq 148
+Request timeout for icmp_seq 149
+Request timeout for icmp_seq 150
+Request timeout for icmp_seq 151
+Request timeout for icmp_seq 152
+Request timeout for icmp_seq 153
+Request timeout for icmp_seq 154
+Request timeout for icmp_seq 155
+Request timeout for icmp_seq 156
+Request timeout for icmp_seq 157
+Request timeout for icmp_seq 158
+Request timeout for icmp_seq 159
+Request timeout for icmp_seq 160
+Request timeout for icmp_seq 161
+Request timeout for icmp_seq 162
+Request timeout for icmp_seq 163
+Request timeout for icmp_seq 164
+Request timeout for icmp_seq 165
+Request timeout for icmp_seq 166
+Request timeout for icmp_seq 167
+Request timeout for icmp_seq 168
+Request timeout for icmp_seq 169
+Request timeout for icmp_seq 170
+Request timeout for icmp_seq 171
+Request timeout for icmp_seq 172
+Request timeout for icmp_seq 173
+Request timeout for icmp_seq 174
+Request timeout for icmp_seq 175
+Request timeout for icmp_seq 176
+Request timeout for icmp_seq 177
+Request timeout for icmp_seq 178
+Request timeout for icmp_seq 179
+Request timeout for icmp_seq 180
+Request timeout for icmp_seq 181
+Request timeout for icmp_seq 182
+Request timeout for icmp_seq 183
+Request timeout for icmp_seq 184
+Request timeout for icmp_seq 185
+Request timeout for icmp_seq 186
+Request timeout for icmp_seq 187
+Request timeout for icmp_seq 188
+Request timeout for icmp_seq 189
+Request timeout for icmp_seq 190
+Request timeout for icmp_seq 191
+Request timeout for icmp_seq 192
+Request timeout for icmp_seq 193
+Request timeout for icmp_seq 194
+Request timeout for icmp_seq 195
+Request timeout for icmp_seq 196
+Request timeout for icmp_seq 197
+Request timeout for icmp_seq 198
+Request timeout for icmp_seq 199
+Request timeout for icmp_seq 200
+Request timeout for icmp_seq 201
+Request timeout for icmp_seq 202
+Request timeout for icmp_seq 203
+Request timeout for icmp_seq 204
+Request timeout for icmp_seq 205
+Request timeout for icmp_seq 206
+Request timeout for icmp_seq 207
+Request timeout for icmp_seq 208
+Request timeout for icmp_seq 209
+Request timeout for icmp_seq 210
+Request timeout for icmp_seq 211
+Request timeout for icmp_seq 212
+Request timeout for icmp_seq 213
+Request timeout for icmp_seq 214
+Request timeout for icmp_seq 215
+Request timeout for icmp_seq 216
+Request timeout for icmp_seq 217
+Request timeout for icmp_seq 218
+Request timeout for icmp_seq 219
+Request timeout for icmp_seq 220
+Request timeout for icmp_seq 221
+Request timeout for icmp_seq 222
+Request timeout for icmp_seq 223
+Request timeout for icmp_seq 224
+Request timeout for icmp_seq 225
+Request timeout for icmp_seq 226
+Request timeout for icmp_seq 227
+Request timeout for icmp_seq 228
+Request timeout for icmp_seq 229
+Request timeout for icmp_seq 230
+Request timeout for icmp_seq 231
+Request timeout for icmp_seq 232
+Request timeout for icmp_seq 233
+Request timeout for icmp_seq 234
+Request timeout for icmp_seq 235
+Request timeout for icmp_seq 236
+Request timeout for icmp_seq 237
+Request timeout for icmp_seq 238
+Request timeout for icmp_seq 239
+Request timeout for icmp_seq 240
+Request timeout for icmp_seq 241
+Request timeout for icmp_seq 242
+Request timeout for icmp_seq 243
+Request timeout for icmp_seq 244
+Request timeout for icmp_seq 245
+Request timeout for icmp_seq 246
+Request timeout for icmp_seq 247
+Request timeout for icmp_seq 248
+Request timeout for icmp_seq 249
+Request timeout for icmp_seq 250
+Request timeout for icmp_seq 251
+Request timeout for icmp_seq 252
+Request timeout for icmp_seq 253
+Request timeout for icmp_seq 254
+Request timeout for icmp_seq 255
+Request timeout for icmp_seq 256
+Request timeout for icmp_seq 257
+Request timeout for icmp_seq 258
+Request timeout for icmp_seq 259
+Request timeout for icmp_seq 260
+Request timeout for icmp_seq 261
+Request timeout for icmp_seq 262
+Request timeout for icmp_seq 263
+Request timeout for icmp_seq 264
+Request timeout for icmp_seq 265
+Request timeout for icmp_seq 266
+Request timeout for icmp_seq 267
+Request timeout for icmp_seq 268
+Request timeout for icmp_seq 269
+Request timeout for icmp_seq 270
+Request timeout for icmp_seq 271
+Request timeout for icmp_seq 272
+Request timeout for icmp_seq 273
+Request timeout for icmp_seq 274
+Request timeout for icmp_seq 275
+Request timeout for icmp_seq 276
+Request timeout for icmp_seq 277
+Request timeout for icmp_seq 278
+Request timeout for icmp_seq 279
+Request timeout for icmp_seq 280
+Request timeout for icmp_seq 281
+Request timeout for icmp_seq 282
+Request timeout for icmp_seq 283
+Request timeout for icmp_seq 284
+Request timeout for icmp_seq 285
+Request timeout for icmp_seq 286
+Request timeout for icmp_seq 287
+Request timeout for icmp_seq 288
+Request timeout for icmp_seq 289
+Request timeout for icmp_seq 290
+Request timeout for icmp_seq 291
+Request timeout for icmp_seq 292
+Request timeout for icmp_seq 293
+Request timeout for icmp_seq 294
+Request timeout for icmp_seq 295
+Request timeout for icmp_seq 296
+Request timeout for icmp_seq 297
+Request timeout for icmp_seq 298
+Request timeout for icmp_seq 299
+Request timeout for icmp_seq 300
+Request timeout for icmp_seq 301
+Request timeout for icmp_seq 302
+Request timeout for icmp_seq 303
+Request timeout for icmp_seq 304
+Request timeout for icmp_seq 305
+Request timeout for icmp_seq 306
+Request timeout for icmp_seq 307
+Request timeout for icmp_seq 308
+Request timeout for icmp_seq 309
+Request timeout for icmp_seq 310
+Request timeout for icmp_seq 311
+Request timeout for icmp_seq 312
+Request timeout for icmp_seq 313
+Request timeout for icmp_seq 314
+Request timeout for icmp_seq 315
+Request timeout for icmp_seq 316
+Request timeout for icmp_seq 317
+Request timeout for icmp_seq 318
+Request timeout for icmp_seq 319
+Request timeout for icmp_seq 320
+Request timeout for icmp_seq 321
+Request timeout for icmp_seq 322
+Request timeout for icmp_seq 323
+Request timeout for icmp_seq 324
+Request timeout for icmp_seq 325
+Request timeout for icmp_seq 326
+Request timeout for icmp_seq 327
+Request timeout for icmp_seq 328
+Request timeout for icmp_seq 329
+Request timeout for icmp_seq 330
+Request timeout for icmp_seq 331
+Request timeout for icmp_seq 332
+Request timeout for icmp_seq 333
+Request timeout for icmp_seq 334
+Request timeout for icmp_seq 335
+Request timeout for icmp_seq 336
+Request timeout for icmp_seq 337
+Request timeout for icmp_seq 338
+Request timeout for icmp_seq 339
+Request timeout for icmp_seq 340
+Request timeout for icmp_seq 341
+Request timeout for icmp_seq 342
+Request timeout for icmp_seq 343
+Request timeout for icmp_seq 344
+Request timeout for icmp_seq 345
+Request timeout for icmp_seq 346
+Request timeout for icmp_seq 347
+Request timeout for icmp_seq 348
+Request timeout for icmp_seq 349
+Request timeout for icmp_seq 350
+Request timeout for icmp_seq 351
+Request timeout for icmp_seq 352
+Request timeout for icmp_seq 353
+Request timeout for icmp_seq 354
+Request timeout for icmp_seq 355
+Request timeout for icmp_seq 356
+Request timeout for icmp_seq 357
+Request timeout for icmp_seq 358
+Request timeout for icmp_seq 359
+Request timeout for icmp_seq 360
+Request timeout for icmp_seq 361
+Request timeout for icmp_seq 362
+Request timeout for icmp_seq 363
+Request timeout for icmp_seq 364
+Request timeout for icmp_seq 365
+Request timeout for icmp_seq 366
+Request timeout for icmp_seq 367
+Request timeout for icmp_seq 368
+Request timeout for icmp_seq 369
+Request timeout for icmp_seq 370
+Request timeout for icmp_seq 371
+Request timeout for icmp_seq 372
+Request timeout for icmp_seq 373
+Request timeout for icmp_seq 374
+Request timeout for icmp_seq 375
+Request timeout for icmp_seq 376
+Request timeout for icmp_seq 377
+Request timeout for icmp_seq 378
+Request timeout for icmp_seq 379
+Request timeout for icmp_seq 380
+Request timeout for icmp_seq 381
+Request timeout for icmp_seq 382
+Request timeout for icmp_seq 383
+Request timeout for icmp_seq 384
+Request timeout for icmp_seq 385
+Request timeout for icmp_seq 386
+Request timeout for icmp_seq 387
+Request timeout for icmp_seq 388
+Request timeout for icmp_seq 389
+Request timeout for icmp_seq 390
+Request timeout for icmp_seq 391
+Request timeout for icmp_seq 392
+Request timeout for icmp_seq 393
+Request timeout for icmp_seq 394
+Request timeout for icmp_seq 395
+Request timeout for icmp_seq 396
+Request timeout for icmp_seq 397
+Request timeout for icmp_seq 398
+Request timeout for icmp_seq 399
+Request timeout for icmp_seq 400
+Request timeout for icmp_seq 401
+Request timeout for icmp_seq 402
+Request timeout for icmp_seq 403
+Request timeout for icmp_seq 404
+Request timeout for icmp_seq 405
+Request timeout for icmp_seq 406
+Request timeout for icmp_seq 407
+Request timeout for icmp_seq 408
+Request timeout for icmp_seq 409
+Request timeout for icmp_seq 410
+Request timeout for icmp_seq 411
+Request timeout for icmp_seq 412
+Request timeout for icmp_seq 413
+Request timeout for icmp_seq 414
+Request timeout for icmp_seq 415
+Request timeout for icmp_seq 416
+Request timeout for icmp_seq 417
+Request timeout for icmp_seq 418
+Request timeout for icmp_seq 419
+Request timeout for icmp_seq 420
+Request timeout for icmp_seq 421
+Request timeout for icmp_seq 422
+Request timeout for icmp_seq 423
+Request timeout for icmp_seq 424
+Request timeout for icmp_seq 425
+Request timeout for icmp_seq 426
+Request timeout for icmp_seq 427
+Request timeout for icmp_seq 428
+Request timeout for icmp_seq 429
+Request timeout for icmp_seq 430
+Request timeout for icmp_seq 431
+Request timeout for icmp_seq 432
+Request timeout for icmp_seq 433
+Request timeout for icmp_seq 434
+Request timeout for icmp_seq 435
+Request timeout for icmp_seq 436
+Request timeout for icmp_seq 437
+Request timeout for icmp_seq 438
+Request timeout for icmp_seq 439
+Request timeout for icmp_seq 440
+Request timeout for icmp_seq 441
+Request timeout for icmp_seq 442
+Request timeout for icmp_seq 443
+Request timeout for icmp_seq 444
+Request timeout for icmp_seq 445
+Request timeout for icmp_seq 446
+Request timeout for icmp_seq 447
+Request timeout for icmp_seq 448
+Request timeout for icmp_seq 449
+Request timeout for icmp_seq 450
+Request timeout for icmp_seq 451
+Request timeout for icmp_seq 452
+Request timeout for icmp_seq 453
+Request timeout for icmp_seq 454
+Request timeout for icmp_seq 455
+64 bytes from 192.168.60.7: icmp_seq=456 ttl=64 time=0.572 ms
+64 bytes from 192.168.60.7: icmp_seq=457 ttl=64 time=0.540 ms
+64 bytes from 192.168.60.7: icmp_seq=458 ttl=64 time=0.610 ms
+64 bytes from 192.168.60.7: icmp_seq=459 ttl=64 time=0.553 ms
+64 bytes from 192.168.60.7: icmp_seq=460 ttl=64 time=0.429 ms
+64 bytes from 192.168.60.7: icmp_seq=461 ttl=64 time=0.650 ms
+64 bytes from 192.168.60.7: icmp_seq=462 ttl=64 time=0.578 ms
+64 bytes from 192.168.60.7: icmp_seq=463 ttl=64 time=0.553 ms
+64 bytes from 192.168.60.7: icmp_seq=464 ttl=64 time=0.522 ms
+64 bytes from 192.168.60.7: icmp_seq=465 ttl=64 time=0.547 ms
+64 bytes from 192.168.60.7: icmp_seq=466 ttl=64 time=0.545 ms
+64 bytes from 192.168.60.7: icmp_seq=467 ttl=64 time=0.594 ms
+64 bytes from 192.168.60.7: icmp_seq=468 ttl=64 time=0.536 ms
+64 bytes from 192.168.60.7: icmp_seq=469 ttl=64 time=0.545 ms
+64 bytes from 192.168.60.7: icmp_seq=470 ttl=64 time=0.561 ms
+64 bytes from 192.168.60.7: icmp_seq=471 ttl=64 time=0.628 ms
+64 bytes from 192.168.60.7: icmp_seq=472 ttl=64 time=0.573 ms
+64 bytes from 192.168.60.7: icmp_seq=473 ttl=64 time=0.517 ms
+64 bytes from 192.168.60.7: icmp_seq=474 ttl=64 time=0.600 ms
+64 bytes from 192.168.60.7: icmp_seq=475 ttl=64 time=0.448 ms
+64 bytes from 192.168.60.7: icmp_seq=476 ttl=64 time=0.582 ms
+64 bytes from 192.168.60.7: icmp_seq=477 ttl=64 time=0.625 ms
+64 bytes from 192.168.60.7: icmp_seq=478 ttl=64 time=0.552 ms
+64 bytes from 192.168.60.7: icmp_seq=479 ttl=64 time=0.540 ms
+64 bytes from 192.168.60.7: icmp_seq=480 ttl=64 time=0.497 ms
+64 bytes from 192.168.60.7: icmp_seq=481 ttl=64 time=0.604 ms
+64 bytes from 192.168.60.7: icmp_seq=482 ttl=64 time=0.437 ms
+64 bytes from 192.168.60.7: icmp_seq=483 ttl=64 time=0.368 ms
+64 bytes from 192.168.60.7: icmp_seq=484 ttl=64 time=0.674 ms
+64 bytes from 192.168.60.7: icmp_seq=485 ttl=64 time=0.661 ms
+64 bytes from 192.168.60.7: icmp_seq=486 ttl=64 time=0.551 ms
+64 bytes from 192.168.60.7: icmp_seq=487 ttl=64 time=0.540 ms
+64 bytes from 192.168.60.7: icmp_seq=488 ttl=64 time=0.575 ms
+64 bytes from 192.168.60.7: icmp_seq=489 ttl=64 time=0.403 ms
+64 bytes from 192.168.60.7: icmp_seq=490 ttl=64 time=0.472 ms
+64 bytes from 192.168.60.7: icmp_seq=491 ttl=64 time=0.592 ms
+64 bytes from 192.168.60.7: icmp_seq=492 ttl=64 time=0.560 ms
+64 bytes from 192.168.60.7: icmp_seq=493 ttl=64 time=0.573 ms
+64 bytes from 192.168.60.7: icmp_seq=494 ttl=64 time=0.564 ms
+64 bytes from 192.168.60.7: icmp_seq=495 ttl=64 time=0.633 ms
+64 bytes from 192.168.60.7: icmp_seq=496 ttl=64 time=0.593 ms
+64 bytes from 192.168.60.7: icmp_seq=497 ttl=64 time=0.420 ms
+64 bytes from 192.168.60.7: icmp_seq=498 ttl=64 time=0.574 ms
+64 bytes from 192.168.60.7: icmp_seq=499 ttl=64 time=0.573 ms
+64 bytes from 192.168.60.7: icmp_seq=500 ttl=64 time=0.561 ms
+64 bytes from 192.168.60.7: icmp_seq=501 ttl=64 time=0.559 ms
+64 bytes from 192.168.60.7: icmp_seq=502 ttl=64 time=0.584 ms
+64 bytes from 192.168.60.7: icmp_seq=503 ttl=64 time=0.547 ms
+64 bytes from 192.168.60.7: icmp_seq=504 ttl=64 time=0.412 ms
+64 bytes from 192.168.60.7: icmp_seq=505 ttl=64 time=0.594 ms
+64 bytes from 192.168.60.7: icmp_seq=506 ttl=64 time=0.541 ms
+64 bytes from 192.168.60.7: icmp_seq=507 ttl=64 time=0.380 ms
+64 bytes from 192.168.60.7: icmp_seq=508 ttl=64 time=0.447 ms
+64 bytes from 192.168.60.7: icmp_seq=509 ttl=64 time=0.553 ms
+64 bytes from 192.168.60.7: icmp_seq=510 ttl=64 time=0.641 ms
+64 bytes from 192.168.60.7: icmp_seq=511 ttl=64 time=0.584 ms
+64 bytes from 192.168.60.7: icmp_seq=512 ttl=64 time=0.571 ms
+64 bytes from 192.168.60.7: icmp_seq=513 ttl=64 time=0.398 ms
+64 bytes from 192.168.60.7: icmp_seq=514 ttl=64 time=0.435 ms
+64 bytes from 192.168.60.7: icmp_seq=515 ttl=64 time=0.583 ms
+64 bytes from 192.168.60.7: icmp_seq=516 ttl=64 time=0.446 ms
+64 bytes from 192.168.60.7: icmp_seq=517 ttl=64 time=0.582 ms
+64 bytes from 192.168.60.7: icmp_seq=518 ttl=64 time=0.439 ms
+64 bytes from 192.168.60.7: icmp_seq=519 ttl=64 time=0.644 ms
+64 bytes from 192.168.60.7: icmp_seq=520 ttl=64 time=0.583 ms
+64 bytes from 192.168.60.7: icmp_seq=521 ttl=64 time=0.470 ms
+64 bytes from 192.168.60.7: icmp_seq=522 ttl=64 time=0.546 ms
+64 bytes from 192.168.60.7: icmp_seq=523 ttl=64 time=0.579 ms
+64 bytes from 192.168.60.7: icmp_seq=524 ttl=64 time=0.646 ms
+64 bytes from 192.168.60.7: icmp_seq=525 ttl=64 time=0.747 ms
+64 bytes from 192.168.60.7: icmp_seq=526 ttl=64 time=0.591 ms
+64 bytes from 192.168.60.7: icmp_seq=527 ttl=64 time=0.625 ms
+64 bytes from 192.168.60.7: icmp_seq=528 ttl=64 time=0.616 ms
+64 bytes from 192.168.60.7: icmp_seq=529 ttl=64 time=0.576 ms
+64 bytes from 192.168.60.7: icmp_seq=530 ttl=64 time=0.513 ms
+64 bytes from 192.168.60.7: icmp_seq=531 ttl=64 time=0.533 ms
+64 bytes from 192.168.60.7: icmp_seq=532 ttl=64 time=0.600 ms
+64 bytes from 192.168.60.7: icmp_seq=533 ttl=64 time=0.548 ms
+64 bytes from 192.168.60.7: icmp_seq=534 ttl=64 time=0.586 ms
+64 bytes from 192.168.60.7: icmp_seq=535 ttl=64 time=0.593 ms
+64 bytes from 192.168.60.7: icmp_seq=536 ttl=64 time=0.539 ms
+64 bytes from 192.168.60.7: icmp_seq=537 ttl=64 time=0.612 ms
+64 bytes from 192.168.60.7: icmp_seq=538 ttl=64 time=0.451 ms
+64 bytes from 192.168.60.7: icmp_seq=539 ttl=64 time=0.397 ms
+64 bytes from 192.168.60.7: icmp_seq=540 ttl=64 time=0.612 ms
+64 bytes from 192.168.60.7: icmp_seq=541 ttl=64 time=0.520 ms
+64 bytes from 192.168.60.7: icmp_seq=542 ttl=64 time=0.430 ms
+64 bytes from 192.168.60.7: icmp_seq=543 ttl=64 time=0.643 ms
+64 bytes from 192.168.60.7: icmp_seq=544 ttl=64 time=0.489 ms
+64 bytes from 192.168.60.7: icmp_seq=545 ttl=64 time=0.515 ms
+64 bytes from 192.168.60.7: icmp_seq=546 ttl=64 time=0.577 ms
+64 bytes from 192.168.60.7: icmp_seq=547 ttl=64 time=0.567 ms
+64 bytes from 192.168.60.7: icmp_seq=548 ttl=64 time=0.452 ms
+64 bytes from 192.168.60.7: icmp_seq=549 ttl=64 time=0.461 ms
+64 bytes from 192.168.60.7: icmp_seq=550 ttl=64 time=0.598 ms
+64 bytes from 192.168.60.7: icmp_seq=551 ttl=64 time=0.504 ms
+64 bytes from 192.168.60.7: icmp_seq=552 ttl=64 time=0.553 ms
+64 bytes from 192.168.60.7: icmp_seq=553 ttl=64 time=0.665 ms
+64 bytes from 192.168.60.7: icmp_seq=554 ttl=64 time=0.585 ms
+64 bytes from 192.168.60.7: icmp_seq=555 ttl=64 time=0.645 ms
+64 bytes from 192.168.60.7: icmp_seq=556 ttl=64 time=0.693 ms
+64 bytes from 192.168.60.7: icmp_seq=557 ttl=64 time=0.502 ms
+64 bytes from 192.168.60.7: icmp_seq=558 ttl=64 time=0.598 ms
+64 bytes from 192.168.60.7: icmp_seq=559 ttl=64 time=0.604 ms
+64 bytes from 192.168.60.7: icmp_seq=560 ttl=64 time=0.450 ms
+64 bytes from 192.168.60.7: icmp_seq=561 ttl=64 time=0.497 ms
+64 bytes from 192.168.60.7: icmp_seq=562 ttl=64 time=0.593 ms
+64 bytes from 192.168.60.7: icmp_seq=563 ttl=64 time=0.553 ms
+64 bytes from 192.168.60.7: icmp_seq=564 ttl=64 time=0.469 ms
+64 bytes from 192.168.60.7: icmp_seq=565 ttl=64 time=0.560 ms
+64 bytes from 192.168.60.7: icmp_seq=566 ttl=64 time=0.574 ms
+64 bytes from 192.168.60.7: icmp_seq=567 ttl=64 time=0.560 ms
+64 bytes from 192.168.60.7: icmp_seq=568 ttl=64 time=0.644 ms
+64 bytes from 192.168.60.7: icmp_seq=569 ttl=64 time=0.539 ms
+64 bytes from 192.168.60.7: icmp_seq=570 ttl=64 time=0.576 ms
+64 bytes from 192.168.60.7: icmp_seq=571 ttl=64 time=0.603 ms
+64 bytes from 192.168.60.7: icmp_seq=572 ttl=64 time=0.569 ms
+64 bytes from 192.168.60.7: icmp_seq=573 ttl=64 time=0.425 ms
+64 bytes from 192.168.60.7: icmp_seq=574 ttl=64 time=0.433 ms
+64 bytes from 192.168.60.7: icmp_seq=575 ttl=64 time=0.559 ms
+64 bytes from 192.168.60.7: icmp_seq=576 ttl=64 time=0.545 ms
+64 bytes from 192.168.60.7: icmp_seq=577 ttl=64 time=0.619 ms
+64 bytes from 192.168.60.7: icmp_seq=578 ttl=64 time=0.521 ms
+64 bytes from 192.168.60.7: icmp_seq=579 ttl=64 time=0.441 ms
+64 bytes from 192.168.60.7: icmp_seq=580 ttl=64 time=0.587 ms
+64 bytes from 192.168.60.7: icmp_seq=581 ttl=64 time=0.572 ms
+64 bytes from 192.168.60.7: icmp_seq=582 ttl=64 time=0.568 ms
+64 bytes from 192.168.60.7: icmp_seq=583 ttl=64 time=0.576 ms
+64 bytes from 192.168.60.7: icmp_seq=584 ttl=64 time=0.505 ms
+64 bytes from 192.168.60.7: icmp_seq=585 ttl=64 time=0.635 ms
+64 bytes from 192.168.60.7: icmp_seq=586 ttl=64 time=0.439 ms
+64 bytes from 192.168.60.7: icmp_seq=587 ttl=64 time=0.579 ms
+64 bytes from 192.168.60.7: icmp_seq=588 ttl=64 time=0.638 ms
+64 bytes from 192.168.60.7: icmp_seq=589 ttl=64 time=0.463 ms
+64 bytes from 192.168.60.7: icmp_seq=590 ttl=64 time=0.574 ms
+64 bytes from 192.168.60.7: icmp_seq=591 ttl=64 time=0.584 ms
+64 bytes from 192.168.60.7: icmp_seq=592 ttl=64 time=0.585 ms
+64 bytes from 192.168.60.7: icmp_seq=593 ttl=64 time=0.580 ms
+64 bytes from 192.168.60.7: icmp_seq=594 ttl=64 time=0.489 ms
+64 bytes from 192.168.60.7: icmp_seq=595 ttl=64 time=0.550 ms
+64 bytes from 192.168.60.7: icmp_seq=596 ttl=64 time=0.536 ms
+64 bytes from 192.168.60.7: icmp_seq=597 ttl=64 time=0.556 ms
+64 bytes from 192.168.60.7: icmp_seq=598 ttl=64 time=0.445 ms
+64 bytes from 192.168.60.7: icmp_seq=599 ttl=64 time=0.419 ms
+
+--- 192.168.60.7 ping statistics ---
+600 packets transmitted, 161 packets received, 73.2% packet loss
+round-trip min/avg/max/stddev = 0.353/0.550/0.747/0.073 ms
