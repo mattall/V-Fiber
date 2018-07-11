@@ -1,13 +1,7 @@
-import pexpect
-import re
-import sys
 import argparse
-from a_timer import Timer
-from torchbearer import light_path, extinguish_path
 from multiprocessing import Process
-from subprocess import call, Popen
+from subprocess import call
 from numpy import mean, std
-from server_details import SERVERS
 from time import sleep
 from exp_utilities import get_ssh_connection
 import shlex
@@ -22,18 +16,9 @@ def ping(always_on, source, dest, time, file_num):
         outfile = "./ping_test/ping_test_{}".format(file_num)
 
     with open(outfile, 'w') as fout:
-        cmd = "ping -i 0.1 -c {} -S {} -b vlan0 {}".format(count, source, dest)
+        cmd = "ping -i 0.1 -c {} -S {} {}".format(count, source, dest)
         print "Executing command: %s" % cmd
-        proc = call(shlex.split(cmd), stdout = fout, stderr = fout)
-
-        # #WITH SOURCE ADDR
-        # call(["ping", "-i 0.1", "-c {}".format(count), "-S {}".format(source), dest], stdout = fout, stderr = fout, shell = True)
-
-        # # WITH BOUND INTERFACE
-        # call(["ping", "-i 0.1", "-c {}".format(count), "-b vlan0", dest], shell=True, stdout = fout)
-
-        # #WITHOUT SOURCE ADDR
-        # call(["ping", "-i 0.1", "-c {}".format(count), dest], shell=True,stdout = fout, stderr = fout)
+        call(shlex.split(cmd), stdout = fout, stderr = fout)
 
     print('ping finished, file_num = {}'.format(file_num))
 
