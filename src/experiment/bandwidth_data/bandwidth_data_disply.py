@@ -70,6 +70,51 @@ def plot_bandwidth_data(file_name):
     plt.plot(data)
     plt.show()
 
+def get_time_to_boost(file_names):
+    """ returns the time at which bandwidth boost was observerd """
+
+    # OPEN ALL FILES
+    data = []
+    for f in file_names:
+        data.append(load(open(f, 'rb')))
+
+    # Find the shortest set of entries
+    lengths = []
+    for d in data:
+        lengths.append(len(d))
+
+    max_entries = min(lengths)
+
+    # plot data from each set of entries additivley
+    plot_one = np.array(data[0])
+    plot_two = []
+    for x in range(max_entries):
+        plot_two.append(plot_one[x]+data[1][x])
+    plot_two = np.array(plot_two)
+
+    if len(file_names) == 4:
+        plot_three = []
+        for x in range(max_entries):
+            plot_three.append(plot_two[x] + data[2][x])
+        plot_three = np.array(plot_three)
+
+        plot_four = []
+        for x in range(max_entries):
+            plot_four.append(plot_three[x] + data[3][x])
+        plot_four = np.array(plot_four)
+
+    boost_times = []
+    for x in range(2, len(plot_four)):
+        if plot_four[x] > (2 * plot_four[x-2])-100:
+            boost_times.append(x)
+
+    print(boost_times)
+    for t in boost_times:
+        print('boost at t = {}'.format(t))
+        print plot_four[t-2]
+        print plot_four[t-1]
+        print plot_four[t]
+
 def plot_multi_bandwidth_data(file_names):
 
     # OPEN ALL FILES
@@ -118,9 +163,9 @@ def plot_multi_bandwidth_data(file_names):
     # axes.set_xlim([0,240])
     axes.tick_params(length=16, width=4)
     axes.locator_params(nbins=4, axis='y')
-    plt.gcf().subplots_adjust(bottom=0.18, left = 0.18)
-    plt.xlabel('Time (seconds)', fontsize = label_size)
-    plt.ylabel('Bandwidth (MBits/second)', fontsize = label_size)
+    plt.gcf().subplots_adjust(bottom=0.21, left = 0.18)
+    plt.xlabel('Time (seconds)', fontsize = label_size, labelpad=30)
+    plt.ylabel('Bandwidth (Mb/s)', fontsize = label_size, labelpad=30)
     plt.axhline(y=1000, color = 'black', label="initial capacity", linestyle='dashed')
     plt.plot(plot_one, color='blue', label="1 client/server pair")
     plt.plot(plot_two, color='green', label="2 client/server pairs")
@@ -196,5 +241,7 @@ def main():
     #     plot_bandwidth_data(f)
 
     plot_multi_bandwidth_data(bandwidth_files)
+
+    get_time_to_boost(bandwidth_files)
 
 main()
