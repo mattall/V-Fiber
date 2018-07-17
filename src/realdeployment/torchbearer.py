@@ -8,9 +8,9 @@ from time import sleep
 '''
 Toarchbearer lights an end-to-end path of dark fiber
 '''
-def light_path(ip_port_pairs = [("192.168.57.200", "GigabitEthernet 0/28"), ("192.168.57.201","GigabitEthernet 0/28")]):
+def light_path(ip_port_pairs = [("192.168.57.200", "GigabitEthernet 0/28"), ("192.168.57.201","GigabitEthernet 0/28")], debug=False, save=False):
     switch_pw = "cisco"
-    verbose = True
+    verbose = debug
 
     for switch_addr, switch_port in ip_port_pairs:
         try:
@@ -51,11 +51,11 @@ def extinguish_path(ip_port_pairs = [("192.168.57.200", "GigabitEthernet 0/25"),
                                         ("192.168.57.200", "GigabitEthernet 0/26"), ("192.168.57.201","GigabitEthernet 0/26"),\
                                         ("192.168.57.200", "GigabitEthernet 0/27"), ("192.168.57.201","GigabitEthernet 0/27"),\
                                         ("192.168.57.200", "GigabitEthernet 0/28"), ("192.168.57.201","GigabitEthernet 0/28")],\
-                                        save = False):
+                                        debug = False, save = False):
     ''' Doesn't write config to memory by default '''
 
     switch_pw = "cisco"
-    verbose = True
+    verbose = debug
 
     for switch_addr, switch_port in ip_port_pairs:
         try:
