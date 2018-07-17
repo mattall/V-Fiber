@@ -13,20 +13,19 @@ CONTEXT = {
     'request_size': 1024,
     'meas_format': "d",
     'meas_to_file': True,
-    'meas_to_location': '/home/matt/vFiber/V-Fiber/src/experiment'
+    'meas_to_location': '~/'
 }
 
 # Useful parameters for test purposes
 TEST_PARAMS = {
     'path': '../data/',
     'buyer_file_name': 'labClient.txt',
-    #'buyer_file_name': 'clientRequests_10.txt',
-    'seller_file_name': 'sellerData.txt',
+    'seller_file_name': 'labSeller.txt',
     'client_request_type': 'BUYER',                 # or SDX
     'client_request_code': 100,                     # or 001
     # change this according to the experiment
-    'infra_tested': 'MOCK',                       # or REAL
-    #'infra_tested': 'REAL',
+    # 'infra_tested': 'MOCK',                       # or REAL
+    'infra_tested': 'REAL',
 }
 
 # Database parameters
