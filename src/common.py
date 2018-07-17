@@ -50,5 +50,5 @@ class Timer(object):
             return "Time in {0} is from {1} to {2}.".format(module, datetime.fromtimestamp(self.start).strftime('%H:%M:%S'),\
                                                            datetime.fromtimestamp(self.end).strftime('%H:%M:%S'))
         if formatNeeded == "d" and toFile:
-            return "{0},{1},{2},{3} OK".format(module, datetime.fromtimestamp(self.start).strftime('%H:%M:%S:%f'),\
+            return "{0},{1},{2},{3} OK\n".format(module, datetime.fromtimestamp(self.start).strftime('%H:%M:%S:%f'),\
                                            datetime.fromtimestamp(self.end).strftime('%H:%M:%S:%f'), self.msecs)
