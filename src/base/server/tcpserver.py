@@ -53,10 +53,6 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
 
         self.__infra_tested = TEST_PARAMS['infra_tested']
 
-        if self.__infra_tested == "MININET":
-            self.__mininetConnection = server.mininetConnection
-            self.__floodlightConnection = server.floodlightConnection
-
         # Call base class
         BaseRequestHandler.__init__(self, request, client_address, server)
 
