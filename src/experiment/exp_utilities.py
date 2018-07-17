@@ -3,7 +3,7 @@ file for useful tools for various tests
 '''
 from paramiko import SSHClient, AutoAddPolicy
 
-def do_ssh_and_send_command(username, address, password, server, command):
+def do_ssh_and_send_command(username, address, password, command):
     port = 22
     c = SSHClient()
     c.load_system_host_keys()

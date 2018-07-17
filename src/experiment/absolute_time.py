@@ -3,9 +3,11 @@ from multiprocessing import Process
 from subprocess import call
 from numpy import mean, std
 from time import sleep
-from exp_utilities import get_ssh_connection
+from exp_utilities import get_ssh_connection, do_ssh_and_send_command
 import shlex
 from base.client.tcpclient import TCPClient
+from server_details import SERVERS
+
 
 def ping(always_on, source, dest, time, file_num):
     print("starting ping, file_num = {}").format(file_num)
@@ -43,6 +45,21 @@ def extinguish_path((sshConnObject, debug, addr1, addr2, int1, int2, password)):
         print stdout.read()
         print stderr.read()
 
+def restart_servers():
+    for s in SERVERS:
+        print('='*30)
+        user = SERVERS[s]['user']
+        addr = SERVERS[s]['address']
+        pw = SERVERS[s]['password']
+        command = "killall -9 python; cd /home/matt/vFiber/V-Fiber/src; source ../../bin/activate; python startVFCluster.py %s".format(s)
+        p = Process(target = do_ssh_and_send_command, args = (user, addr, pw, command))
+        p.start()
+        server_procs.append(p)
+
+    for p in server_procs:
+        p.join()
+
+
 def main(args):
     sourcepoint = '192.168.60.35'
     endpoint = args.endpoint
@@ -60,6 +77,11 @@ def main(args):
                     (ssh, debug, "192.168.57.200", "192.168.57.201", "GigabitEthernet 0/27", "GigabitEthernet 0/27", "cisco"),
                     (ssh, debug, "192.168.57.200", "192.168.57.201", "GigabitEthernet 0/28", "GigabitEthernet 0/28", "cisco")]
 
+    #Connect to GC Servers
+
+    sleep(5)
+
+
     for tt in test_tuples:
         extinguish_path(tt)
         sleep(5)
@@ -69,6 +91,7 @@ def main(args):
     file_num = 0
     # begin experiment
     for i in range(runs):
+        restart_servers()
         p = Process(target=ping, args=(always_on, sourcepoint, endpoint, delta, file_num))
         file_num += 1
         p.start()
@@ -80,6 +103,7 @@ def main(args):
         for tt in test_tuples:
             extinguish_path(tt)
             sleep(5)
+
 
     ssh.close()
 

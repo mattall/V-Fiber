@@ -11,7 +11,7 @@ class Seller(SyncObj):
         '''
         cfg = SyncObjConf(logCompactionMinEntries = 2147483647, logCompactionMinTime = 2147483647)
         super(Seller, self).__init__(selfAddress, partnerAddresses, cfg)
-        self.__rsp = TEST_PARAMS['path']
+        self.__rsp = TEST_PARAMS['server_path']
         self.__sf = TEST_PARAMS['seller_file_name']
         self.__compressed = CONTEXT['compressed_content']
         self.__sellerGraph = nx.Graph()

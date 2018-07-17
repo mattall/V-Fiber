@@ -4,13 +4,16 @@ import re
 if __name__ == "__main__":
     from a_timer import Timer
 from time import sleep
+import argparse
+
 
 '''
 Toarchbearer lights an end-to-end path of dark fiber
 '''
-def light_path(ip_port_pairs = [("192.168.57.200", "GigabitEthernet 0/28"), ("192.168.57.201","GigabitEthernet 0/28")], debug=False, save=False):
-    switch_pw = "cisco"
-    verbose = debug
+def light_path(ip_port_pairs = [("192.168.57.200", "GigabitEthernet 0/28"), ("192.168.57.201","GigabitEthernet 0/28")],
+                save = False, password = 'cisco', disply_output = True):
+    switch_pw = password
+    verbose = disply_output
 
     for switch_addr, switch_port in ip_port_pairs:
         try:
@@ -39,9 +42,10 @@ def light_path(ip_port_pairs = [("192.168.57.200", "GigabitEthernet 0/28"), ("19
             child.expect('\(config-if\)#')
             child.sendline('end')
             child.expect('#')
-            child.sendline('wr mem')
-            child.expect('[OK]')
-            child.expect('#')
+            if save:
+                child.sendline('wr mem')
+                child.expect('[OK]')
+                child.expect('#')
             child.sendline('quit')
         except (pexpect.EOF, pexpect.TIMEOUT), e:
             child.close()
@@ -51,11 +55,11 @@ def extinguish_path(ip_port_pairs = [("192.168.57.200", "GigabitEthernet 0/25"),
                                         ("192.168.57.200", "GigabitEthernet 0/26"), ("192.168.57.201","GigabitEthernet 0/26"),\
                                         ("192.168.57.200", "GigabitEthernet 0/27"), ("192.168.57.201","GigabitEthernet 0/27"),\
                                         ("192.168.57.200", "GigabitEthernet 0/28"), ("192.168.57.201","GigabitEthernet 0/28")],\
-                                        debug = False, save = False):
-    ''' Doesn't write config to memory by default '''
+                                        save = False, password = "cisco", disply_output = True):
+    ''' Doesn't write config to memory if save is False '''
 
-    switch_pw = "cisco"
-    verbose = debug
+    switch_pw = password
+    verbose = disply_output
 
     for switch_addr, switch_port in ip_port_pairs:
         try:
@@ -93,16 +97,37 @@ def extinguish_path(ip_port_pairs = [("192.168.57.200", "GigabitEthernet 0/25"),
             child.close()
             raise Exception("Error while trying to move the vlan on the switch.")
 
-
-
 if __name__ == "__main__":
-    for i in range(50):
-        with Timer() as extinguishing_time:
-            extinguish_path(["192.168.57.200", "192.168.57.201"], "GigabitEthernet 0/28")
+        parser = argparse.ArgumentParser()
+        parser.add_argument("-m", "--mode", help="light path (l) or extinguish path (e)", dest="mode", type=str)
+        parser.add_argument("-a1", "--address_one", help="address for first network device in link", dest="a1", type=str)
+        parser.add_argument("-a2", "--address_two", help="address for second network device in link", dest="a2", type=str)
+        parser.add_argument("-i1", "--interface_one", help="interface for first network device in link", dest="i1", type=str)
+        parser.add_argument("-i2", "--interface_two", help="interface for second network device in link", dest="i2", type=str)
+        parser.add_argument("-s", "--save", help="save configuration to NVM (y or n)", dest="save", type=str)
+        parser.add_argument("-v", "--verbose", help="view network device output (y or n)", dest="verbose", type=str)
+        parser.add_argument("-p", "--password", help="network device password", dest="pw", type=str)
 
-        with Timer() as lighting_time:
-            light_path(["192.168.57.200", "192.168.57.201"], "GigabitEthernet 0/28")
+        args = parser.parse_args()
 
-        print("extinguishing time:\n", str(extinguishing_time.interval))
-        print("lighting time:\n", str(lighting_time.interval))
-        sleep(40)
+        mode=args.mode
+        address_one=args.a1
+        address_two=args.a2
+        interface_one=args.i1
+        interface_two=args.i2
+        save=True if args.save == 'y' else False
+        verbose=True if args.verbose == 'y' else False
+        password=args.pw
+
+        if mode == 'l':
+            light_path(ip_port_pairs=[(address_one, interface_one), \
+                                        (address_two, interface_two)],\
+                        save=save, password=password, disply_output=verbose)
+
+        elif mode =='e':
+            extinguish_path(ip_port_pairs=[(address_one, interface_one), \
+                                        (address_two, interface_two)],\
+                        save=save, password=password, disply_output=verbose)
+
+        else:
+            print("invalid mode command, choose 'l' or 'e'")

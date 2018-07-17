@@ -8,7 +8,7 @@ class Layer3(object):
         '''
         Initialize seller class
         '''
-        self.__rsp = TEST_PARAMS['path']
+        self.__rsp = TEST_PARAMS['server_path']
         self.__sf = TEST_PARAMS['seller_file_name']
         self.__compressed = CONTEXT['compressed_content']
         self.__isdebug = CONTEXT['debug']
