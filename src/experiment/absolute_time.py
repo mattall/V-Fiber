@@ -46,18 +46,33 @@ def extinguish_path((sshConnObject, debug, addr1, addr2, int1, int2, password)):
         print stderr.read()
 
 def restart_servers():
+    server_procs = []
     for s in SERVERS:
         print('='*30)
         user = SERVERS[s]['user']
         addr = SERVERS[s]['address']
         pw = SERVERS[s]['password']
-        command = "killall -9 python; cd /home/matt/vFiber/V-Fiber/src; source ../../bin/activate; python startVFCluster.py %s".format(s)
+        command = "killall -9 python; cd /home/matt/vFiber/V-Fiber/src; source ../../bin/activate; python startVFCluster.py {}".format(s)
+        print("executing command: {}".format(command))
         p = Process(target = do_ssh_and_send_command, args = (user, addr, pw, command))
         p.start()
         server_procs.append(p)
 
-    for p in server_procs:
-        p.join()
+    sleep(10)
+    return server_procs
+
+def kill_servers():
+    server_procs = []
+    for s in SERVERS:
+        print('='*30)
+        user = SERVERS[s]['user']
+        addr = SERVERS[s]['address']
+        pw = SERVERS[s]['password']
+        command = "killall -9 python"
+        print("executing command: {}".format(command))
+        p = Process(target = do_ssh_and_send_command, args = (user, addr, pw, command))
+        p.start()
+        server_procs.append(p)
 
 
 def main(args):
@@ -95,7 +110,6 @@ def main(args):
         p = Process(target=ping, args=(always_on, sourcepoint, endpoint, delta, file_num))
         file_num += 1
         p.start()
-        sleep(1)
         t = client_thread()
         sleep(time_between_extinguish_and_light)
         t.join()
@@ -103,6 +117,7 @@ def main(args):
         for tt in test_tuples:
             extinguish_path(tt)
             sleep(5)
+        kill_servers()
 
 
     ssh.close()
@@ -129,7 +144,7 @@ def main(args):
     standard_deviation = std(times)
     print("mean: {}".format(average))
     print("standard deviation: {}".format(standard_deviation))
-    with open("./ping_test/0_ping_test_Results", 'w') as resultsFile:
+    with open("./absolute_time/0_ping_test_Results", 'w') as resultsFile:
         resultsFile.write("messages set: {}\n".format(messages_sent))
         resultsFile.write("mean time to activate: {} seconds \n".format(average))
         resultsFile.write("standard deviation: {} seconds".format(standard_deviation))
