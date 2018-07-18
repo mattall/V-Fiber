@@ -206,7 +206,7 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
             self.__logger.debug("[TCPRequestHandler][handle]Elapsed Time {}".format(val))
             overheadList.append(val)
 
-            strVal = "\n".join(overheadList)
+            strVal = "".join(overheadList)
             self.__logger.debug("[TCPRequestHandler][handle] Overhead list :\n {}".format(strVal))
             # a = StringIO(strVal)
             # plotTimeline(a, CONTEXT['meas_to_location']+"overhead.eps")
