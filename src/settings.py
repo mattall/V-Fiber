@@ -13,7 +13,7 @@ CONTEXT = {
     'request_size': 1024,
     'meas_format': "d",
     'meas_to_file': True,
-    'meas_to_location': '~/'
+    'meas_to_location': '/home/matt/'
 }
 
 # Useful parameters for test purposes
