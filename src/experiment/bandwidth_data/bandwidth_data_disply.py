@@ -105,15 +105,15 @@ def get_time_to_boost(file_names):
 
     boost_times = []
     for x in range(2, len(plot_four)):
-        if plot_four[x] > (2 * plot_four[x-2])-100:
+        if plot_four[x] > (2 * plot_four[x-2])-200:
             boost_times.append(x)
 
     print(boost_times)
     for t in boost_times:
         print('boost at t = {}'.format(t))
-        print plot_four[t-2]
-        print plot_four[t-1]
-        print plot_four[t]
+        print t-2, plot_four[t-2]
+        print t-1, plot_four[t-1]
+        print t, plot_four[t]
 
 def plot_multi_bandwidth_data(file_names):
 
@@ -223,10 +223,17 @@ def main():
     #                 "./get_files/2018-06-20T18:36:10_perf_server_192.168.57.3",\
     #                 "./get_files/2018-06-20T18:36:11_perf_server_192.168.57.6"]
 
-    data_file_names = ["./get_files/2018-06-25T12:56:58_perf_server_192.168.57.4",\
-                    "./get_files/2018-06-25T12:57:16_perf_server_192.168.57.7",\
-                    "./get_files/2018-06-25T12:57:22_perf_server_192.168.57.3",\
-                    "./get_files/2018-06-25T12:56:59_perf_server_192.168.57.6"]
+    ### Version in paper
+    # data_file_names = ["./get_files/2018-06-25T12:56:58_perf_server_192.168.57.4",\
+    #                 "./get_files/2018-06-25T12:57:16_perf_server_192.168.57.7",\
+    #                 "./get_files/2018-06-25T12:57:22_perf_server_192.168.57.3",\
+    #                 "./get_files/2018-06-25T12:56:59_perf_server_192.168.57.6"]
+
+    data_file_names = ["./get_files/2018-07-18T17:12:59_perf_server_192.168.57.6",
+                        "./get_files/2018-07-18T17:13:00_perf_server_192.168.57.4",
+                        "./get_files/2018-07-18T17:13:01_perf_server_192.168.57.3",
+                        "./get_files/2018-07-18T17:13:02_perf_server_192.168.57.7"]
+
 
     bandwidth_files = []
     transfer_files = []
@@ -240,7 +247,7 @@ def main():
     # for f in bandwidth_files:
     #     plot_bandwidth_data(f)
 
-    plot_multi_bandwidth_data(bandwidth_files)
+    # plot_multi_bandwidth_data(bandwidth_files)
 
     get_time_to_boost(bandwidth_files)
 

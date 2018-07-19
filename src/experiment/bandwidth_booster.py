@@ -72,6 +72,40 @@ import sys
 from matplotlib import pyplot as plt
 import matplotlib as mpl
 from datetime import datetime as dt
+from exp_utilities import get_ssh_connection, do_ssh_and_send_command
+
+def restart_servers():
+    server_procs = []
+    for s in SERVERS:
+        print('='*30)
+        user = SERVERS[s]['user']
+        addr = SERVERS[s]['address']
+        pw = SERVERS[s]['password']
+        command = "killall -9 python; cd /home/matt/vFiber/V-Fiber/src; source ../../bin/activate; python startVFCluster.py {}".format(s)
+        print("executing command: {}".format(command))
+        p = Process(target = do_ssh_and_send_command, args = (user, addr, pw, command))
+        p.start()
+        server_procs.append(p)
+
+    for p in server_procs:
+        p.join()
+
+    sleep(10)
+
+def kill_servers():
+    server_procs = []
+    for s in SERVERS:
+        print('='*30)
+        user = SERVERS[s]['user']
+        addr = SERVERS[s]['address']
+        pw = SERVERS[s]['password']
+        command = "killall -9 python"
+        print("executing command: {}".format(command))
+        p = Process(target = do_ssh_and_send_command, args = (user, addr, pw, command))
+        p.start()
+        server_procs.append(p)
+    for p in server_procs:
+        p.join()
 
 def client_thread(req=None):
     print("Thread is initializing client")
@@ -82,15 +116,22 @@ def client_thread(req=None):
     client.start()
     return client
 
-def do_ssh(username, address, password):
+def do_ssh_and_send_command(username, address, password, command):
     port = 22
     paramiko.util.log_to_file("ssh.log")
     c = paramiko.SSHClient()
     c.load_system_host_keys()
     c.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-    c.connect(hostname = address, username = 'matt', password = 'root')
-    c.exec_command("killall -9 python; cd /home/matt/vFiber/V-Fiber/src; source ../../bin/activate; python startVFCluster.py %s" % server)
+    c.connect(hostname = address, username = username, password = password)
+    c.exec_command(command)
     c.close()
+
+def extinguish_path((sshConnObject, debug, addr1, addr2, int1, int2, password)):
+    print("extinguishing path")
+    stdin, stdout, stderr = sshConnObject.exec_command("cd /home/matt/vFiber/V-Fiber/src/experiment; source ../../../bin/activate; python /home/matt/vFiber/V-Fiber/src/experiment/torchbearer.py -m e -a1 {} -a2 {} -i1 '{}' -i2 '{}' -s n -v y -p {}".format(addr1, addr2, int1, int2, password))
+    if debug:
+        print stdout.read()
+        print stderr.read()
 
 def start_perf_client(server_addr, self_addr, durration):
     port = 22
@@ -109,6 +150,7 @@ def start_perf_client(server_addr, self_addr, durration):
     except:
         print(serr)
     c.close()
+
 
     # data = sout
     #
@@ -164,12 +206,25 @@ def my_plot(a):
     plt.plot(a)
     plt.show()
 '''
+
 def main(args):
     DELTA = int(args.delta)              # number of seconds between requests
     lambdas = int(args.wavelengths)      # total labdas to allocate durring experiment
-    TEST_DURRATION = DELTA * (lambdas)
-
+    # TEST_DURRATION = DELTA * (lambdas)
+    TEST_DURRATION = DELTA * 2
     reqs_sent = 0 # updated throughout experiment
+
+    ssh = get_ssh_connection('matt', '192.168.57.102', 'onrgserver1')
+    debug = False
+    test_tuples = [(ssh, debug, "192.168.57.200", "192.168.57.201", "GigabitEthernet 0/25", "GigabitEthernet 0/25", "cisco"),
+                    (ssh, debug, "192.168.57.200", "192.168.57.201", "GigabitEthernet 0/26", "GigabitEthernet 0/26", "cisco"),
+                    (ssh, debug, "192.168.57.200", "192.168.57.201", "GigabitEthernet 0/27", "GigabitEthernet 0/27", "cisco"),]
+
+    for t in test_tuples:
+        extinguish_path(t)
+        sleep(5)
+
+    restart_servers()
 
     perf_clients = []
     print("# Start iperf3 clients")
@@ -185,17 +240,23 @@ def main(args):
 
     ### THIS IS IT BOYS ###
     print("# Starting lambda experiment")
-    sleep(1)
+    sleep(DELTA)
     target = None
-    for l in range(lambdas):
-        if l < 2:
-            print("Sending request in {} seconds.".format(DELTA))
-            sleep(DELTA)
-        print("# Sending request to activate lambda now")
+    for l in range(3):
+        print("sending request to activate lambda now")
         t = client_thread()
         thread_reqs.append(t)
-        sleep(10)
         print("## Lambda Requests submitted")
+
+    # for l in range(lambdas):
+    #     if l < 2:
+    #         print("Sending request in {} seconds.".format(DELTA))
+    #         sleep(DELTA)
+    #     print("# Sending request to activate lambda now")
+    #     t = client_thread()
+    #     thread_reqs.append(t)
+    #     sleep(10)
+    # print("## Lambda Requests submitted")
     print("No requests to send. Sleeping for {} seconds".format(DELTA))
     sleep(DELTA)
 
@@ -211,6 +272,8 @@ def main(args):
 
     print("*~*~*~*~*~*~ Experiment Compete *~*~*~*~*~*~")
 
+    kill_servers()
+    
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-d", "--delta", help="Number of seconds between adding lambdas.", dest="delta", default=120, type=int)
