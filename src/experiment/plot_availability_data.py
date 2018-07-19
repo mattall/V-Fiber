@@ -56,17 +56,58 @@ def main():
     # fname = "availability_experiment_length-600:delta-1:volume-100:failure_testing-False:poisson-True.pkl"
     # create_plot(fname, 5)
 
-    # Periodic Failure/Recovery
-    fname = "availability_experiment_length-600:delta-1:volume-100:failure_testing-True:poisson-True.pkl"
-    starts = [120,240,360,480]
-    stops = [60,180,300,420,540]
-    create_plot(fname, 5, starts, stops)
+    # # Periodic Failure/Recovery
+    # fname = "availability_experiment_length-600:delta-1:volume-100:failure_testing-True:poisson-True.pkl"
+    # starts = [120,240,360,480]
+    # stops = [60,180,300,420,540]
+    # create_plot(fname, 5, starts, stops)
 
     # # DEADSTOP TEST
     # fname = "availability_experiment_length-600:delta-1:volume-100:failure_testing-d:poisson-True.pkl"
     # starts = [150, 200, 450]
     # stops = [60, 120, 420]
     # create_plot(fname, 5, starts, stops)
+
+    files = ["availability_experiment_length-600:delta-1:volume-100:failure_testing-False:poisson-True.pkl",
+            "availability_experiment_length-600:delta-1:volume-100:failure_testing-True:poisson-True.pkl",
+            "availability_experiment_length-600:delta-1:volume-100:failure_testing-d:poisson-True.pkl"]
+
+    for f in files:
+        with open(f,'rb') as fob:
+            activity_log = pkl.load(fob)
+
+            if f == "availability_experiment_length-600:delta-1:volume-100:failure_testing-d:poisson-True.pkl":
+                print(f)
+                print
+                print("before first failure")
+                print("throughout: {}".format(activity_log[120][1]))
+                print("throughout: {}".format(activity_log[121][1]))
+                print("throughout: {}".format(activity_log[122][1]))
+                print("throughout: {}".format(activity_log[149][1]))
+                print("throughout: {}".format(activity_log[150][1]))
+                print("time: {}".format(activity_log[120][0]))
+                print("time: {}".format(activity_log[121][0]))
+                print("time: {}".format(activity_log[122][0]))
+                print("time: {}".format(activity_log[149][0]))
+                print("time: {}".format(activity_log[150][0]))
+
+                print("after first failure")
+                print("throughout: {}".format(activity_log[420][1]))
+                print("throughout: {}".format(activity_log[421][1]))
+                print("throughout: {}".format(activity_log[422][1]))
+                print("time: {}".format(activity_log[420][0]))
+                print("time: {}".format(activity_log[422][0]))
+
+                print("after second failure")
+                print("throughout: {}".format(activity_log[-1][1]))
+                print("time: {}".format(activity_log[-1][0]))
+                print
+
+            else:
+                print(f)
+                print("throughout: {}".format(activity_log[-1][1]))
+                print("time: {}".format(activity_log[-1][0]))
+
 
 if __name__ == "__main__":
     main()
