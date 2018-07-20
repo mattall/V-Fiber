@@ -2,6 +2,7 @@ from matplotlib import pyplot as plt
 import matplotlib as mpl
 import numpy as np
 from pickle import dump, load
+from numpy import mean
 
 def parse_experiment_data(dat_file_name):
     '''
@@ -115,6 +116,9 @@ def get_time_to_boost(file_names):
         print plot_four[t-1]
         print plot_four[t]
 
+    print("average throughput from 1 to 300: {}".format(mean(plot_four[boost_times[0]:boost_times[1]])))
+    print("average throughput from 301 to 600: {}".format(mean(plot_four[boost_times[1]:boost_times[2]])))
+    print("average throughput from 601 to end: {}".format(mean(plot_four[boost_times[2]:-1])))
 def plot_multi_bandwidth_data(file_names):
 
     # OPEN ALL FILES
@@ -240,8 +244,10 @@ def main():
     # for f in bandwidth_files:
     #     plot_bandwidth_data(f)
 
-    plot_multi_bandwidth_data(bandwidth_files)
+    # plot_multi_bandwidth_data(bandwidth_files)
 
     get_time_to_boost(bandwidth_files)
+
+
 
 main()
