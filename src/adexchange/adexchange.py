@@ -5,6 +5,8 @@ from vcg import VCG
 import networkx as nx
 from common import get_logger
 from pysyncobj import SyncObj, replicated, SyncObjConf
+from threading import Thread, Event
+from multiprocessing.pool import ThreadPool
 
 class AdExchange(SyncObj):
     def __init__(self, selfAddress, partnerAddresses):
@@ -23,11 +25,58 @@ class AdExchange(SyncObj):
                        G[u][v]['costPerStrand'], G[u][v]['ISP'], G[u][v]['prefixA'], G[u][v]['prefixB']\
                  ) for (u,v) in zip(path[0:],path[1:])]
 
-    def updateSellerGraph_and_getResources(self, S, path, reqValues):
+    def updateSellerGraph_and_getResources(self, S, links_in_path, total_links, reqValues):
         ip_port_pairs = []
-        for (u,v) in zip(path[0:], path[1:]):
-            for item in reqValues:
-                ip_port_pairs.extend(S.release_strand(u, v, item.numberOfStrands))
+
+        ## Two phase commit
+        if total_links > 1:
+            # create empty list of lock aquire events.
+            lock_aquire_events = []
+
+            # set this event when all locks are aquired
+            all_locks_aquired = Event()
+
+            # concurrency object for getting return value from parallel threads
+            pool = ThreadPool(processes = total_links)
+            threads = []
+
+            for (u,v) in links_in_path:
+                # set up event for link
+                lock_aquire_event = Event()
+                lock_aquire_events.apped(lock_aquire_event)
+
+                # start client threads
+                for item in reqValues:
+                    ### if code gets stuck here try apply_async
+                    release_strand_thread = pool.apply(
+                                            name="release_strand:{}_{}".format(u,v),
+                                            target=S.release_strand,
+                                            args=(u,v,item.numberOfStrands,
+                                            lock_aquire_event, all_locks_aquired,))
+
+                    threads.append(release_strand_thread)
+
+            # when all lock_aquire_events are set, set all_locks_aquired
+            for e in lock_aquire_events:
+                while not e.isSet():
+                    event_is_set = e.wait()
+            all_locks_aquired.set()
+
+            # get resulting ip_port_pairs
+            for t in threads:
+                t.join()
+                ip_port_pairs.extend(t.get())
+
+
+        ## Optimistic CC
+        elif total_links == 1:
+            for (u,v) in links_in_path:
+                for item in reqValues:
+                    ip_port_pairs.extend(S.release_strand_optimistic(u, v, item.numberOfStrands))
+
+        else:
+            self.__logger.info("ERROR! Impssible number of links given.")
+
         return ip_port_pairs
 
     def resourceAvailable(self, G, path, reqValues):
@@ -129,8 +178,8 @@ class AdExchange(SyncObj):
                 shortestPath = nx.shortest_path(sellerGraph, source=k1, target=k2)
                 gCoP = self.getCostOfPath(shortestPath, sellerGraph)
                 lIP = self.linksInPath(shortestPath)
-                k = len(lIP)
-                reserve = max(self.__reserve, gCoP/k)
+                num_links = len(lIP)
+                reserve = max(self.__reserve, gCoP/num_links)
 
                 bids = []
                 for item in v:
@@ -138,13 +187,13 @@ class AdExchange(SyncObj):
 
                 if nx.has_path(sellerGraph, k1, k2) and self.resourceAvailable(sellerGraph, shortestPath, v):
                     (alloc, payments) = GSP.compute(slot_click, reserve, bids)
-                    allocation.extend(zip(alloc, [i * k for i in payments]))
+                    allocation.extend(zip(alloc, [i * num_links for i in payments]))
                     for (kTest, vTest) in allocation:
                         allocationDict[kTest] = vTest
 
                     # Updates sellerGraph with the allocation
                     self.__logger.debug("Before > {}".format(self.availableAttributes(shortestPath, sellerGraph)))
-                    ip_port_pairs = self.updateSellerGraph_and_getResources(seller, shortestPath, v)
+                    ip_port_pairs = self.updateSellerGraph_and_getResources(seller, lIP, num_links, v)
                     self.__logger.debug("After > {}".format(self.availableAttributes(shortestPath, sellerGraph)))
                 else:
                     self.__logger.info("Link does not exists between {} and {}. No resource available for request".format(k1, k2))

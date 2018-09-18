@@ -3,6 +3,7 @@ from settings import CONTEXT, TEST_PARAMS, SELLER
 import networkx as nx
 from common import get_logger
 from pysyncobj import SyncObj, replicated_sync, replicated, SyncObjConf
+from threading import Lock
 
 class Seller(SyncObj):
     def __init__(self, selfAddress, partnerAddresses):
@@ -66,7 +67,8 @@ class Seller(SyncObj):
                                                 ISP = provider, prefixA = ip_A,\
                                                 prefixB = ip_B,
                                                 available_interfaces = interfaces, \
-                                                unavailable_interfaces = [])
+                                                unavailable_interfaces = []
+                                                link_lock = Lock())
             else: # no line to read
                 break
 
@@ -80,14 +82,73 @@ class Seller(SyncObj):
         return self.__sellerGraph
 
     @replicated_sync
-    def release_strand(self, u, v, num_to_release):
-        # update edge info
-        self.__sellerGraph[u][v]['numberOfStrands'] -= num_to_release
-        buyer_interface = self.__sellerGraph[u][v]['available_interfaces'].pop()
-        self.__sellerGraph[u][v]['unavailable_interfaces'].append(buyer_interface)
+    def release_strand(self, u, v, num_to_release, local_lock_event, global_lock_event):
+        try:
+            local_lock = self.__sellerGraph[u][v]['link_lock'].aquire()
+            local_lock_event.set()
+            self.__logger.debug("Lock for {} {} aquired".format(u,v))
+            global_lock_event.wait()
 
-        # send list of two ip/port pairs for link
-        link_a = (self.__sellerGraph[u][v]['prefixA'], buyer_interface[0])
-        link_b = (self.__sellerGraph[u][v]['prefixB'], buyer_interface[1])
-        resource = [link_a, link_b]
+            # update edge info
+            self.__sellerGraph[u][v]['numberOfStrands'] -= num_to_release
+
+            # pop the number of requested interfaces (strands)
+            buyer_interfaces = []
+            for n in num_to_release:
+                buyer_interfaces.append(self.__sellerGraph[u][v]['available_interfaces'].pop())
+
+            self.__sellerGraph[u][v]['unavailable_interfaces'].extend(buyer_interfaces)
+
+            # send list of two ip/port pairs for link
+            resources = []
+            for interface in buyer_interfaces:
+                link_a = (self.__sellerGraph[u][v]['prefixA'], interface[0])
+                link_b = (self.__sellerGraph[u][v]['prefixB'], interface[1])
+                resources.extend((link_a, link_b))
+
+        finally:
+            local_lock.release()
         return resource
+
+    @replicated_sync
+    def release_strand_optimistic(self, u, v, num_to_release):
+        # operate on copy of data. If data has changed before committing quit.
+
+        # Returns if transaction completes, otherwise starts over.
+        # Quits (Returns empty list) if insufficent resources are available.
+        while True:
+            strands_at_start = self.__sellerGraph[u][v]['numberOfStrands']
+            copy_of_strands = strands_at_start[:]
+
+            available_interfaces_at_start = self.__sellerGraph[u][v]['available_interfaces']
+            ai_copy = available_interfaces_at_start[:]
+
+            unavailable_interfaces_at_start = self.__sellerGraph[u][v]['unavailable_interfaces']
+            ui_copy = unavailable_interfaces_at_start[:]
+
+            proposed_number_of_strands = copy_of_strands - num_to_release
+
+            # Get out of here if all strands have been used up.
+            if proposed_number_of_strands < 0:
+                return []
+
+            buyer_interfaces = []
+            for n in num_to_release:
+                buyer_interfaces.append(ai_copy.pop())
+
+            ui_copy.extend(buyer_interfaces)
+
+            # Make changes and return if data hasn't changed since we got here.
+            if strands_at_start == self.__sellerGraph[u][v]['numberOfStrands'] \
+            and available_interfaces_at_start == self.__sellerGraph[u][v]['available_interfaces'] \
+            and unavailable_interfaces_at_start == self.__sellerGraph[u][v]['unavailable_interfaces']:
+                self.__sellerGraph[u][v]['numberOfStrands'] = proposed_number_of_strands
+                self.__sellerGraph[u][v]['available_interfaces'] = ai_copy
+                self.__sellerGraph[u][v]['unavailable_interfaces'] = ua_copy
+
+                resources = []
+                for interface in buyer_interfaces:
+                    link_a = (self.__sellerGraph[u][v]['prefixA'], interface[0])
+                    link_b = (self.__sellerGraph[u][v]['prefixB'], interface[1])
+                    resources.extend((link_a, link_b))
+                return resources
