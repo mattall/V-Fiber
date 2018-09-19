@@ -170,7 +170,7 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                                     #flowTuples = self.getFlowTuples(item)
 
                                     for ip, port in ip_port_pairs:
-                                        self.__logger.info("Pushing circuit to {} interface {}".format(ip, port))
+                                        self.__logger.debug("Pushing circuit to {} interface {}".format(ip, port))
 
                                     # Push circuits
                                     # locationA = (item.linkA.split(",")[1]).strip()
@@ -200,11 +200,11 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                     self.request.sendall(c_response)
                     self.__logger.debug("[TCPRequestHandler][handle]Bunch of compressed data sent back!")
 
-                elif (request.name == "SDX" and request.code == 001):
+                elif (request.name == "SDX" and request.code == "001"):
                     self.__logger.info("Request from SDX received.")
                 else:
                     self.__dbConnection.close()
-                    self.__sshConnection.close()
+                    #self.__sshConnection.close()
                     raise ValueError('Bad request name and code. Either should be from SDX or from Buyer.')
             val = tTotalProcessing.printTime("ProcessClientRequest", tTotalProcessing, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
             self.__logger.debug("[TCPRequestHandler][handle]Elapsed Time {}".format(val))
