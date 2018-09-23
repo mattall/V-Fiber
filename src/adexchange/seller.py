@@ -91,3 +91,16 @@ class Seller(SyncObj):
         link_b = (self.__sellerGraph[u][v]['prefixB'], buyer_interface[1])
         resource = [link_a, link_b]
         return resource
+
+    @replicated_sync
+    def aquire_strand(self, u, v, num_to_release):
+        # update edge info
+        self.__sellerGraph[u][v]['numberOfStrands'] += num_to_release
+        buyer_interface = self.__sellerGraph[u][v]['unavailable_interfaces'].pop()
+        self.__sellerGraph[u][v]['available_interfaces'].append(buyer_interface)
+
+        # send list of two ip/port pairs for link
+        link_a = (self.__sellerGraph[u][v]['prefixA'], buyer_interface[0])
+        link_b = (self.__sellerGraph[u][v]['prefixB'], buyer_interface[1])
+        resource = [link_a, link_b]
+        return resource

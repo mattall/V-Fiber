@@ -8,7 +8,7 @@ from settings import CONTEXT, SERVER_BINDING, DB_PARAMS, TEST_PARAMS
 from collections import defaultdict, namedtuple
 from common import get_logger, Timer
 from realdeployment.lab_testbed import addLink
-from realdeployment.torchbearer import light_path
+from realdeployment.torchbearer import light_path, extinguish_path
 from realdeployment.ExperimentOverhead.plotTimeline import *
 from subprocess import call
 from StringIO import StringIO
@@ -119,9 +119,9 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                     # Allocate IP address for circuits
                     # allocationList = layer3.allocateIPAddresses(self.__sellerObj.getSellerGraph(), allocationList, self.__dbConnection)
 
-                    self.__logger.debug("IP address and interface allocations decisions.")
+                    self.__logger.debug("[TCPRequestHandler][handle]IP address and interface allocations decisions.")
                     for u in allocationList:
-                        self.__logger.debug(u)
+                        self.__logger.debug("[TCPRequestHandler][handle] {}".format(u))
 
                     # Create e-2-e path for client
                     if self.__infra_tested == 'REAL':
@@ -196,11 +196,100 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                     self.request.sendall(c_response)
                     self.__logger.debug("[TCPRequestHandler][handle]Bunch of compressed data sent back!")
 
+                elif (request.name == "BUYER" and request.code == 101):
+                    self.__logger.info("Request to terminate buyer's allocation.")
+                    ClientRequest = namedtuple('ClientRequest','linkA linkB numberOfStrands \
+                                                                            capacityPerStrand bidPerStrand \
+                                                                            clientName winnerFlag toPay \
+                                                                            ipA ipB portA portB \
+                                                                            ISP prefixA prefixB')
+                    crDict = defaultdict(list)
+                    # prepare requests data and store it in a namedtuple
+                    for r in request.content:
+                        if r.startswith("#"): continue
+                        vals = r.strip().split(";")
+                        va1 = vals[0].strip()
+                        va2 = vals[1].strip()
+                        cr = ClientRequest(linkA=va1, linkB=va2, numberOfStrands=int(vals[2]), \
+                                        capacityPerStrand=int(vals[3]), bidPerStrand=int(vals[4]), \
+                                        clientName=vals[5].strip(), winnerFlag=0, toPay=0, \
+                                        ipA='', ipB='', portA='', portB='', \
+                                        ISP='', prefixA='', prefixB='')
+                        key = va1+"#"+va2
+                        crDict[key].append(cr)
+
+                    # get interfaces from seller graph
+                    self.__logger.debug("[TCPRequestHandler][handle]Dispatching request to the Fiber Exchange...")
+                    with Timer() as tAd:
+                        allocationList, ip_port_pairs = self.__adExObject.returnAllocationToInfrustructureGraph(crDict, self.__sellerObj)
+                    val = tAd.printTime("returnAllocation", tAd, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
+                    self.__logger.debug("[TCPRequestHandler][handle]Elapsed Time {}".format(val))
+                    overheadList.append(val)
+
+                    # take back the e-2-e path
+                    if self.__infra_tested == 'REAL':
+                        self.__logger.info("[TCPRequestHandler][handle]Launching real network experiments.")
+                        with Timer() as tCircuitConfigDestruction:
+                            for item in allocationList:
+                                # Create circuits
+                                with Timer() as tGeneration:
+                                    flowTuples = self.getFlowTuples(item)
+
+                                    # Push circuits
+                                    self.__logger.info("[TCPRequestHandler][handle]Disconnecting {} and {}".format(item.linkA, item.linkB))
+                                    if "," in item.linkA:
+                                        locationA = (item.linkA.split(",")[1]).strip()
+                                    else:
+                                        locationA = item.linkA[1].strip()
+                                    if "," in item.linkB:
+                                        locationB = (item.linkB.split(",")[1]).strip()
+                                    else:
+                                        locationB = item.linkB[1].strip()
+                                    capacity = item.capacityPerStrand
+
+                                    # switch_ips = ["192.168.57.200", "192.168.57.201"]
+                                val = tGeneration.printTime("Configuration Generation", tGeneration, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
+                                with Timer() as tDestruction:
+                                    extinguish_path(ip_port_pairs)
+                                val = tDestruction.printTime("CircuitDestruction", tDestruction, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
+                                self.__logger.debug("[TCPRequestHandler][handle]Elapsed Time {}".format(val))
+                                overheadList.append(val)
+                                self.__logger.info("Circuit pulled from networks by vFiber from client: {0}".format(item.clientName))
+                        val = tCircuitConfigDestruction.printTime("TotalGenerationAndDestruction", tCircuitConfigDestruction, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
+                        self.__logger.debug("[TCPRequestHandler][handle]Elapsed Time {}".format(val))
+                        overheadList.append(val)
+
+                    elif self.__infra_tested == 'MOCK':
+                        self.__logger.info("Launching mock network experiments.")
+                        with Timer() as tCircuitConfigDestruction:
+                            for item in allocationList:
+                                if item.winnerFlag == 1:
+                                    # Create circuits
+                                    #flowTuples = self.getFlowTuples(item)
+
+                                    for ip, port in ip_port_pairs:
+                                        self.__logger.info("[TCPRequestHandler][handle]Disconnecting {} and {}".format(ip, port))
+
+                                    # Push circuits
+                                    # locationA = (item.linkA.split(",")[1]).strip()
+                                    # locationB = (item.linkB.split(",")[1]).strip()
+                                    capacity = item.capacityPerStrand
+                                    # with Timer() as tCreation:
+                                    #     val = tCreation.printTime("CircuitCreation", tCreation, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
+                                    # overheadList.append(val)
+
+                                    self.__logger.info("Circuit pulled from networks by vFiber from client: {0}".format(item.clientName))
+                        val = tCircuitConfigDestruction.printTime("TotalGenerationAndDestruction", tCircuitConfigDestruction, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
+                        self.__logger.debug("[TCPRequestHandler][handle]Elapsed Time {}".format(val))
+                        overheadList.append(val)
+                    else:
+                        raise ValueError('Wrong configuration parameter in TEST_PARAMS')
+
+
                 elif (request.name == "SDX" and request.code == 001):
                     self.__logger.info("Request from SDX received.")
                 else:
                     self.__dbConnection.close()
-                    self.__sshConnection.close()
                     raise ValueError('Bad request name and code. Either should be from SDX or from Buyer.')
             val = tTotalProcessing.printTime("ProcessClientRequest", tTotalProcessing, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
             self.__logger.debug("[TCPRequestHandler][handle]Elapsed Time {}".format(val))
