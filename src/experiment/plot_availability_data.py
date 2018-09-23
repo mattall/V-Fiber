@@ -1,18 +1,35 @@
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 import pickle as pkl
+from sys import exit
 from numpy import median, average, std
 
+def print_vals(filename):
+    '''
+    Reads data gathered from availability.py and plots the data
+    '''
+
+    with open(filename,'rb') as fob:
+        activity_log = pkl.load(fob)
+
+    for x in range(len(activity_log)):
+        if 120 < x < 200:
+            print activity_log[x][0], activity_log[x][1]-activity_log[x-1][1]
 
 def create_plot(filename, bucketSize=5, starts=[], stops=[]):
     '''
     Reads data gathered from availability.py and plots the data
     '''
+
     with open(filename,'rb') as fob:
         activity_log = pkl.load(fob)
 
     time_t = []
     completed = []
+
+    for x in range(len(activity_log)):
+     if 360 < x < 400:
+         print activity_log[x][0], activity_log[x][1]-activity_log[x-1][1]
 
     # organize measurments into 5-second buckets
     for x in range(bucketSize, len(activity_log)):
@@ -44,12 +61,15 @@ def create_plot(filename, bucketSize=5, starts=[], stops=[]):
     for s in stops:
         plt.axvline(x=s, color = 'red', linewidth=lw, linestyle='--')
 
-    plt.gcf().subplots_adjust(bottom = 0.21, left = 0.20)
+    fig = plt.gcf()
+    fig.subplots_adjust(bottom = 0.21, left = 0.20)
+    fig.set_size_inches(21.8,12.2)
     plt.xlabel('Time (seconds)', fontsize = label_size, labelpad=30)
     plt.ylabel('Completed Requests \n per {} Seconds'.format(bucketSize), fontsize = label_size, labelpad=25)
-
     plt.plot(time_t, completed)
-    plt.show()
+    figName = filename.replace('.pkl', '.png')
+    plt.savefig(figName, dpi=166)
+
 
 def main():
     ## NO FAIL
@@ -111,3 +131,16 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+'''
+quickly look at a range of values
+for x in range(len(activity_log)):
+     if 360 < x < 400:
+         print activity_log[x][0], activity_log[x][1]-activity_log[x-1][1]
+'''
+
+'''
+from plot_availability_data import create_plot as cp
+fig_name="availability_experiment_length-2:delta-1:volume-100:failure_testing-2min2takedown:wait_time-60:poisson-True.pkl"
+cp(fig_name)
+'''

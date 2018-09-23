@@ -19,7 +19,7 @@ CONTEXT = {
 # Useful parameters for test purposes
 TEST_PARAMS = {
     'path': '../data/',
-    'buyer_file_name': 'labClient.txt',
+    'buyer_file_name': 'clientRequest.txt',
     #'buyer_file_name': 'clientRequests_10.txt',
     'seller_file_name': 'mega_seller.txt',
     'client_request_type': 'BUYER',                 # or SDX

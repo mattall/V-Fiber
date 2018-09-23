@@ -55,21 +55,23 @@ class TCPClient(threading.Thread):
             zippedfile = None
             testfile = None
             if (self.__compression):
-                zippedfile = gzip.open(''.join(resource)+".gz", "r+")
-                if self.totalReqs > 0:
-                    for i in range(self.totalReqs):
-                        bidList.append(zippedfile.readline())
-                else:
-                    bidList = zippedfile.readlines()
+                with gzip.open(''.join(resource)+".gz", "r+") as zippedfile:
+                    if self.totalReqs > 0:
+                        for _ in range(self.totalReqs):
+                            bidList.append(zippedfile.readline())
+                    else:
+                        bidList = zippedfile.readlines()
                 self.__logger.info("[TCPClient][run](Compressed) Content size {0}".format(sys.getsizeof(bidList)))
+    
             else:
-                testfile = open(''.join(resource), 'r')
-                if self.totalReqs > 0:
-                    for i in range(self.totalReqs):
-                        bidList.append(testfile.readline())
-                else:
-                    bidList = testfile.readlines()
+                with open(''.join(resource), 'r') as testfile:
+                    if self.totalReqs > 0:
+                        for _ in range(self.totalReqs):
+                            bidList.append(testfile.readline())
+                    else:
+                        bidList = testfile.readlines()
                 self.__logger.info("[TCPClient][run](Uncompressed) Content size {0}".format(sys.getsizeof(bidList)))
+                testfile.close()
 
             data = Request(self.__client_request_type, self.__client_request_code, bidList)
 
