@@ -2,3 +2,8 @@
 *.pyc
 clientRequests*
 server_details.py
+*.pkl
+*.png
+*.out
+*.log
+
