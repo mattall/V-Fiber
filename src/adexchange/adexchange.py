@@ -178,13 +178,15 @@ class AdExchange(SyncObj):
         else:
             raise ValueError("Unknown auction type. Either use 'vcg' or 'gsp' in settings.")
     
-    def returnAllocationToInfrustructureGraph(self, allocList, sellerGraph):
+    def returnAllocationToInfrustructureGraph(self, allocList, seller):
         '''
         Function to reuturn an expired request to the IG
         '''
         self.__logger.debug("[AdExchange][return]")
         self.__logger.debug("[AdExchange][returnAllocationToInfrustructureGraph]Request List: {}".format("|".join(allocList)))
         self.__logger.debug("[AdExchange][returnAllocationToInfrustructureGraph]Seller List (locations): {}".format("|".join(sellerGraph.getSellerGraph())))
+
+        sellerGraph = seller.getSellerGraph()
 
         allocationDict = {}
         for key, v in allocList.items():
