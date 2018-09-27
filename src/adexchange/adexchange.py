@@ -67,11 +67,15 @@ class AdExchange(SyncObj):
             for item in v:
                 cName = item.clientName
                 if (cName in allocationDict.keys()):
+                    self.__logger.debug("cName present in allocation dictionary")
                     # namedtuple is immutable, so a hacky way to create the mutable effect
                     t1 = item._replace(winnerFlag = 1)
                     t2 = t1._replace(toPay = allocationDict[cName])
                     newReqList.append(t2)
                 else:
+                    self.__logger.debug("client name NOT present in allocation dictionary")
+                    self.__logger.debug("client name: {}".format(cName))
+                    self.__logger.debig("allocation dictionary keys: {}".format(allocationDict.keys))
                     newReqList.append(item)
         return newReqList
 
@@ -148,12 +152,14 @@ class AdExchange(SyncObj):
                     self.__logger.debug("Before > {}".format(self.availableAttributes(shortestPath, sellerGraph)))
                     ip_port_pairs = self.updateSellerGraph_and_getResources(seller, shortestPath, v)
                     self.__logger.debug("After > {}".format(self.availableAttributes(shortestPath, sellerGraph)))
+
                 else:
                     self.__logger.info("Link does not exists between {} and {}. No resource available for request".format(k1, k2))
+                    
             except nx.NodeNotFound:
                 self.__logger.info("Path does not exists between {} and {}. No resource available for request".format(k1, k2))
                 allocationDict = {}
-                break;
+                break
         return (self.updateRequestList(reqList, allocationDict), ip_port_pairs)
 
     def processClientRequests(self, reqList, sellerObj):
@@ -182,11 +188,12 @@ class AdExchange(SyncObj):
         '''
         Function to reuturn an expired request to the IG
         '''
-        self.__logger.debug("[AdExchange][return]")
-        self.__logger.debug("[AdExchange][returnAllocationToInfrustructureGraph]Request List: {}".format("|".join(allocList)))
-        self.__logger.debug("[AdExchange][returnAllocationToInfrustructureGraph]Seller List (locations): {}".format("|".join(sellerGraph.getSellerGraph())))
-
         sellerGraph = seller.getSellerGraph()
+        self.__logger.debug("[AdExchange][return]")
+        self.__logger.debug("[AdExchange][returnAllocationToInfrustructureGraph]Request List: \
+                            {}".format("|".join(allocList)))
+        self.__logger.debug("[AdExchange][returnAllocationToInfrustructureGraph]Seller List (locations): \
+                            {}".format("|".join(sellerGraph)))
 
         allocationDict = {}
         for key, v in allocList.items():
