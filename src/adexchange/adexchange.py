@@ -75,7 +75,7 @@ class AdExchange(SyncObj):
                 else:
                     self.__logger.debug("client name NOT present in allocation dictionary")
                     self.__logger.debug("client name: {}".format(cName))
-                    self.__logger.debug("allocation dictionary keys: {}".format(allocationDict.keys))
+                    self.__logger.debug("allocation dictionary keys: {}".format(allocationDict.keys()))
                     newReqList.append(item)
         return newReqList
 
