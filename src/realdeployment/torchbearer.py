@@ -10,7 +10,7 @@ Toarchbearer lights an end-to-end path of dark fiber
 '''
 def light_path(ip_port_pairs = [("192.168.57.200", "GigabitEthernet 0/28"), ("192.168.57.201","GigabitEthernet 0/28")]):
     switch_pw = "cisco"
-    verbose = True
+    verbose = False
 
     for switch_addr, switch_port in ip_port_pairs:
         try:
@@ -55,7 +55,7 @@ def extinguish_path(ip_port_pairs = [("192.168.57.200", "GigabitEthernet 0/25"),
     ''' Doesn't write config to memory by default '''
 
     switch_pw = "cisco"
-    verbose = True
+    verbose = False
 
     for switch_addr, switch_port in ip_port_pairs:
         try:
