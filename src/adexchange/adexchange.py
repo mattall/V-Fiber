@@ -148,6 +148,11 @@ class AdExchange(SyncObj):
                     bids.append((item.clientName, item.bidPerStrand))
 
                 if nx.has_path(sellerGraph, k1, k2) and self.resourceAvailable(sellerGraph, shortestPath, v):
+                    (alloc, payments) = GSP.compute(slot_click, reserve, bids)
+                    allocation.extend(zip(alloc, [i * k for i in payments]))
+                    for (kTest, vTest) in allocation:
+                        allocationDict[kTest] = vTest
+                    
                     # Updates sellerGraph with the allocation
                     self.__logger.debug("Before > {}".format(self.availableAttributes(shortestPath, sellerGraph)))
                     ip_port_pairs = self.updateSellerGraph_and_getResources(seller, shortestPath, v)
