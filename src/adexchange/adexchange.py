@@ -212,7 +212,7 @@ class AdExchange(SyncObj):
             if nx.has_path(sellerGraph, k1, k2):
                 # Updates sellerGraph with the allocation
                 self.__logger.debug("[AdExchange][returnAllocationToInfrustructureGraph]Before > {}".format(self.availableAttributes(shortestPath, sellerGraph)))
-                ip_port_pairs = self.updateSellerGraph_and_giveResources(sellerGraph, shortestPath, v)
+                ip_port_pairs = self.updateSellerGraph_and_giveResources(seller, shortestPath, v)
                 self.__logger.debug("[AdExchange][returnAllocationToInfrustructureGraph]After > {}".format(self.availableAttributes(shortestPath, sellerGraph)))
             else:
                 self.__logger.info("[AdExchange][returnAllocationToInfrustructureGraph]Link does not exists between {} and {}".format(k1, k2))
