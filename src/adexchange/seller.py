@@ -58,15 +58,18 @@ class Seller(SyncObj):
                             interface_b = strand_data[2].strip()
                             interfaces.append((interface_a, interface_b))
 
-                    self.__logger.debug("[TCPClient][run]Adding Link: {0}|{1} with {2} lambdas".format(point_A, point_B, len(interfaces)))
-                    self.__sellerGraph.add_edge(point_A, point_B, \
-                                                numberOfStrands = strands, \
-                                                capacityPerStrand = strand_cap,\
-                                                costPerStrand = strand_cost, \
-                                                ISP = provider, prefixA = ip_A,\
+                    self.__logger.debug("[Seller][run]Adding Link: {0}|{1} with {2} lambdas".format(point_A, point_B, len(interfaces)))
+                    self.__sellerGraph.add_edge(point_A, point_B,
+                                                numberOfStrands = strands, 
+                                                capacityPerStrand = strand_cap,
+                                                costPerStrand = strand_cost, 
+                                                ISP = provider, 
+                                                prefixA = ip_A,
                                                 prefixB = ip_B,
-                                                available_interfaces = interfaces, \
-                                                unavailable_interfaces = [])
+                                                available_interfaces = interfaces, 
+                                                allocated_interfaces = [],
+                                                disconnected_interfaces = [])
+
             else: # no line to read
                 break
 
@@ -84,7 +87,7 @@ class Seller(SyncObj):
         # update edge info
         self.__sellerGraph[u][v]['numberOfStrands'] -= num_to_release
         buyer_interface = self.__sellerGraph[u][v]['available_interfaces'].pop()
-        self.__sellerGraph[u][v]['unavailable_interfaces'].append(buyer_interface)
+        self.__sellerGraph[u][v]['allocated_interfaces'].append(buyer_interface)
 
         # send list of two ip/port pairs for link
         link_a = (self.__sellerGraph[u][v]['prefixA'], buyer_interface[0])
@@ -93,10 +96,27 @@ class Seller(SyncObj):
         return resource
 
     @replicated_sync
+    def update_disconected_strand(self, u, v, interfaces):
+        self.__logger.info("[Seller][update_disconnected_strand] Interface {} down between {} and {}".format(interfaces, u, v))
+        # Remove strand from allocated and put it in disconnected
+        if interfaces in self.__sellerGraph[u][v]['allocated_interfaces']:
+            self.__logger.debug("[Seller][update_disconnected_strand] Interface found in allocated_interfaces")
+            self.__sellerGraph[u][v]['allocated_interfaces'].remove(interfaces)
+            self.__sellerGraph[u][v]['disconnected_interfaces'].append(interfaces)
+        
+        elif interfaces in self.__sellerGraph[u][v]['available_interfaces']:
+            self.__logger.debug("[Seller][update_disconnected_strand] Interface found in available_interfaces")
+            self.__sellerGraph[u][v]['available_interfaces'].remove(interfaces)
+            self.__sellerGraph[u][v]['disconnected_interfaces'].append(interfaces)
+            
+        else:
+            self.__logger.debug("[Seller][update_disconnected_strand] Interface not found.")
+
+    @replicated_sync
     def aquire_strand(self, u, v, num_to_release):
         # update edge info
         self.__sellerGraph[u][v]['numberOfStrands'] += num_to_release
-        buyer_interface = self.__sellerGraph[u][v]['unavailable_interfaces'].pop()
+        buyer_interface = self.__sellerGraph[u][v]['allocated_interfaces'].pop()
         self.__sellerGraph[u][v]['available_interfaces'].append(buyer_interface)
 
         # send list of two ip/port pairs for link
