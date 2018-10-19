@@ -6,3 +6,4 @@ server_details.py
 *.pkl
 *.log
 *.out
+*src/experiment/bandwidth_data/*
