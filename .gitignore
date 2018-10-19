@@ -7,3 +7,5 @@ server_details.py
 *.log
 *.out
 *src/experiment/bandwidth_data/*
+*"conflicted copy"*
+
