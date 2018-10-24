@@ -285,9 +285,17 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                     else:
                         raise ValueError('Wrong configuration parameter in TEST_PARAMS')
 
+                elif (request.name == "MONITOR" and request.code == 102):
+                    self.__logger.info("Request from Monitor received.")
+                    (ip, port) = request.content 
+                    self.__logger.debug("Request Content: {}".format(ip_port))
+                    (x, y) = self.__sellerObj.find_edge_from_ip_port_pair((ip, port))
+                    self.__sellerObj.update_disconnected_strand(x, y, port)
+                    self.__sellerObj.aquire_strand(x, y, 0)
 
                 elif (request.name == "SDX" and request.code == 001):
                     self.__logger.info("Request from SDX received.")
+
                 else:
                     self.__dbConnection.close()
                     raise ValueError('Bad request name and code. Either should be from SDX or from Buyer.')

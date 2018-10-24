@@ -66,9 +66,11 @@ class Seller(SyncObj):
                                                 ISP = provider, 
                                                 prefixA = ip_A,
                                                 prefixB = ip_B,
+                                                interfaces = interfaces,
                                                 available_interfaces = interfaces, 
                                                 allocated_interfaces = [],
                                                 disconnected_interfaces = [])
+                                                
 
             else: # no line to read
                 break
@@ -94,6 +96,27 @@ class Seller(SyncObj):
         link_b = (self.__sellerGraph[u][v]['prefixB'], buyer_interface[1])
         resource = [link_a, link_b]
         return resource
+
+    @replicated_sync
+    def find_edge_from_ip_port_pair(self, ip_port_pair):
+        '''
+        returns the node tuple (a , b) associated with a particular ip_port 
+        port pair
+        '''
+        self.__logger.debug("[Seller][find_edge_from_ip_port_pair] Looking for edge containg {}.".format(ip_port_pair))
+        ip, port = ip_port_pair
+        G = self.__sellerGraph.edges
+        for source, dest in self.__sellerGraph.edges:
+            edge_attributes = self.__sellerGraph[source][dest]
+            edge_ips = edge_attributes['ip_A'], edge_attributes['ip_B']
+            if ip in edge_ips:
+                interfaces = edge_attributes['interfaces']
+                if port in interfaces:
+                    return source, dest
+                    
+        self.__logger.info("[Seller][find_edge_from_ip_port_pair] Edge not found for {}.".format(ip_port_pair))
+
+                
 
     @replicated_sync
     def update_disconected_strand(self, u, v, interfaces):

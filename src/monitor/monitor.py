@@ -4,21 +4,31 @@ import pexpect
 import sys
 import re
 from time import sleep
-from pysyncobj import SyncObj, replicated_sync, replicated, SyncObjConf
-from Seller import getSellerGraph, update_disconected_strand
-from realdeployment import light_path, extinguish_path
+#from pysyncobj import SyncObj, replicated_sync, replicated, SyncObjConf
+#from Seller import getSellerGraph, update_disconected_strand
+from base.model.datamodel import Request, Data, Utility
+#from realdeployment import light_path, extinguish_path
+from settings import CONTEXT, SERVER_BINDING, TEST_PARAMS
+
+
 
 #from adexchange.seller import Seller
 
-class Monitor(SyncObj):
+class Monitor():
     '''
     check the interface for an occupied link. 
     If it is down, then activate an alternative link.
     '''
-    def __init__(self, selfAddress, partnerAddresses):
-        cfg = SyncObjConf(logCompactionMinEntries = 2147483647, logCompactionMinTime = 2147483647)
-            super(Seller, self).__init__(selfAddress, partnerAddresses, cfg)
-        interval = 5 # seconds
+    def __init__(self, switch_addr):
+        # cfg = SyncObjConf(logCompactionMinEntries = 2147483647, logCompactionMinTime = 2147483647)
+        #     super(Seller, self).__init__(selfAddress, partnerAddresses, cfg)
+        self.interval = 5 # seconds
+        self.__switch_addr = switch_addr
+        self.__request_code = 102
+        self.__request_type = 'MONITOR'
+        self.__serverhosts = SERVER_BINDING['address'][-1]
+        self.__serverport = int(SERVER_BINDING['port'])
+        print("Hello")
 
     def login_to_switch(self, switch_addr, verbose=False):
         switch_pw = "cisco"
@@ -55,8 +65,9 @@ class Monitor(SyncObj):
             return (conn, True)
         else:
             return (conn, False)
-
-    def monitor(self):
+    
+    '''
+    def start_monitor(self):
         # Constantly runs, looking for broen links, and updating the seller graph when appropriate
         while True: 
             if self.__isLeader():
@@ -75,21 +86,53 @@ class Monitor(SyncObj):
 
                     for ui in uis:
                         (local_interface, remote_interface) = ui
-                        if link_disconnected(connection, local_interface)
+                        if link_disconnected(connection, local_interface):
                             G.update_disconected_strand(u, v, ui)                            
                             extinguish_path([(ipA, local_interface), (ipB, remote_interface)])
-                            if G.[u][v]['available_interfaces']:
+                            if G[u][v]['available_interfaces']:
                                 new_link = G.release_strand(u, v, 0)
                                 light_path(new_link)
 
                     connection.close()
-
-
-    # conn = login_to_switch('192.168.57.200', True)
-    # conn.sendline('sho int gig 0/25 | i 0/25')
-    # r = conn.expect(['\(connected\)', '\(notconnect\)', '\(disabled\)'])
-    '''
-    possible cases for show config
-    ['line protocol is up (connected)',  'line protocol is down (notconnect)', 'line protocol is down (disabled)']
     '''
 
+    def start_monitor(self):
+        '''
+        Thread handler
+        '''
+        print('starting monitor')
+        conn = None
+        try: 
+            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            sock.connect((self.__serverhosts[0], self.__serverport))
+            # Request creation
+            while 1:
+                conn = self.login_to_switch(self.__switch_addr, False)
+                if conn == -1:
+                    print("Error connecting")
+                    break
+                ports = ['gig 0/25',
+                         'gig 0/26',
+                         'gig 0/27',
+                         'gig 0/28',]
+                for p in ports:
+                    conn, disconnected = self.link_disconnected(conn, p)
+                    print("link {} disconnected: {}".format(p, disconnected))
+                    if disconnected:
+                        print("link {} disconnected: {}".format(p, disconnected))
+                        data = Request( self.__request_type,
+                                        self.__request_code,
+                                        (self.__switch_addr, p))
+                        sock.sendall(data.to_json())
+                        print(data.to_json())
+            
+                sleep(self.interval)
+
+        except Exception as e:
+            print(e)
+
+        finally:
+            if conn:
+                conn.close()
+
+        print("ending monitor")

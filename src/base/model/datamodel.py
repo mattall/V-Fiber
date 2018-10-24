@@ -10,9 +10,10 @@ class Request(object):
         '''
          Initialize Data instance
         '''
-        # name can take 'BUYER' and 'SDX'
+        # name can take 'BUYER' and 'Monitor'
         self.name = name
-        # 100 is bidding for BUYER, 001 is the link status update code for SDX
+        # code 100 is bidding for BUYER, 001 is the link status update code for SDX
+        # code 101 is from Monitor
         self.code = code
         self.content = content
 
