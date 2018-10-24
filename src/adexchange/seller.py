@@ -108,7 +108,7 @@ class Seller(SyncObj):
         G = self.__sellerGraph.edges
         for source, dest in self.__sellerGraph.edges:
             edge_attributes = self.__sellerGraph[source][dest]
-            edge_ips = edge_attributes['ip_A'], edge_attributes['ip_B']
+            edge_ips = edge_attributes['prefixA'], edge_attributes['prefixB']
             if ip in edge_ips:
                 interfaces = edge_attributes['interfaces']
                 if port in interfaces:
