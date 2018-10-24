@@ -289,9 +289,13 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                     self.__logger.info("Request from Monitor received.")
                     (ip, port) = request.content 
                     self.__logger.debug("Request Content: {}".format(ip, port))
-                    (x, y) = self.__sellerObj.find_edge_from_ip_port_pair((ip, port))
-                    self.__sellerObj.update_disconnected_strand(x, y, port)
-                    self.__sellerObj.aquire_strand(x, y, 0)
+                    try:
+                        (x, y) = self.__sellerObj.find_edge_from_ip_port_pair((ip, port))                        
+                        self.__sellerObj.update_disconnected_strand(x, y, port)
+                        self.__sellerObj.aquire_strand(x, y, 0)
+                    except TypeError:
+                        pass
+
 
                 elif (request.name == "SDX" and request.code == 001):
                     self.__logger.info("Request from SDX received.")
