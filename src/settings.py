@@ -1,6 +1,6 @@
 # Server bindings
 SERVER_BINDING = {
-    'address': ['192.168.57.102','192.168.57.103','192.168.57.104'],
+    'address': ['192.168.57.102','192.168.57.103','192.168.57.104','localhost'],
     'port': '10000',
     'service_alias': 'VirtualFiber'
 }
@@ -46,6 +46,7 @@ ADEX = {
     # bids below this reserved price are ignored -- just to ensure that everyone makes money.
     'reserve': 500,
     # server port combinations for distributed adExObject
+    'bindings0': ['localhost:7000'],
     'bindings1': ['192.168.60.2:7000', '192.168.60.4:7000', '192.168.60.3:7000'],
     'bindings2': ['192.168.60.3:7000', '192.168.60.2:7000', '192.168.60.4:7000'],
     'bindings3': ['192.168.60.4:7000', '192.168.60.3:7000', '192.168.60.2:7000'],
@@ -53,6 +54,7 @@ ADEX = {
 
 SELLER = {
     # server port combination for distributed seller object
+    'bindings0': ['localhost:7100'],
     'bindings1': ['192.168.60.2:7100', '192.168.60.4:7100', '192.168.60.3:7100'],
     'bindings2': ['192.168.60.3:7100', '192.168.60.2:7100', '192.168.60.4:7100'],
     'bindings3': ['192.168.60.4:7100', '192.168.60.3:7100', '192.168.60.2:7100'],
