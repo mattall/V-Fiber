@@ -286,13 +286,17 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                         raise ValueError('Wrong configuration parameter in TEST_PARAMS')
 
                 elif (request.name == "MONITOR" and request.code == 102):
-                    self.__logger.info("Request from Monitor received.")
+                    self.__logger.info("[TCPRequestHandler][handle]Request from Monitor received.")
                     (ip, port) = request.content 
-                    self.__logger.debug("Request Content: {}".format(ip, port))
+                    self.__logger.debug("[TCPRequestHandler][handle]Broken Link: {}".format(ip, port))
                     try:
-                        (x, y) = self.__sellerObj.find_edge_from_ip_port_pair((ip, port))                        
-                        self.__sellerObj.update_disconnected_strand(x, y, port)
-                        self.__sellerObj.aquire_strand(x, y, 0)
+                        (x, y, port_pair) = self.__sellerObj.find_edge_from_ip_port_pair((ip, port))                        
+                        harzardous_path = self.__sellerObj.update_disconnected_strand(x, y, port_pair)
+                        new_path = self.__sellerObj.aquire_strand(x, y, 0)
+                        self.__logger.info("[TCPRequestHandler][handle]Cleaning up bad path.")
+                        extinguish_path(harzardous_path)
+                        self.__logger.info("[TCPRequestHandler][handle]Allocating new path.")
+                        light_path(new_path)
                     except TypeError:
                         pass
 
