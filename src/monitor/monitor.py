@@ -1,5 +1,5 @@
 # monitor a link -- 
-
+import socket
 import pexpect
 import sys
 import re
@@ -22,11 +22,12 @@ class Monitor():
     def __init__(self, switch_addr):
         # cfg = SyncObjConf(logCompactionMinEntries = 2147483647, logCompactionMinTime = 2147483647)
         #     super(Seller, self).__init__(selfAddress, partnerAddresses, cfg)
-        self.interval = 5 # seconds
+        self.interval = 1 # seconds
+        self.tolerance = 5 # number of times to recognize a disconnect before reporting
         self.__switch_addr = switch_addr
         self.__request_code = 102
         self.__request_type = 'MONITOR'
-        self.__serverhosts = SERVER_BINDING['address'][-1]
+        self.__serverhosts = SERVER_BINDING['address'][0]
         self.__serverport = int(SERVER_BINDING['port'])
         print("Hello")
 
@@ -66,6 +67,65 @@ class Monitor():
         else:
             return (conn, False)
     
+
+
+    def start_monitor(self):
+        '''
+        Thread handler
+        '''
+        print('starting monitor')
+        conn = None
+        ports = ['Gi 0/25',
+                         'Gi 0/26',
+                         'Gi 0/27',
+                         'Gi 0/28',]
+        stop_count = [0 for x in range(len(ports))]
+        try: 
+            # Request creation
+            conn = self.login_to_switch(self.__switch_addr, False)
+            while 1:
+                if conn == -1:
+                    print("Error connecting")
+                    break
+                
+                for i in range(len(ports)):
+                    p = ports[i]
+                    conn, disconnected = self.link_disconnected(conn, p)
+                    print("link {} disconnected: {}".format(p, disconnected))
+                    if disconnected:
+                        stop_count[i] += 1
+                        print("stop count: ", stop_count)
+                        if stop_count[i] == self.tolerance:
+                            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                            try:
+                                sock.connect((self.__serverhosts, self.__serverport))
+                            except Exception as e:
+                                print(e)
+                                print("host :", self.__serverhosts)
+                                print("port :", self.__serverport)
+
+                            print("link {} disconnected: {}".format(p, disconnected))
+                            data = Request( self.__request_type,
+                                            self.__request_code,
+                                            (self.__switch_addr, p))
+                            sock.sendall(data.to_json())
+                            print(data.to_json())
+                            del ports[i]
+                            del stop_count[i]
+
+                    else:
+                        stop_count[i] = 0
+                sleep(self.interval)
+
+        except Exception as e:
+            print(e)
+
+        finally:
+            if conn:
+                conn.close()
+
+        print("ending monitor")
+
     '''
     def start_monitor(self):
         # Constantly runs, looking for broen links, and updating the seller graph when appropriate
@@ -95,44 +155,3 @@ class Monitor():
 
                     connection.close()
     '''
-
-    def start_monitor(self):
-        '''
-        Thread handler
-        '''
-        print('starting monitor')
-        conn = None
-        try: 
-            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            sock.connect((self.__serverhosts[0], self.__serverport))
-            # Request creation
-            while 1:
-                conn = self.login_to_switch(self.__switch_addr, False)
-                if conn == -1:
-                    print("Error connecting")
-                    break
-                ports = ['gig 0/25',
-                         'gig 0/26',
-                         'gig 0/27',
-                         'gig 0/28',]
-                for p in ports:
-                    conn, disconnected = self.link_disconnected(conn, p)
-                    print("link {} disconnected: {}".format(p, disconnected))
-                    if disconnected:
-                        print("link {} disconnected: {}".format(p, disconnected))
-                        data = Request( self.__request_type,
-                                        self.__request_code,
-                                        (self.__switch_addr, p))
-                        sock.sendall(data.to_json())
-                        print(data.to_json())
-            
-                sleep(self.interval)
-
-        except Exception as e:
-            print(e)
-
-        finally:
-            if conn:
-                conn.close()
-
-        print("ending monitor")
