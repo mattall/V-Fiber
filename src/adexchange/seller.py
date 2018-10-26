@@ -58,15 +58,20 @@ class Seller(SyncObj):
                             interface_b = strand_data[2].strip()
                             interfaces.append((interface_a, interface_b))
 
-                    self.__logger.debug("[TCPClient][run]Adding Link: {0}|{1} with {2} lambdas".format(point_A, point_B, len(interfaces)))
-                    self.__sellerGraph.add_edge(point_A, point_B, \
-                                                numberOfStrands = strands, \
-                                                capacityPerStrand = strand_cap,\
-                                                costPerStrand = strand_cost, \
-                                                ISP = provider, prefixA = ip_A,\
+                    self.__logger.debug("[Seller][run]Adding Link: {0}|{1} with {2} lambdas".format(point_A, point_B, len(interfaces)))
+                    self.__sellerGraph.add_edge(point_A, point_B,
+                                                numberOfStrands = strands, 
+                                                capacityPerStrand = strand_cap,
+                                                costPerStrand = strand_cost, 
+                                                ISP = provider, 
+                                                prefixA = ip_A,
                                                 prefixB = ip_B,
-                                                available_interfaces = interfaces, \
-                                                unavailable_interfaces = [])
+                                                interfaces = interfaces,
+                                                available_interfaces = interfaces[:], 
+                                                allocated_interfaces = [],
+                                                disconnected_interfaces = [])
+                                                
+
             else: # no line to read
                 break
 
@@ -84,7 +89,77 @@ class Seller(SyncObj):
         # update edge info
         self.__sellerGraph[u][v]['numberOfStrands'] -= num_to_release
         buyer_interface = self.__sellerGraph[u][v]['available_interfaces'].pop()
-        self.__sellerGraph[u][v]['unavailable_interfaces'].append(buyer_interface)
+        self.__sellerGraph[u][v]['allocated_interfaces'].append(buyer_interface)
+
+        # send list of two ip/port pairs for link
+        link_a = (self.__sellerGraph[u][v]['prefixA'], buyer_interface[0])
+        link_b = (self.__sellerGraph[u][v]['prefixB'], buyer_interface[1])
+        resource = [link_a, link_b]
+        return resource
+
+    @replicated_sync
+    def find_edge_from_ip_port_pair(self, ip_port_pair):
+        '''
+        returns the node tuple (a , b) associated with a particular ip_port 
+        port pair
+        '''
+        self.__logger.debug("[Seller][find_edge_from_ip_port_pair] Looking for edge containg {}.".format(ip_port_pair))
+        ip, port = ip_port_pair
+        G = self.__sellerGraph.edges
+        for source, dest in self.__sellerGraph.edges:
+            edge_attributes = self.__sellerGraph[source][dest]
+            edge_ips = edge_attributes['prefixA'], edge_attributes['prefixB']
+            if ip in edge_ips:
+                # get the index of the address in the tuple
+                i = edge_ips.index(ip)
+                self.__logger.debug("[Seller][find_edge_from_ip_port_pair] Found IP Address on edge.".format(ip_port_pair))
+                interfaces = edge_attributes['interfaces']
+                self.__logger.debug("[Seller][find_edge_from_ip_port_pair] Edge contains the following interfaces: {}.".format(interfaces))
+                # find the interface pair who's port shows up in the same index as the ip address
+                for inter in interfaces:
+                    if port == inter[i]:
+                        return source, dest, inter
+                    
+        self.__logger.info("[Seller][find_edge_from_ip_port_pair] Edge not found for {}.".format(ip_port_pair))
+
+                
+
+    @replicated_sync
+    def update_disconnected_strand(self, u, v, interfaces):
+        '''
+        Called when monitor notices a broken link
+        Returns the resource spec for vFiber to extinguish the path
+        '''
+        self.__logger.info("[Seller][update_disconnected_strand] Interface {} down between {} and {}".format(interfaces, u, v))
+        # Remove strand from allocated and put it in disconnected
+        if interfaces in self.__sellerGraph[u][v]['allocated_interfaces']:
+            self.__logger.debug("[Seller][update_disconnected_strand] Interface found in allocated_interfaces")
+            self.__sellerGraph[u][v]['allocated_interfaces'].remove(interfaces)
+            self.__sellerGraph[u][v]['disconnected_interfaces'].append(interfaces)
+            link_a = (self.__sellerGraph[u][v]['prefixA'], interfaces[0])
+            link_b = (self.__sellerGraph[u][v]['prefixB'], interfaces[1])
+            resource = [link_a, link_b]
+            return resource
+
+        
+        elif interfaces in self.__sellerGraph[u][v]['available_interfaces']:
+            self.__logger.debug("[Seller][update_disconnected_strand] Interface found in available_interfaces")
+            self.__sellerGraph[u][v]['available_interfaces'].remove(interfaces)
+            self.__sellerGraph[u][v]['disconnected_interfaces'].append(interfaces)
+            link_a = (self.__sellerGraph[u][v]['prefixA'], interfaces[0])
+            link_b = (self.__sellerGraph[u][v]['prefixB'], interfaces[1])
+            resource = [link_a, link_b]
+            return resource
+            
+        else:
+            self.__logger.debug("[Seller][update_disconnected_strand] Interface not found.")
+
+    @replicated_sync
+    def aquire_strand(self, u, v, num_to_release):
+        # update edge info
+        self.__sellerGraph[u][v]['numberOfStrands'] += num_to_release
+        buyer_interface = self.__sellerGraph[u][v]['available_interfaces'].pop()
+        self.__sellerGraph[u][v]['allocated_interfaces'].append(buyer_interface)
 
         # send list of two ip/port pairs for link
         link_a = (self.__sellerGraph[u][v]['prefixA'], buyer_interface[0])

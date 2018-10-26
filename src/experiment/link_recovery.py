@@ -220,29 +220,31 @@ def main(args):
                     (ssh, debug, "192.168.57.200", "192.168.57.201", "GigabitEthernet 0/26", "GigabitEthernet 0/26", "cisco"),
                     (ssh, debug, "192.168.57.200", "192.168.57.201", "GigabitEthernet 0/27", "GigabitEthernet 0/27", "cisco"),]
 
-    for t in test_tuples:
-        extinguish_path(t)
-        sleep(5)
+    # for t in test_tuples:
+    #     extinguish_path(t)
+    #     sleep(5)
 
-    restart_servers()
+    #restart_servers()
 
     perf_clients = []
     print("# Start iperf3 clients")
     for s in PERF_CLIENTS:
         server_addr = PERF_SERVERS[s]['address']
         client_addr = PERF_CLIENTS[s]['address']
-        print("Starting Perf client on {}, connecing to {}".format(client_addr, server_addr))
-        p = Process(target = start_perf_client, args = (server_addr, client_addr, TEST_DURRATION))
-        p.start()
-        perf_clients.append(p)
+        if server_addr == '192.168.57.6' or server_addr == '192.168.57.4':
+            print("Starting Perf client on {}, connecing to {}".format(client_addr, server_addr))
+            p = Process(target = start_perf_client, args = (server_addr, client_addr, TEST_DURRATION))
+            p.start()
+            perf_clients.append(p)
+    
 
     thread_reqs = [] # list of threads
-
+    sleep(10)
     ### THIS IS IT BOYS ###
     print("# Starting lambda experiment")
-    sleep(DELTA)
+    #sleep(DELTA)
     target = None
-    for l in range(3):
+    for l in range(1):
         print("sending request to activate lambda now")
         t = client_thread()
         thread_reqs.append(t)
@@ -259,7 +261,7 @@ def main(args):
     # print("## Lambda Requests submitted")
     print("No requests to send. Sleeping for {} seconds".format(DELTA))
     sleep(DELTA)
-
+    sleep(DELTA)
     print("*~*~*~*~*~*~ vFiber Client Finishing*~*~*~*~*~*~")
 
     for t in thread_reqs:
@@ -272,7 +274,7 @@ def main(args):
 
     print("*~*~*~*~*~*~ Experiment Compete *~*~*~*~*~*~")
 
-    kill_servers()
+    #kill_servers()
     
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

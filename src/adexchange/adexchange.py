@@ -30,6 +30,13 @@ class AdExchange(SyncObj):
                 ip_port_pairs.extend(S.release_strand(u, v, item.numberOfStrands))
         return ip_port_pairs
 
+    def updateSellerGraph_and_giveResources(self, S, path, reqValues):
+        ip_port_pairs = []
+        for (u,v) in zip(path[0:], path[1:]):
+            for item in reqValues:
+                ip_port_pairs.extend(S.aquire_strand(u, v, item.numberOfStrands))
+        return ip_port_pairs
+
     def resourceAvailable(self, G, path, reqValues):
         pathHasCapacity = True
         pathHasStrands = True
@@ -42,7 +49,7 @@ class AdExchange(SyncObj):
         if pathHasStrands and pathHasCapacity:
             return True
         else:
-            return False
+            return False        
 
     def getCostOfPath(self, path, G):
         cost = 0
@@ -60,11 +67,15 @@ class AdExchange(SyncObj):
             for item in v:
                 cName = item.clientName
                 if (cName in allocationDict.keys()):
+                    self.__logger.debug("cName present in allocation dictionary")
                     # namedtuple is immutable, so a hacky way to create the mutable effect
                     t1 = item._replace(winnerFlag = 1)
                     t2 = t1._replace(toPay = allocationDict[cName])
                     newReqList.append(t2)
                 else:
+                    self.__logger.debug("client name NOT present in allocation dictionary")
+                    self.__logger.debug("client name: {}".format(cName))
+                    self.__logger.debug("allocation dictionary keys: {}".format(allocationDict.keys()))
                     newReqList.append(item)
         return newReqList
 
@@ -141,17 +152,19 @@ class AdExchange(SyncObj):
                     allocation.extend(zip(alloc, [i * k for i in payments]))
                     for (kTest, vTest) in allocation:
                         allocationDict[kTest] = vTest
-
+                    
                     # Updates sellerGraph with the allocation
                     self.__logger.debug("Before > {}".format(self.availableAttributes(shortestPath, sellerGraph)))
                     ip_port_pairs = self.updateSellerGraph_and_getResources(seller, shortestPath, v)
                     self.__logger.debug("After > {}".format(self.availableAttributes(shortestPath, sellerGraph)))
+
                 else:
                     self.__logger.info("Link does not exists between {} and {}. No resource available for request".format(k1, k2))
+                    
             except nx.NodeNotFound:
                 self.__logger.info("Path does not exists between {} and {}. No resource available for request".format(k1, k2))
                 allocationDict = {}
-                break;
+                break
         return (self.updateRequestList(reqList, allocationDict), ip_port_pairs)
 
     def processClientRequests(self, reqList, sellerObj):
@@ -162,7 +175,6 @@ class AdExchange(SyncObj):
         self.__logger.debug("[AdExchange][processClientRequest]Seller List (locations): {}".format("|".join(sellerObj.getSellerGraph())))
         self.__logger.debug("[AdExchange][processClientRequest]Auction Type: {}".format(self.__auction))
         self.__logger.debug("[AdExchange][processClientRequest]Reserve Price: {}".format(self.__reserve))
-
 
         # print request list
         for k, v in reqList.items():
@@ -176,3 +188,33 @@ class AdExchange(SyncObj):
             return self.runSecondPriceAuction(reqList, sellerObj)
         else:
             raise ValueError("Unknown auction type. Either use 'vcg' or 'gsp' in settings.")
+    
+    def returnAllocationToInfrustructureGraph(self, allocList, seller):
+        '''
+        Function to reuturn an expired request to the IG
+        '''
+        sellerGraph = seller.getSellerGraph()
+        self.__logger.debug("[AdExchange][return]")
+        self.__logger.debug("[AdExchange][returnAllocationToInfrustructureGraph]Request List: \
+                            {}".format("|".join(allocList)))
+        self.__logger.debug("[AdExchange][returnAllocationToInfrustructureGraph]Seller List (locations): \
+                            {}".format("|".join(sellerGraph)))
+
+        allocationDict = {}
+        for key, v in allocList.items():
+            k1,k2=key.split("#")
+            # n denotes the number of customers bidding for that conduit
+            n = len(v)
+            shortestPath = nx.shortest_path(sellerGraph, source=k1, target=k2)
+            lIP = self.linksInPath(shortestPath)
+            k = len(lIP)
+
+            if nx.has_path(sellerGraph, k1, k2):
+                # Updates sellerGraph with the allocation
+                self.__logger.debug("[AdExchange][returnAllocationToInfrustructureGraph]Before > {}".format(self.availableAttributes(shortestPath, sellerGraph)))
+                ip_port_pairs = self.updateSellerGraph_and_giveResources(seller, shortestPath, v)
+                self.__logger.debug("[AdExchange][returnAllocationToInfrustructureGraph]After > {}".format(self.availableAttributes(shortestPath, sellerGraph)))
+            else:
+                self.__logger.info("[AdExchange][returnAllocationToInfrustructureGraph]Link does not exists between {} and {}".format(k1, k2))
+
+        return (self.updateRequestList(allocList, allocationDict), ip_port_pairs)

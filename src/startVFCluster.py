@@ -9,6 +9,7 @@ from random import randint
 from threading import Thread
 from time import sleep
 from argparse import ArgumentParser
+from sys import exit
 # from argparse.ArgumentParser import add_argument, parse_args
 
 class VFiber(object):
@@ -17,7 +18,13 @@ class VFiber(object):
         self.__id = id
         bindings = 'bindings' + str(id)
         self.logger = get_logger("main")
-        self.server = TCPServer((SERVER_BINDING['address'][id-1], int(SERVER_BINDING['port'])), TCPRequestHandler)
+        try:
+            self.server = TCPServer((SERVER_BINDING['address'][id-1], int(SERVER_BINDING['port'])), TCPRequestHandler)
+        except Exception as e:
+            print(e)
+            print("SERVER_BINDING['address'][id-1]", SERVER_BINDING['address'][id-1])
+            print("int(SERVER_BINDING['port']", int(SERVER_BINDING['port']))
+            exit()
 
         self.server.adExObject = AdExchange(ADEX[bindings][0], ADEX[bindings][1:])
 
