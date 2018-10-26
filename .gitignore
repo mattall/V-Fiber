@@ -9,3 +9,4 @@ server_details.py
 *src/experiment/bandwidth_data/*
 *"conflicted copy"*
 *.vscode
+*.txt
