@@ -166,7 +166,7 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                                     #flowTuples = self.getFlowTuples(item)
 
                                     for ip, port in ip_port_pairs:
-                                        self.__logger.info("Pushing circuit to {} interface {}".format(ip, port))
+                                        self.__logger.debug("Pushing circuit to {} interface {}".format(ip, port))
 
                                     # Push circuits
                                     # locationA = (item.linkA.split(",")[1]).strip()
@@ -307,6 +307,7 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                 else:
                     self.__dbConnection.close()
                     raise ValueError('Bad request name and code. Either should be from SDX or from Buyer.')
+            
             val = tTotalProcessing.printTime("ProcessClientRequest", tTotalProcessing, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
             self.__logger.debug("[TCPRequestHandler][handle]Elapsed Time {}".format(val))
             overheadList.append(val)

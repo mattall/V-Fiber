@@ -7,13 +7,13 @@ SERVER_BINDING = {
 
 # Contextual settings
 CONTEXT = {
-    'debug': True,
+    'debug': False,
     'client_socket_buffer': 8192,
     'compressed_content': False,
     'request_size': 1024,
     'meas_format': "d",
     'meas_to_file': True,
-    'meas_to_location': '/home/matt/'
+    'meas_to_location': '/home/matt/vFiber/V-Fiber/src/experiment'
 }
 
 # Useful parameters for test purposes
@@ -60,4 +60,4 @@ SELLER = {
     'bindings2': ['192.168.60.3:7100', '192.168.60.2:7100', '192.168.60.4:7100'],
     'bindings3': ['192.168.60.4:7100', '192.168.60.3:7100', '192.168.60.2:7100'],
 
-}
+

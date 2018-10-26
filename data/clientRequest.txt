@@ -1,2001 +1,321 @@
 #LinkA;LinkB;FiberStrands;CapacityNeededPerStrand (MBps);BidAmountPerStrand;ClientName
 Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Salt Lake City, Utah; 5; 5; 1750; C3
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-San Francisco, California; Denver, Colorado; 10; 5; 950; C2
-Denver, Colorado; Salt Lake City, Utah; 1; 20; 900; C4
-Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4
+Kansas City, Missouri; Madison, Wisconsin; 1; 20; 900; C1
+San Francisco, California; Denver, Colorado; 1; 5; 950; C2
+San Francisco, California; Salt Lake City, Utah; 1; 5; 1750; C3
+Denver, Colorado; Salt Lake City, Utah; 1; 1; 900; C4

@@ -5,7 +5,7 @@ from multiprocessing import Process
 from time import sleep, time
 from numpy.random import poisson
 from pandas import read_csv
-from random import choice, randint
+from random import choice, randint, sample
 from settings import SERVER_BINDING
 from server_details import SERVERS
 import argparse
@@ -14,6 +14,9 @@ import pickle as pkl
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 from numpy import median
+from plot_availability_data import create_plot
+import resource
+resource.setrlimit(resource.RLIMIT_NOFILE, (10240, 10240))
 
 # import logging
 #
@@ -24,6 +27,23 @@ def client_thread(req, req_path = None, req_file = None):
     client = TCPClient(totalReqs = req, buyer_data = req_file, path_to_data = req_path)
     client.start()
     return client
+
+def end_two_servers(log='', start_t=0, stops=''):
+    victims = sample(SERVERS.items(), 2)
+    for s, target in victims:
+        end_a_server(target['user'], target['address'], target['password'], s)
+        elapsed_time = time_since(start_t)
+        log += "vFiber shutdown on server '%s' at time %s\n" % (s, elapsed_time)
+        stops.append(elapsed_time)
+    return victims, log, stops
+
+def revive_two_servers(patients, log='', start_t=0, starts=''):
+    for s, target in patients:
+        do_ssh(target['user'], target['address'], target['password'], s)
+        elapsed_time = time_since(start_t)
+        log += "vFiber started on server '%s' at time %s\n" % (s, elapsed_time)
+        starts.append(elapsed_time)
+    return log, starts
 
 # def update_activity_log(activity_log, thread_reqs, reqs_sent, START_TIME):
 #     completed_threads = get_inactive_reqs(thread_reqs)
@@ -41,6 +61,8 @@ def client_thread(req, req_path = None, req_file = None):
 #         still_working = False
 #     return still_working
 
+def time_since(start):
+    return time() - start
 
 def update_activity_log(activity_log, thread_reqs, reqs_sent, START_TIME):
     completed_threads = get_inactive_reqs(thread_reqs)
@@ -92,7 +114,7 @@ def do_ssh(username, address, password, server):
     c.load_system_host_keys()
     c.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     c.connect(hostname = address, username = username, password = password)
-    c.exec_command("killall -9 python; cd /home/matt/vFiber/V-Fiber/src; source ../../bin/activate; python startVFCluster.py %s" % server)
+    c.exec_command("killall -9 python; cd /home/matt/vFiber/V-Fiber/src; source ../../bin/activate; python startVFCluster.py {} &>> {}.log".format(server,time()))
     c.close()
 
 def end_a_server(username, address, password, server):
@@ -108,7 +130,7 @@ def end_a_server(username, address, password, server):
 def closeConnections(connections):
     for conn in connections.items():
         conn.close()
-        print "Connection to {0} closed!".format(node)
+        print "Connection to {0} closed!".format(conn)
 
 def start_vFiber(server_cons, server):
     stdin, stdout, stderr = server_cons[server].exec_command("killall -9 python; cd /home/matt/vFiber/V-Fiber/src; source ../../bin/activate; python startVFCluster.py %s" % server)
@@ -123,8 +145,9 @@ def main(args):
     REQUESTS_PER_TIC = args.volume
     REQ_PATH = "/Users/TomNason/Dropbox/VFiber_code/VFiber/data/"
     REQ_FILE = "clientRequest.txt"
-    failure_testing = True if args.failure_testing == 'y' else False
+    failure_testing = args.failure_testing
     use_poisson = True if args.use_poisson == 'y' else False
+    wait_time = args.wait_time
     log = ''
 
     reqs_sent = 0 # updated throughout experiment
@@ -132,29 +155,39 @@ def main(args):
     server_procs = []
     activity_log  = []
 
-    # #Connect to GC Servers
-    # for s in SERVERS:
-    #     print('='*30)
-    #     user = SERVERS[s]['user']
-    #     addr = SERVERS[s]['address']
-    #     pw = SERVERS[s]['password']
-    #     p = Process(target = do_ssh, args = (user, addr, pw, s))
-    #     p.start()
-    #     server_procs.append(p)
-    #
-    # for p in server_procs:
-    #     p.join()
-    #
-    # sleep(5)
+    #Connect to GC Servers
+    for s in SERVERS:
+        print('='*30)
+        user = SERVERS[s]['user']
+        addr = SERVERS[s]['address']
+        pw = SERVERS[s]['password']
+        p = Process(target = do_ssh, args = (user, addr, pw, s))
+        p.start()
+        server_procs.append(p)
+
+    for p in server_procs:
+        p.join()
+
+    sleep(5)
 
     thread_reqs = [] # list of ordered-pairs, (thread, requests_in_thread)
     starts = []
     stops = []
 
     START_TIME = time()
-    END_TIME = START_TIME + TEST_DURRATION
+
+    if failure_testing == '2min2takedown':         
+        END_TIME = START_TIME + 120 + wait_time + 120
+        services_terminated = False
+        services_recovered = False
+
+    
+    else:
+        END_TIME = START_TIME + TEST_DURRATION
+    
     s = 0
     target = None
+
     while time() < END_TIME:
         print("[experiment][main]Time left {0}".format(int(END_TIME - time())))
         if use_poisson:
@@ -168,12 +201,24 @@ def main(args):
         reqs_sent += req_count
         threads_working = update_activity_log(activity_log, thread_reqs, reqs_sent, START_TIME)
 
-        if failure_testing:
+        elapsed_time = time() - START_TIME
+
+        if failure_testing == '2min2takedown':
+            if START_TIME + 120 < time():
+                if not services_terminated:
+                    victims, log, stops = end_two_servers(log, START_TIME, stops)
+                    services_terminated = True
+
+            if START_TIME + 120 + wait_time < time():
+                if not services_recovered:
+                    log, starts = revive_two_servers(victims,log, START_TIME, starts)
+                    services_recovered = True
+
+        if failure_testing == 'p':
             """
             Kill a random server every two minutes, starting at one minute.
             Bring the server back online after one minute.
             """
-            elapsed_time = time() - START_TIME
             if 60 < elapsed_time < 61:
                 s, target = choice(SERVERS.items())
                 end_a_server(target['user'], target['address'], target['password'], s)
@@ -224,66 +269,108 @@ def main(args):
                 log += "vFiber shutdown on server '%s' at time %s\n" % (s, elapsed_time)
                 stops.append(elapsed_time)
 
+        elif failure_testing == 'd':
+            if START_TIME + 60 < time() < START_TIME + 61:
+                victims, log, stops = end_two_servers(log, START_TIME, stops)
+
+            if START_TIME + 70 < time() < START_TIME + 71:
+                log, starts = revive_two_servers(victims,log, START_TIME, starts)
+            
+            if START_TIME + 120 < time() < START_TIME + 121:
+                victims, log, stops = end_two_servers(log, START_TIME, stops)
+
+            if START_TIME + 140 < time() < START_TIME + 141:
+                log, starts = revive_two_servers(victims,log, START_TIME, starts)
+
+            if START_TIME + 180 < time() < START_TIME + 181:
+                victims, log, stops = end_two_servers(log, START_TIME, stops)
+
+            if START_TIME + 210 < time() < START_TIME + 211:
+                log, starts = revive_two_servers(victims,log, START_TIME, starts)
+
+            if START_TIME + 300 < time() < START_TIME + 301:
+                victims, log, stops = end_two_servers(log, START_TIME, stops)
+            
+            if START_TIME + 360 < time() < START_TIME + 361:
+                log, starts = revive_two_servers(victims,log, START_TIME, starts)
+
+            # Artifact code from old dead-stop failure test.
+            # if START_TIME + 60 < time() < START_TIME + 61:
+            #     target = SERVERS['1']
+            #     end_a_server(target['user'], target['address'], target['password'], '1')
+            #     log += "vFiber shutdown on server '%s' at time %s\n" % ('1', elapsed_time)
+            #     stops.append(elapsed_time)
+
+            # if START_TIME + 120 < time() < START_TIME + 121:
+            #     target = SERVERS['2']
+            #     end_a_server(target['user'], target['address'], target['password'], '2')
+            #     log += "vFiber shutdown on server '%s' at time %s\n" % ('2', elapsed_time)
+            #     stops.append(elapsed_time)
+
+            # if START_TIME + 150 < time() < START_TIME + 151:
+            #     target = SERVERS['1']
+            #     do_ssh(target['user'], target['address'], target['password'], '1')
+            #     log += "vFiber started on server '%s' at time %s\n" % ('1', elapsed_time)
+            #     starts.append(elapsed_time)
+
+            # if START_TIME + 200 < time() < START_TIME + 201:
+            #     target = SERVERS['2']
+            #     do_ssh(target['user'], target['address'], target['password'], '2')
+            #     log += "vFiber started on server '%s' at time %s\n" % ('2', elapsed_time)
+            #     starts.append(elapsed_time)
+
+            # if START_TIME + 420 < time() < START_TIME + 421:
+            #     target = SERVERS['2']
+            #     end_a_server(target['user'], target['address'], target['password'], '2')
+            #     log += "vFiber shutdown on server '%s' at time %s\n" % (2, elapsed_time)
+            #     stops.append(elapsed_time)
+
+            #     target = SERVERS['3']
+            #     end_a_server(target['user'], target['address'], target['password'], '3')
+            #     log += "vFiber shutdown on server '%s' at time %s\n" % ('3', elapsed_time)
+            #     stops.append(elapsed_time)
+
+            # if START_TIME + 450 < time() < START_TIME + 451:
+            #     target = SERVERS['2']
+            #     do_ssh(target['user'], target['address'], target['password'], '2')
+            #     log += "vFiber started on server '%s' at time %s\n" % ('2', elapsed_time)
+            #     starts.append(elapsed_time)
+
         sleep(DELTA)
 
-    while threads_working and (time() < END_TIME + 10):
+    while threads_working and (time() < END_TIME + 15):
         print("[experiment][main]Late birds finishing up in (t - {0})".format(int(END_TIME + 10 - time())))
         threads_working = update_activity_log(activity_log, thread_reqs, reqs_sent, START_TIME)
         sleep(1)
 
     #update_activity_log(activity_log, thread_reqs, reqs_sent, START_TIME)
 
+    for s in SERVERS:
+        print('='*30)
+        user = SERVERS[s]['user']
+        addr = SERVERS[s]['address']
+        pw = SERVERS[s]['password']
+        end_a_server(user, addr, pw, s)
+        print("vFiber shutdown on server '%s' connected at %s" % (s, addr))
+
     #sanity check -- reqs in thread reqs is same as reqs_sent
     print('*'*30)
     print 'number of requests sent {}'.format(reqs_sent)
     print 'requests over time\n{}'.format(activity_log)
     print log
-
-    # for s in SERVERS:
-    #     print('='*30)
-    #     user = SERVERS[s]['user']
-    #     addr = SERVERS[s]['address']
-    #     pw = SERVERS[s]['password']
-    #     end_a_server(user, addr, pw, s)
-    #     print("vFiber shutdown on server '%s' connected at %s" % (s, addr))
+    print("stops:", stops)
+    print("starts:", starts)
 
     # write test to file
-    test_file = "availability_experiment_length-{}:delta-{}:volume-{}:failure_testing-{}:poisson-{}.pkl".format(TEST_DURRATION,DELTA,REQUESTS_PER_TIC,failure_testing,use_poisson)
+    if wait_time:
+        test_file = "availability_experiment_length-{}:delta-{}:volume-{}:failure_testing-{}:wait_time-{}:poisson-{}.pkl".format(TEST_DURRATION,DELTA,REQUESTS_PER_TIC,failure_testing,wait_time,use_poisson)
+    else:
+        test_file = "availability_experiment_length-{}:delta-{}:volume-{}:failure_testing-{}:poisson-{}.pkl".format(TEST_DURRATION,DELTA,REQUESTS_PER_TIC,failure_testing,use_poisson)
+    
     with open(test_file, 'w') as file:
         pkl.dump(activity_log, file)
 
-    time_t = []
-    completed = []
-    for x in range(1, len(activity_log)):
-        # time is the first entry of the x'th tuple
-        time_t.append(activity_log[x][0])
-        # completed at time_t is the second entry of the x'th tuple
-        # minus the second entry of the (x-1)'th tuple
-        completed.append(activity_log[x][1]-activity_log[x-1][1])
-
-    mpl.rcParams.update({'font.size': 50})
-    mpl.rcParams['axes.linewidth'] = 4
-    plt.rcParams["font.family"] = "Times New Roman"
-
-    label_size = 50
-
-    axes = plt.gca()
-    axes.set_ylim([-5,median(completed)*2])
-    axes.set_xlim([0,time_t[-1]])
-    axes.tick_params(length=16, width=4)
-    lw = 3
-    for s in starts:
-        plt.axvline(x=s, color = 'green', linewidth=lw)
-
-    for s in stops:
-        plt.axvline(x=s, color = 'red', linewidth=lw)
-
-    plt.gcf().subplots_adjust(bottom = 0.18, left = 0.18)
-    plt.xlabel('Time (seconds)', fontsize = label_size)
-    plt.ylabel('Completed Requets\n per Second', fontsize = label_size)
-
-    plt.plot(time_t, completed)
-    plt.show()
+    create_plot(test_file, 5, starts, stops)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -292,7 +379,8 @@ if __name__ == "__main__":
     parser.add_argument("-v", "--volume", help="Rough number of requests to send per time delta.", dest="volume", default=10, type=int)
     parser.add_argument("-p", "--use_poisson", help="True or False, identify wheather to use Poisson for generating requests", dest="use_poisson", type=str)
     parser.add_argument("-f", "--filename", help="Name of file where request data resides.")
-    parser.add_argument("-t", "--failure_testing", help="y of n", dest="failure_testing", default=False, type=str)
+    parser.add_argument("-t", "--failure_testing", help="p for periodic, d for deadstop, or n for no", dest="failure_testing", default=False, type=str)
+    parser.add_argument("-w", "--wait_time", help="for 2min takedown experiment, specify down time in seconds.", dest="wait_time", type=int, default=None)
 
     args = parser.parse_args()
     main(args)
