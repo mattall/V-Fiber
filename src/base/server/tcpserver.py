@@ -166,8 +166,9 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                                     #flowTuples = self.getFlowTuples(item)
 
                                     for ip, port in ip_port_pairs:
-                                        self.__logger.debug("Pushing circuit to {} interface {}".format(ip, port))
-
+                                        self.__logger.debug("Pushing circuit to {} interface {} * PENDING **".format(ip, port))
+                                        sleep(TEST_PARAMS['install_time'])
+                                        self.__logger.debug("Circuite Pushed to {} interface {} *** OKAY ***".format(ip, port))
                                     # Push circuits
                                     # locationA = (item.linkA.split(",")[1]).strip()
                                     # locationB = (item.linkB.split(",")[1]).strip()
