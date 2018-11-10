@@ -1,0 +1,2002 @@
+#Source                    |Destination                |Total Strands|Capacity|Bid  |Client
+#=============================================================================================
+Kansas City, Missouri      ; Madison, Wisconsin        ;            7;      57;  871;     0
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;      94;  991;     1
+San Francisco, California  ; Madison, Wisconsin        ;            3;      57;  891;     2
+Denver, Colorado           ; Salt Lake City, Utah      ;           10;      24;  920;     3
+San Francisco, California  ; Salt Lake City, Utah      ;            2;      28;  630;     4
+San Francisco, California  ; Salt Lake City, Utah      ;            5;      14;  937;     5
+San Francisco, California  ; Madison, Wisconsin        ;            9;      65;  864;     6
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            8;       8;  962;     7
+San Francisco, California  ; Denver, Colorado          ;            8;      34;  742;     8
+San Francisco, California  ; Denver, Colorado          ;            6;      52;  844;     9
+Denver, Colorado           ; Madison, Wisconsin        ;            5;      39;  724;    10
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            6;       1;  835;    11
+San Francisco, California  ; Madison, Wisconsin        ;            4;      39;  945;    12
+Kansas City, Missouri      ; Denver, Colorado          ;            8;       7;  716;    13
+Denver, Colorado           ; Madison, Wisconsin        ;            9;       7;  651;    14
+San Francisco, California  ; Salt Lake City, Utah      ;            1;      52;  731;    15
+San Francisco, California  ; Madison, Wisconsin        ;            1;      44;  900;    16
+Denver, Colorado           ; Madison, Wisconsin        ;            1;      27;  685;    17
+Denver, Colorado           ; Salt Lake City, Utah      ;            4;      45;  935;    18
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            7;      87;  851;    19
+Denver, Colorado           ; Salt Lake City, Utah      ;            4;      77;  785;    20
+San Francisco, California  ; Salt Lake City, Utah      ;            4;      40;  624;    21
+San Francisco, California  ; Denver, Colorado          ;            5;      70;  978;    22
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;      85;  841;    23
+Denver, Colorado           ; Madison, Wisconsin        ;            2;      64;  808;    24
+San Francisco, California  ; Denver, Colorado          ;            4;      40;  767;    25
+Kansas City, Missouri      ; Madison, Wisconsin        ;            3;      85;  643;    26
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            9;      28;  888;    27
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;      76;  889;    28
+San Francisco, California  ; Denver, Colorado          ;           10;      45;  746;    29
+Denver, Colorado           ; Madison, Wisconsin        ;            5;      93;  906;    30
+Kansas City, Missouri      ; Denver, Colorado          ;            3;       9;  930;    31
+San Francisco, California  ; Denver, Colorado          ;            9;      73;  683;    32
+Kansas City, Missouri      ; Madison, Wisconsin        ;            4;      18;  976;    33
+Denver, Colorado           ; Madison, Wisconsin        ;            8;       7;  626;    34
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            2;      93;  963;    35
+San Francisco, California  ; Madison, Wisconsin        ;            4;      85;  914;    36
+San Francisco, California  ; Denver, Colorado          ;           10;      82;  810;    37
+San Francisco, California  ; Denver, Colorado          ;            1;      96;  636;    38
+Kansas City, Missouri      ; Denver, Colorado          ;           10;       3;  693;    39
+Kansas City, Missouri      ; Denver, Colorado          ;           10;      86;  690;    40
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      65;  842;    41
+San Francisco, California  ; Salt Lake City, Utah      ;            4;      97;  918;    42
+Denver, Colorado           ; Madison, Wisconsin        ;            2;      18;  702;    43
+San Francisco, California  ; Madison, Wisconsin        ;            7;      27;  603;    44
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;      43;  899;    45
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;      96;  841;    46
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      16;  747;    47
+San Francisco, California  ; Madison, Wisconsin        ;            5;       1;  942;    48
+San Francisco, California  ; Denver, Colorado          ;           10;      30;  839;    49
+Kansas City, Missouri      ; Denver, Colorado          ;            5;      43;  700;    50
+Kansas City, Missouri      ; Denver, Colorado          ;            6;      11;  770;    51
+Denver, Colorado           ; Salt Lake City, Utah      ;           10;      41;  981;    52
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;      63;  920;    53
+Denver, Colorado           ; Madison, Wisconsin        ;            1;      58;  719;    54
+Denver, Colorado           ; Madison, Wisconsin        ;            2;      45;  718;    55
+Denver, Colorado           ; Salt Lake City, Utah      ;            3;      23;  610;    56
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      53;  849;    57
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      76;  814;    58
+San Francisco, California  ; Denver, Colorado          ;            7;      45;  948;    59
+Denver, Colorado           ; Madison, Wisconsin        ;            8;      57;  980;    60
+Denver, Colorado           ; Madison, Wisconsin        ;            6;      34;  822;    61
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      58;  917;    62
+Kansas City, Missouri      ; Denver, Colorado          ;            6;      45;  886;    63
+Kansas City, Missouri      ; Madison, Wisconsin        ;           10;      29;  844;    64
+San Francisco, California  ; Denver, Colorado          ;            6;      71;  902;    65
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;      34;  739;    66
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      14;  849;    67
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            2;      77;  854;    68
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      43;  641;    69
+San Francisco, California  ; Madison, Wisconsin        ;            2;      59;  986;    70
+San Francisco, California  ; Salt Lake City, Utah      ;            8;      30;  730;    71
+Denver, Colorado           ; Salt Lake City, Utah      ;            6;      48;  612;    72
+Kansas City, Missouri      ; Denver, Colorado          ;            1;      80;  780;    73
+Kansas City, Missouri      ; Denver, Colorado          ;            6;      74;  877;    74
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            8;      16;  624;    75
+Kansas City, Missouri      ; Madison, Wisconsin        ;            5;      11;  970;    76
+Denver, Colorado           ; Madison, Wisconsin        ;            5;      12;  966;    77
+Denver, Colorado           ; Madison, Wisconsin        ;            5;      65;  908;    78
+Denver, Colorado           ; Madison, Wisconsin        ;            6;      66;  675;    79
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      48;  986;    80
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            3;      88;  814;    81
+Denver, Colorado           ; Madison, Wisconsin        ;            8;      31;  632;    82
+San Francisco, California  ; Salt Lake City, Utah      ;            3;      32;  603;    83
+San Francisco, California  ; Denver, Colorado          ;           10;      44;  707;    84
+Kansas City, Missouri      ; Denver, Colorado          ;            1;       3;  844;    85
+San Francisco, California  ; Madison, Wisconsin        ;            8;      45;  905;    86
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;      50;  652;    87
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      67;  684;    88
+Kansas City, Missouri      ; Madison, Wisconsin        ;            2;      47;  702;    89
+Denver, Colorado           ; Salt Lake City, Utah      ;            3;      49;  917;    90
+Kansas City, Missouri      ; Madison, Wisconsin        ;            4;      41;  919;    91
+San Francisco, California  ; Madison, Wisconsin        ;            7;      73;  789;    92
+Kansas City, Missouri      ; Madison, Wisconsin        ;            8;      76;  918;    93
+San Francisco, California  ; Denver, Colorado          ;           10;      96;  964;    94
+San Francisco, California  ; Madison, Wisconsin        ;            7;      26;  870;    95
+Denver, Colorado           ; Salt Lake City, Utah      ;            6;      94;  646;    96
+Kansas City, Missouri      ; Denver, Colorado          ;            1;      14;  941;    97
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;      41;  810;    98
+Denver, Colorado           ; Salt Lake City, Utah      ;            7;       7;  853;    99
+Denver, Colorado           ; Salt Lake City, Utah      ;           10;      73;  881;   100
+San Francisco, California  ; Denver, Colorado          ;            8;      12;  904;   101
+Kansas City, Missouri      ; Madison, Wisconsin        ;            7;      81;  911;   102
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      15;  696;   103
+Kansas City, Missouri      ; Madison, Wisconsin        ;            9;      39;  892;   104
+San Francisco, California  ; Denver, Colorado          ;            8;      70;  681;   105
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      24;  739;   106
+Kansas City, Missouri      ; Madison, Wisconsin        ;            3;      50;  738;   107
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            9;      24;  895;   108
+Kansas City, Missouri      ; Denver, Colorado          ;            4;      51;  879;   109
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;      18;  757;   110
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      46;  921;   111
+San Francisco, California  ; Madison, Wisconsin        ;            8;      24;  770;   112
+San Francisco, California  ; Denver, Colorado          ;            3;      21;  747;   113
+San Francisco, California  ; Salt Lake City, Utah      ;            3;      40;  734;   114
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      35;  647;   115
+Denver, Colorado           ; Madison, Wisconsin        ;            8;      57;  976;   116
+Kansas City, Missouri      ; Madison, Wisconsin        ;            4;      16;  790;   117
+Kansas City, Missouri      ; Salt Lake City, Utah      ;           10;      58;  796;   118
+Kansas City, Missouri      ; Madison, Wisconsin        ;            4;      74;  855;   119
+San Francisco, California  ; Madison, Wisconsin        ;            2;       4;  979;   120
+Kansas City, Missouri      ; Denver, Colorado          ;            2;       1;  880;   121
+Kansas City, Missouri      ; Salt Lake City, Utah      ;           10;      85;  648;   122
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      48;  878;   123
+Kansas City, Missouri      ; Madison, Wisconsin        ;            8;      98;  921;   124
+Kansas City, Missouri      ; Madison, Wisconsin        ;            5;       6;  840;   125
+Kansas City, Missouri      ; Madison, Wisconsin        ;            2;      95;  886;   126
+San Francisco, California  ; Salt Lake City, Utah      ;            6;      38;  992;   127
+Kansas City, Missouri      ; Madison, Wisconsin        ;            9;       2;  962;   128
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      12;  614;   129
+Denver, Colorado           ; Salt Lake City, Utah      ;            1;      20;  817;   130
+Denver, Colorado           ; Madison, Wisconsin        ;            5;      89;  695;   131
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            8;      99;  765;   132
+San Francisco, California  ; Denver, Colorado          ;            6;      16;  715;   133
+San Francisco, California  ; Salt Lake City, Utah      ;            8;      14;  910;   134
+Kansas City, Missouri      ; Madison, Wisconsin        ;           10;      30;  806;   135
+San Francisco, California  ; Madison, Wisconsin        ;            8;      96;  665;   136
+Kansas City, Missouri      ; Denver, Colorado          ;            5;      70;  939;   137
+Kansas City, Missouri      ; Denver, Colorado          ;            8;      84;  958;   138
+San Francisco, California  ; Denver, Colorado          ;            3;      79;  916;   139
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      62;  793;   140
+San Francisco, California  ; Madison, Wisconsin        ;            4;      11;  600;   141
+San Francisco, California  ; Madison, Wisconsin        ;            1;      95;  619;   142
+Kansas City, Missouri      ; Madison, Wisconsin        ;            6;      87;  803;   143
+San Francisco, California  ; Salt Lake City, Utah      ;            5;      77;  795;   144
+Denver, Colorado           ; Madison, Wisconsin        ;            3;      43;  916;   145
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            9;      64;  975;   146
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            7;      95;  961;   147
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            7;      95;  921;   148
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            4;      38;  660;   149
+Denver, Colorado           ; Salt Lake City, Utah      ;           10;      55;  922;   150
+San Francisco, California  ; Madison, Wisconsin        ;            3;      10;  620;   151
+San Francisco, California  ; Salt Lake City, Utah      ;            3;       8;  704;   152
+Denver, Colorado           ; Madison, Wisconsin        ;           10;       4;  982;   153
+San Francisco, California  ; Salt Lake City, Utah      ;            1;      49;  731;   154
+Kansas City, Missouri      ; Salt Lake City, Utah      ;           10;      26;  799;   155
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;      79;  800;   156
+Denver, Colorado           ; Salt Lake City, Utah      ;            9;      78;  652;   157
+San Francisco, California  ; Denver, Colorado          ;            8;      32;  608;   158
+Kansas City, Missouri      ; Madison, Wisconsin        ;           10;       1;  601;   159
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;      79;  842;   160
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            2;      16;  618;   161
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            8;       5;  977;   162
+Kansas City, Missouri      ; Madison, Wisconsin        ;            3;      28;  606;   163
+San Francisco, California  ; Denver, Colorado          ;            4;      83;  975;   164
+Kansas City, Missouri      ; Madison, Wisconsin        ;            3;      50;  826;   165
+Denver, Colorado           ; Salt Lake City, Utah      ;            4;      16;  703;   166
+Kansas City, Missouri      ; Denver, Colorado          ;            5;      99;  706;   167
+San Francisco, California  ; Madison, Wisconsin        ;            5;       1;  687;   168
+San Francisco, California  ; Denver, Colorado          ;            7;      33;  895;   169
+Kansas City, Missouri      ; Salt Lake City, Utah      ;           10;      35;  668;   170
+Kansas City, Missouri      ; Denver, Colorado          ;           10;      13;  885;   171
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            4;      54;  929;   172
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      80;  755;   173
+San Francisco, California  ; Salt Lake City, Utah      ;            4;       3;  763;   174
+Denver, Colorado           ; Madison, Wisconsin        ;            3;      33;  941;   175
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            6;      68;  966;   176
+San Francisco, California  ; Madison, Wisconsin        ;            2;      61;  800;   177
+Kansas City, Missouri      ; Denver, Colorado          ;            4;      66;  642;   178
+San Francisco, California  ; Salt Lake City, Utah      ;            1;      79;  920;   179
+San Francisco, California  ; Salt Lake City, Utah      ;            3;      77;  603;   180
+San Francisco, California  ; Denver, Colorado          ;            5;      83;  723;   181
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;      83;  756;   182
+Denver, Colorado           ; Madison, Wisconsin        ;            2;       4;  772;   183
+San Francisco, California  ; Denver, Colorado          ;            5;      15;  843;   184
+San Francisco, California  ; Salt Lake City, Utah      ;            1;      49;  811;   185
+Kansas City, Missouri      ; Madison, Wisconsin        ;            1;      73;  750;   186
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            6;      26;  819;   187
+San Francisco, California  ; Madison, Wisconsin        ;           10;      19;  908;   188
+Kansas City, Missouri      ; Denver, Colorado          ;            2;      95;  724;   189
+Kansas City, Missouri      ; Madison, Wisconsin        ;            7;      80;  671;   190
+Denver, Colorado           ; Salt Lake City, Utah      ;            4;      82;  696;   191
+San Francisco, California  ; Madison, Wisconsin        ;            2;      79;  746;   192
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            4;      48;  956;   193
+Kansas City, Missouri      ; Denver, Colorado          ;            9;       7;  982;   194
+Kansas City, Missouri      ; Madison, Wisconsin        ;            3;      99;  710;   195
+San Francisco, California  ; Madison, Wisconsin        ;           10;       5;  978;   196
+Kansas City, Missouri      ; Denver, Colorado          ;            6;      49;  693;   197
+Denver, Colorado           ; Salt Lake City, Utah      ;            7;      22;  723;   198
+Denver, Colorado           ; Madison, Wisconsin        ;            7;      64;  745;   199
+San Francisco, California  ; Salt Lake City, Utah      ;            7;      10;  941;   200
+Denver, Colorado           ; Salt Lake City, Utah      ;            4;      34;  790;   201
+Kansas City, Missouri      ; Madison, Wisconsin        ;            5;      88;  694;   202
+Kansas City, Missouri      ; Denver, Colorado          ;            3;      57;  761;   203
+San Francisco, California  ; Salt Lake City, Utah      ;            5;      18;  602;   204
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      24;  680;   205
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;       5;  764;   206
+San Francisco, California  ; Salt Lake City, Utah      ;            5;      53;  638;   207
+Denver, Colorado           ; Madison, Wisconsin        ;            8;      47;  881;   208
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;       8;  609;   209
+Denver, Colorado           ; Madison, Wisconsin        ;            8;      41;  932;   210
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      18;  928;   211
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      90;  613;   212
+San Francisco, California  ; Denver, Colorado          ;            1;      83;  742;   213
+San Francisco, California  ; Salt Lake City, Utah      ;            9;      74;  823;   214
+San Francisco, California  ; Denver, Colorado          ;            5;      37;  760;   215
+Denver, Colorado           ; Madison, Wisconsin        ;            1;      33;  937;   216
+Kansas City, Missouri      ; Denver, Colorado          ;            9;      48;  609;   217
+Denver, Colorado           ; Madison, Wisconsin        ;            1;      22;  895;   218
+San Francisco, California  ; Salt Lake City, Utah      ;            2;      35;  739;   219
+Denver, Colorado           ; Salt Lake City, Utah      ;            6;      80;  900;   220
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            3;      59;  607;   221
+San Francisco, California  ; Denver, Colorado          ;           10;      27;  801;   222
+Denver, Colorado           ; Madison, Wisconsin        ;            7;      90;  622;   223
+Kansas City, Missouri      ; Denver, Colorado          ;            2;      44;  967;   224
+Kansas City, Missouri      ; Madison, Wisconsin        ;            5;      52;  636;   225
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            6;      20;  794;   226
+San Francisco, California  ; Madison, Wisconsin        ;            4;      10;  670;   227
+San Francisco, California  ; Madison, Wisconsin        ;            2;       1;  997;   228
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      62;  984;   229
+Denver, Colorado           ; Madison, Wisconsin        ;            8;      22;  894;   230
+Kansas City, Missouri      ; Madison, Wisconsin        ;           10;      52;  951;   231
+Denver, Colorado           ; Salt Lake City, Utah      ;            1;      75;  932;   232
+San Francisco, California  ; Madison, Wisconsin        ;            7;      82;  723;   233
+Kansas City, Missouri      ; Denver, Colorado          ;           10;      25;  869;   234
+Denver, Colorado           ; Salt Lake City, Utah      ;            1;      26;  863;   235
+Denver, Colorado           ; Salt Lake City, Utah      ;           10;      67;  616;   236
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;      61;  714;   237
+Denver, Colorado           ; Madison, Wisconsin        ;            2;      22;  611;   238
+San Francisco, California  ; Madison, Wisconsin        ;            4;      64;  820;   239
+Denver, Colorado           ; Salt Lake City, Utah      ;            6;      12;  838;   240
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      75;  932;   241
+San Francisco, California  ; Denver, Colorado          ;            2;      20;  760;   242
+Denver, Colorado           ; Madison, Wisconsin        ;            8;      26;  743;   243
+Denver, Colorado           ; Salt Lake City, Utah      ;            3;      62;  609;   244
+Denver, Colorado           ; Salt Lake City, Utah      ;            9;      60;  821;   245
+San Francisco, California  ; Madison, Wisconsin        ;            2;      90;  869;   246
+Denver, Colorado           ; Salt Lake City, Utah      ;            3;      82;  829;   247
+San Francisco, California  ; Salt Lake City, Utah      ;            4;      81;  866;   248
+Denver, Colorado           ; Madison, Wisconsin        ;            6;      77;  873;   249
+Kansas City, Missouri      ; Denver, Colorado          ;            5;      70;  697;   250
+Denver, Colorado           ; Madison, Wisconsin        ;            8;      20;  850;   251
+Denver, Colorado           ; Salt Lake City, Utah      ;            6;      97;  972;   252
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            1;      37;  846;   253
+Kansas City, Missouri      ; Madison, Wisconsin        ;            7;      91;  837;   254
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      14;  940;   255
+San Francisco, California  ; Salt Lake City, Utah      ;            7;      97;  734;   256
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;      73;  983;   257
+Denver, Colorado           ; Salt Lake City, Utah      ;           10;      77;  914;   258
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;      97;  862;   259
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      44;  902;   260
+San Francisco, California  ; Madison, Wisconsin        ;            9;       4;  718;   261
+Denver, Colorado           ; Madison, Wisconsin        ;            9;     100;  752;   262
+Kansas City, Missouri      ; Denver, Colorado          ;            2;      57;  989;   263
+Kansas City, Missouri      ; Denver, Colorado          ;            6;      87;  965;   264
+San Francisco, California  ; Denver, Colorado          ;            6;      76;  994;   265
+Denver, Colorado           ; Madison, Wisconsin        ;            1;     100;  921;   266
+Denver, Colorado           ; Madison, Wisconsin        ;            1;      91;  794;   267
+Denver, Colorado           ; Salt Lake City, Utah      ;            4;      43;  876;   268
+San Francisco, California  ; Salt Lake City, Utah      ;            1;      57;  651;   269
+Kansas City, Missouri      ; Madison, Wisconsin        ;            4;      21;  804;   270
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            2;      81;  600;   271
+Denver, Colorado           ; Madison, Wisconsin        ;            5;      34;  868;   272
+San Francisco, California  ; Salt Lake City, Utah      ;            8;      49;  693;   273
+Kansas City, Missouri      ; Denver, Colorado          ;            2;       1;  764;   274
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      50;  632;   275
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;       2;  672;   276
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            2;      15;  910;   277
+San Francisco, California  ; Denver, Colorado          ;            4;      33;  646;   278
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;      30;  740;   279
+San Francisco, California  ; Madison, Wisconsin        ;            3;      75;  723;   280
+San Francisco, California  ; Madison, Wisconsin        ;           10;      24;  803;   281
+Denver, Colorado           ; Salt Lake City, Utah      ;            1;      62;  995;   282
+San Francisco, California  ; Denver, Colorado          ;            8;      52;  810;   283
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      83;  659;   284
+San Francisco, California  ; Madison, Wisconsin        ;            3;       7;  939;   285
+Denver, Colorado           ; Salt Lake City, Utah      ;            6;      11;  982;   286
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            8;      20;  873;   287
+San Francisco, California  ; Madison, Wisconsin        ;            9;      96;  974;   288
+San Francisco, California  ; Salt Lake City, Utah      ;            9;      31;  917;   289
+San Francisco, California  ; Madison, Wisconsin        ;            6;      96;  608;   290
+San Francisco, California  ; Denver, Colorado          ;            6;      98;  650;   291
+San Francisco, California  ; Madison, Wisconsin        ;            5;      26;  871;   292
+San Francisco, California  ; Madison, Wisconsin        ;            2;      64;  939;   293
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      13;  798;   294
+Kansas City, Missouri      ; Madison, Wisconsin        ;            3;      64;  858;   295
+Kansas City, Missouri      ; Denver, Colorado          ;            5;      80;  602;   296
+San Francisco, California  ; Salt Lake City, Utah      ;            4;      19;  723;   297
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      26;  996;   298
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      36;  935;   299
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;      10;  910;   300
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            2;      90;  772;   301
+Denver, Colorado           ; Madison, Wisconsin        ;            6;      79;  866;   302
+Denver, Colorado           ; Madison, Wisconsin        ;            3;      82;  734;   303
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;      55;  713;   304
+Kansas City, Missouri      ; Denver, Colorado          ;            2;      38;  820;   305
+Kansas City, Missouri      ; Madison, Wisconsin        ;            3;      44;  687;   306
+San Francisco, California  ; Salt Lake City, Utah      ;            1;      89;  714;   307
+Denver, Colorado           ; Madison, Wisconsin        ;            7;       7;  662;   308
+Kansas City, Missouri      ; Salt Lake City, Utah      ;           10;      40;  673;   309
+Kansas City, Missouri      ; Madison, Wisconsin        ;           10;      26;  609;   310
+Kansas City, Missouri      ; Denver, Colorado          ;            9;      58;  761;   311
+Denver, Colorado           ; Salt Lake City, Utah      ;            7;      62;  844;   312
+Denver, Colorado           ; Salt Lake City, Utah      ;            4;      27;  974;   313
+San Francisco, California  ; Madison, Wisconsin        ;            5;      47;  956;   314
+San Francisco, California  ; Madison, Wisconsin        ;           10;      78;  956;   315
+Denver, Colorado           ; Madison, Wisconsin        ;            6;      98;  691;   316
+Kansas City, Missouri      ; Denver, Colorado          ;            2;      90;  840;   317
+Denver, Colorado           ; Madison, Wisconsin        ;            2;       3;  972;   318
+Kansas City, Missouri      ; Denver, Colorado          ;            4;      55;  731;   319
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            1;      89;  786;   320
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            4;      52;  702;   321
+Kansas City, Missouri      ; Salt Lake City, Utah      ;           10;      24;  800;   322
+San Francisco, California  ; Salt Lake City, Utah      ;            4;      49;  754;   323
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            6;      67;  973;   324
+Denver, Colorado           ; Salt Lake City, Utah      ;           10;      78;  818;   325
+Kansas City, Missouri      ; Madison, Wisconsin        ;            4;      81;  966;   326
+San Francisco, California  ; Denver, Colorado          ;            9;      84;  756;   327
+Kansas City, Missouri      ; Madison, Wisconsin        ;            1;      12;  674;   328
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;       6;  724;   329
+San Francisco, California  ; Madison, Wisconsin        ;            6;      23;  819;   330
+Denver, Colorado           ; Madison, Wisconsin        ;            1;      14;  762;   331
+Denver, Colorado           ; Madison, Wisconsin        ;            2;      39;  973;   332
+Kansas City, Missouri      ; Denver, Colorado          ;            4;      26;  852;   333
+San Francisco, California  ; Salt Lake City, Utah      ;            2;      92;  604;   334
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            1;      33;  655;   335
+San Francisco, California  ; Denver, Colorado          ;            5;      60;  919;   336
+Denver, Colorado           ; Madison, Wisconsin        ;            7;      86;  966;   337
+Kansas City, Missouri      ; Madison, Wisconsin        ;            6;      75;  934;   338
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            4;      63;  748;   339
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            1;      27;  623;   340
+San Francisco, California  ; Madison, Wisconsin        ;            5;      60;  827;   341
+Kansas City, Missouri      ; Madison, Wisconsin        ;           10;      99;  711;   342
+Denver, Colorado           ; Madison, Wisconsin        ;            7;      27;  727;   343
+Denver, Colorado           ; Salt Lake City, Utah      ;            6;       9;  829;   344
+Denver, Colorado           ; Madison, Wisconsin        ;            1;      40;  705;   345
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            9;      92;  851;   346
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;       8;  636;   347
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      35;  848;   348
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;      92;  923;   349
+San Francisco, California  ; Madison, Wisconsin        ;            9;      53;  919;   350
+San Francisco, California  ; Denver, Colorado          ;            5;      56;  698;   351
+San Francisco, California  ; Denver, Colorado          ;            1;      41;  807;   352
+Kansas City, Missouri      ; Denver, Colorado          ;            5;      99;  753;   353
+San Francisco, California  ; Madison, Wisconsin        ;            9;      97;  938;   354
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      75;  703;   355
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            3;      14;  950;   356
+Kansas City, Missouri      ; Denver, Colorado          ;            2;      85;  820;   357
+San Francisco, California  ; Denver, Colorado          ;            3;       4;  956;   358
+Kansas City, Missouri      ; Madison, Wisconsin        ;            2;      69;  762;   359
+Kansas City, Missouri      ; Denver, Colorado          ;            7;      56;  818;   360
+San Francisco, California  ; Salt Lake City, Utah      ;            3;      98;  607;   361
+San Francisco, California  ; Madison, Wisconsin        ;            9;       9;  928;   362
+Kansas City, Missouri      ; Salt Lake City, Utah      ;           10;      31;  682;   363
+Denver, Colorado           ; Salt Lake City, Utah      ;            7;      90;  690;   364
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            7;      47;  878;   365
+Kansas City, Missouri      ; Madison, Wisconsin        ;            7;      94;  711;   366
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            6;      98;  921;   367
+Kansas City, Missouri      ; Madison, Wisconsin        ;            6;      47;  701;   368
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            6;      40;  712;   369
+Denver, Colorado           ; Salt Lake City, Utah      ;            6;      18;  997;   370
+Denver, Colorado           ; Salt Lake City, Utah      ;            6;      29;  664;   371
+San Francisco, California  ; Madison, Wisconsin        ;            7;      20;  895;   372
+Denver, Colorado           ; Madison, Wisconsin        ;            7;      80;  792;   373
+San Francisco, California  ; Denver, Colorado          ;            1;      54;  778;   374
+Kansas City, Missouri      ; Denver, Colorado          ;            5;      65;  968;   375
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;      39;  830;   376
+Denver, Colorado           ; Salt Lake City, Utah      ;            9;      95;  713;   377
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;      99;  937;   378
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            3;      43;  829;   379
+San Francisco, California  ; Madison, Wisconsin        ;            1;       7;  839;   380
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;      56;  860;   381
+San Francisco, California  ; Salt Lake City, Utah      ;            8;      24;  997;   382
+San Francisco, California  ; Madison, Wisconsin        ;            4;      18;  791;   383
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            1;      71;  725;   384
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            1;       7;  833;   385
+San Francisco, California  ; Madison, Wisconsin        ;            3;      34;  897;   386
+San Francisco, California  ; Madison, Wisconsin        ;           10;      23;  775;   387
+Denver, Colorado           ; Salt Lake City, Utah      ;            1;      75;  681;   388
+San Francisco, California  ; Madison, Wisconsin        ;            4;      42;  610;   389
+San Francisco, California  ; Salt Lake City, Utah      ;            7;      80;  851;   390
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;      87;  642;   391
+San Francisco, California  ; Denver, Colorado          ;           10;       3;  855;   392
+Kansas City, Missouri      ; Denver, Colorado          ;            4;      46;  699;   393
+San Francisco, California  ; Salt Lake City, Utah      ;            5;      88;  685;   394
+Kansas City, Missouri      ; Madison, Wisconsin        ;            6;      32;  982;   395
+Denver, Colorado           ; Madison, Wisconsin        ;            8;      97;  792;   396
+San Francisco, California  ; Madison, Wisconsin        ;            8;      87;  821;   397
+Denver, Colorado           ; Madison, Wisconsin        ;            1;      25;  763;   398
+Kansas City, Missouri      ; Denver, Colorado          ;            7;       5;  832;   399
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      40;  777;   400
+Kansas City, Missouri      ; Madison, Wisconsin        ;            4;       8;  739;   401
+Kansas City, Missouri      ; Denver, Colorado          ;            2;      10;  794;   402
+San Francisco, California  ; Madison, Wisconsin        ;            3;      18;  803;   403
+Denver, Colorado           ; Madison, Wisconsin        ;            2;     100;  838;   404
+San Francisco, California  ; Denver, Colorado          ;            8;      82;  806;   405
+Kansas City, Missouri      ; Denver, Colorado          ;            2;       7;  957;   406
+San Francisco, California  ; Denver, Colorado          ;            7;      31;  626;   407
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            7;      89;  892;   408
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;      28;  825;   409
+Denver, Colorado           ; Salt Lake City, Utah      ;            1;      87;  724;   410
+San Francisco, California  ; Madison, Wisconsin        ;            2;      12;  677;   411
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            9;      77;  959;   412
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;       4;  954;   413
+Kansas City, Missouri      ; Denver, Colorado          ;            7;      53;  805;   414
+Denver, Colorado           ; Salt Lake City, Utah      ;            1;      34;  758;   415
+Kansas City, Missouri      ; Madison, Wisconsin        ;           10;      75;  663;   416
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      53;  809;   417
+Denver, Colorado           ; Madison, Wisconsin        ;            6;      84;  616;   418
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            7;      29;  752;   419
+San Francisco, California  ; Salt Lake City, Utah      ;            7;      14;  888;   420
+Kansas City, Missouri      ; Denver, Colorado          ;            1;      99;  792;   421
+San Francisco, California  ; Madison, Wisconsin        ;            2;      18;  998;   422
+Denver, Colorado           ; Madison, Wisconsin        ;            2;      86;  741;   423
+Denver, Colorado           ; Madison, Wisconsin        ;            2;      55;  966;   424
+San Francisco, California  ; Salt Lake City, Utah      ;            3;      59;  743;   425
+Denver, Colorado           ; Madison, Wisconsin        ;            3;      88;  902;   426
+San Francisco, California  ; Madison, Wisconsin        ;           10;      29;  823;   427
+San Francisco, California  ; Madison, Wisconsin        ;            1;      70;  675;   428
+San Francisco, California  ; Denver, Colorado          ;           10;      21;  963;   429
+Kansas City, Missouri      ; Denver, Colorado          ;            5;      29;  681;   430
+Kansas City, Missouri      ; Madison, Wisconsin        ;            3;      19;  625;   431
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            1;      19;  704;   432
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      26;  832;   433
+Kansas City, Missouri      ; Denver, Colorado          ;            3;      48;  667;   434
+San Francisco, California  ; Denver, Colorado          ;            4;      70;  637;   435
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            2;       3;  897;   436
+Kansas City, Missouri      ; Denver, Colorado          ;            3;      83;  957;   437
+Kansas City, Missouri      ; Madison, Wisconsin        ;            1;      45;  898;   438
+San Francisco, California  ; Denver, Colorado          ;            8;      68;  696;   439
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      17;  657;   440
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;      11;  765;   441
+Kansas City, Missouri      ; Denver, Colorado          ;            4;      94;  801;   442
+San Francisco, California  ; Salt Lake City, Utah      ;            5;      58;  983;   443
+Kansas City, Missouri      ; Madison, Wisconsin        ;            7;      13;  788;   444
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      14;  656;   445
+Kansas City, Missouri      ; Madison, Wisconsin        ;            1;      13;  721;   446
+San Francisco, California  ; Denver, Colorado          ;            2;      49;  775;   447
+San Francisco, California  ; Denver, Colorado          ;            1;      98;  604;   448
+Denver, Colorado           ; Madison, Wisconsin        ;            2;      25;  838;   449
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      66;  725;   450
+Denver, Colorado           ; Salt Lake City, Utah      ;            7;       4;  806;   451
+Kansas City, Missouri      ; Denver, Colorado          ;            4;      72;  791;   452
+Denver, Colorado           ; Salt Lake City, Utah      ;           10;      92;  678;   453
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            2;      61;  688;   454
+Kansas City, Missouri      ; Madison, Wisconsin        ;            4;      85;  824;   455
+San Francisco, California  ; Denver, Colorado          ;            9;      43;  950;   456
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            8;      31;  648;   457
+San Francisco, California  ; Salt Lake City, Utah      ;            7;      89;  979;   458
+San Francisco, California  ; Denver, Colorado          ;            1;      80;  956;   459
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;      64;  830;   460
+San Francisco, California  ; Salt Lake City, Utah      ;            2;      10;  622;   461
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            6;      85;  692;   462
+Kansas City, Missouri      ; Madison, Wisconsin        ;            3;      65;  828;   463
+Kansas City, Missouri      ; Denver, Colorado          ;            2;      56;  910;   464
+San Francisco, California  ; Madison, Wisconsin        ;            5;      61;  641;   465
+San Francisco, California  ; Salt Lake City, Utah      ;            1;      14;  821;   466
+San Francisco, California  ; Madison, Wisconsin        ;            7;      89;  812;   467
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;      57;  996;   468
+Kansas City, Missouri      ; Denver, Colorado          ;           10;      21;  725;   469
+Denver, Colorado           ; Madison, Wisconsin        ;            5;      25;  767;   470
+San Francisco, California  ; Madison, Wisconsin        ;            3;       9;  874;   471
+San Francisco, California  ; Madison, Wisconsin        ;            4;      71;  865;   472
+Kansas City, Missouri      ; Madison, Wisconsin        ;            3;      31;  609;   473
+Kansas City, Missouri      ; Madison, Wisconsin        ;            3;       3;  743;   474
+San Francisco, California  ; Madison, Wisconsin        ;            1;      24;  733;   475
+San Francisco, California  ; Denver, Colorado          ;            4;      83;  938;   476
+Kansas City, Missouri      ; Salt Lake City, Utah      ;           10;      72;  870;   477
+Kansas City, Missouri      ; Denver, Colorado          ;            9;      66;  603;   478
+Denver, Colorado           ; Madison, Wisconsin        ;            7;      39;  750;   479
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;      95;  804;   480
+Denver, Colorado           ; Madison, Wisconsin        ;            8;      70;  740;   481
+Denver, Colorado           ; Salt Lake City, Utah      ;            4;      42;  850;   482
+San Francisco, California  ; Madison, Wisconsin        ;            8;      76;  668;   483
+Denver, Colorado           ; Salt Lake City, Utah      ;            4;      48;  638;   484
+Kansas City, Missouri      ; Denver, Colorado          ;            1;      75;  854;   485
+San Francisco, California  ; Denver, Colorado          ;            1;      20;  721;   486
+San Francisco, California  ; Denver, Colorado          ;            2;      33;  790;   487
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      96;  824;   488
+San Francisco, California  ; Salt Lake City, Utah      ;            6;      83;  632;   489
+Denver, Colorado           ; Salt Lake City, Utah      ;            1;      96;  709;   490
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;      24;  626;   491
+San Francisco, California  ; Denver, Colorado          ;            2;      46;  678;   492
+Denver, Colorado           ; Salt Lake City, Utah      ;            9;      86;  705;   493
+Kansas City, Missouri      ; Madison, Wisconsin        ;            8;       2;  779;   494
+Kansas City, Missouri      ; Denver, Colorado          ;            7;      77;  834;   495
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      48;  701;   496
+Kansas City, Missouri      ; Denver, Colorado          ;            7;      82;  890;   497
+Denver, Colorado           ; Madison, Wisconsin        ;            1;      99;  797;   498
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      34;  801;   499
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;      81;  779;   500
+Denver, Colorado           ; Madison, Wisconsin        ;            2;      82;  792;   501
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;       6;  748;   502
+San Francisco, California  ; Denver, Colorado          ;            6;      88;  703;   503
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            7;      25;  791;   504
+Denver, Colorado           ; Salt Lake City, Utah      ;            7;      17;  955;   505
+San Francisco, California  ; Denver, Colorado          ;           10;      20;  924;   506
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      97;  985;   507
+San Francisco, California  ; Madison, Wisconsin        ;            2;      52;  674;   508
+Denver, Colorado           ; Salt Lake City, Utah      ;            4;      47;  806;   509
+San Francisco, California  ; Madison, Wisconsin        ;            1;      53;  840;   510
+San Francisco, California  ; Salt Lake City, Utah      ;            9;      90;  956;   511
+San Francisco, California  ; Denver, Colorado          ;            1;       8;  930;   512
+Denver, Colorado           ; Madison, Wisconsin        ;            7;      94;  604;   513
+Kansas City, Missouri      ; Madison, Wisconsin        ;            6;      50;  903;   514
+Kansas City, Missouri      ; Madison, Wisconsin        ;            3;      14;  709;   515
+Denver, Colorado           ; Madison, Wisconsin        ;            8;      31;  982;   516
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      40;  632;   517
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      70;  809;   518
+Denver, Colorado           ; Madison, Wisconsin        ;            7;       1;  960;   519
+Denver, Colorado           ; Madison, Wisconsin        ;            1;      21;  631;   520
+Denver, Colorado           ; Salt Lake City, Utah      ;            6;      70;  917;   521
+San Francisco, California  ; Madison, Wisconsin        ;            6;      26;  947;   522
+San Francisco, California  ; Salt Lake City, Utah      ;            3;      94;  928;   523
+Denver, Colorado           ; Salt Lake City, Utah      ;            3;      66;  736;   524
+Denver, Colorado           ; Salt Lake City, Utah      ;            1;      44;  694;   525
+Kansas City, Missouri      ; Madison, Wisconsin        ;            5;      83;  901;   526
+San Francisco, California  ; Madison, Wisconsin        ;            5;      64;  836;   527
+San Francisco, California  ; Denver, Colorado          ;            7;      85;  848;   528
+Denver, Colorado           ; Salt Lake City, Utah      ;            1;      68;  856;   529
+Denver, Colorado           ; Salt Lake City, Utah      ;            7;      17;  654;   530
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      12;  925;   531
+San Francisco, California  ; Denver, Colorado          ;            7;      89;  895;   532
+Kansas City, Missouri      ; Denver, Colorado          ;            4;      40;  921;   533
+San Francisco, California  ; Madison, Wisconsin        ;            8;      86;  925;   534
+Kansas City, Missouri      ; Madison, Wisconsin        ;            6;       5;  853;   535
+Kansas City, Missouri      ; Denver, Colorado          ;            4;      69;  632;   536
+Denver, Colorado           ; Salt Lake City, Utah      ;            6;      14;  644;   537
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            2;      30;  899;   538
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      87;  907;   539
+Denver, Colorado           ; Salt Lake City, Utah      ;            1;       9;  908;   540
+Kansas City, Missouri      ; Denver, Colorado          ;            9;      49;  954;   541
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      63;  954;   542
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            8;       3;  755;   543
+San Francisco, California  ; Madison, Wisconsin        ;            9;      61;  843;   544
+Kansas City, Missouri      ; Salt Lake City, Utah      ;           10;      92;  971;   545
+Denver, Colorado           ; Salt Lake City, Utah      ;            1;      97;  821;   546
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            7;      76;  748;   547
+Denver, Colorado           ; Salt Lake City, Utah      ;            7;      89;  725;   548
+San Francisco, California  ; Salt Lake City, Utah      ;            2;      29;  799;   549
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      86;  681;   550
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      79;  667;   551
+San Francisco, California  ; Madison, Wisconsin        ;            7;      88;  858;   552
+San Francisco, California  ; Denver, Colorado          ;            5;      20;  712;   553
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      98;  678;   554
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;      39;  699;   555
+Denver, Colorado           ; Madison, Wisconsin        ;            1;     100;  769;   556
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      37;  625;   557
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      43;  850;   558
+Denver, Colorado           ; Salt Lake City, Utah      ;           10;      94;  699;   559
+San Francisco, California  ; Denver, Colorado          ;            2;      12;  783;   560
+Denver, Colorado           ; Madison, Wisconsin        ;            7;      94;  921;   561
+Kansas City, Missouri      ; Denver, Colorado          ;            4;      90;  923;   562
+San Francisco, California  ; Denver, Colorado          ;            8;      67;  759;   563
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      41;  789;   564
+Kansas City, Missouri      ; Denver, Colorado          ;            9;      61;  637;   565
+San Francisco, California  ; Denver, Colorado          ;            5;      85;  625;   566
+Kansas City, Missouri      ; Denver, Colorado          ;            2;      33;  600;   567
+San Francisco, California  ; Madison, Wisconsin        ;            7;      25;  667;   568
+San Francisco, California  ; Madison, Wisconsin        ;            2;      41;  986;   569
+San Francisco, California  ; Salt Lake City, Utah      ;            6;      70;  884;   570
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      46;  729;   571
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            6;      83;  796;   572
+San Francisco, California  ; Madison, Wisconsin        ;            8;       5;  812;   573
+Denver, Colorado           ; Madison, Wisconsin        ;            6;      17;  951;   574
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      70;  926;   575
+San Francisco, California  ; Madison, Wisconsin        ;            1;      57;  841;   576
+Denver, Colorado           ; Madison, Wisconsin        ;            5;      46;  943;   577
+Kansas City, Missouri      ; Denver, Colorado          ;            9;      29;  615;   578
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      63;  792;   579
+Denver, Colorado           ; Salt Lake City, Utah      ;            1;      34;  919;   580
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      63;  678;   581
+Denver, Colorado           ; Salt Lake City, Utah      ;            7;       6;  732;   582
+Denver, Colorado           ; Salt Lake City, Utah      ;            6;      63;  646;   583
+San Francisco, California  ; Denver, Colorado          ;            5;      85;  739;   584
+San Francisco, California  ; Denver, Colorado          ;            8;      15;  706;   585
+San Francisco, California  ; Salt Lake City, Utah      ;            1;       7;  774;   586
+Kansas City, Missouri      ; Denver, Colorado          ;            9;       2;  995;   587
+Kansas City, Missouri      ; Madison, Wisconsin        ;            6;       2;  616;   588
+Kansas City, Missouri      ; Madison, Wisconsin        ;            9;      50;  665;   589
+San Francisco, California  ; Salt Lake City, Utah      ;            4;      76;  631;   590
+Kansas City, Missouri      ; Madison, Wisconsin        ;            5;       6;  952;   591
+San Francisco, California  ; Salt Lake City, Utah      ;            2;      72;  803;   592
+Denver, Colorado           ; Madison, Wisconsin        ;            1;      71;  916;   593
+San Francisco, California  ; Denver, Colorado          ;            9;      64;  600;   594
+San Francisco, California  ; Madison, Wisconsin        ;            9;      58;  846;   595
+San Francisco, California  ; Madison, Wisconsin        ;           10;      87;  997;   596
+Kansas City, Missouri      ; Madison, Wisconsin        ;            1;      81;  764;   597
+San Francisco, California  ; Denver, Colorado          ;            9;     100;  895;   598
+San Francisco, California  ; Denver, Colorado          ;            3;      54;  818;   599
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;      15;  740;   600
+Kansas City, Missouri      ; Madison, Wisconsin        ;            1;      19;  870;   601
+San Francisco, California  ; Salt Lake City, Utah      ;            4;      58;  790;   602
+Kansas City, Missouri      ; Denver, Colorado          ;            4;      98;  601;   603
+San Francisco, California  ; Salt Lake City, Utah      ;            3;      26;  697;   604
+Kansas City, Missouri      ; Madison, Wisconsin        ;           10;      16;  791;   605
+San Francisco, California  ; Denver, Colorado          ;           10;      45;  610;   606
+Kansas City, Missouri      ; Denver, Colorado          ;            8;      34;  924;   607
+Kansas City, Missouri      ; Denver, Colorado          ;            3;      93;  852;   608
+San Francisco, California  ; Denver, Colorado          ;            4;      47;  862;   609
+Denver, Colorado           ; Salt Lake City, Utah      ;            9;       4;  638;   610
+Kansas City, Missouri      ; Salt Lake City, Utah      ;           10;     100;  604;   611
+San Francisco, California  ; Madison, Wisconsin        ;            4;      24;  637;   612
+San Francisco, California  ; Denver, Colorado          ;            9;      86;  942;   613
+Denver, Colorado           ; Salt Lake City, Utah      ;           10;      33;  946;   614
+Kansas City, Missouri      ; Denver, Colorado          ;           10;      40;  895;   615
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      11;  629;   616
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;      54;  883;   617
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            4;      93;  664;   618
+Kansas City, Missouri      ; Madison, Wisconsin        ;            4;      85;  657;   619
+Kansas City, Missouri      ; Madison, Wisconsin        ;            8;      39;  626;   620
+Kansas City, Missouri      ; Madison, Wisconsin        ;            1;      26;  858;   621
+Denver, Colorado           ; Madison, Wisconsin        ;            2;      37;  936;   622
+Denver, Colorado           ; Salt Lake City, Utah      ;            7;      95;  926;   623
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;      46;  952;   624
+Kansas City, Missouri      ; Madison, Wisconsin        ;            2;      21;  821;   625
+San Francisco, California  ; Madison, Wisconsin        ;            1;      78;  712;   626
+Denver, Colorado           ; Salt Lake City, Utah      ;           10;      18;  609;   627
+San Francisco, California  ; Salt Lake City, Utah      ;            8;       1;  821;   628
+Kansas City, Missouri      ; Madison, Wisconsin        ;            4;      17;  841;   629
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;      36;  818;   630
+San Francisco, California  ; Salt Lake City, Utah      ;            7;      72;  872;   631
+Kansas City, Missouri      ; Madison, Wisconsin        ;            4;      53;  663;   632
+San Francisco, California  ; Madison, Wisconsin        ;            2;      86;  724;   633
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      83;  903;   634
+Kansas City, Missouri      ; Denver, Colorado          ;            5;      71;  843;   635
+San Francisco, California  ; Denver, Colorado          ;            3;       8;  788;   636
+Kansas City, Missouri      ; Madison, Wisconsin        ;            9;       3;  737;   637
+San Francisco, California  ; Madison, Wisconsin        ;            4;       4;  989;   638
+San Francisco, California  ; Madison, Wisconsin        ;            2;      12;  794;   639
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      71;  662;   640
+Denver, Colorado           ; Salt Lake City, Utah      ;            7;       9;  744;   641
+Kansas City, Missouri      ; Denver, Colorado          ;            8;      76;  850;   642
+San Francisco, California  ; Madison, Wisconsin        ;            8;       5;  690;   643
+Denver, Colorado           ; Madison, Wisconsin        ;            8;      83;  828;   644
+Denver, Colorado           ; Salt Lake City, Utah      ;            6;      97;  620;   645
+San Francisco, California  ; Salt Lake City, Utah      ;            2;      21;  911;   646
+San Francisco, California  ; Denver, Colorado          ;            9;     100;  722;   647
+Denver, Colorado           ; Salt Lake City, Utah      ;            3;      78;  966;   648
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      10;  842;   649
+Denver, Colorado           ; Salt Lake City, Utah      ;           10;      77;  762;   650
+San Francisco, California  ; Salt Lake City, Utah      ;            8;      14;  825;   651
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            8;       8;  700;   652
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      50;  913;   653
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;      29;  837;   654
+San Francisco, California  ; Denver, Colorado          ;            3;      53;  915;   655
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            9;       9;  813;   656
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;       7;  879;   657
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            8;      39;  684;   658
+San Francisco, California  ; Denver, Colorado          ;            7;      68;  817;   659
+Kansas City, Missouri      ; Madison, Wisconsin        ;            5;       4;  603;   660
+San Francisco, California  ; Denver, Colorado          ;           10;      71;  813;   661
+Kansas City, Missouri      ; Madison, Wisconsin        ;            6;      44;  820;   662
+Denver, Colorado           ; Salt Lake City, Utah      ;            7;       6;  636;   663
+Kansas City, Missouri      ; Madison, Wisconsin        ;            7;      82;  929;   664
+Denver, Colorado           ; Salt Lake City, Utah      ;            6;      83;  810;   665
+San Francisco, California  ; Denver, Colorado          ;            5;      66;  905;   666
+San Francisco, California  ; Madison, Wisconsin        ;            6;      96;  859;   667
+Denver, Colorado           ; Salt Lake City, Utah      ;            1;      16;  666;   668
+Denver, Colorado           ; Salt Lake City, Utah      ;            6;      36;  769;   669
+Kansas City, Missouri      ; Madison, Wisconsin        ;            7;      66;  736;   670
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            7;      43;  677;   671
+Denver, Colorado           ; Salt Lake City, Utah      ;            9;      42;  693;   672
+Kansas City, Missouri      ; Denver, Colorado          ;            2;      90;  788;   673
+San Francisco, California  ; Madison, Wisconsin        ;           10;      70;  750;   674
+Kansas City, Missouri      ; Madison, Wisconsin        ;            2;      56;  602;   675
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      18;  684;   676
+Denver, Colorado           ; Madison, Wisconsin        ;            2;      90;  678;   677
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      96;  608;   678
+San Francisco, California  ; Denver, Colorado          ;            6;      54;  960;   679
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            4;      67;  607;   680
+Kansas City, Missouri      ; Madison, Wisconsin        ;           10;      44;  989;   681
+Denver, Colorado           ; Salt Lake City, Utah      ;           10;      82;  951;   682
+Kansas City, Missouri      ; Salt Lake City, Utah      ;           10;      41;  871;   683
+San Francisco, California  ; Salt Lake City, Utah      ;            8;      15;  927;   684
+Kansas City, Missouri      ; Denver, Colorado          ;            4;      86;  935;   685
+Denver, Colorado           ; Salt Lake City, Utah      ;            4;      52;  652;   686
+San Francisco, California  ; Madison, Wisconsin        ;            4;     100;  990;   687
+San Francisco, California  ; Denver, Colorado          ;            4;      27;  631;   688
+Kansas City, Missouri      ; Madison, Wisconsin        ;            3;      65;  881;   689
+Denver, Colorado           ; Salt Lake City, Utah      ;            3;      18;  822;   690
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;      78;  946;   691
+Kansas City, Missouri      ; Denver, Colorado          ;            1;      77;  781;   692
+Denver, Colorado           ; Salt Lake City, Utah      ;            3;      58;  882;   693
+Kansas City, Missouri      ; Denver, Colorado          ;            9;      48;  763;   694
+Kansas City, Missouri      ; Denver, Colorado          ;            8;      45;  821;   695
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      58;  803;   696
+San Francisco, California  ; Denver, Colorado          ;            9;      76;  654;   697
+San Francisco, California  ; Denver, Colorado          ;            4;      80;  982;   698
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            8;      36;  732;   699
+San Francisco, California  ; Madison, Wisconsin        ;            9;       2;  604;   700
+Kansas City, Missouri      ; Denver, Colorado          ;            2;      79;  879;   701
+San Francisco, California  ; Madison, Wisconsin        ;            8;      31;  794;   702
+Denver, Colorado           ; Salt Lake City, Utah      ;           10;      18;  781;   703
+San Francisco, California  ; Denver, Colorado          ;            6;      56;  971;   704
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      72;  624;   705
+Kansas City, Missouri      ; Denver, Colorado          ;            3;       1;  653;   706
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            3;      94;  822;   707
+San Francisco, California  ; Salt Lake City, Utah      ;            7;       8;  936;   708
+Kansas City, Missouri      ; Denver, Colorado          ;            1;       8;  969;   709
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            7;      57;  637;   710
+Denver, Colorado           ; Salt Lake City, Utah      ;            9;      18;  739;   711
+San Francisco, California  ; Madison, Wisconsin        ;            5;      76;  996;   712
+San Francisco, California  ; Salt Lake City, Utah      ;            3;      90;  825;   713
+Kansas City, Missouri      ; Madison, Wisconsin        ;            8;      35;  969;   714
+San Francisco, California  ; Madison, Wisconsin        ;            5;      61;  756;   715
+San Francisco, California  ; Denver, Colorado          ;            1;       1;  845;   716
+Denver, Colorado           ; Salt Lake City, Utah      ;           10;      99;  761;   717
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      58;  800;   718
+San Francisco, California  ; Salt Lake City, Utah      ;            5;      37;  675;   719
+San Francisco, California  ; Madison, Wisconsin        ;            9;      71;  901;   720
+Denver, Colorado           ; Salt Lake City, Utah      ;            7;      24;  893;   721
+San Francisco, California  ; Salt Lake City, Utah      ;            5;      66;  788;   722
+San Francisco, California  ; Denver, Colorado          ;           10;      23;  850;   723
+Denver, Colorado           ; Salt Lake City, Utah      ;            9;      63;  971;   724
+San Francisco, California  ; Salt Lake City, Utah      ;            8;      54;  912;   725
+Denver, Colorado           ; Madison, Wisconsin        ;            8;      25;  786;   726
+Denver, Colorado           ; Salt Lake City, Utah      ;            7;      11;  826;   727
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      37;  672;   728
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            3;      59;  735;   729
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      22;  800;   730
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            8;      86;  760;   731
+Kansas City, Missouri      ; Madison, Wisconsin        ;            5;      18;  742;   732
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;      37;  978;   733
+Kansas City, Missouri      ; Madison, Wisconsin        ;           10;      89;  987;   734
+San Francisco, California  ; Denver, Colorado          ;            5;      27;  678;   735
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;      24;  929;   736
+Denver, Colorado           ; Madison, Wisconsin        ;            1;      83;  736;   737
+San Francisco, California  ; Denver, Colorado          ;           10;      83;  952;   738
+Kansas City, Missouri      ; Denver, Colorado          ;            2;      31;  832;   739
+Denver, Colorado           ; Salt Lake City, Utah      ;           10;      19;  827;   740
+Kansas City, Missouri      ; Denver, Colorado          ;           10;       1;  708;   741
+Denver, Colorado           ; Salt Lake City, Utah      ;            4;      86;  704;   742
+Denver, Colorado           ; Madison, Wisconsin        ;            6;      87;  810;   743
+Kansas City, Missouri      ; Denver, Colorado          ;            6;      91;  730;   744
+San Francisco, California  ; Salt Lake City, Utah      ;            7;      18;  806;   745
+San Francisco, California  ; Salt Lake City, Utah      ;            8;      85;  780;   746
+Kansas City, Missouri      ; Madison, Wisconsin        ;            7;      66;  752;   747
+San Francisco, California  ; Madison, Wisconsin        ;            3;      64;  966;   748
+San Francisco, California  ; Denver, Colorado          ;            2;       8;  633;   749
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      79;  872;   750
+San Francisco, California  ; Denver, Colorado          ;            2;      40;  622;   751
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            9;      96;  744;   752
+San Francisco, California  ; Madison, Wisconsin        ;            9;      78;  803;   753
+San Francisco, California  ; Salt Lake City, Utah      ;            2;      11;  707;   754
+Denver, Colorado           ; Madison, Wisconsin        ;            3;      48;  758;   755
+San Francisco, California  ; Salt Lake City, Utah      ;            7;      91;  831;   756
+Denver, Colorado           ; Madison, Wisconsin        ;            7;      12;  940;   757
+Denver, Colorado           ; Salt Lake City, Utah      ;            3;      55;  895;   758
+Denver, Colorado           ; Madison, Wisconsin        ;            6;      58;  652;   759
+Kansas City, Missouri      ; Denver, Colorado          ;            1;      65;  742;   760
+Denver, Colorado           ; Salt Lake City, Utah      ;            1;      72;  963;   761
+Kansas City, Missouri      ; Madison, Wisconsin        ;            6;      73;  668;   762
+Denver, Colorado           ; Salt Lake City, Utah      ;            6;      77;  611;   763
+Denver, Colorado           ; Salt Lake City, Utah      ;           10;      82;  899;   764
+San Francisco, California  ; Madison, Wisconsin        ;            6;      82;  980;   765
+San Francisco, California  ; Salt Lake City, Utah      ;            7;      53;  871;   766
+Denver, Colorado           ; Salt Lake City, Utah      ;            9;      59;  775;   767
+Denver, Colorado           ; Salt Lake City, Utah      ;            6;      73;  731;   768
+San Francisco, California  ; Salt Lake City, Utah      ;            3;       4;  641;   769
+Denver, Colorado           ; Madison, Wisconsin        ;            1;      22;  986;   770
+San Francisco, California  ; Denver, Colorado          ;            6;      41;  987;   771
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      52;  880;   772
+Kansas City, Missouri      ; Denver, Colorado          ;            1;      59;  680;   773
+San Francisco, California  ; Denver, Colorado          ;           10;      51;  804;   774
+Kansas City, Missouri      ; Madison, Wisconsin        ;            3;      45;  894;   775
+Kansas City, Missouri      ; Madison, Wisconsin        ;            4;      80;  610;   776
+Kansas City, Missouri      ; Madison, Wisconsin        ;            9;      12;  820;   777
+Denver, Colorado           ; Madison, Wisconsin        ;            1;      32;  687;   778
+Kansas City, Missouri      ; Denver, Colorado          ;            8;      43;  689;   779
+Kansas City, Missouri      ; Denver, Colorado          ;            5;      43;  748;   780
+Kansas City, Missouri      ; Denver, Colorado          ;            8;      18;  806;   781
+San Francisco, California  ; Denver, Colorado          ;            2;       1;  864;   782
+Denver, Colorado           ; Madison, Wisconsin        ;            5;      43;  852;   783
+Denver, Colorado           ; Salt Lake City, Utah      ;            3;      54;  854;   784
+Kansas City, Missouri      ; Denver, Colorado          ;            9;      36;  935;   785
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      38;  720;   786
+Kansas City, Missouri      ; Madison, Wisconsin        ;            9;      77;  635;   787
+Kansas City, Missouri      ; Denver, Colorado          ;            8;      22;  648;   788
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            2;      37;  963;   789
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;      48;  682;   790
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;     100;  811;   791
+San Francisco, California  ; Denver, Colorado          ;            7;      59;  969;   792
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      16;  861;   793
+San Francisco, California  ; Denver, Colorado          ;            4;      61;  653;   794
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      42;  700;   795
+Denver, Colorado           ; Salt Lake City, Utah      ;            9;      90;  602;   796
+Denver, Colorado           ; Salt Lake City, Utah      ;            1;       1;  794;   797
+Kansas City, Missouri      ; Denver, Colorado          ;            5;      88;  858;   798
+San Francisco, California  ; Madison, Wisconsin        ;            8;      46;  777;   799
+San Francisco, California  ; Salt Lake City, Utah      ;            9;      68;  650;   800
+San Francisco, California  ; Salt Lake City, Utah      ;            8;      28;  963;   801
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      57;  764;   802
+San Francisco, California  ; Denver, Colorado          ;            1;      72;  847;   803
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;      47;  678;   804
+San Francisco, California  ; Salt Lake City, Utah      ;            1;      38;  905;   805
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      81;  724;   806
+Denver, Colorado           ; Madison, Wisconsin        ;            1;      96;  673;   807
+San Francisco, California  ; Denver, Colorado          ;           10;      98;  653;   808
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            4;      91;  938;   809
+Kansas City, Missouri      ; Denver, Colorado          ;            8;      90;  627;   810
+Kansas City, Missouri      ; Denver, Colorado          ;            7;      47;  946;   811
+Denver, Colorado           ; Salt Lake City, Utah      ;            4;       9;  781;   812
+San Francisco, California  ; Salt Lake City, Utah      ;            7;      72;  616;   813
+Denver, Colorado           ; Salt Lake City, Utah      ;            3;      56;  726;   814
+Kansas City, Missouri      ; Madison, Wisconsin        ;            3;      84;  799;   815
+Denver, Colorado           ; Salt Lake City, Utah      ;            7;       1;  752;   816
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      36;  807;   817
+Kansas City, Missouri      ; Madison, Wisconsin        ;            5;      28;  629;   818
+Kansas City, Missouri      ; Denver, Colorado          ;            9;      49; 1000;   819
+San Francisco, California  ; Madison, Wisconsin        ;            6;       9;  785;   820
+Denver, Colorado           ; Salt Lake City, Utah      ;            4;       9;  875;   821
+San Francisco, California  ; Madison, Wisconsin        ;            4;      49;  925;   822
+San Francisco, California  ; Madison, Wisconsin        ;            4;      89;  782;   823
+Denver, Colorado           ; Madison, Wisconsin        ;            6;      34;  863;   824
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;       7;  730;   825
+San Francisco, California  ; Denver, Colorado          ;            1;      52;  706;   826
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            9;      63;  820;   827
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            1;      90;  857;   828
+Kansas City, Missouri      ; Denver, Colorado          ;            9;      41;  872;   829
+Kansas City, Missouri      ; Madison, Wisconsin        ;            6;      81;  620;   830
+Kansas City, Missouri      ; Madison, Wisconsin        ;            2;      98;  968;   831
+San Francisco, California  ; Denver, Colorado          ;            7;      58;  706;   832
+Denver, Colorado           ; Salt Lake City, Utah      ;            4;      74;  744;   833
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;      98;  752;   834
+San Francisco, California  ; Salt Lake City, Utah      ;            5;      99;  806;   835
+San Francisco, California  ; Madison, Wisconsin        ;            5;      71;  883;   836
+Denver, Colorado           ; Madison, Wisconsin        ;            1;      65;  636;   837
+Kansas City, Missouri      ; Denver, Colorado          ;            7;      78;  703;   838
+Denver, Colorado           ; Salt Lake City, Utah      ;            3;      70;  777;   839
+Denver, Colorado           ; Salt Lake City, Utah      ;            7;      83;  980;   840
+San Francisco, California  ; Madison, Wisconsin        ;            8;      52;  658;   841
+San Francisco, California  ; Madison, Wisconsin        ;            4;      30;  703;   842
+San Francisco, California  ; Salt Lake City, Utah      ;           10;       8;  720;   843
+Kansas City, Missouri      ; Madison, Wisconsin        ;            8;      10;  837;   844
+Denver, Colorado           ; Madison, Wisconsin        ;            3;      44;  782;   845
+San Francisco, California  ; Denver, Colorado          ;            1;      11;  856;   846
+Kansas City, Missouri      ; Denver, Colorado          ;            9;      48;  611;   847
+Denver, Colorado           ; Madison, Wisconsin        ;            5;      38;  843;   848
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            6;      49;  627;   849
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            8;      86;  890;   850
+Kansas City, Missouri      ; Madison, Wisconsin        ;            9;      38;  874;   851
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            4;      82;  878;   852
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      32;  678;   853
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            7;      13;  644;   854
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      68;  788;   855
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            2;      96;  676;   856
+Denver, Colorado           ; Madison, Wisconsin        ;            8;      67;  697;   857
+Denver, Colorado           ; Madison, Wisconsin        ;            6;      46;  736;   858
+San Francisco, California  ; Madison, Wisconsin        ;            5;      89;  844;   859
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      28;  885;   860
+Denver, Colorado           ; Salt Lake City, Utah      ;            1;      43;  735;   861
+Denver, Colorado           ; Salt Lake City, Utah      ;            1;      63;  803;   862
+San Francisco, California  ; Salt Lake City, Utah      ;            1;      59;  939;   863
+Denver, Colorado           ; Madison, Wisconsin        ;            2;      80;  886;   864
+San Francisco, California  ; Salt Lake City, Utah      ;            6;      56;  941;   865
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;      59;  962;   866
+Denver, Colorado           ; Salt Lake City, Utah      ;            4;      92;  771;   867
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      33;  985;   868
+Kansas City, Missouri      ; Madison, Wisconsin        ;            8;      77;  935;   869
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      13;  893;   870
+San Francisco, California  ; Salt Lake City, Utah      ;            7;       7;  662;   871
+San Francisco, California  ; Madison, Wisconsin        ;           10;      69;  835;   872
+San Francisco, California  ; Madison, Wisconsin        ;            3;      21;  977;   873
+San Francisco, California  ; Madison, Wisconsin        ;            5;      90;  953;   874
+Kansas City, Missouri      ; Madison, Wisconsin        ;           10;      88;  829;   875
+Kansas City, Missouri      ; Madison, Wisconsin        ;            6;      66;  971;   876
+Kansas City, Missouri      ; Madison, Wisconsin        ;            9;       4;  711;   877
+Kansas City, Missouri      ; Madison, Wisconsin        ;            2;      45;  867;   878
+San Francisco, California  ; Madison, Wisconsin        ;            2;      92;  953;   879
+Denver, Colorado           ; Madison, Wisconsin        ;            2;      85;  669;   880
+San Francisco, California  ; Madison, Wisconsin        ;            5;      76;  633;   881
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;      48;  795;   882
+Denver, Colorado           ; Salt Lake City, Utah      ;            7;       6;  674;   883
+San Francisco, California  ; Salt Lake City, Utah      ;            4;      84;  863;   884
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;      71;  959;   885
+Kansas City, Missouri      ; Salt Lake City, Utah      ;           10;      90;  644;   886
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      42;  735;   887
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      43;  719;   888
+San Francisco, California  ; Denver, Colorado          ;            7;      80;  766;   889
+San Francisco, California  ; Salt Lake City, Utah      ;            2;      61;  930;   890
+Denver, Colorado           ; Madison, Wisconsin        ;            6;      99;  650;   891
+San Francisco, California  ; Denver, Colorado          ;            9;      33;  999;   892
+Kansas City, Missouri      ; Denver, Colorado          ;            6;      44;  614;   893
+Denver, Colorado           ; Salt Lake City, Utah      ;           10;      11;  873;   894
+Kansas City, Missouri      ; Madison, Wisconsin        ;            3;      13;  865;   895
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      27;  642;   896
+San Francisco, California  ; Salt Lake City, Utah      ;            6;      52;  671;   897
+Denver, Colorado           ; Salt Lake City, Utah      ;            4;      14;  701;   898
+Denver, Colorado           ; Madison, Wisconsin        ;            8;      74;  739;   899
+Denver, Colorado           ; Salt Lake City, Utah      ;            9;      19;  952;   900
+Kansas City, Missouri      ; Denver, Colorado          ;            8;      29;  808;   901
+San Francisco, California  ; Salt Lake City, Utah      ;            7;      89;  915;   902
+San Francisco, California  ; Madison, Wisconsin        ;            6;      34;  943;   903
+San Francisco, California  ; Madison, Wisconsin        ;            1;      27;  878;   904
+San Francisco, California  ; Denver, Colorado          ;            1;      70;  680;   905
+Denver, Colorado           ; Madison, Wisconsin        ;            2;       8;  605;   906
+Kansas City, Missouri      ; Madison, Wisconsin        ;           10;      89;  866;   907
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;       4;  798;   908
+Kansas City, Missouri      ; Madison, Wisconsin        ;            9;     100;  933;   909
+Denver, Colorado           ; Salt Lake City, Utah      ;            7;      71;  678;   910
+San Francisco, California  ; Madison, Wisconsin        ;            1;      63;  993;   911
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            4;      15;  688;   912
+Kansas City, Missouri      ; Denver, Colorado          ;            7;      69;  899;   913
+Denver, Colorado           ; Madison, Wisconsin        ;            7;      19;  843;   914
+Denver, Colorado           ; Salt Lake City, Utah      ;            3;      57;  760;   915
+Kansas City, Missouri      ; Madison, Wisconsin        ;            7;       1;  891;   916
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            1;       1;  818;   917
+Denver, Colorado           ; Salt Lake City, Utah      ;            3;      27;  844;   918
+Kansas City, Missouri      ; Denver, Colorado          ;            2;      55;  873;   919
+San Francisco, California  ; Salt Lake City, Utah      ;            6;      80;  788;   920
+Denver, Colorado           ; Madison, Wisconsin        ;            3;      36;  603;   921
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            1;      45;  609;   922
+Denver, Colorado           ; Salt Lake City, Utah      ;            1;      73;  857;   923
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            1;      19;  641;   924
+Kansas City, Missouri      ; Denver, Colorado          ;            6;      44;  828;   925
+Denver, Colorado           ; Salt Lake City, Utah      ;            3;      52;  868;   926
+Denver, Colorado           ; Madison, Wisconsin        ;            6;      75;  659;   927
+San Francisco, California  ; Salt Lake City, Utah      ;            2;      30;  811;   928
+San Francisco, California  ; Salt Lake City, Utah      ;            8;      77;  709;   929
+Kansas City, Missouri      ; Denver, Colorado          ;            7;      60;  825;   930
+Denver, Colorado           ; Madison, Wisconsin        ;            8;      22;  805;   931
+San Francisco, California  ; Madison, Wisconsin        ;           10;      44;  870;   932
+Denver, Colorado           ; Salt Lake City, Utah      ;            6;      27;  867;   933
+Denver, Colorado           ; Salt Lake City, Utah      ;            3;      96;  899;   934
+Kansas City, Missouri      ; Denver, Colorado          ;            9;      89;  773;   935
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            4;      34;  618;   936
+Denver, Colorado           ; Salt Lake City, Utah      ;            6;      55;  868;   937
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            3;      18;  895;   938
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            1;      90;  648;   939
+San Francisco, California  ; Madison, Wisconsin        ;            2;      21;  622;   940
+San Francisco, California  ; Madison, Wisconsin        ;            2;      76;  805;   941
+Denver, Colorado           ; Madison, Wisconsin        ;            8;      55;  904;   942
+San Francisco, California  ; Madison, Wisconsin        ;            9;       8;  637;   943
+Denver, Colorado           ; Madison, Wisconsin        ;            5;      32;  832;   944
+San Francisco, California  ; Madison, Wisconsin        ;            2;      57;  801;   945
+San Francisco, California  ; Madison, Wisconsin        ;            3;      70;  711;   946
+San Francisco, California  ; Salt Lake City, Utah      ;            2;      55;  688;   947
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      13;  932;   948
+Denver, Colorado           ; Madison, Wisconsin        ;            6;      70;  890;   949
+Denver, Colorado           ; Madison, Wisconsin        ;            8;      46;  708;   950
+San Francisco, California  ; Madison, Wisconsin        ;            1;      90;  958;   951
+San Francisco, California  ; Madison, Wisconsin        ;            6;      55;  970;   952
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;      30;  785;   953
+San Francisco, California  ; Salt Lake City, Utah      ;            5;      69;  764;   954
+Kansas City, Missouri      ; Madison, Wisconsin        ;            1;      73;  791;   955
+San Francisco, California  ; Denver, Colorado          ;            3;      95;  953;   956
+Kansas City, Missouri      ; Madison, Wisconsin        ;            9;       6;  938;   957
+Kansas City, Missouri      ; Denver, Colorado          ;           10;       1;  999;   958
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            3;      46;  794;   959
+Denver, Colorado           ; Madison, Wisconsin        ;            2;      44;  970;   960
+Denver, Colorado           ; Madison, Wisconsin        ;            6;      27;  947;   961
+San Francisco, California  ; Denver, Colorado          ;            2;      36;  935;   962
+San Francisco, California  ; Denver, Colorado          ;            4;     100;  913;   963
+Kansas City, Missouri      ; Denver, Colorado          ;            9;      24;  881;   964
+Kansas City, Missouri      ; Madison, Wisconsin        ;            1;      94;  798;   965
+San Francisco, California  ; Denver, Colorado          ;            1;      57;  749;   966
+Denver, Colorado           ; Madison, Wisconsin        ;            1;      94;  748;   967
+San Francisco, California  ; Madison, Wisconsin        ;            5;      85;  811;   968
+San Francisco, California  ; Denver, Colorado          ;            7;      61;  627;   969
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      42;  604;   970
+Denver, Colorado           ; Madison, Wisconsin        ;            5;      79;  971;   971
+San Francisco, California  ; Denver, Colorado          ;           10;      66;  944;   972
+Denver, Colorado           ; Salt Lake City, Utah      ;            9;      86;  805;   973
+San Francisco, California  ; Denver, Colorado          ;            6;      86;  723;   974
+San Francisco, California  ; Madison, Wisconsin        ;            1;      26;  750;   975
+San Francisco, California  ; Salt Lake City, Utah      ;            8;       9;  987;   976
+Kansas City, Missouri      ; Denver, Colorado          ;            8;       3;  790;   977
+Kansas City, Missouri      ; Madison, Wisconsin        ;            9;      90;  996;   978
+San Francisco, California  ; Salt Lake City, Utah      ;            4;      96;  825;   979
+Denver, Colorado           ; Madison, Wisconsin        ;            2;      99;  868;   980
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            7;      12;  847;   981
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            4;      65;  931;   982
+Denver, Colorado           ; Madison, Wisconsin        ;            7;      48;  712;   983
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      50;  960;   984
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      44;  647;   985
+Kansas City, Missouri      ; Denver, Colorado          ;            2;      13;  688;   986
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            6;      17;  797;   987
+Denver, Colorado           ; Madison, Wisconsin        ;            5;      92;  916;   988
+Kansas City, Missouri      ; Madison, Wisconsin        ;           10;      53;  910;   989
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;      11;  683;   990
+Kansas City, Missouri      ; Denver, Colorado          ;            4;      71;  982;   991
+San Francisco, California  ; Denver, Colorado          ;            5;       4;  645;   992
+San Francisco, California  ; Madison, Wisconsin        ;            3;      55;  749;   993
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            6;      97;  990;   994
+Kansas City, Missouri      ; Madison, Wisconsin        ;            6;      55;  959;   995
+Denver, Colorado           ; Salt Lake City, Utah      ;            4;      11;  833;   996
+San Francisco, California  ; Salt Lake City, Utah      ;            8;      69;  841;   997
+San Francisco, California  ; Denver, Colorado          ;            7;      19;  801;   998
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      20;  947;   999
+Kansas City, Missouri      ; Madison, Wisconsin        ;            5;      37;  761;  1000
+Kansas City, Missouri      ; Madison, Wisconsin        ;            1;     100;  742;  1001
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            2;      45;  612;  1002
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            8;      11;  863;  1003
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      95;  937;  1004
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            6;      95;  849;  1005
+Kansas City, Missouri      ; Madison, Wisconsin        ;            2;      53;  876;  1006
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      48;  813;  1007
+San Francisco, California  ; Madison, Wisconsin        ;            9;      67;  996;  1008
+San Francisco, California  ; Madison, Wisconsin        ;            9;      64;  614;  1009
+San Francisco, California  ; Denver, Colorado          ;            9;      66;  767;  1010
+Kansas City, Missouri      ; Denver, Colorado          ;           10;       6;  861;  1011
+San Francisco, California  ; Madison, Wisconsin        ;            8;      32;  852;  1012
+Kansas City, Missouri      ; Denver, Colorado          ;            5;      68;  662;  1013
+San Francisco, California  ; Salt Lake City, Utah      ;            6;      20;  773;  1014
+San Francisco, California  ; Madison, Wisconsin        ;            4;       8;  968;  1015
+Kansas City, Missouri      ; Madison, Wisconsin        ;            6;      23;  804;  1016
+Denver, Colorado           ; Madison, Wisconsin        ;            6;      68;  974;  1017
+Kansas City, Missouri      ; Denver, Colorado          ;            4;      97;  695;  1018
+San Francisco, California  ; Madison, Wisconsin        ;            4;      18;  744;  1019
+San Francisco, California  ; Madison, Wisconsin        ;            6;      93;  657;  1020
+San Francisco, California  ; Salt Lake City, Utah      ;            5;      66;  787;  1021
+Denver, Colorado           ; Salt Lake City, Utah      ;            3;      69;  959;  1022
+Denver, Colorado           ; Salt Lake City, Utah      ;           10;      84;  928;  1023
+Denver, Colorado           ; Madison, Wisconsin        ;            3;      89;  943;  1024
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      25;  734;  1025
+San Francisco, California  ; Salt Lake City, Utah      ;            8;       9;  635;  1026
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            8;      61;  852;  1027
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      96;  888;  1028
+San Francisco, California  ; Salt Lake City, Utah      ;            4;      79;  763;  1029
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      74;  845;  1030
+San Francisco, California  ; Madison, Wisconsin        ;            5;      12;  790;  1031
+Denver, Colorado           ; Salt Lake City, Utah      ;            9;      45;  865;  1032
+San Francisco, California  ; Salt Lake City, Utah      ;            8;      85;  958;  1033
+San Francisco, California  ; Madison, Wisconsin        ;            8;      64;  798;  1034
+Kansas City, Missouri      ; Salt Lake City, Utah      ;           10;      21;  847;  1035
+San Francisco, California  ; Madison, Wisconsin        ;            9;      29;  991;  1036
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      28;  635;  1037
+San Francisco, California  ; Madison, Wisconsin        ;           10;      56;  615;  1038
+Kansas City, Missouri      ; Madison, Wisconsin        ;           10;      87;  917;  1039
+San Francisco, California  ; Salt Lake City, Utah      ;            4;      15;  869;  1040
+Denver, Colorado           ; Madison, Wisconsin        ;            9;       5;  835;  1041
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            3;      28;  733;  1042
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            7;      32;  885;  1043
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;      64;  666;  1044
+San Francisco, California  ; Denver, Colorado          ;            6;      77;  988;  1045
+Denver, Colorado           ; Salt Lake City, Utah      ;            1;      12;  914;  1046
+Denver, Colorado           ; Madison, Wisconsin        ;            2;      38;  697;  1047
+Denver, Colorado           ; Salt Lake City, Utah      ;            7;      38;  787;  1048
+Denver, Colorado           ; Madison, Wisconsin        ;            6;      16;  686;  1049
+San Francisco, California  ; Denver, Colorado          ;            8;      41;  629;  1050
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      15;  915;  1051
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      73;  813;  1052
+Kansas City, Missouri      ; Madison, Wisconsin        ;            8;      72;  755;  1053
+Kansas City, Missouri      ; Madison, Wisconsin        ;           10;      95;  718;  1054
+Denver, Colorado           ; Madison, Wisconsin        ;            5;      14;  897;  1055
+Kansas City, Missouri      ; Madison, Wisconsin        ;            4;      13;  835;  1056
+Kansas City, Missouri      ; Madison, Wisconsin        ;            9;       8;  769;  1057
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;      12;  785;  1058
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      92;  663;  1059
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      90;  910;  1060
+San Francisco, California  ; Denver, Colorado          ;            8;      82;  991;  1061
+Denver, Colorado           ; Madison, Wisconsin        ;            6;      67;  963;  1062
+Denver, Colorado           ; Madison, Wisconsin        ;            5;      14;  911;  1063
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      24;  914;  1064
+San Francisco, California  ; Denver, Colorado          ;            1;      43;  827;  1065
+Kansas City, Missouri      ; Denver, Colorado          ;            4;      29;  642;  1066
+San Francisco, California  ; Madison, Wisconsin        ;            7;      78;  654;  1067
+Denver, Colorado           ; Madison, Wisconsin        ;            7;      41;  804;  1068
+San Francisco, California  ; Madison, Wisconsin        ;            6;      17;  855;  1069
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      76;  632;  1070
+Kansas City, Missouri      ; Madison, Wisconsin        ;            3;      78;  957;  1071
+San Francisco, California  ; Madison, Wisconsin        ;            8;      85;  951;  1072
+Denver, Colorado           ; Madison, Wisconsin        ;            3;      96;  912;  1073
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            1;      38; 1000;  1074
+Kansas City, Missouri      ; Madison, Wisconsin        ;            9;      19;  887;  1075
+Denver, Colorado           ; Madison, Wisconsin        ;            3;       3;  928;  1076
+San Francisco, California  ; Salt Lake City, Utah      ;            7;      20;  669;  1077
+San Francisco, California  ; Denver, Colorado          ;            4;      36;  748;  1078
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      96;  657;  1079
+Denver, Colorado           ; Salt Lake City, Utah      ;           10;      62;  794;  1080
+San Francisco, California  ; Madison, Wisconsin        ;            1;       7;  971;  1081
+San Francisco, California  ; Madison, Wisconsin        ;           10;      33;  923;  1082
+Denver, Colorado           ; Salt Lake City, Utah      ;            9;       9;  812;  1083
+San Francisco, California  ; Salt Lake City, Utah      ;            4;      44;  979;  1084
+Kansas City, Missouri      ; Madison, Wisconsin        ;            1;      20;  853;  1085
+San Francisco, California  ; Denver, Colorado          ;            7;      27;  618;  1086
+San Francisco, California  ; Denver, Colorado          ;            9;      97;  958;  1087
+San Francisco, California  ; Salt Lake City, Utah      ;            1;       9;  867;  1088
+Kansas City, Missouri      ; Denver, Colorado          ;           10;      95;  601;  1089
+Denver, Colorado           ; Salt Lake City, Utah      ;            1;      13;  838;  1090
+Denver, Colorado           ; Salt Lake City, Utah      ;            4;      79;  654;  1091
+Kansas City, Missouri      ; Madison, Wisconsin        ;            4;      11;  807;  1092
+Denver, Colorado           ; Salt Lake City, Utah      ;            7;      40;  906;  1093
+San Francisco, California  ; Madison, Wisconsin        ;            5;      67;  975;  1094
+Denver, Colorado           ; Madison, Wisconsin        ;            5;      83;  677;  1095
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;      69;  746;  1096
+Denver, Colorado           ; Madison, Wisconsin        ;            1;      16;  895;  1097
+Kansas City, Missouri      ; Madison, Wisconsin        ;            4;      74;  859;  1098
+Denver, Colorado           ; Salt Lake City, Utah      ;            6;      98;  623;  1099
+San Francisco, California  ; Salt Lake City, Utah      ;            7;      60;  978;  1100
+San Francisco, California  ; Denver, Colorado          ;            7;      50;  962;  1101
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            3;      64;  644;  1102
+Kansas City, Missouri      ; Madison, Wisconsin        ;            2;      47;  934;  1103
+Denver, Colorado           ; Madison, Wisconsin        ;            1;       5;  998;  1104
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      89;  775;  1105
+Denver, Colorado           ; Madison, Wisconsin        ;            8;      54;  798;  1106
+San Francisco, California  ; Salt Lake City, Utah      ;            8;      46;  813;  1107
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            9;      74;  732;  1108
+Denver, Colorado           ; Salt Lake City, Utah      ;            9;      51;  999;  1109
+San Francisco, California  ; Denver, Colorado          ;            1;      24;  672;  1110
+San Francisco, California  ; Denver, Colorado          ;            3;      76;  892;  1111
+Denver, Colorado           ; Madison, Wisconsin        ;            2;      83;  740;  1112
+San Francisco, California  ; Madison, Wisconsin        ;            5;      18;  794;  1113
+San Francisco, California  ; Denver, Colorado          ;            8;      33;  799;  1114
+Kansas City, Missouri      ; Denver, Colorado          ;            6;      75;  789;  1115
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;      98;  901;  1116
+San Francisco, California  ; Denver, Colorado          ;            1;      30;  625;  1117
+San Francisco, California  ; Madison, Wisconsin        ;            5;      74;  870;  1118
+San Francisco, California  ; Denver, Colorado          ;            4;      76;  941;  1119
+Denver, Colorado           ; Madison, Wisconsin        ;            6;      40;  751;  1120
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            2;      42;  910;  1121
+Kansas City, Missouri      ; Denver, Colorado          ;            7;      98;  956;  1122
+Denver, Colorado           ; Madison, Wisconsin        ;            3;      70;  925;  1123
+Denver, Colorado           ; Madison, Wisconsin        ;            6;      67;  916;  1124
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;      41;  670;  1125
+Kansas City, Missouri      ; Denver, Colorado          ;            4;       4;  784;  1126
+Denver, Colorado           ; Salt Lake City, Utah      ;            7;       6;  868;  1127
+Kansas City, Missouri      ; Denver, Colorado          ;            2;      34;  744;  1128
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            2;      59;  750;  1129
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            8;      54;  779;  1130
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;      91;  601;  1131
+San Francisco, California  ; Denver, Colorado          ;            7;      19;  799;  1132
+San Francisco, California  ; Salt Lake City, Utah      ;            4;      12;  763;  1133
+San Francisco, California  ; Madison, Wisconsin        ;            7;      32;  619;  1134
+San Francisco, California  ; Denver, Colorado          ;           10;       9;  867;  1135
+San Francisco, California  ; Denver, Colorado          ;            8;      45;  680;  1136
+San Francisco, California  ; Salt Lake City, Utah      ;            7;      42;  888;  1137
+Kansas City, Missouri      ; Madison, Wisconsin        ;            6;      88;  799;  1138
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            7;      97;  874;  1139
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      47;  749;  1140
+San Francisco, California  ; Denver, Colorado          ;            4;      52;  908;  1141
+Kansas City, Missouri      ; Madison, Wisconsin        ;            2;      98;  841;  1142
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;      44;  621;  1143
+Denver, Colorado           ; Madison, Wisconsin        ;            5;      42;  776;  1144
+San Francisco, California  ; Salt Lake City, Utah      ;            1;      70;  718;  1145
+San Francisco, California  ; Denver, Colorado          ;            4;      46;  724;  1146
+San Francisco, California  ; Denver, Colorado          ;            7;      23;  893;  1147
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            6;     100;  847;  1148
+San Francisco, California  ; Madison, Wisconsin        ;           10;       1;  844;  1149
+Denver, Colorado           ; Salt Lake City, Utah      ;            7;      30;  726;  1150
+San Francisco, California  ; Denver, Colorado          ;           10;      79;  615;  1151
+Denver, Colorado           ; Salt Lake City, Utah      ;           10;      96;  935;  1152
+San Francisco, California  ; Salt Lake City, Utah      ;            4;      70;  936;  1153
+Denver, Colorado           ; Madison, Wisconsin        ;            3;      64;  682;  1154
+Denver, Colorado           ; Madison, Wisconsin        ;           10;     100;  859;  1155
+Kansas City, Missouri      ; Denver, Colorado          ;            4;      36;  701;  1156
+San Francisco, California  ; Salt Lake City, Utah      ;            9;      48;  752;  1157
+Denver, Colorado           ; Salt Lake City, Utah      ;            3;      69;  928;  1158
+Denver, Colorado           ; Madison, Wisconsin        ;            2;     100;  613;  1159
+San Francisco, California  ; Denver, Colorado          ;            9;      84;  670;  1160
+Kansas City, Missouri      ; Denver, Colorado          ;            8;      52;  702;  1161
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      34;  726;  1162
+Denver, Colorado           ; Madison, Wisconsin        ;            1;      28;  633;  1163
+San Francisco, California  ; Madison, Wisconsin        ;            9;      51;  688;  1164
+Denver, Colorado           ; Salt Lake City, Utah      ;           10;       2;  685;  1165
+San Francisco, California  ; Madison, Wisconsin        ;           10;      77;  670;  1166
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      59;  770;  1167
+San Francisco, California  ; Denver, Colorado          ;            8;      13;  862;  1168
+San Francisco, California  ; Denver, Colorado          ;            4;      78;  695;  1169
+Kansas City, Missouri      ; Denver, Colorado          ;            1;      21;  751;  1170
+San Francisco, California  ; Salt Lake City, Utah      ;            8;      55;  753;  1171
+Kansas City, Missouri      ; Denver, Colorado          ;            7;      60;  625;  1172
+Kansas City, Missouri      ; Denver, Colorado          ;            2;       2;  872;  1173
+Kansas City, Missouri      ; Madison, Wisconsin        ;           10;      41;  919;  1174
+Kansas City, Missouri      ; Madison, Wisconsin        ;            1;      78;  907;  1175
+San Francisco, California  ; Madison, Wisconsin        ;            3;      44;  781;  1176
+San Francisco, California  ; Madison, Wisconsin        ;           10;      41;  616;  1177
+Denver, Colorado           ; Madison, Wisconsin        ;           10;       1;  798;  1178
+Kansas City, Missouri      ; Denver, Colorado          ;            6;       5;  606;  1179
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      16;  955;  1180
+San Francisco, California  ; Madison, Wisconsin        ;            2;      62;  769;  1181
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      16;  752;  1182
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            9;      42;  650;  1183
+Kansas City, Missouri      ; Madison, Wisconsin        ;            8;      35;  718;  1184
+Denver, Colorado           ; Salt Lake City, Utah      ;            3;      23;  667;  1185
+San Francisco, California  ; Denver, Colorado          ;            1;      64;  865;  1186
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            6;      37;  834;  1187
+Kansas City, Missouri      ; Denver, Colorado          ;            8;      29;  831;  1188
+San Francisco, California  ; Denver, Colorado          ;            6;      54;  907;  1189
+San Francisco, California  ; Salt Lake City, Utah      ;            3;      16;  911;  1190
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            8;      47;  761;  1191
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;      84;  905;  1192
+San Francisco, California  ; Salt Lake City, Utah      ;            1;      57;  844;  1193
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            3;      64;  723;  1194
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;      92;  644;  1195
+Denver, Colorado           ; Madison, Wisconsin        ;            2;      94;  909;  1196
+Kansas City, Missouri      ; Madison, Wisconsin        ;            9;      23;  656;  1197
+Kansas City, Missouri      ; Denver, Colorado          ;            2;      90;  949;  1198
+Kansas City, Missouri      ; Denver, Colorado          ;            8;      55;  961;  1199
+Denver, Colorado           ; Madison, Wisconsin        ;            7;      98;  816;  1200
+San Francisco, California  ; Madison, Wisconsin        ;            4;      77;  685;  1201
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            1;      87;  643;  1202
+Kansas City, Missouri      ; Denver, Colorado          ;            4;      15;  875;  1203
+Kansas City, Missouri      ; Denver, Colorado          ;           10;      60;  776;  1204
+Kansas City, Missouri      ; Denver, Colorado          ;            6;      74;  873;  1205
+Denver, Colorado           ; Salt Lake City, Utah      ;           10;      94;  714;  1206
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            7;      87;  701;  1207
+San Francisco, California  ; Denver, Colorado          ;            6;      70;  612;  1208
+Kansas City, Missouri      ; Denver, Colorado          ;            1;      38;  711;  1209
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            3;      13;  999;  1210
+San Francisco, California  ; Madison, Wisconsin        ;            7;      22;  980;  1211
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            7;      77;  614;  1212
+San Francisco, California  ; Denver, Colorado          ;            4;      35;  976;  1213
+San Francisco, California  ; Madison, Wisconsin        ;            5;      35;  646;  1214
+San Francisco, California  ; Denver, Colorado          ;            8;      90;  926;  1215
+Denver, Colorado           ; Madison, Wisconsin        ;            6;      95;  641;  1216
+San Francisco, California  ; Madison, Wisconsin        ;            7;      61;  734;  1217
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;      95;  802;  1218
+Kansas City, Missouri      ; Denver, Colorado          ;           10;       6;  618;  1219
+Denver, Colorado           ; Madison, Wisconsin        ;            7;      35;  710;  1220
+Kansas City, Missouri      ; Salt Lake City, Utah      ;           10;      19;  666;  1221
+Denver, Colorado           ; Madison, Wisconsin        ;            3;      80;  724;  1222
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      20;  709;  1223
+Kansas City, Missouri      ; Denver, Colorado          ;            5;      61;  687;  1224
+San Francisco, California  ; Madison, Wisconsin        ;            5;      72;  687;  1225
+San Francisco, California  ; Madison, Wisconsin        ;            6;      56;  915;  1226
+Kansas City, Missouri      ; Denver, Colorado          ;            1;      12;  705;  1227
+San Francisco, California  ; Madison, Wisconsin        ;            5;      84;  615;  1228
+Kansas City, Missouri      ; Denver, Colorado          ;            8;      23;  882;  1229
+San Francisco, California  ; Madison, Wisconsin        ;            6;      72;  748;  1230
+San Francisco, California  ; Salt Lake City, Utah      ;            8;      61;  880;  1231
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            4;      11;  882;  1232
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            4;      37;  790;  1233
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            9;      81;  738;  1234
+Denver, Colorado           ; Madison, Wisconsin        ;            3;      34;  712;  1235
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      48;  881;  1236
+Kansas City, Missouri      ; Denver, Colorado          ;            7;      40;  708;  1237
+San Francisco, California  ; Salt Lake City, Utah      ;            1;      70;  999;  1238
+San Francisco, California  ; Salt Lake City, Utah      ;            2;      44;  992;  1239
+Kansas City, Missouri      ; Madison, Wisconsin        ;            6;      51;  787;  1240
+Denver, Colorado           ; Madison, Wisconsin        ;            6;      33;  748;  1241
+San Francisco, California  ; Madison, Wisconsin        ;            3;      78;  962;  1242
+Kansas City, Missouri      ; Denver, Colorado          ;            7;       5;  917;  1243
+Kansas City, Missouri      ; Madison, Wisconsin        ;            7;      56;  971;  1244
+Denver, Colorado           ; Madison, Wisconsin        ;            8;      59;  742;  1245
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      43;  734;  1246
+San Francisco, California  ; Madison, Wisconsin        ;            7;       6;  630;  1247
+San Francisco, California  ; Salt Lake City, Utah      ;            9;      66;  660;  1248
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      23;  766;  1249
+San Francisco, California  ; Madison, Wisconsin        ;            1;      93;  904;  1250
+Kansas City, Missouri      ; Denver, Colorado          ;            3;      71;  834;  1251
+Denver, Colorado           ; Salt Lake City, Utah      ;            9;      49;  841;  1252
+San Francisco, California  ; Denver, Colorado          ;           10;      98;  607;  1253
+Kansas City, Missouri      ; Denver, Colorado          ;            8;      17;  855;  1254
+San Francisco, California  ; Salt Lake City, Utah      ;            7;      44;  663;  1255
+Denver, Colorado           ; Salt Lake City, Utah      ;            6;      11;  685;  1256
+San Francisco, California  ; Madison, Wisconsin        ;            6;      66;  874;  1257
+Kansas City, Missouri      ; Madison, Wisconsin        ;           10;      37;  901;  1258
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;      75;  946;  1259
+San Francisco, California  ; Denver, Colorado          ;            2;      84;  841;  1260
+San Francisco, California  ; Madison, Wisconsin        ;            1;      38;  788;  1261
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      28;  757;  1262
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      97;  631;  1263
+Denver, Colorado           ; Madison, Wisconsin        ;            7;      50;  625;  1264
+San Francisco, California  ; Salt Lake City, Utah      ;            8;      27;  947;  1265
+San Francisco, California  ; Denver, Colorado          ;            2;      55;  728;  1266
+Denver, Colorado           ; Salt Lake City, Utah      ;           10;      29;  959;  1267
+Kansas City, Missouri      ; Madison, Wisconsin        ;            6;       7;  664;  1268
+San Francisco, California  ; Madison, Wisconsin        ;            9;      48;  708;  1269
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            1;      30;  767;  1270
+San Francisco, California  ; Salt Lake City, Utah      ;            6;      57;  956;  1271
+Denver, Colorado           ; Madison, Wisconsin        ;            2;      69;  831;  1272
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      91;  600;  1273
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            7;      94;  837;  1274
+San Francisco, California  ; Salt Lake City, Utah      ;            1;      62;  688;  1275
+Kansas City, Missouri      ; Madison, Wisconsin        ;            6;      27;  970;  1276
+Denver, Colorado           ; Madison, Wisconsin        ;            7;      81;  913;  1277
+Kansas City, Missouri      ; Denver, Colorado          ;           10;      31;  729;  1278
+San Francisco, California  ; Salt Lake City, Utah      ;            6;      64;  999;  1279
+Kansas City, Missouri      ; Denver, Colorado          ;           10;      18;  983;  1280
+Kansas City, Missouri      ; Denver, Colorado          ;            4;      32;  745;  1281
+Kansas City, Missouri      ; Denver, Colorado          ;           10;       5;  927;  1282
+Kansas City, Missouri      ; Madison, Wisconsin        ;            3;       2;  730;  1283
+Denver, Colorado           ; Madison, Wisconsin        ;            1;     100;  902;  1284
+San Francisco, California  ; Madison, Wisconsin        ;            8;      65;  729;  1285
+Denver, Colorado           ; Madison, Wisconsin        ;            6;       2;  749;  1286
+Kansas City, Missouri      ; Salt Lake City, Utah      ;           10;      42;  633;  1287
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      98;  719;  1288
+Denver, Colorado           ; Madison, Wisconsin        ;            3;      70;  734;  1289
+San Francisco, California  ; Salt Lake City, Utah      ;            9;      43;  907;  1290
+San Francisco, California  ; Denver, Colorado          ;            7;      44;  807;  1291
+Kansas City, Missouri      ; Madison, Wisconsin        ;            4;      62;  621;  1292
+San Francisco, California  ; Madison, Wisconsin        ;            2;      56;  851;  1293
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            7;      63;  871;  1294
+Kansas City, Missouri      ; Madison, Wisconsin        ;            5;      45;  895;  1295
+San Francisco, California  ; Salt Lake City, Utah      ;            8;      24;  926;  1296
+San Francisco, California  ; Madison, Wisconsin        ;            3;      98;  676;  1297
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      47;  686;  1298
+San Francisco, California  ; Salt Lake City, Utah      ;            7;      54;  996;  1299
+Kansas City, Missouri      ; Denver, Colorado          ;            9;      58;  757;  1300
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;      81;  733;  1301
+San Francisco, California  ; Salt Lake City, Utah      ;            1;      83;  775;  1302
+Kansas City, Missouri      ; Denver, Colorado          ;            4;      57;  861;  1303
+San Francisco, California  ; Madison, Wisconsin        ;            6;      19;  692;  1304
+San Francisco, California  ; Denver, Colorado          ;            6;      28;  923;  1305
+Denver, Colorado           ; Madison, Wisconsin        ;            2;      27;  610;  1306
+Kansas City, Missouri      ; Denver, Colorado          ;            6;      27;  640;  1307
+Denver, Colorado           ; Madison, Wisconsin        ;            7;      81;  770;  1308
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      52;  667;  1309
+Kansas City, Missouri      ; Madison, Wisconsin        ;           10;      45;  665;  1310
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      37;  746;  1311
+Kansas City, Missouri      ; Madison, Wisconsin        ;            4;      93;  822;  1312
+Denver, Colorado           ; Madison, Wisconsin        ;            3;      55;  947;  1313
+San Francisco, California  ; Salt Lake City, Utah      ;            8;      43;  955;  1314
+Denver, Colorado           ; Madison, Wisconsin        ;            1;      87; 1000;  1315
+Denver, Colorado           ; Madison, Wisconsin        ;            3;      31;  906;  1316
+San Francisco, California  ; Salt Lake City, Utah      ;            3;      77;  613;  1317
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      52;  640;  1318
+Denver, Colorado           ; Madison, Wisconsin        ;            3;      82;  643;  1319
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;      41;  733;  1320
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;      22;  610;  1321
+San Francisco, California  ; Denver, Colorado          ;            1;      56;  698;  1322
+San Francisco, California  ; Madison, Wisconsin        ;            9;      19;  904;  1323
+Denver, Colorado           ; Salt Lake City, Utah      ;            3;      33;  644;  1324
+Kansas City, Missouri      ; Madison, Wisconsin        ;            8;       7;  615;  1325
+San Francisco, California  ; Salt Lake City, Utah      ;            4;      74;  605;  1326
+Denver, Colorado           ; Madison, Wisconsin        ;            5;      52;  638;  1327
+Kansas City, Missouri      ; Denver, Colorado          ;            4;      42;  967;  1328
+San Francisco, California  ; Salt Lake City, Utah      ;            3;      52;  769;  1329
+Denver, Colorado           ; Salt Lake City, Utah      ;            7;      24;  636;  1330
+Kansas City, Missouri      ; Madison, Wisconsin        ;            3;      65;  748;  1331
+Denver, Colorado           ; Madison, Wisconsin        ;            5;      68;  969;  1332
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;      30;  930;  1333
+Kansas City, Missouri      ; Denver, Colorado          ;            3;      65;  783;  1334
+Denver, Colorado           ; Salt Lake City, Utah      ;            4;      35;  693;  1335
+Denver, Colorado           ; Madison, Wisconsin        ;            8;      25;  653;  1336
+Kansas City, Missouri      ; Madison, Wisconsin        ;            7;       5;  833;  1337
+Kansas City, Missouri      ; Denver, Colorado          ;            9;      46;  887;  1338
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            1;       5;  683;  1339
+San Francisco, California  ; Denver, Colorado          ;            4;      66;  644;  1340
+Denver, Colorado           ; Salt Lake City, Utah      ;            4;      85;  821;  1341
+Denver, Colorado           ; Salt Lake City, Utah      ;            1;      95;  868;  1342
+San Francisco, California  ; Madison, Wisconsin        ;            8;      85;  627;  1343
+Denver, Colorado           ; Madison, Wisconsin        ;            5;      71;  612;  1344
+Denver, Colorado           ; Madison, Wisconsin        ;            1;      35;  951;  1345
+San Francisco, California  ; Salt Lake City, Utah      ;            8;      54;  785;  1346
+San Francisco, California  ; Denver, Colorado          ;            1;      78;  647;  1347
+Kansas City, Missouri      ; Madison, Wisconsin        ;            2;      42;  824;  1348
+Kansas City, Missouri      ; Madison, Wisconsin        ;            3;       8;  613;  1349
+San Francisco, California  ; Denver, Colorado          ;            2;      19; 1000;  1350
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      81;  680;  1351
+San Francisco, California  ; Denver, Colorado          ;           10;      74;  873;  1352
+Kansas City, Missouri      ; Denver, Colorado          ;            6;      20;  994;  1353
+San Francisco, California  ; Salt Lake City, Utah      ;            7;      33;  766;  1354
+San Francisco, California  ; Salt Lake City, Utah      ;            4;      50;  934;  1355
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      35;  677;  1356
+San Francisco, California  ; Denver, Colorado          ;            8;      87;  622;  1357
+San Francisco, California  ; Denver, Colorado          ;            5;      31;  650;  1358
+Denver, Colorado           ; Salt Lake City, Utah      ;            9;      47;  894;  1359
+San Francisco, California  ; Salt Lake City, Utah      ;            3;      48;  883;  1360
+Denver, Colorado           ; Salt Lake City, Utah      ;            1;      59;  712;  1361
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      31;  853;  1362
+Denver, Colorado           ; Salt Lake City, Utah      ;            1;      73;  773;  1363
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      79;  820;  1364
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            8;      19;  934;  1365
+San Francisco, California  ; Madison, Wisconsin        ;            2;      23;  629;  1366
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      18;  903;  1367
+San Francisco, California  ; Salt Lake City, Utah      ;            6;      52;  611;  1368
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      99;  742;  1369
+San Francisco, California  ; Denver, Colorado          ;            3;      60;  753;  1370
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            2;      43;  668;  1371
+Kansas City, Missouri      ; Madison, Wisconsin        ;            6;      67;  855;  1372
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;      12;  906;  1373
+Denver, Colorado           ; Salt Lake City, Utah      ;            1;      32;  876;  1374
+Denver, Colorado           ; Madison, Wisconsin        ;            8;      67;  773;  1375
+San Francisco, California  ; Salt Lake City, Utah      ;            7;       5;  929;  1376
+San Francisco, California  ; Madison, Wisconsin        ;            9;      80;  760;  1377
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            9;      99;  742;  1378
+San Francisco, California  ; Denver, Colorado          ;            5;       4;  939;  1379
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      88;  663;  1380
+Denver, Colorado           ; Madison, Wisconsin        ;            3;      31;  939;  1381
+San Francisco, California  ; Denver, Colorado          ;            7;      26;  784;  1382
+Denver, Colorado           ; Salt Lake City, Utah      ;            9;      55;  784;  1383
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      42;  679;  1384
+Denver, Colorado           ; Madison, Wisconsin        ;            4;       3;  713;  1385
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            8;      55;  787;  1386
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      78;  873;  1387
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            1;      90;  666;  1388
+Kansas City, Missouri      ; Denver, Colorado          ;            9;      19;  766;  1389
+San Francisco, California  ; Denver, Colorado          ;            2;      16;  824;  1390
+San Francisco, California  ; Madison, Wisconsin        ;            7;      62;  951;  1391
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            4;      91;  754;  1392
+San Francisco, California  ; Denver, Colorado          ;            7;      75;  747;  1393
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            3;      72;  645;  1394
+Denver, Colorado           ; Salt Lake City, Utah      ;            3;      29;  751;  1395
+Kansas City, Missouri      ; Denver, Colorado          ;            5;      11;  610;  1396
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      24;  648;  1397
+San Francisco, California  ; Salt Lake City, Utah      ;            7;      27;  791;  1398
+Kansas City, Missouri      ; Denver, Colorado          ;            8;      25;  642;  1399
+Denver, Colorado           ; Madison, Wisconsin        ;            8;      78;  713;  1400
+Kansas City, Missouri      ; Denver, Colorado          ;            6;      90;  864;  1401
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;      75;  772;  1402
+Kansas City, Missouri      ; Denver, Colorado          ;            3;      11;  709;  1403
+San Francisco, California  ; Madison, Wisconsin        ;           10;      94;  989;  1404
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;      74;  891;  1405
+Denver, Colorado           ; Salt Lake City, Utah      ;            3;      63;  706;  1406
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;      97;  651;  1407
+Denver, Colorado           ; Salt Lake City, Utah      ;            3;      53;  775;  1408
+San Francisco, California  ; Denver, Colorado          ;           10;      45;  937;  1409
+Denver, Colorado           ; Madison, Wisconsin        ;            3;      60;  714;  1410
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      88;  646;  1411
+Kansas City, Missouri      ; Denver, Colorado          ;            3;       7;  882;  1412
+Kansas City, Missouri      ; Salt Lake City, Utah      ;           10;      32;  921;  1413
+Kansas City, Missouri      ; Madison, Wisconsin        ;            1;      61;  696;  1414
+Kansas City, Missouri      ; Denver, Colorado          ;            9;      65;  887;  1415
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            4;      98;  844;  1416
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            4;      54;  937;  1417
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;       9;  640;  1418
+San Francisco, California  ; Salt Lake City, Utah      ;            8;      83;  940;  1419
+Denver, Colorado           ; Madison, Wisconsin        ;            3;      46;  607;  1420
+Kansas City, Missouri      ; Madison, Wisconsin        ;            8;       9;  705;  1421
+San Francisco, California  ; Madison, Wisconsin        ;            3;      80;  927;  1422
+Kansas City, Missouri      ; Salt Lake City, Utah      ;           10;     100;  718;  1423
+Denver, Colorado           ; Madison, Wisconsin        ;            7;      48;  645;  1424
+San Francisco, California  ; Salt Lake City, Utah      ;            5;      57;  973;  1425
+Denver, Colorado           ; Madison, Wisconsin        ;            3;      50;  680;  1426
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;      29;  869;  1427
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;      34;  858;  1428
+San Francisco, California  ; Salt Lake City, Utah      ;            8;      68;  974;  1429
+San Francisco, California  ; Salt Lake City, Utah      ;            7;      73;  928;  1430
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      16;  849;  1431
+San Francisco, California  ; Denver, Colorado          ;            5;       8;  666;  1432
+Kansas City, Missouri      ; Madison, Wisconsin        ;            2;      66;  850;  1433
+San Francisco, California  ; Madison, Wisconsin        ;            8;      91;  885;  1434
+San Francisco, California  ; Denver, Colorado          ;           10;      81;  972;  1435
+San Francisco, California  ; Denver, Colorado          ;            2;      66;  622;  1436
+Denver, Colorado           ; Madison, Wisconsin        ;            6;      30;  715;  1437
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            6;      42;  872;  1438
+San Francisco, California  ; Denver, Colorado          ;            6;      35;  957;  1439
+San Francisco, California  ; Salt Lake City, Utah      ;            1;      65;  678;  1440
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;      63;  845;  1441
+Kansas City, Missouri      ; Denver, Colorado          ;            9;      71;  688;  1442
+San Francisco, California  ; Denver, Colorado          ;           10;      69;  997;  1443
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            9;      73;  725;  1444
+Denver, Colorado           ; Salt Lake City, Utah      ;            1;      48;  948;  1445
+Denver, Colorado           ; Salt Lake City, Utah      ;            3;      65;  624;  1446
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      75;  702;  1447
+Kansas City, Missouri      ; Salt Lake City, Utah      ;           10;      68;  837;  1448
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            4;       3;  826;  1449
+San Francisco, California  ; Denver, Colorado          ;            6;      12;  614;  1450
+San Francisco, California  ; Madison, Wisconsin        ;            2;      74;  804;  1451
+San Francisco, California  ; Salt Lake City, Utah      ;            8;      37;  756;  1452
+San Francisco, California  ; Salt Lake City, Utah      ;            1;      76;  873;  1453
+Kansas City, Missouri      ; Madison, Wisconsin        ;            2;      66;  652;  1454
+San Francisco, California  ; Madison, Wisconsin        ;            4;      48;  661;  1455
+San Francisco, California  ; Madison, Wisconsin        ;            8;      62;  631;  1456
+Denver, Colorado           ; Madison, Wisconsin        ;            1;      58;  845;  1457
+Denver, Colorado           ; Madison, Wisconsin        ;            2;      82;  922;  1458
+Denver, Colorado           ; Salt Lake City, Utah      ;            9;      51;  986;  1459
+San Francisco, California  ; Salt Lake City, Utah      ;            3;      21;  978;  1460
+Denver, Colorado           ; Madison, Wisconsin        ;            6;      53;  938;  1461
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;      41;  667;  1462
+Denver, Colorado           ; Salt Lake City, Utah      ;            1;      74;  996;  1463
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            6;      94;  984;  1464
+Kansas City, Missouri      ; Madison, Wisconsin        ;            2;      27;  907;  1465
+Denver, Colorado           ; Madison, Wisconsin        ;            5;      79;  789;  1466
+Kansas City, Missouri      ; Madison, Wisconsin        ;            7;      49;  907;  1467
+Denver, Colorado           ; Salt Lake City, Utah      ;            9;      82;  789;  1468
+Denver, Colorado           ; Salt Lake City, Utah      ;            6;       8;  891;  1469
+Kansas City, Missouri      ; Denver, Colorado          ;            6;      44;  662;  1470
+Denver, Colorado           ; Madison, Wisconsin        ;            7;      90;  947;  1471
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            1;      31;  649;  1472
+San Francisco, California  ; Denver, Colorado          ;            8;      78;  629;  1473
+Kansas City, Missouri      ; Madison, Wisconsin        ;            9;      88;  766;  1474
+San Francisco, California  ; Madison, Wisconsin        ;            3;      89;  860;  1475
+Kansas City, Missouri      ; Salt Lake City, Utah      ;           10;      83;  797;  1476
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      57;  777;  1477
+San Francisco, California  ; Denver, Colorado          ;            4;       7;  605;  1478
+Denver, Colorado           ; Salt Lake City, Utah      ;            4;       9;  892;  1479
+Kansas City, Missouri      ; Madison, Wisconsin        ;            7;      57;  787;  1480
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            3;      59;  731;  1481
+Kansas City, Missouri      ; Denver, Colorado          ;            6;      33;  988;  1482
+Denver, Colorado           ; Salt Lake City, Utah      ;            7;      20;  647;  1483
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      79;  970;  1484
+San Francisco, California  ; Denver, Colorado          ;            5;      67;  830;  1485
+Kansas City, Missouri      ; Madison, Wisconsin        ;            8;      53;  749;  1486
+San Francisco, California  ; Salt Lake City, Utah      ;            5;      18;  953;  1487
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;      67;  710;  1488
+San Francisco, California  ; Madison, Wisconsin        ;            8;       9;  642;  1489
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            4;      95;  945;  1490
+San Francisco, California  ; Denver, Colorado          ;            4;      74;  970;  1491
+San Francisco, California  ; Madison, Wisconsin        ;            9;      59;  955;  1492
+San Francisco, California  ; Madison, Wisconsin        ;            6;      27;  738;  1493
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      99;  749;  1494
+Kansas City, Missouri      ; Madison, Wisconsin        ;            8;      78;  737;  1495
+San Francisco, California  ; Madison, Wisconsin        ;            6;      54;  735;  1496
+San Francisco, California  ; Madison, Wisconsin        ;            8;      66;  918;  1497
+San Francisco, California  ; Salt Lake City, Utah      ;            4;      60;  926;  1498
+San Francisco, California  ; Madison, Wisconsin        ;            8;      62;  904;  1499
+San Francisco, California  ; Denver, Colorado          ;            1;      85;  661;  1500
+Denver, Colorado           ; Salt Lake City, Utah      ;           10;      42;  945;  1501
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            3;      10;  746;  1502
+Kansas City, Missouri      ; Madison, Wisconsin        ;            2;      25;  739;  1503
+San Francisco, California  ; Salt Lake City, Utah      ;            4;      74;  723;  1504
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            3;      66;  768;  1505
+San Francisco, California  ; Madison, Wisconsin        ;            2;      18;  600;  1506
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            2;      12;  952;  1507
+Kansas City, Missouri      ; Denver, Colorado          ;            4;      91;  839;  1508
+Denver, Colorado           ; Salt Lake City, Utah      ;            9;       1;  815;  1509
+Denver, Colorado           ; Madison, Wisconsin        ;            3;      99;  865;  1510
+San Francisco, California  ; Salt Lake City, Utah      ;            1;      46;  871;  1511
+Kansas City, Missouri      ; Denver, Colorado          ;            9;      40;  871;  1512
+San Francisco, California  ; Salt Lake City, Utah      ;            9;      25;  908;  1513
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            2;       8;  771;  1514
+San Francisco, California  ; Madison, Wisconsin        ;            7;      34;  936;  1515
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      56;  920;  1516
+Kansas City, Missouri      ; Denver, Colorado          ;            8;      62;  641;  1517
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            2;      77;  922;  1518
+Denver, Colorado           ; Salt Lake City, Utah      ;           10;     100;  735;  1519
+Kansas City, Missouri      ; Denver, Colorado          ;            9;      23;  802;  1520
+San Francisco, California  ; Denver, Colorado          ;            6;      77;  838;  1521
+Denver, Colorado           ; Salt Lake City, Utah      ;            4;      55;  778;  1522
+San Francisco, California  ; Denver, Colorado          ;            9;      99;  816;  1523
+Denver, Colorado           ; Madison, Wisconsin        ;            6;      95;  832;  1524
+Denver, Colorado           ; Madison, Wisconsin        ;            3;      97;  868;  1525
+San Francisco, California  ; Madison, Wisconsin        ;            9;      17;  751;  1526
+San Francisco, California  ; Denver, Colorado          ;            7;      21;  891;  1527
+Kansas City, Missouri      ; Denver, Colorado          ;           10;      38;  745;  1528
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;      99;  693;  1529
+Kansas City, Missouri      ; Madison, Wisconsin        ;            7;       4;  656;  1530
+San Francisco, California  ; Salt Lake City, Utah      ;            5;      68;  743;  1531
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      20;  782;  1532
+Kansas City, Missouri      ; Denver, Colorado          ;            3;      36;  744;  1533
+San Francisco, California  ; Denver, Colorado          ;            6;      37;  794;  1534
+Kansas City, Missouri      ; Denver, Colorado          ;            7;      43;  849;  1535
+San Francisco, California  ; Madison, Wisconsin        ;            5;      22;  857;  1536
+Denver, Colorado           ; Salt Lake City, Utah      ;            9;      51;  605;  1537
+Kansas City, Missouri      ; Denver, Colorado          ;           10;      81;  650;  1538
+San Francisco, California  ; Madison, Wisconsin        ;            1;      37;  998;  1539
+Denver, Colorado           ; Madison, Wisconsin        ;            3;      52;  696;  1540
+San Francisco, California  ; Denver, Colorado          ;            3;      72;  626;  1541
+Denver, Colorado           ; Salt Lake City, Utah      ;            9;      73;  618;  1542
+San Francisco, California  ; Denver, Colorado          ;            4;      52;  889;  1543
+Denver, Colorado           ; Madison, Wisconsin        ;            1;      59;  905;  1544
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;       8;  649;  1545
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            3;      68;  889;  1546
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      68;  665;  1547
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;      20;  720;  1548
+San Francisco, California  ; Madison, Wisconsin        ;            3;      78;  954;  1549
+Denver, Colorado           ; Madison, Wisconsin        ;            5;      82;  865;  1550
+Denver, Colorado           ; Madison, Wisconsin        ;            5;      47;  733;  1551
+San Francisco, California  ; Salt Lake City, Utah      ;            4;      95;  946;  1552
+San Francisco, California  ; Madison, Wisconsin        ;            5;      70;  924;  1553
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            4;      17;  779;  1554
+San Francisco, California  ; Madison, Wisconsin        ;            5;      73;  823;  1555
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      18;  952;  1556
+Kansas City, Missouri      ; Madison, Wisconsin        ;            7;      64;  733;  1557
+Denver, Colorado           ; Madison, Wisconsin        ;            5;      65;  835;  1558
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            6;      88;  872;  1559
+Kansas City, Missouri      ; Madison, Wisconsin        ;            6;      18;  946;  1560
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      49;  639;  1561
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            6;       2;  986;  1562
+Denver, Colorado           ; Madison, Wisconsin        ;            3;       7;  799;  1563
+Denver, Colorado           ; Salt Lake City, Utah      ;            3;      86;  734;  1564
+San Francisco, California  ; Denver, Colorado          ;           10;      31;  913;  1565
+Denver, Colorado           ; Madison, Wisconsin        ;            6;      91;  830;  1566
+San Francisco, California  ; Denver, Colorado          ;           10;       4;  884;  1567
+Denver, Colorado           ; Salt Lake City, Utah      ;            4;      32;  982;  1568
+Denver, Colorado           ; Salt Lake City, Utah      ;            3;      39;  823;  1569
+Denver, Colorado           ; Salt Lake City, Utah      ;            7;      47;  740;  1570
+San Francisco, California  ; Salt Lake City, Utah      ;            1;      95;  743;  1571
+San Francisco, California  ; Denver, Colorado          ;            9;      86;  882;  1572
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;      52;  708;  1573
+San Francisco, California  ; Salt Lake City, Utah      ;            1;      46;  676;  1574
+San Francisco, California  ; Salt Lake City, Utah      ;            5;      25;  925;  1575
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      67;  874;  1576
+Kansas City, Missouri      ; Madison, Wisconsin        ;            4;      62;  648;  1577
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            8;      56;  851;  1578
+Denver, Colorado           ; Madison, Wisconsin        ;            5;      57;  662;  1579
+Denver, Colorado           ; Salt Lake City, Utah      ;            4;      54;  736;  1580
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;      34;  626;  1581
+Kansas City, Missouri      ; Madison, Wisconsin        ;            6;       1;  667;  1582
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            2;      46;  641;  1583
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            6;       3;  666;  1584
+Kansas City, Missouri      ; Denver, Colorado          ;            7;      51;  878;  1585
+Denver, Colorado           ; Madison, Wisconsin        ;            1;      52;  665;  1586
+Denver, Colorado           ; Madison, Wisconsin        ;            7;      48;  662;  1587
+Denver, Colorado           ; Salt Lake City, Utah      ;            6;      30;  762;  1588
+San Francisco, California  ; Denver, Colorado          ;            3;      76;  645;  1589
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      27;  731;  1590
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;       1;  933;  1591
+Denver, Colorado           ; Salt Lake City, Utah      ;            3;       7;  616;  1592
+Kansas City, Missouri      ; Denver, Colorado          ;           10;      78;  871;  1593
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      53;  604;  1594
+San Francisco, California  ; Madison, Wisconsin        ;            9;      91;  902;  1595
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            1;      73;  793;  1596
+San Francisco, California  ; Salt Lake City, Utah      ;            1;      63;  902;  1597
+San Francisco, California  ; Denver, Colorado          ;            3;      63;  696;  1598
+Kansas City, Missouri      ; Madison, Wisconsin        ;            6;      67;  922;  1599
+Denver, Colorado           ; Salt Lake City, Utah      ;           10;      13;  966;  1600
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;       7;  889;  1601
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            3;      50;  880;  1602
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      94;  832;  1603
+Denver, Colorado           ; Madison, Wisconsin        ;            1;      51;  894;  1604
+San Francisco, California  ; Madison, Wisconsin        ;            3;      33;  998;  1605
+San Francisco, California  ; Salt Lake City, Utah      ;            8;      65;  653;  1606
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;      48;  659;  1607
+San Francisco, California  ; Madison, Wisconsin        ;            9;      84;  707;  1608
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            1;      19;  872;  1609
+Denver, Colorado           ; Salt Lake City, Utah      ;           10;      61;  637;  1610
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      34;  647;  1611
+Kansas City, Missouri      ; Madison, Wisconsin        ;            3;      93;  617;  1612
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      81;  820;  1613
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      72;  639;  1614
+Denver, Colorado           ; Madison, Wisconsin        ;            3;      72;  826;  1615
+Kansas City, Missouri      ; Denver, Colorado          ;            3;      45;  943;  1616
+San Francisco, California  ; Salt Lake City, Utah      ;            4;      93;  800;  1617
+Denver, Colorado           ; Salt Lake City, Utah      ;            9;      77;  951;  1618
+Kansas City, Missouri      ; Denver, Colorado          ;            3;      36;  730;  1619
+San Francisco, California  ; Madison, Wisconsin        ;            8;      43;  625;  1620
+Kansas City, Missouri      ; Denver, Colorado          ;            5;      35;  838;  1621
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      79;  604;  1622
+San Francisco, California  ; Madison, Wisconsin        ;            2;      62;  613;  1623
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      27;  911;  1624
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;      50;  821;  1625
+Denver, Colorado           ; Madison, Wisconsin        ;            3;      89;  870;  1626
+San Francisco, California  ; Madison, Wisconsin        ;           10;      66;  910;  1627
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            7;      44;  644;  1628
+Denver, Colorado           ; Madison, Wisconsin        ;            6;      11;  754;  1629
+Kansas City, Missouri      ; Madison, Wisconsin        ;            5;      28;  905;  1630
+San Francisco, California  ; Madison, Wisconsin        ;            4;      25;  914;  1631
+Kansas City, Missouri      ; Denver, Colorado          ;           10;       6;  734;  1632
+Denver, Colorado           ; Madison, Wisconsin        ;            8;      15;  658;  1633
+San Francisco, California  ; Salt Lake City, Utah      ;            5;      85;  715;  1634
+San Francisco, California  ; Salt Lake City, Utah      ;            7;      29;  727;  1635
+Kansas City, Missouri      ; Madison, Wisconsin        ;            4;      35;  747;  1636
+San Francisco, California  ; Madison, Wisconsin        ;            4;      62;  695;  1637
+San Francisco, California  ; Denver, Colorado          ;            6;      80;  943;  1638
+San Francisco, California  ; Denver, Colorado          ;            8;      20;  810;  1639
+San Francisco, California  ; Salt Lake City, Utah      ;            8;      51;  786;  1640
+Denver, Colorado           ; Madison, Wisconsin        ;            6;      64;  810;  1641
+San Francisco, California  ; Denver, Colorado          ;            1;      46;  720;  1642
+Kansas City, Missouri      ; Salt Lake City, Utah      ;           10;      26;  922;  1643
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      61;  725;  1644
+Denver, Colorado           ; Salt Lake City, Utah      ;            7;       5;  763;  1645
+Denver, Colorado           ; Madison, Wisconsin        ;            8;      95;  710;  1646
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            9;      66;  938;  1647
+Denver, Colorado           ; Madison, Wisconsin        ;            2;      95;  869;  1648
+Denver, Colorado           ; Salt Lake City, Utah      ;            7;      83;  610;  1649
+San Francisco, California  ; Salt Lake City, Utah      ;            1;      93;  982;  1650
+Kansas City, Missouri      ; Denver, Colorado          ;            3;      36;  836;  1651
+Denver, Colorado           ; Madison, Wisconsin        ;            3;      72;  660;  1652
+Kansas City, Missouri      ; Denver, Colorado          ;            8;      58;  683;  1653
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      42;  701;  1654
+Denver, Colorado           ; Madison, Wisconsin        ;            3;      24;  933;  1655
+Kansas City, Missouri      ; Madison, Wisconsin        ;            5;      58;  810;  1656
+San Francisco, California  ; Denver, Colorado          ;           10;      49;  849;  1657
+San Francisco, California  ; Denver, Colorado          ;            3;      40;  858;  1658
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            7;      26;  850;  1659
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      30;  816;  1660
+Kansas City, Missouri      ; Denver, Colorado          ;           10;      63;  984;  1661
+Denver, Colorado           ; Salt Lake City, Utah      ;            9;      97;  963;  1662
+Denver, Colorado           ; Salt Lake City, Utah      ;           10;      65;  984;  1663
+San Francisco, California  ; Salt Lake City, Utah      ;            2;      81;  604;  1664
+Kansas City, Missouri      ; Denver, Colorado          ;            6;      15;  613;  1665
+Denver, Colorado           ; Salt Lake City, Utah      ;            3;      81;  890;  1666
+Denver, Colorado           ; Salt Lake City, Utah      ;            4;      96;  965;  1667
+San Francisco, California  ; Madison, Wisconsin        ;            6;      46;  794;  1668
+Denver, Colorado           ; Salt Lake City, Utah      ;           10;       8;  798;  1669
+San Francisco, California  ; Madison, Wisconsin        ;            5;      77;  743;  1670
+San Francisco, California  ; Madison, Wisconsin        ;            6;      32;  966;  1671
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      29;  705;  1672
+Denver, Colorado           ; Salt Lake City, Utah      ;            4;       4;  939;  1673
+Kansas City, Missouri      ; Madison, Wisconsin        ;            9;      71;  856;  1674
+Kansas City, Missouri      ; Madison, Wisconsin        ;           10;      82;  612;  1675
+Kansas City, Missouri      ; Madison, Wisconsin        ;            8;      81;  777;  1676
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            4;      80;  992;  1677
+San Francisco, California  ; Salt Lake City, Utah      ;            6;      68;  843;  1678
+Kansas City, Missouri      ; Madison, Wisconsin        ;            6;      27;  924;  1679
+Denver, Colorado           ; Salt Lake City, Utah      ;            7;      67;  900;  1680
+San Francisco, California  ; Madison, Wisconsin        ;            7;      26;  887;  1681
+San Francisco, California  ; Salt Lake City, Utah      ;            3;      70;  947;  1682
+Kansas City, Missouri      ; Madison, Wisconsin        ;            6;      29;  859;  1683
+Denver, Colorado           ; Salt Lake City, Utah      ;            4;      15;  991;  1684
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      54;  754;  1685
+Denver, Colorado           ; Madison, Wisconsin        ;            5;      89;  956;  1686
+San Francisco, California  ; Denver, Colorado          ;            3;      39;  746;  1687
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      95;  887;  1688
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            9;      16;  964;  1689
+Kansas City, Missouri      ; Madison, Wisconsin        ;            8;       8;  902;  1690
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      91;  669;  1691
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;       8;  632;  1692
+Denver, Colorado           ; Madison, Wisconsin        ;            2;      84;  863;  1693
+Denver, Colorado           ; Salt Lake City, Utah      ;            4;      57;  666;  1694
+Kansas City, Missouri      ; Denver, Colorado          ;            7;       4;  620;  1695
+Denver, Colorado           ; Salt Lake City, Utah      ;            9;      12;  846;  1696
+Denver, Colorado           ; Madison, Wisconsin        ;            7;      61;  810;  1697
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      63;  782;  1698
+San Francisco, California  ; Salt Lake City, Utah      ;            8;      80;  711;  1699
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            8;      37;  626;  1700
+Denver, Colorado           ; Salt Lake City, Utah      ;            6;      96;  761;  1701
+San Francisco, California  ; Denver, Colorado          ;            6;      55;  930;  1702
+Kansas City, Missouri      ; Denver, Colorado          ;            9;      86;  930;  1703
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      18;  992;  1704
+San Francisco, California  ; Salt Lake City, Utah      ;            5;      11;  635;  1705
+San Francisco, California  ; Madison, Wisconsin        ;            7;      64;  739;  1706
+Denver, Colorado           ; Madison, Wisconsin        ;            5;      45;  836;  1707
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            6;      43;  713;  1708
+Denver, Colorado           ; Salt Lake City, Utah      ;            7;      81;  850;  1709
+Denver, Colorado           ; Salt Lake City, Utah      ;            9;      72;  942;  1710
+Kansas City, Missouri      ; Denver, Colorado          ;            7;      57;  903;  1711
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            2;      69;  817;  1712
+Kansas City, Missouri      ; Madison, Wisconsin        ;            3;      49;  995;  1713
+Kansas City, Missouri      ; Denver, Colorado          ;            3;      15;  898;  1714
+San Francisco, California  ; Denver, Colorado          ;            6;      40;  836;  1715
+San Francisco, California  ; Madison, Wisconsin        ;            9;      84;  961;  1716
+San Francisco, California  ; Salt Lake City, Utah      ;            5;      92;  887;  1717
+Denver, Colorado           ; Salt Lake City, Utah      ;            1;     100;  676;  1718
+Kansas City, Missouri      ; Denver, Colorado          ;            8;      89;  699;  1719
+Kansas City, Missouri      ; Madison, Wisconsin        ;            5;      14;  619;  1720
+San Francisco, California  ; Denver, Colorado          ;            8;      56;  704;  1721
+Denver, Colorado           ; Madison, Wisconsin        ;            8;      81;  647;  1722
+San Francisco, California  ; Madison, Wisconsin        ;           10;      99;  944;  1723
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      60;  780;  1724
+San Francisco, California  ; Salt Lake City, Utah      ;            1;      55;  808;  1725
+San Francisco, California  ; Salt Lake City, Utah      ;            1;      96;  881;  1726
+San Francisco, California  ; Salt Lake City, Utah      ;            9;      87;  980;  1727
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;      31;  800;  1728
+Denver, Colorado           ; Madison, Wisconsin        ;            8;      42;  821;  1729
+San Francisco, California  ; Madison, Wisconsin        ;            5;      49;  841;  1730
+Denver, Colorado           ; Salt Lake City, Utah      ;            1;       6;  826;  1731
+Kansas City, Missouri      ; Denver, Colorado          ;            9;      71;  858;  1732
+Denver, Colorado           ; Madison, Wisconsin        ;            2;      14;  731;  1733
+Denver, Colorado           ; Salt Lake City, Utah      ;            3;      67;  943;  1734
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;      42;  666;  1735
+Kansas City, Missouri      ; Madison, Wisconsin        ;            8;      88;  993;  1736
+San Francisco, California  ; Salt Lake City, Utah      ;            9;      32;  657;  1737
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      71;  651;  1738
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      10;  633;  1739
+San Francisco, California  ; Madison, Wisconsin        ;            4;      44;  706;  1740
+San Francisco, California  ; Salt Lake City, Utah      ;            1;      23;  916;  1741
+Kansas City, Missouri      ; Madison, Wisconsin        ;            8;      74;  928;  1742
+San Francisco, California  ; Salt Lake City, Utah      ;            3;      54;  669;  1743
+Kansas City, Missouri      ; Denver, Colorado          ;            9;      98;  652;  1744
+Denver, Colorado           ; Madison, Wisconsin        ;            1;      85;  635;  1745
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      29;  626;  1746
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            1;      41;  980;  1747
+Denver, Colorado           ; Madison, Wisconsin        ;            6;       2;  746;  1748
+San Francisco, California  ; Salt Lake City, Utah      ;            2;      45;  725;  1749
+San Francisco, California  ; Denver, Colorado          ;            8;      44;  748;  1750
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            3;      74;  950;  1751
+Denver, Colorado           ; Madison, Wisconsin        ;            7;      18;  724;  1752
+Kansas City, Missouri      ; Madison, Wisconsin        ;            5;      52;  656;  1753
+Kansas City, Missouri      ; Denver, Colorado          ;           10;      65;  691;  1754
+Denver, Colorado           ; Salt Lake City, Utah      ;            9;      84;  650;  1755
+Kansas City, Missouri      ; Denver, Colorado          ;            7;      59;  703;  1756
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            7;      78;  706;  1757
+San Francisco, California  ; Salt Lake City, Utah      ;            9;     100;  827;  1758
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      60;  663;  1759
+San Francisco, California  ; Denver, Colorado          ;            9;     100;  727;  1760
+Kansas City, Missouri      ; Denver, Colorado          ;           10;      39;  946;  1761
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      89;  750;  1762
+Denver, Colorado           ; Salt Lake City, Utah      ;            3;      86;  859;  1763
+Kansas City, Missouri      ; Madison, Wisconsin        ;           10;      87;  624;  1764
+Denver, Colorado           ; Madison, Wisconsin        ;            7;      95;  889;  1765
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            2;      90;  769;  1766
+San Francisco, California  ; Madison, Wisconsin        ;            7;      34;  937;  1767
+Denver, Colorado           ; Salt Lake City, Utah      ;            3;      57;  709;  1768
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            7;      21;  645;  1769
+San Francisco, California  ; Madison, Wisconsin        ;            8;      90;  954;  1770
+Denver, Colorado           ; Madison, Wisconsin        ;            4;     100;  852;  1771
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      59;  997;  1772
+San Francisco, California  ; Salt Lake City, Utah      ;            7;      37;  933;  1773
+San Francisco, California  ; Madison, Wisconsin        ;           10;      98;  780;  1774
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;      58;  794;  1775
+Kansas City, Missouri      ; Denver, Colorado          ;            4;      21;  860;  1776
+San Francisco, California  ; Salt Lake City, Utah      ;            2;      62;  696;  1777
+San Francisco, California  ; Salt Lake City, Utah      ;            7;       6;  917;  1778
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            4;      56;  883;  1779
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            6;      79;  858;  1780
+Denver, Colorado           ; Madison, Wisconsin        ;            3;      58;  876;  1781
+Denver, Colorado           ; Salt Lake City, Utah      ;            1;      12;  792;  1782
+Denver, Colorado           ; Madison, Wisconsin        ;            7;      86;  718;  1783
+San Francisco, California  ; Denver, Colorado          ;            2;      71;  881;  1784
+San Francisco, California  ; Denver, Colorado          ;            8;      49;  936;  1785
+San Francisco, California  ; Denver, Colorado          ;            1;      91;  632;  1786
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      30;  908;  1787
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      85;  974;  1788
+San Francisco, California  ; Denver, Colorado          ;            4;      98;  728;  1789
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            9;      62;  971;  1790
+Denver, Colorado           ; Madison, Wisconsin        ;            7;      29;  708;  1791
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      36;  842;  1792
+San Francisco, California  ; Salt Lake City, Utah      ;            2;      33;  898;  1793
+Kansas City, Missouri      ; Denver, Colorado          ;            2;      38;  958;  1794
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;       8;  737;  1795
+Kansas City, Missouri      ; Salt Lake City, Utah      ;           10;      83;  835;  1796
+San Francisco, California  ; Salt Lake City, Utah      ;            8;      62;  830;  1797
+Kansas City, Missouri      ; Denver, Colorado          ;            8;      74;  871;  1798
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      62;  875;  1799
+Denver, Colorado           ; Madison, Wisconsin        ;            6;      64;  933;  1800
+Denver, Colorado           ; Salt Lake City, Utah      ;            6;      86;  678;  1801
+Denver, Colorado           ; Salt Lake City, Utah      ;            7;      32;  834;  1802
+Kansas City, Missouri      ; Madison, Wisconsin        ;            1;      23;  865;  1803
+San Francisco, California  ; Madison, Wisconsin        ;           10;      68;  728;  1804
+Denver, Colorado           ; Salt Lake City, Utah      ;            9;      66;  883;  1805
+San Francisco, California  ; Denver, Colorado          ;            6;      66;  847;  1806
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            4;      55;  784;  1807
+Kansas City, Missouri      ; Madison, Wisconsin        ;            6;      35;  974;  1808
+Denver, Colorado           ; Salt Lake City, Utah      ;            7;      38;  913;  1809
+Denver, Colorado           ; Madison, Wisconsin        ;            5;      74;  883;  1810
+Kansas City, Missouri      ; Denver, Colorado          ;            5;      12;  648;  1811
+San Francisco, California  ; Madison, Wisconsin        ;           10;      47;  631;  1812
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      66;  714;  1813
+Kansas City, Missouri      ; Denver, Colorado          ;            2;      91;  627;  1814
+Kansas City, Missouri      ; Denver, Colorado          ;            9;      84;  758;  1815
+Kansas City, Missouri      ; Madison, Wisconsin        ;            5;      77;  876;  1816
+Kansas City, Missouri      ; Madison, Wisconsin        ;            9;      42;  754;  1817
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      97;  841;  1818
+Denver, Colorado           ; Madison, Wisconsin        ;            2;      71;  685;  1819
+Kansas City, Missouri      ; Madison, Wisconsin        ;            6;      64;  757;  1820
+Kansas City, Missouri      ; Denver, Colorado          ;            7;      48;  924;  1821
+Kansas City, Missouri      ; Denver, Colorado          ;            2;      11;  601;  1822
+Denver, Colorado           ; Madison, Wisconsin        ;            2;      97;  613;  1823
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            9;      30;  739;  1824
+Denver, Colorado           ; Madison, Wisconsin        ;            1;      51;  853;  1825
+Denver, Colorado           ; Madison, Wisconsin        ;            8;      31;  988;  1826
+Denver, Colorado           ; Salt Lake City, Utah      ;            4;      57;  692;  1827
+Kansas City, Missouri      ; Madison, Wisconsin        ;            4;      99;  820;  1828
+Denver, Colorado           ; Madison, Wisconsin        ;            5;      74;  666;  1829
+Kansas City, Missouri      ; Denver, Colorado          ;           10;      74;  911;  1830
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      41;  751;  1831
+San Francisco, California  ; Madison, Wisconsin        ;           10;      41;  991;  1832
+Kansas City, Missouri      ; Madison, Wisconsin        ;            5;       1;  957;  1833
+Denver, Colorado           ; Salt Lake City, Utah      ;            4;      70;  757;  1834
+San Francisco, California  ; Madison, Wisconsin        ;            3;      16;  655;  1835
+San Francisco, California  ; Denver, Colorado          ;            9;      24;  973;  1836
+San Francisco, California  ; Denver, Colorado          ;            4;      76;  627;  1837
+Kansas City, Missouri      ; Madison, Wisconsin        ;            5;      43;  640;  1838
+San Francisco, California  ; Madison, Wisconsin        ;            2;      65;  627;  1839
+Kansas City, Missouri      ; Denver, Colorado          ;            9;      24;  893;  1840
+San Francisco, California  ; Denver, Colorado          ;           10;      52;  980;  1841
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;      62;  876;  1842
+San Francisco, California  ; Salt Lake City, Utah      ;            5;      17;  764;  1843
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      43;  737;  1844
+Kansas City, Missouri      ; Madison, Wisconsin        ;            8;      12;  689;  1845
+San Francisco, California  ; Salt Lake City, Utah      ;            7;      92;  635;  1846
+Kansas City, Missouri      ; Denver, Colorado          ;            7;      94;  906;  1847
+Kansas City, Missouri      ; Madison, Wisconsin        ;            3;      75;  921;  1848
+San Francisco, California  ; Salt Lake City, Utah      ;            2;      80;  842;  1849
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      62;  882;  1850
+San Francisco, California  ; Denver, Colorado          ;            5;      15;  692;  1851
+San Francisco, California  ; Denver, Colorado          ;            6;       5;  690;  1852
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            6;      57;  979;  1853
+San Francisco, California  ; Salt Lake City, Utah      ;            4;      15;  951;  1854
+Kansas City, Missouri      ; Madison, Wisconsin        ;            9;      12;  732;  1855
+Kansas City, Missouri      ; Denver, Colorado          ;           10;      52;  613;  1856
+Kansas City, Missouri      ; Denver, Colorado          ;            7;      27;  805;  1857
+San Francisco, California  ; Madison, Wisconsin        ;            3;      72;  897;  1858
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            4;      81;  796;  1859
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;      74;  897;  1860
+Kansas City, Missouri      ; Madison, Wisconsin        ;            1;      83;  951;  1861
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            2;      41;  684;  1862
+San Francisco, California  ; Salt Lake City, Utah      ;            8;      43;  730;  1863
+Denver, Colorado           ; Madison, Wisconsin        ;            8;      72;  719;  1864
+Denver, Colorado           ; Salt Lake City, Utah      ;           10;      66;  962;  1865
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      26;  990;  1866
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;      79;  817;  1867
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;      49;  911;  1868
+San Francisco, California  ; Salt Lake City, Utah      ;            7;      56;  902;  1869
+San Francisco, California  ; Denver, Colorado          ;            1;       9;  990;  1870
+Denver, Colorado           ; Salt Lake City, Utah      ;            1;       8;  861;  1871
+San Francisco, California  ; Denver, Colorado          ;            9;      69;  657;  1872
+Denver, Colorado           ; Madison, Wisconsin        ;            6;      33;  993;  1873
+San Francisco, California  ; Salt Lake City, Utah      ;            4;      95;  607;  1874
+Kansas City, Missouri      ; Madison, Wisconsin        ;            6;      79;  859;  1875
+Kansas City, Missouri      ; Denver, Colorado          ;           10;      72;  639;  1876
+Kansas City, Missouri      ; Madison, Wisconsin        ;            8;      25;  896;  1877
+Kansas City, Missouri      ; Madison, Wisconsin        ;            6;      49;  653;  1878
+Kansas City, Missouri      ; Denver, Colorado          ;            8;      63;  868;  1879
+San Francisco, California  ; Madison, Wisconsin        ;           10;      66;  642;  1880
+Kansas City, Missouri      ; Madison, Wisconsin        ;            2;      22;  690;  1881
+San Francisco, California  ; Salt Lake City, Utah      ;            4;      69;  970;  1882
+San Francisco, California  ; Salt Lake City, Utah      ;           10;       9;  863;  1883
+Denver, Colorado           ; Madison, Wisconsin        ;            5;      26;  937;  1884
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            9;      81;  751;  1885
+Kansas City, Missouri      ; Denver, Colorado          ;            8;      96;  658;  1886
+San Francisco, California  ; Madison, Wisconsin        ;           10;      92;  769;  1887
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      63;  843;  1888
+San Francisco, California  ; Madison, Wisconsin        ;           10;      76;  644;  1889
+San Francisco, California  ; Denver, Colorado          ;            2;      89;  739;  1890
+San Francisco, California  ; Salt Lake City, Utah      ;            1;      37;  751;  1891
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      85;  970;  1892
+San Francisco, California  ; Madison, Wisconsin        ;            3;      33;  703;  1893
+Denver, Colorado           ; Salt Lake City, Utah      ;           10;      18;  685;  1894
+San Francisco, California  ; Salt Lake City, Utah      ;            7;      32;  704;  1895
+Kansas City, Missouri      ; Madison, Wisconsin        ;            4;      52;  654;  1896
+San Francisco, California  ; Salt Lake City, Utah      ;            9;      45;  708;  1897
+San Francisco, California  ; Salt Lake City, Utah      ;            9;      75;  841;  1898
+Denver, Colorado           ; Madison, Wisconsin        ;            1;      98;  859;  1899
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            9;       1;  847;  1900
+Kansas City, Missouri      ; Denver, Colorado          ;            6;      26;  805;  1901
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            7;      34;  868;  1902
+Denver, Colorado           ; Madison, Wisconsin        ;            8;      24;  764;  1903
+Kansas City, Missouri      ; Madison, Wisconsin        ;            5;      47;  617;  1904
+Denver, Colorado           ; Madison, Wisconsin        ;            8;      95;  885;  1905
+San Francisco, California  ; Salt Lake City, Utah      ;            2;      51;  954;  1906
+San Francisco, California  ; Denver, Colorado          ;            7;      98;  686;  1907
+San Francisco, California  ; Salt Lake City, Utah      ;            8;      17;  688;  1908
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            7;      38;  676;  1909
+Denver, Colorado           ; Madison, Wisconsin        ;            4;      55;  684;  1910
+Denver, Colorado           ; Madison, Wisconsin        ;            3;       9;  998;  1911
+Denver, Colorado           ; Madison, Wisconsin        ;            3;      22;  953;  1912
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;      45;  690;  1913
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;       5;  741;  1914
+Kansas City, Missouri      ; Denver, Colorado          ;           10;       2;  823;  1915
+San Francisco, California  ; Denver, Colorado          ;            1;      92;  982;  1916
+Denver, Colorado           ; Madison, Wisconsin        ;            7;      41;  971;  1917
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      55;  627;  1918
+San Francisco, California  ; Salt Lake City, Utah      ;            7;      61;  858;  1919
+San Francisco, California  ; Madison, Wisconsin        ;            2;      10;  908;  1920
+San Francisco, California  ; Madison, Wisconsin        ;            6;     100;  830;  1921
+Denver, Colorado           ; Madison, Wisconsin        ;            6;      36;  796;  1922
+Denver, Colorado           ; Salt Lake City, Utah      ;            3;      65;  657;  1923
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      96;  708;  1924
+Kansas City, Missouri      ; Denver, Colorado          ;            2;       6;  803;  1925
+Kansas City, Missouri      ; Madison, Wisconsin        ;            5;      12;  727;  1926
+Denver, Colorado           ; Madison, Wisconsin        ;            6;      25;  821;  1927
+Denver, Colorado           ; Madison, Wisconsin        ;            7;      60;  639;  1928
+San Francisco, California  ; Madison, Wisconsin        ;            6;      29;  937;  1929
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            6;      80;  838;  1930
+Denver, Colorado           ; Salt Lake City, Utah      ;            9;      83;  831;  1931
+Kansas City, Missouri      ; Denver, Colorado          ;            7;       1;  883;  1932
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;      47;  623;  1933
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            9;      73;  770;  1934
+Kansas City, Missouri      ; Denver, Colorado          ;            2;      19;  970;  1935
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;      28;  636;  1936
+Denver, Colorado           ; Madison, Wisconsin        ;            5;      37;  922;  1937
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      69;  962;  1938
+San Francisco, California  ; Madison, Wisconsin        ;            7;      85;  620;  1939
+Denver, Colorado           ; Salt Lake City, Utah      ;            4;       6;  658;  1940
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;       9;  943;  1941
+Kansas City, Missouri      ; Salt Lake City, Utah      ;           10;      56;  929;  1942
+San Francisco, California  ; Salt Lake City, Utah      ;            1;      20;  855;  1943
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      87;  727;  1944
+Kansas City, Missouri      ; Madison, Wisconsin        ;            9;      94;  918;  1945
+San Francisco, California  ; Madison, Wisconsin        ;            6;      94;  833;  1946
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;      75;  962;  1947
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      30;  794;  1948
+Denver, Colorado           ; Madison, Wisconsin        ;           10;      78;  990;  1949
+Denver, Colorado           ; Salt Lake City, Utah      ;           10;      28;  693;  1950
+Kansas City, Missouri      ; Denver, Colorado          ;            7;      83;  820;  1951
+San Francisco, California  ; Denver, Colorado          ;            5;      88;  812;  1952
+San Francisco, California  ; Denver, Colorado          ;            6;      58;  742;  1953
+San Francisco, California  ; Madison, Wisconsin        ;            8;      25;  957;  1954
+Denver, Colorado           ; Madison, Wisconsin        ;            9;      82;  845;  1955
+Kansas City, Missouri      ; Madison, Wisconsin        ;            3;      95;  877;  1956
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;      94;  891;  1957
+San Francisco, California  ; Salt Lake City, Utah      ;            1;      69;  877;  1958
+Denver, Colorado           ; Madison, Wisconsin        ;            5;      31;  901;  1959
+Kansas City, Missouri      ; Denver, Colorado          ;            4;      29;  988;  1960
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            3;      59;  833;  1961
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            4;      89;  963;  1962
+San Francisco, California  ; Denver, Colorado          ;            6;      29;  724;  1963
+Kansas City, Missouri      ; Madison, Wisconsin        ;            3;      19;  629;  1964
+Kansas City, Missouri      ; Denver, Colorado          ;           10;      51;  736;  1965
+San Francisco, California  ; Madison, Wisconsin        ;            6;      66;  715;  1966
+Denver, Colorado           ; Salt Lake City, Utah      ;            4;       4;  916;  1967
+San Francisco, California  ; Denver, Colorado          ;           10;      73;  753;  1968
+Kansas City, Missouri      ; Madison, Wisconsin        ;            2;       8;  901;  1969
+Denver, Colorado           ; Madison, Wisconsin        ;            3;      73;  771;  1970
+Kansas City, Missouri      ; Madison, Wisconsin        ;            6;       5;  653;  1971
+San Francisco, California  ; Madison, Wisconsin        ;            4;      37;  645;  1972
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      15;  620;  1973
+San Francisco, California  ; Madison, Wisconsin        ;            5;      59;  615;  1974
+Denver, Colorado           ; Salt Lake City, Utah      ;            8;      11;  683;  1975
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            6;      35;  919;  1976
+Denver, Colorado           ; Salt Lake City, Utah      ;            2;      72;  702;  1977
+Kansas City, Missouri      ; Denver, Colorado          ;            6;      87;  957;  1978
+San Francisco, California  ; Denver, Colorado          ;            1;       2;  951;  1979
+San Francisco, California  ; Salt Lake City, Utah      ;           10;      97;  746;  1980
+Denver, Colorado           ; Madison, Wisconsin        ;            1;      74;  739;  1981
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      25;  872;  1982
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            2;      60;  927;  1983
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            7;      27;  634;  1984
+Kansas City, Missouri      ; Madison, Wisconsin        ;            9;      90;  617;  1985
+Kansas City, Missouri      ; Denver, Colorado          ;            3;      57;  957;  1986
+Denver, Colorado           ; Salt Lake City, Utah      ;            9;      43;  833;  1987
+Denver, Colorado           ; Madison, Wisconsin        ;            1;      15;  614;  1988
+San Francisco, California  ; Salt Lake City, Utah      ;            3;      14;  714;  1989
+San Francisco, California  ; Denver, Colorado          ;            3;      32;  628;  1990
+Denver, Colorado           ; Salt Lake City, Utah      ;            5;      48;  755;  1991
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            5;      50;  839;  1992
+Denver, Colorado           ; Madison, Wisconsin        ;            3;      54;  832;  1993
+San Francisco, California  ; Denver, Colorado          ;            5;      30;  651;  1994
+San Francisco, California  ; Denver, Colorado          ;           10;      99;  927;  1995
+San Francisco, California  ; Madison, Wisconsin        ;            5;      12;  871;  1996
+Kansas City, Missouri      ; Denver, Colorado          ;            3;      48;  818;  1997
+Kansas City, Missouri      ; Salt Lake City, Utah      ;            2;      96;  918;  1998
+Kansas City, Missouri      ; Denver, Colorado          ;            4;      71;  899;  1999
