@@ -1,6 +1,6 @@
 # Server bindings
 SERVER_BINDING = {
-    'address': ['192.168.57.102','192.168.57.103','192.168.57.104','localhost'],
+    'address': ['192.168.57.102', '192.168.57.103', '192.168.57.104', '192.168.57.14', '192.168.57.12', '192.168.57.35', '192.168.57.15', '192.168.57.7', '192.168.57.3'],
     'port': '10000',
     'service_alias': 'VirtualFiber'
 }
@@ -25,8 +25,11 @@ TEST_PARAMS = {
     'client_request_type': 'BUYER',                 # or SDX
     'client_request_code': 100,                     # or 001
     # change this according to the experiment
-    # 'infra_tested': 'MOCK',                       # or REAL
-    'infra_tested': 'REAL',
+    'infra_tested': 'MOCK',                       # or REAL
+    #'infra_tested': 'REAL',
+    'install_time': 34.29 # mean
+    # 'install_time': 34.29 # max
+    # 'install_time': 34.29 # mean
 }
 
 # Database parameters
@@ -46,6 +49,7 @@ ADEX = {
     'auction': 'gsp',
     # bids below this reserved price are ignored -- just to ensure that everyone makes money.
     'reserve': 500,
+    'port': '7000',
     # server port combinations for distributed adExObject
     'bindings0': ['localhost:7000'],
     'bindings1': ['192.168.60.2:7000', '192.168.60.4:7000', '192.168.60.3:7000'],
@@ -54,10 +58,12 @@ ADEX = {
 }
 
 SELLER = {
+    'port':'7100',
     # server port combination for distributed seller object
     'bindings0': ['localhost:7100'],
     'bindings1': ['192.168.60.2:7100', '192.168.60.4:7100', '192.168.60.3:7100'],
     'bindings2': ['192.168.60.3:7100', '192.168.60.2:7100', '192.168.60.4:7100'],
     'bindings3': ['192.168.60.4:7100', '192.168.60.3:7100', '192.168.60.2:7100'],
+}
 
 

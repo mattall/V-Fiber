@@ -14,21 +14,32 @@ from sys import exit
 
 class VFiber(object):
 
-    def __init__(self, id):
+    def __init__(self, id, cluster_size):
         self.__id = id
         bindings = 'bindings' + str(id)
         self.logger = get_logger("main")
         try:
+            server_addr = SERVER_BINDING['address'][id-1]
             self.server = TCPServer((SERVER_BINDING['address'][id-1], int(SERVER_BINDING['port'])), TCPRequestHandler)
         except Exception as e:
             print(e)
             print("SERVER_BINDING['address'][id-1]", SERVER_BINDING['address'][id-1])
             print("int(SERVER_BINDING['port']", int(SERVER_BINDING['port']))
             exit()
+        
+        
+        cluster_servers = SERVER_BINDING['address'][:cluster_size] 
+        peers = cluster_servers[:]
+        peers.remove(server_addr)
 
-        self.server.adExObject = AdExchange(ADEX[bindings][0], ADEX[bindings][1:])
+        exchangeID = server_addr + ':' + ADEX['port']
+        exchangePeers = [ p + ':' + ADEX['port'] for p in peers ]
+        self.server.adExObject = AdExchange(exchangeID, exchangePeers)
 
+        sellerID = server_addr + ':' + SELLER['port']
+        sellerPeers = exchangePeers = [ p + ':' + SELLER['port'] for p in peers ]
         self.server.sellerObject = Seller(SELLER[bindings][0], SELLER[bindings][1:])
+
         self.server.sellerObject.populateSellerInfo()
 
     # def __adex_leader_daemon(self):
@@ -80,8 +91,9 @@ class VFiber(object):
 def main():
     parser = ArgumentParser()
     parser.add_argument('server_num', help="number 1,2,3... to distinguish whcih server is to begin running", type=int)
+    parser.add_argument('total_servers', help="number 1,2,3... how many servers run in this cluster?", type=int)
     args = parser.parse_args()
-    vFiber = VFiber(args.server_num)
+    vFiber = VFiber(args.server_num, args.total_servers)
 
     if ADEX['status'] == "open":
         vFiber.server.serve_forever()
