@@ -1,6 +1,15 @@
 # Server bindings
 SERVER_BINDING = {
-    'address': ['192.168.57.102', '192.168.57.103', '192.168.57.104', '192.168.57.14', '192.168.57.12', '192.168.57.35', '192.168.57.15', '192.168.57.7', '192.168.57.3'],
+    'address': ['192.168.57.102', 
+                '192.168.57.103', 
+                '192.168.57.104', 
+                '192.168.57.105', 
+                '192.168.57.106', 
+                '192.168.57.107', 
+                '192.168.57.108',
+                '192.168.57.109',
+                '192.168.57.110', 
+                'localhost'],
     'port': '10000',
     'service_alias': 'VirtualFiber'
 }
@@ -27,9 +36,9 @@ TEST_PARAMS = {
     # change this according to the experiment
     'infra_tested': 'MOCK',                       # or REAL
     #'infra_tested': 'REAL',
-    'install_time': 34.29 # mean
-    # 'install_time': 34.29 # max
-    # 'install_time': 34.29 # mean
+    'install_time': 34.29, # mean
+    # 'install_time': 34.29, # max
+    # 'install_time': 34.29, # mean
 }
 
 # Database parameters
@@ -38,7 +47,7 @@ DB_PARAMS = {
     'username': 'root',
     'password': '',
     'database': 'VirtualFiber',
-    'truncate': True                                # True will truncate the IPAllocation table at the start
+    'truncate': True,                                # True will truncate the IPAllocation table at the start
 }
 
 # Ad Exchange settings
