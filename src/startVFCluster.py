@@ -27,10 +27,13 @@ class VFiber(object):
             print("int(SERVER_BINDING['port']", int(SERVER_BINDING['port']))
             exit()
         
+        if cluster_size > 1:
+            cluster_servers = SERVER_BINDING['address'][:cluster_size] 
+            peers = cluster_servers[:]
+            peers.remove(server_addr)
         
-        cluster_servers = SERVER_BINDING['address'][:cluster_size] 
-        peers = cluster_servers[:]
-        peers.remove(server_addr)
+        elif cluster_size == 1: 
+            peers = []
 
         exchangeID = server_addr + ':' + ADEX['port']
         exchangePeers = [ p + ':' + ADEX['port'] for p in peers ]
