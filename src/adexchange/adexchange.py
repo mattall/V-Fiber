@@ -24,17 +24,22 @@ class AdExchange(SyncObj):
                  ) for (u,v) in zip(path[0:],path[1:])]
 
     def updateSellerGraph_and_getResources(self, S, path, reqValues):
+        
         ip_port_pairs = []
         for (u,v) in zip(path[0:], path[1:]):
             for item in reqValues:
                 ip_port_pairs.extend(S.release_strand(u, v, item.numberOfStrands))
+
         return ip_port_pairs
 
     def updateSellerGraph_and_giveResources(self, S, path, reqValues):
         ip_port_pairs = []
+
+        # Update the graph
         for (u,v) in zip(path[0:], path[1:]):
             for item in reqValues:
                 ip_port_pairs.extend(S.aquire_strand(u, v, item.numberOfStrands))
+
         return ip_port_pairs
 
     def resourceAvailable(self, G, path, reqValues):
@@ -46,6 +51,7 @@ class AdExchange(SyncObj):
                     pathHasStrands = False
                 if G[u][v]['capacityPerStrand'] < item.capacityPerStrand:
                     pathHasCapacity = False
+                    
         if pathHasStrands and pathHasCapacity:
             return True
         else:
@@ -152,10 +158,14 @@ class AdExchange(SyncObj):
                     allocation.extend(zip(alloc, [i * k for i in payments]))
                     for (kTest, vTest) in allocation:
                         allocationDict[kTest] = vTest
-                    
+
+                    seller.lockEdgesOnPath(shortestPath)
                     # Updates sellerGraph with the allocation
                     self.__logger.debug("Before > {}".format(self.availableAttributes(shortestPath, sellerGraph)))
                     ip_port_pairs = self.updateSellerGraph_and_getResources(seller, shortestPath, v)
+                    
+                    seller.unlockEdgesOnPath(shortestPath)
+
                     self.__logger.debug("After > {}".format(self.availableAttributes(shortestPath, sellerGraph)))
 
                 else:

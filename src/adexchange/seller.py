@@ -3,19 +3,29 @@ from settings import CONTEXT, TEST_PARAMS, SELLER
 import networkx as nx
 from common import get_logger
 from pysyncobj import SyncObj, replicated_sync, replicated, SyncObjConf
+from pysyncobj.batteries import ReplLockManager
 
 class Seller(SyncObj):
     def __init__(self, selfAddress, partnerAddresses):
         '''
         Initialize seller class
         '''
-        cfg = SyncObjConf(logCompactionMinEntries = 2147483647, logCompactionMinTime = 2147483647)
-        super(Seller, self).__init__(selfAddress, partnerAddresses, cfg)
+        self.__lockManager = ReplLockManager(120)
+        cfg = SyncObjConf(  logCompactionMinEntries = 2147483647, 
+                            logCompactionMinTime = 2147483647,
+                            )
+        super(Seller, self).__init__(   selfAddress,
+                                        partnerAddresses, 
+                                        cfg, 
+                                        consumers=[self.__lockManager],
+                                        )
         self.__rsp = TEST_PARAMS['server_path']
         self.__sf = TEST_PARAMS['seller_file_name']
         self.__compressed = CONTEXT['compressed_content']
         self.__sellerGraph = nx.Graph()
         self.__logger = get_logger("Seller")
+         # self unlock after being held for 120 seconds
+
 
     @replicated
     def populateSellerInfo(self):
@@ -38,7 +48,7 @@ class Seller(SyncObj):
                 if line.startswith("#"): continue
                 line = line.strip()
                 vals = line.split(";")
-
+                edge_num = 0
                 if len(vals) == 8:
                     point_A = vals[0].strip()
                     point_B = vals[1].strip()
@@ -69,14 +79,43 @@ class Seller(SyncObj):
                                                 interfaces = interfaces,
                                                 available_interfaces = interfaces[:], 
                                                 allocated_interfaces = [],
-                                                disconnected_interfaces = [])
-                                                
+                                                disconnected_interfaces = [],
+                                                key = edge_num,
+                                                #lock = Lock(),
+                                                )
+                    edge_num += 1                                                
 
             else: # no line to read
                 break
 
         zFile.close()
         self.__logger.info("### Seller Information populated...")
+
+    @replicated
+    def lockEdgesOnPath(self, path):
+        S = self.__sellerGraph
+        # Discover keys for edges
+        edge_keys = []
+        for (u,v) in zip(path[0:], path[1:]):
+            edge_keys.append(S[u][v]['key'])
+
+        # Acquire keys 
+        edge_keys.sort()
+        for key in edge_keys:
+            while (self.__lockManager.tryAcquire( key ) is False): pass
+
+    @replicated
+    def unlockEdgesOnPath(self, path):
+        S = self.__sellerGraph
+        edge_keys = []
+        for (u,v) in zip(path[0:], path[1:]):
+            edge_keys.append(S[u][v]['key'])
+
+        # Release the keys
+        for key in edge_keys:
+            self.__lockManager.release( key )
+
+
 
     def getSellerGraph(self):
         '''
