@@ -15,7 +15,7 @@ class TCPClient(threading.Thread):
     '''
      JSON/TCP client thread
     '''
-    def __init__(self, buyer_data = TEST_PARAMS['buyer_file_name'], path_to_data = TEST_PARAMS['path'], totalReqs = -1):
+    def __init__(self, buyer_data = TEST_PARAMS['buyer_file_name'], path_to_data = TEST_PARAMS['client_path'], totalReqs = -1):
         '''
          Class constructor
         '''
