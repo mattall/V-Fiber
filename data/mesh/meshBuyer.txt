@@ -1,0 +1,2 @@
+#LinkA;LinkB;FiberStrands;CapacityNeededPerStrand (GBps);BidAmountPerStrand;ClientName
+B; D; 1; 1; 900; meshMan
