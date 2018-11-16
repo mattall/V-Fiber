@@ -16,13 +16,13 @@ SERVER_BINDING = {
 
 # Contextual settings
 CONTEXT = {
-    'debug': False,
+    'debug': True,
     'client_socket_buffer': 8192,
     'compressed_content': False,
     'request_size': 1024,
     'meas_format': "d",
     'meas_to_file': True,
-    'meas_to_location': '/home/matt/vFiber/V-Fiber/src/experiment'
+    'meas_to_location': '/home/matt/vFiber/V-Fiber/src/star_results/'
 }
 
 # Useful parameters for test purposes
