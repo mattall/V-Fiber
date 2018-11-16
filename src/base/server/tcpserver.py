@@ -15,7 +15,7 @@ from StringIO import StringIO
 from time import sleep
 from sys import exc_info
 from traceback import print_exception
-
+from time import time
 class TCPServer(SocketServer.ThreadingTCPServer):
     '''
      Multi-threaded TCP server
@@ -112,7 +112,7 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                     with Timer() as tAd:
                         allocationList, ip_port_pairs = self.__adExObject.processClientRequests(crDict, self.__sellerObj)
                     val = tAd.printTime("FiberExchange", tAd, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
-                    self.__logger.debug("[TCPRequestHandler][handle]Elapsed Time {}".format(val))
+                    self.__logger.info("[TCPRequestHandler][handle]Exchange Time {}".format(val))
                     overheadList.append(val)
                     self.__logger.debug("[TCPRequestHandler][handle]Received allocation List from Fiber Exchange...{}".format(allocationList))
                     self.__logger.debug("[TCPRequestHandler][handle]Received ip_port_pairs from Fiber Exchange...{}".format(ip_port_pairs))
@@ -150,11 +150,11 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                                     with Timer() as tCreation:
                                         light_path(ip_port_pairs)
                                     val = tCreation.printTime("CircuitCreation", tCreation, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
-                                    self.__logger.debug("[TCPRequestHandler][handle]Elapsed Time {}".format(val))
+                                    self.__logger.info("[TCPRequestHandler][handle]Creation Time {}".format(val))
                                     overheadList.append(val)
                                     self.__logger.info("Circuit pushed into networks by vFiber for winner: {0}".format(item.clientName))
                         val = tCircuitCreation.printTime("TotalGenerationAndCreation", tCircuitCreation, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
-                        self.__logger.debug("[TCPRequestHandler][handle]Elapsed Time {}".format(val))
+                        self.__logger.info("[TCPRequestHandler][handle]Generation and Creation Time {}".format(val))
                         overheadList.append(val)
 
                     elif self.__infra_tested == 'MOCK':
@@ -162,24 +162,15 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                         with Timer() as tCircuitCreation:
                             for item in allocationList:
                                 if item.winnerFlag == 1:
-                                    # Create circuits
-                                    #flowTuples = self.getFlowTuples(item)
-
                                     for ip, port in ip_port_pairs:
                                         self.__logger.debug("Pushing circuit to {} interface {} * PENDING **".format(ip, port))
-                                        sleep(TEST_PARAMS['install_time'])
+                                        #sleep(TEST_PARAMS['install_time'])/2
                                         self.__logger.debug("Circuite Pushed to {} interface {} *** OKAY ***".format(ip, port))
-                                    # Push circuits
-                                    # locationA = (item.linkA.split(",")[1]).strip()
-                                    # locationB = (item.linkB.split(",")[1]).strip()
+                                    
                                     capacity = item.capacityPerStrand
-                                    # with Timer() as tCreation:
-                                    #     val = tCreation.printTime("CircuitCreation", tCreation, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
-                                    # overheadList.append(val)
-
                                     self.__logger.info("Circuit pushed into networks by vFiber for winner: {0}".format(item.clientName))
-                        val = tCircuitCreation.printTime("TotalGenerationAndCreation", tCircuitCreation, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
-                        self.__logger.debug("[TCPRequestHandler][handle]Elapsed Time {}".format(val))
+                        val = tCircuitCreation.printTime("TotalCreationTime", tCircuitCreation, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
+                        self.__logger.info("[TCPRequestHandler][handle]Creation Time {}".format(val))
                         overheadList.append(val)
                     else:
                         raise ValueError('Wrong configuration parameter in TEST_PARAMS')
@@ -224,7 +215,7 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                     with Timer() as tAd:
                         allocationList, ip_port_pairs = self.__adExObject.returnAllocationToInfrustructureGraph(crDict, self.__sellerObj)
                     val = tAd.printTime("returnAllocation", tAd, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
-                    self.__logger.debug("[TCPRequestHandler][handle]Elapsed Time {}".format(val))
+                    self.__logger.info("[TCPRequestHandler][handle]Exchange Time {}".format(val))
                     overheadList.append(val)
 
                     # take back the e-2-e path
@@ -253,36 +244,13 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                                 with Timer() as tDestruction:
                                     extinguish_path(ip_port_pairs)
                                 val = tDestruction.printTime("CircuitDestruction", tDestruction, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
-                                self.__logger.debug("[TCPRequestHandler][handle]Elapsed Time {}".format(val))
+                                self.__logger.info("[TCPRequestHandler][handle]Circuit Destruction Time {}".format(val))
                                 overheadList.append(val)
                                 self.__logger.info("Circuit pulled from networks by vFiber from client: {0}".format(item.clientName))
                         val = tCircuitConfigDestruction.printTime("TotalGenerationAndDestruction", tCircuitConfigDestruction, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
-                        self.__logger.debug("[TCPRequestHandler][handle]Elapsed Time {}".format(val))
+                        self.__logger.info("[TCPRequestHandler][handle]Configuration Generation and Circuit Destruction Time {}".format(val))
                         overheadList.append(val)
 
-                    elif self.__infra_tested == 'MOCK':
-                        self.__logger.info("Launching mock network experiments.")
-                        with Timer() as tCircuitConfigDestruction:
-                            for item in allocationList:
-                                if item.winnerFlag == 1:
-                                    # Create circuits
-                                    #flowTuples = self.getFlowTuples(item)
-
-                                    for ip, port in ip_port_pairs:
-                                        self.__logger.info("[TCPRequestHandler][handle]Disconnecting {} and {}".format(ip, port))
-
-                                    # Push circuits
-                                    # locationA = (item.linkA.split(",")[1]).strip()
-                                    # locationB = (item.linkB.split(",")[1]).strip()
-                                    capacity = item.capacityPerStrand
-                                    # with Timer() as tCreation:
-                                    #     val = tCreation.printTime("CircuitCreation", tCreation, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
-                                    # overheadList.append(val)
-
-                                    self.__logger.info("Circuit pulled from networks by vFiber from client: {0}".format(item.clientName))
-                        val = tCircuitConfigDestruction.printTime("TotalGenerationAndDestruction", tCircuitConfigDestruction, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
-                        self.__logger.debug("[TCPRequestHandler][handle]Elapsed Time {}".format(val))
-                        overheadList.append(val)
                     else:
                         raise ValueError('Wrong configuration parameter in TEST_PARAMS')
 
@@ -310,14 +278,14 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                     raise ValueError('Bad request name and code. Either should be from SDX or from Buyer.')
             
             val = tTotalProcessing.printTime("ProcessClientRequest", tTotalProcessing, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
-            self.__logger.debug("[TCPRequestHandler][handle]Elapsed Time {}".format(val))
+            self.__logger.info("[TCPRequestHandler][handle]Total Request Handling Time {}".format(val))
             overheadList.append(val)
 
             strVal = "".join(overheadList)
             self.__logger.debug("[TCPRequestHandler][handle] Overhead list :\n {}".format(strVal))
             # a = StringIO(strVal)
             # plotTimeline(a, CONTEXT['meas_to_location']+"overhead.eps")
-            with open(CONTEXT['meas_to_location']+"overhead.txt", "a") as file:
+            with open("./"+str(time())+"overhead.txt", "a") as file:
                 file.write(strVal)
                 file.close()
 
