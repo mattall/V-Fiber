@@ -25,7 +25,7 @@ class VFiber(object):
             print(e)
             self.__logger.debug("Server : {} ".format((id-1)))
             self.__logger.debug("Address: {}".format(SERVER_BINDING['address'][id-1]))
-            self.__logger.debug("Port: {}".format(SERVER_BINDING['port')))
+            self.__logger.debug("Port: {}".format(SERVER_BINDING['port'])))
             exit()
         
         if cluster_size > 1:
