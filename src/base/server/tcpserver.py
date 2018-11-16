@@ -164,7 +164,7 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                                 if item.winnerFlag == 1:
                                     for ip, port in ip_port_pairs:
                                         self.__logger.debug("Pushing circuit to {} interface {} * PENDING **".format(ip, port))
-                                        sleep(TEST_PARAMS['install_time'])/2
+                                        sleep(TEST_PARAMS['install_time']/2)
                                         self.__logger.debug("Circuite Pushed to {} interface {} *** OKAY ***".format(ip, port))
                                     
                                     capacity = item.capacityPerStrand
