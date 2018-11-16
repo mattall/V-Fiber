@@ -17,14 +17,15 @@ class VFiber(object):
     def __init__(self, id, cluster_size):
         self.__id = id
         bindings = 'bindings' + str(id)
-        self.logger = get_logger("main")
+        self.__logger = get_logger("main")
         try:
             server_addr = SERVER_BINDING['address'][id-1]
             self.server = TCPServer((SERVER_BINDING['address'][id-1], int(SERVER_BINDING['port'])), TCPRequestHandler)
         except Exception as e:
             print(e)
-            print("SERVER_BINDING['address'][id-1]", SERVER_BINDING['address'][id-1])
-            print("int(SERVER_BINDING['port']", int(SERVER_BINDING['port']))
+            self.__logger.debug("Server : {} ".format((id-1)))
+            self.__logger.debug("Address: {}".format(SERVER_BINDING['address'][id-1]))
+            self.__logger.debug("Port: {}", int(SERVER_BINDING['port']))
             exit()
         
         if cluster_size > 1:
@@ -37,27 +38,23 @@ class VFiber(object):
 
         exchangeID = server_addr + ':' + ADEX['port']
         exchangePeers = [ p + ':' + ADEX['port'] for p in peers ]
-        self.server.adExObject = AdExchange(exchangeID, exchangePeers)
+        try:
+            self.server.adExObject = AdExchange(exchangeID, exchangePeers)
+        except Exception as e:
+            print(e)
+            self.__logger.debug("Server Exchange ID: {}".format(exchangeID))
+            self.__logger.debug("Peers : {}".format(exchangePeers))
 
         sellerID = server_addr + ':' + SELLER['port']
         sellerPeers = exchangePeers = [ p + ':' + SELLER['port'] for p in peers ]
-        self.server.sellerObject = Seller(SELLER[bindings][0], SELLER[bindings][1:])
+        try:
+            self.server.sellerObject = Seller(sellerID, sellerPeers)
+        except Exception as e:
+            print(e)
+            self.__logger.debug("Server Seller ID: {}".format(SellerID))
+            self.__logger.debug("Peers: {}".format(sellerPeers))
 
         self.server.sellerObject.populateSellerInfo()
-
-    # def __adex_leader_daemon(self):
-    #     while True:
-    #         if self.server.adExObject._isLeader():
-    #             pass
-    #         else:
-    #             self.server.adExObject = self.get_leader(self.adExObjects)
-    #
-    # def __seller_leader_daemon(self):
-    #     while True:
-    #         if self.server.adExObject._isLeader():
-    #             pass
-    #         else:
-    #             self.server.adExObject = self.get_leader(self.adExObjects)
 
     def init_cluster(self, bindings_list, object_constructor):
         '''
