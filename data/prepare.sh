@@ -1,2 +1,2 @@
-rm *.txt.gz
-gzip -k *.txt
+rm -r ./*.txt.gz
+gzip -k -r ./*.txt
