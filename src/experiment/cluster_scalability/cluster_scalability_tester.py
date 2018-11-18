@@ -25,7 +25,7 @@ from random import choice
 from os import listdir
 from os.path import isfile, join
 
-def timed_client_thread(servers, path, data):
+def (servers, path, data):
     print("Thread is initializing client")
     
     client = TCPClient(server_hosts=servers,path_to_data=path,buyer_data=data,totalReqs=1)
