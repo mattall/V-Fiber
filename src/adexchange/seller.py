@@ -41,13 +41,13 @@ class Seller(SyncObj):
             zFile = gzip.open(''.join(resource)+".gz", "r+")
         else:
             zFile = open(''.join(resource), 'r')
+        edge_num = 0
         while True:
             line = zFile.readline()
             if line:
                 if line.startswith("#"): continue
                 line = line.strip()
                 vals = line.split(";")
-                edge_num = 0
                 if len(vals) == 8:
                     point_A = vals[0].strip()
                     point_B = vals[1].strip()
@@ -67,7 +67,7 @@ class Seller(SyncObj):
                             interface_b = strand_data[2].strip()
                             interfaces.append((interface_a, interface_b))
 
-                    self.__logger.debug("[Seller][run]Adding Link: {0}|{1} with {2} lambdas".format(point_A, point_B, len(interfaces)))
+                    
                     self.__sellerGraph.add_edge(point_A, point_B,
                                                 numberOfStrands = strands, 
                                                 capacityPerStrand = strand_cap,
@@ -81,6 +81,8 @@ class Seller(SyncObj):
                                                 disconnected_interfaces = [],
                                                 key = edge_num,
                                                 )
+                    self.__logger.debug("[Seller][run]Added Link: {0}|{1} with {2} lambdas. Key = {3}"\
+                                        .format(point_A, point_B, len(interfaces), edge_num))
                     edge_num += 1                                                
 
             else: # no line to read
