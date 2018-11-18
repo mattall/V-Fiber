@@ -10,7 +10,7 @@ class Seller(SyncObj):
         '''
         Initialize seller class
         '''
-        self.__lockManager = ReplLockManager(120)
+        self.__lockManager = ReplLockManager(5)         # self unlock after being held for 5 seconds
         cfg = SyncObjConf(  logCompactionMinEntries = 2147483647, 
                             logCompactionMinTime = 2147483647,
                             )
@@ -24,7 +24,6 @@ class Seller(SyncObj):
         self.__compressed = CONTEXT['compressed_content']
         self.__sellerGraph = nx.Graph()
         self.__logger = get_logger("Seller")
-         # self unlock after being held for 120 seconds
 
 
     @replicated
@@ -81,7 +80,6 @@ class Seller(SyncObj):
                                                 allocated_interfaces = [],
                                                 disconnected_interfaces = [],
                                                 key = edge_num,
-                                                #lock = Lock(),
                                                 )
                     edge_num += 1                                                
 
@@ -91,30 +89,43 @@ class Seller(SyncObj):
         zFile.close()
         self.__logger.info("### Seller Information populated...")
 
-    @replicated
+    @replicated_sync
     def lockEdgesOnPath(self, path):
         S = self.__sellerGraph
         # Discover keys for edges
         edge_keys = []
+        key_to_edge = {}
         for (u,v) in zip(path[0:], path[1:]):
             edge_keys.append(S[u][v]['key'])
+            key_to_edge[S[u][v]['key']] = (u, v)
 
         # Acquire keys 
         edge_keys.sort()
+        self.__logger.debug("[Seller][lockEdgesOnPath] Aquiring locks for edge: {}".format( [key_to_edge[k] for k in edge_keys] ))
         for key in edge_keys:
-            while (self.__lockManager.tryAcquire( key ) is False): pass
+            while (self.__lockManager.tryAcquire( key ) is False): 
+                time.sleep(0) # yield control to another thread
+            
+            self.__logger.debug("[Seller][lockEdgesOnPath] Aquired lock for edge: {}".format( key_to_edge[key] ))
 
-    @replicated
+
+    @replicated_sync
     def unlockEdgesOnPath(self, path):
+        self.__logger.debug("[Seller][unlockEdgesOnPath] Relinquishing hold on path {}".format(path))
         S = self.__sellerGraph
         edge_keys = []
+        key_to_edge = {}
         for (u,v) in zip(path[0:], path[1:]):
             edge_keys.append(S[u][v]['key'])
+            key_to_edge[S[u][v]['key']] = (u, v)
+            self.__logger.debug("[Seller][unlockEdgesOnPath] Found key {} for edge {}".format(S[u][v]['key'], (u, v)))
 
+        edge_keys.sort(reverse=True)
         # Release the keys
+        self.__logger.debug("[Seller][unlockEdgesOnPath] Releasing locks for edge: {}".format( [key_to_edge[k] for k in edge_keys] ))
         for key in edge_keys:
             self.__lockManager.release( key )
-
+            self.__logger.debug("[Seller][unlockEdgesOnPath] Released lock for edge: {}".format( key_to_edge[key] ))
 
 
     def getSellerGraph(self):
