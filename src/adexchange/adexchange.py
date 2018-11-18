@@ -144,21 +144,28 @@ class AdExchange(SyncObj):
 
             try:
                 shortestPath = nx.shortest_path(sellerGraph, source=k1, target=k2)
-                gCoP = self.getCostOfPath(shortestPath, sellerGraph)
-                lIP = self.linksInPath(shortestPath)
-                k = len(lIP)
-                reserve = max(self.__reserve, gCoP/k)
+            
+            except nx.NodeNotFound:
+                self.__logger.info("Path does not exists between {} and {}. No resource available for request".format(k1, k2))
+                allocationDict = {}
+                break
+    
+            gCoP = self.getCostOfPath(shortestPath, sellerGraph)
+            lIP = self.linksInPath(shortestPath)
+            k = len(lIP)
+            reserve = max(self.__reserve, gCoP/k)
 
-                bids = []
-                for item in v:
-                    bids.append((item.clientName, item.bidPerStrand))
+            bids = []
+            for item in v:
+                bids.append((item.clientName, item.bidPerStrand))
 
-                if nx.has_path(sellerGraph, k1, k2) and self.resourceAvailable(sellerGraph, shortestPath, v):
-                    (alloc, payments) = GSP.compute(slot_click, reserve, bids)
-                    allocation.extend(zip(alloc, [i * k for i in payments]))
-                    for (kTest, vTest) in allocation:
-                        allocationDict[kTest] = vTest
+            if nx.has_path(sellerGraph, k1, k2) and self.resourceAvailable(sellerGraph, shortestPath, v):
+                (alloc, payments) = GSP.compute(slot_click, reserve, bids)
+                allocation.extend(zip(alloc, [i * k for i in payments]))
+                for (kTest, vTest) in allocation:
+                    allocationDict[kTest] = vTest
 
+                try:
                     seller.lockEdgesOnPath(shortestPath)
                     # Updates sellerGraph with the allocation
                     self.__logger.debug("Before > {}".format(self.availableAttributes(shortestPath, sellerGraph)))
@@ -167,14 +174,12 @@ class AdExchange(SyncObj):
                     seller.unlockEdgesOnPath(shortestPath)
 
                     self.__logger.debug("After > {}".format(self.availableAttributes(shortestPath, sellerGraph)))
+                except Exception as e:
+                    self.__logger.info("{}".format(e))
+                    self.__logger.info("could not allocate resources for optical path")
+            else:
+                self.__logger.info("Link does not exists between {} and {}. No resource available for request".format(k1, k2))
 
-                else:
-                    self.__logger.info("Link does not exists between {} and {}. No resource available for request".format(k1, k2))
-                    
-            except nx.NodeNotFound:
-                self.__logger.info("Path does not exists between {} and {}. No resource available for request".format(k1, k2))
-                allocationDict = {}
-                break
         return (self.updateRequestList(reqList, allocationDict), ip_port_pairs)
 
     def processClientRequests(self, reqList, sellerObj):
