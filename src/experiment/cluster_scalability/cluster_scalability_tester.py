@@ -19,29 +19,40 @@ from time import sleep, time
 from server_details import SERVERS
 import argparse
 import paramiko
+import logging
+from settings import SERVER_BINDING
+from random import choice
+from os import listdir
+from os.path import isfile, join
 
-def timed_client_thread(req, req_path = None, req_file = None):
-    print("Thread is initializing client with totalReqs = {}, buyer_data = {}".format(req, req_file))
-    client = TCPClient(totalReqs = req, buyer_data = req_file, path_to_data = req_path)
+def timed_client_thread(servers, path, data):
+    print("Thread is initializing client")
+    
+    client = TCPClient(server_hosts=servers,path_to_data=path,buyer_data=data,totalReqs=1)
     start = time()
     client.start()
     client.join()
     end = time()
-    return (end - start)
+    print(end - start)
 
-def do_ssh(username, address, password, server):
+def do_ssh(username, address, password, server, cluster_size):
     port = 22
     paramiko.util.log_to_file("ssh.log")
+    logging.getLogger("paramiko").setLevel(logging.WARNING)
     c = paramiko.SSHClient()
     c.load_system_host_keys()
     c.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     c.connect(hostname = address, username = username, password = password)
-    c.exec_command("killall -9 python; a; python startVFCluster.py {} &>> {}.log".format(server,time()))
+    c.exec_command("killall -9 python; cd /home/matt/vFiber/V-Fiber/src;\
+                     source ../../bin/activate; \
+                     python startVFCluster.py {0} {1}&>> {2}.log".\
+                     format(server, cluster_size ,time()))
     c.close()
 
 def end_a_server(username, address, password, server):
     port = 22
     paramiko.util.log_to_file("terminate_server.log")
+    logging.getLogger("paramiko").setLevel(logging.WARNING)
     c = paramiko.SSHClient()
     c.load_system_host_keys()
     c.set_missing_host_key_policy(paramiko.AutoAddPolicy())
@@ -50,34 +61,45 @@ def end_a_server(username, address, password, server):
     c.close()
 
 def main(args):
-    server_procs = []
-    activity_log  = []
+    server_procs = [] 
 
-    #Connect to GC Servers
+    # Start Distributed Controller ervers
     for s in SERVERS:
         if int(s) <= args.cluster_size:
             print('='*30)
             user = SERVERS[s]['user']
             addr = SERVERS[s]['address']
             pw = SERVERS[s]['password']
-            p = Process(target = do_ssh, args = (user, addr, pw, s))
+            p = Process(target = do_ssh, args = (user, addr, pw, s, args.cluster_size))
             p.start()
             server_procs.append(p)
 
-    # for p in server_procs:
-    #     p.join()
-
     sleep(5)
 
-    thread_reqs = [] # list of ordered-pairs, (thread, requests_in_thread)
-    starts = []
-    stops = []
+    buyer_path = "/Users/TomNason/Dropbox/VFiber_code/VFiber/data/star/starBuyers/"
+    buyer_files = [f for f in listdir(buyer_path) if isfile(join(buyer_path, f))]
 
-    # start up a a client thread, and track its time to complete
+    # Start up a client thread, and track its time-to-complete
+    vF_severs = SERVER_BINDING['address'][:args.cluster_size]
+    while (1):
+        req_file = "/"+choice(buyer_files)
+        if ".gz" not in req_file:
+            break
 
-    request_time = timed_client_thread()
-    print("Client Request completed in {} seconds", request_time)
+    client_procs = []
+    for r in range(args.reqs_to_send):
+        p = Process(target = timed_client_thread, args = (vF_severs, buyer_path, req_file))
+        p.start()
+        client_procs.append(p)
 
+    start = time()
+    for p in client_procs:
+        p.join()
+    end = time()
+
+    request_time = (end - start)
+
+    # Terminate Ditributed Controller servers
     for s in SERVERS:
         if int(s) <= args.cluster_size:
             print('='*30)
@@ -86,18 +108,20 @@ def main(args):
             pw = SERVERS[s]['password']
             end_a_server(user, addr, pw, s)
             print("vFiber shutdown on server '%s' connected at %s" % (s, addr))
-    
+
     # write test to file
-    test_file = "{}_{}_{}.txt".format(args.cluster_size, args.topology, args.time)    
-    with open(test_file, 'w') as file:
-        file.write(request_time)
+    test_file = "{}_{}_{}_{}.txt".format(\
+                    args.cluster_size, args.topology, args.time, args.reqs_to_send)    
+    with open(test_file, 'a+') as file:
+        file.write("{}\n".format(request_time))
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     
-    parser.add_argument("-s", "--cluster_size", help = "Max Number of servers to evaluate cluster")
-    parser.add_argument("-T", "--topology", help = "circuit, two-link, star?")
-    parser.add_argument("-t", "--time", help="mean, max, or min")
+    parser.add_argument("cluster_size", type=int, help="Max Number of servers to evaluate cluster")
+    parser.add_argument("topology", type=str, help="circuit, two-link, star?")
+    parser.add_argument("time", type=str, help="mean, max, or min")
+    parser.add_argument("reqs_to_send", type=int, help="10, 20, 100?")
 
     args = parser.parse_args()
     main(args)
