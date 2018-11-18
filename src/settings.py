@@ -28,7 +28,7 @@ CONTEXT = {
 # Useful parameters for test purposes
 TEST_PARAMS = {
     'server_path': '../data/star/',
-    'client_path': '/Users/TomNason/Dropbox/VFiber_code/VFiber/data/star/starBuyers',
+    'client_path': '/Users/TomNason/Dropbox/VFiber_code/VFiber/data/star/starBuyers/',
     'buyer_file_name': 'starBuyer_0.txt',
     'seller_file_name': 'starSeller.txt',
     'client_request_type': 'BUYER',                 # or SDX
