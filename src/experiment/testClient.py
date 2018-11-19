@@ -15,14 +15,19 @@ class TCPClient(threading.Thread):
     '''
      JSON/TCP client thread
     '''
-    def __init__(self, buyer_data = TEST_PARAMS['buyer_file_name'], path_to_data = TEST_PARAMS['client_path'], totalReqs = -1):
+    def __init__(   self, \
+                    buyer_data = TEST_PARAMS['buyer_file_name'], \
+                    path_to_data = TEST_PARAMS['client_path'], \
+                    totalReqs = -1, 
+                    server_hosts = SERVER_BINDING['address'],
+                    client_request_type = TEST_PARAMS['client_request_type'],):
         '''
          Class constructor
         '''
         Thread.__init__(self)
 
         # Remote service bindings
-        self.__serverhosts = SERVER_BINDING['address']
+        self.__serverhosts = server_hosts
         self.__serverport = int(SERVER_BINDING['port'])
         # Buffer settings
         self.__bufferdim = int(CONTEXT['client_socket_buffer'])
@@ -30,7 +35,7 @@ class TCPClient(threading.Thread):
         self.__compression = Utility()
         self.__resourcepath = TEST_PARAMS['client_path']
         self.__buyerFile = buyer_data
-        self.__client_request_type = TEST_PARAMS['client_request_type']
+        self.__client_request_type = client_request_type
         self.__client_request_code = TEST_PARAMS['client_request_code']
         self.__logger = get_logger("TCPClient")
         self.__conn_timeout = 1
