@@ -251,7 +251,37 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                         self.__logger.info("[TCPRequestHandler][handle]Configuration Generation and Circuit Destruction Time {}".format(val))
                         overheadList.append(val)
 
-                    else:
+                    elif self.__infra_tested == 'MOCK':
+                        self.__logger.info("[TCPRequestHandler][handle]Launching real network experiments.")
+                        with Timer() as tCircuitConfigDestruction:
+                            for item in allocationList:
+                                # Create circuits
+                                with Timer() as tGeneration:
+                                    flowTuples = self.getFlowTuples(item)
+
+                                    # Push circuits
+                                    self.__logger.info("[TCPRequestHandler][handle]Disconnecting {} and {}".format(item.linkA, item.linkB))
+                                    if "," in item.linkA:
+                                        locationA = (item.linkA.split(",")[1]).strip()
+                                    else:
+                                        locationA = item.linkA[1].strip()
+                                    if "," in item.linkB:
+                                        locationB = (item.linkB.split(",")[1]).strip()
+                                    else:
+                                        locationB = item.linkB[1].strip()
+                                    capacity = item.capacityPerStrand
+
+                                    # switch_ips = ["192.168.57.200", "192.168.57.201"]
+                                val = tGeneration.printTime("Configuration Generation", tGeneration, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
+                                with Timer() as tDestruction:
+                                    sleep(0.001)
+                                val = tDestruction.printTime("CircuitDestruction", tDestruction, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
+                                self.__logger.info("[TCPRequestHandler][handle]Circuit Destruction Time {}".format(val))
+                                overheadList.append(val)
+                                self.__logger.info("Circuit pulled from networks by vFiber from client: {0}".format(item.clientName))
+                        val = tCircuitConfigDestruction.printTime("TotalGenerationAndDestruction", tCircuitConfigDestruction, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
+                        self.__logger.info("[TCPRequestHandler][handle]Configuration Generation and Circuit Destruction Time {}".format(val))
+                        overheadList.append(val)                    else:
                         raise ValueError('Wrong configuration parameter in TEST_PARAMS')
 
                 elif (request.name == "MONITOR" and request.code == 102):
