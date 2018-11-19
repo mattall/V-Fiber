@@ -32,7 +32,8 @@ TEST_PARAMS = {
     'buyer_file_name': 'starBuyer_0.txt',
     'seller_file_name': 'starSeller.txt',
     'client_request_type': 'BUYER',                 # or SDX
-    'client_request_code': 100,                     # or 001
+    'client_request_code': 100,                     # request a lambda
+    #'client_request_code': 101,                     # terminate a lambda
     'infra_tested': 'MOCK',                         # or REAL
     #'infra_tested': 'REAL',
     'install_time': 33.9,    # 50th percentile
