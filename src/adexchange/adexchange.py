@@ -170,9 +170,7 @@ class AdExchange(SyncObj):
                     # Updates sellerGraph with the allocation
                     self.__logger.debug("Before > {}".format(self.availableAttributes(shortestPath, sellerGraph)))
                     ip_port_pairs = self.updateSellerGraph_and_getResources(seller, shortestPath, v)
-                    
                     seller.unlockEdgesOnPath(shortestPath)
-
                     self.__logger.debug("After > {}".format(self.availableAttributes(shortestPath, sellerGraph)))
                 except Exception as e:
                     self.__logger.info("{}".format(e))
@@ -226,8 +224,10 @@ class AdExchange(SyncObj):
 
             if nx.has_path(sellerGraph, k1, k2):
                 # Updates sellerGraph with the allocation
+                seller.lockEdgesOnPath(shortestPath)
                 self.__logger.debug("[AdExchange][returnAllocationToInfrustructureGraph]Before > {}".format(self.availableAttributes(shortestPath, sellerGraph)))
                 ip_port_pairs = self.updateSellerGraph_and_giveResources(seller, shortestPath, v)
+                seller.unlockEdgesOnPath(shortestPath)
                 self.__logger.debug("[AdExchange][returnAllocationToInfrustructureGraph]After > {}".format(self.availableAttributes(shortestPath, sellerGraph)))
             else:
                 self.__logger.info("[AdExchange][returnAllocationToInfrustructureGraph]Link does not exists between {} and {}".format(k1, k2))
