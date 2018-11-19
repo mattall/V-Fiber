@@ -20,12 +20,13 @@ from server_details import SERVERS
 import argparse
 import paramiko
 import logging
+import pickle
 from settings import SERVER_BINDING
 from random import choice
 from os import listdir
 from os.path import isfile, join
 
-def (servers, path, data):
+def timed_client_thread(servers, path, data):
     print("Thread is initializing client")
     
     client = TCPClient(server_hosts=servers,path_to_data=path,buyer_data=data,totalReqs=1)
@@ -79,16 +80,34 @@ def main(args):
     buyer_path = "/Users/TomNason/Dropbox/VFiber_code/VFiber/data/star/starBuyers/"
     buyer_files = [f for f in listdir(buyer_path) if isfile(join(buyer_path, f))]
 
-    # Start up a client thread, and track its time-to-complete
+    
     vF_severs = SERVER_BINDING['address'][:args.cluster_size]
-    while (1):
-        req_file = "/"+choice(buyer_files)
-        if ".gz" not in req_file:
-            break
+    
+    try:
+        # Read some requests
+        with(open("req_files_{}_{}.pkl".format(args.topology, args.reqs_to_send))) as reqFile:
+            requests = pickle.load(reqFile)
+ 
+    except IOError:
+        # Generate some requests
+        requests = []
+        for i in range(args.reqs_to_send):
+            while (1):
+                req_file = "/"+choice(buyer_files)
+                if ".gz" not in req_file:
+                    requests.append(req_file)
+                    break
 
+        # Save these requests for later tests
+        with(open("req_files_{}_{}.pkl".format(args.topology, args.reqs_to_send), "w+")) as reqFile:
+            pickle.dump(requests, reqFile)
+        with(open("req_files_{}_{}.txt".format(args.topology, args.reqs_to_send), "w+")) as reqFile:
+            reqFile.write(str(requests))
+
+    # Start up a client thread, and track its time-to-complete
     client_procs = []
-    for r in range(args.reqs_to_send):
-        p = Process(target = timed_client_thread, args = (vF_severs, buyer_path, req_file))
+    for r in requests:
+        p = Process(target = timed_client_thread, args = (vF_severs, buyer_path, r))
         p.start()
         client_procs.append(p)
 
@@ -111,7 +130,7 @@ def main(args):
 
     # write test to file
     test_file = "{}_{}_{}_{}.txt".format(\
-                    args.cluster_size, args.topology, args.time, args.reqs_to_send)    
+                    args.reqs_to_send, args.cluster_size, args.topology, args.time,)
     with open(test_file, 'a+') as file:
         file.write("{}\n".format(request_time))
 
