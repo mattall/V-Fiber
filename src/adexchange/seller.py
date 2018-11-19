@@ -106,8 +106,7 @@ class Seller(SyncObj):
         self.__logger.debug("[Seller][lockEdgesOnPath] Aquiring locks for edge: {}".format( [key_to_edge[k] for k in edge_keys] ))
         for key in edge_keys:
             while (self.__lockManager.tryAcquire( key ) is False): 
-                time.sleep(0) # yield control to another thread
-            
+                time.sleep(0) # yield control to another thread            
             self.__logger.debug("[Seller][lockEdgesOnPath] Aquired lock for edge: {}".format( key_to_edge[key] ))
 
 
@@ -120,11 +119,9 @@ class Seller(SyncObj):
         for (u,v) in zip(path[0:], path[1:]):
             edge_keys.append(S[u][v]['key'])
             key_to_edge[S[u][v]['key']] = (u, v)
-            self.__logger.debug("[Seller][unlockEdgesOnPath] Found key {} for edge {}".format(S[u][v]['key'], (u, v)))
 
         edge_keys.sort(reverse=True)
         # Release the keys
-        self.__logger.debug("[Seller][unlockEdgesOnPath] Releasing locks for edge: {}".format( [key_to_edge[k] for k in edge_keys] ))
         for key in edge_keys:
             self.__lockManager.release( key )
             self.__logger.debug("[Seller][unlockEdgesOnPath] Released lock for edge: {}".format( key_to_edge[key] ))
