@@ -1,2 +1,7 @@
-mean time to activate: 34.29 seconds 
-standard deviation: 1.18500351617 seconds
+max                : 41.9
+min. . . . . . . . : 33.5
+mean               : 34.29
+5th percentile     : 33.595
+50th percentile    : 33.9
+95th percentile    : 35.505
+standard deviation : 1.18500351617

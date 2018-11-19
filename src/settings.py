@@ -33,12 +33,13 @@ TEST_PARAMS = {
     'seller_file_name': 'starSeller.txt',
     'client_request_type': 'BUYER',                 # or SDX
     'client_request_code': 100,                     # or 001
-    # change this according to the experiment
-    'infra_tested': 'MOCK',                       # or REAL
+    'infra_tested': 'MOCK',                         # or REAL
     #'infra_tested': 'REAL',
-    'install_time': 34.29, # mean
+    'install_time': 33.9,    # 50th percentile
     # 'install_time': 34.29, # max
     # 'install_time': 34.29, # mean
+    # 'install_time': 33.595 # 5th percentile
+    # 'install_time': 35.505 # 95th percentile
 }
 
 # Database parameters

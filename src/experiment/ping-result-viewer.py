@@ -1,6 +1,5 @@
 import numpy as np
-from numpy import mean
-from numpy import std
+from numpy import mean, std, percentile
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 
@@ -60,13 +59,21 @@ for f in files:
 times = [(float(tc)/10.0)-time_between_extinguish_and_light for tc in timeouts]
 average = mean(times)
 standard_deviation = std(times)
-print("max: {}".format(max(times)))
-print("min: {}".format(min(times)))
-print("mean: {}".format(average))
-print("standard deviation: {}".format(standard_deviation))
+print("max                : {}".format(max(times)))
+print("min. . . . . . . . : {}".format(min(times)))
+print("mean               : {}".format(average))
+print("5th percentile     : {}".format(percentile(times, 5)))
+print("50th percentile    : {}".format(percentile(times, 50)))
+print("95th percentile    : {}".format(percentile(times, 95)))
+print("standard deviation : {}".format(standard_deviation))
 with open("./ping_test/00_ping_test_Results", 'w') as resultsFile:
-    #resultsFile.write("messages set: {}\n".format(messages_sent))
-    resultsFile.write("mean time to activate: {} seconds \n".format(average))
-    resultsFile.write("standard deviation: {} seconds".format(standard_deviation))
+    resultsFile.write("max                : {}\n".format(max(times)))
+    resultsFile.write("min. . . . . . . . : {}\n".format(min(times)))
+    resultsFile.write("mean               : {}\n".format(average))
+    resultsFile.write("5th percentile     : {}\n".format(percentile(times, 5)))
+    resultsFile.write("50th percentile    : {}\n".format(percentile(times, 50)))
+    resultsFile.write("95th percentile    : {}\n".format(percentile(times, 95)))
+    resultsFile.write("standard deviation : {}\n".format(standard_deviation))
 
-cdf(times)
+
+#cdf(times)
