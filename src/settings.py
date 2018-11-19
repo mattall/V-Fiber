@@ -27,7 +27,7 @@ CONTEXT = {
 
 # Useful parameters for test purposes
 TEST_PARAMS = {
-    'server_path': '../data/star/',
+    'server_path': '../data/mesh/',
     'client_path': '/Users/TomNason/Dropbox/VFiber_code/VFiber/data/star/starBuyers/',
     'buyer_file_name': 'starBuyer_0.txt',
     'seller_file_name': 'starSeller.txt',
@@ -36,11 +36,11 @@ TEST_PARAMS = {
     #'client_request_code': 101,                     # terminate a lambda
     'infra_tested': 'MOCK',                         # or REAL
     #'infra_tested': 'REAL',
-    'install_time': 33.9,    # 50th percentile
+    # 'install_time': 33.9,    # 50th percentile
     # 'install_time': 34.29, # max
     # 'install_time': 34.29, # mean
     # 'install_time': 33.595 # 5th percentile
-    # 'install_time': 35.505 # 95th percentile
+    'install_time': 35.505 # 95th percentile
 }
 
 # Database parameters
