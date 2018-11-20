@@ -24,7 +24,6 @@ class AdExchange(SyncObj):
                  ) for (u,v) in zip(path[0:],path[1:])]
 
     def updateSellerGraph_and_getResources(self, S, path, reqValues):
-        
         ip_port_pairs = []
         for (u,v) in zip(path[0:], path[1:]):
             for item in reqValues:
@@ -144,12 +143,14 @@ class AdExchange(SyncObj):
 
             try:
                 shortestPath = nx.shortest_path(sellerGraph, source=k1, target=k2)
-            
+
             except nx.NodeNotFound:
                 self.__logger.info("Path does not exists between {} and {}. No resource available for request".format(k1, k2))
                 allocationDict = {}
                 break
-    
+
+            seller.lockEdgesOnPath(shortestPath)
+
             gCoP = self.getCostOfPath(shortestPath, sellerGraph)
             lIP = self.linksInPath(shortestPath)
             k = len(lIP)
@@ -169,14 +170,15 @@ class AdExchange(SyncObj):
                     seller.lockEdgesOnPath(shortestPath)
                     # Updates sellerGraph with the allocation
                     self.__logger.debug("Before > {}".format(self.availableAttributes(shortestPath, sellerGraph)))
-                    ip_port_pairs = self.updateSellerGraph_and_getResources(seller, shortestPath, v)
-                    seller.unlockEdgesOnPath(shortestPath)
+                    ip_port_pairs = self.updateSellerGraph_and_getResources(seller, shortestPath, v)                    
                     self.__logger.debug("After > {}".format(self.availableAttributes(shortestPath, sellerGraph)))
                 except Exception as e:
                     self.__logger.info("{}".format(e))
                     self.__logger.info("could not allocate resources for optical path")
             else:
                 self.__logger.info("Link does not exists between {} and {}. No resource available for request".format(k1, k2))
+            
+            seller.unlockEdgesOnPath(shortestPath)    
 
         return (self.updateRequestList(reqList, allocationDict), ip_port_pairs)
 
