@@ -17,7 +17,7 @@ SERVER_BINDING = {
 
 # Contextual settings
 CONTEXT = {
-    'debug': True,
+    'debug': False,
     'client_socket_buffer': 8192,
     'compressed_content': False,
     'request_size': 1024,
@@ -28,7 +28,7 @@ CONTEXT = {
 
 # Useful parameters for test purposes
 TEST_PARAMS = {
-    'server_path': '../data/circuit/',
+    'server_path': '../data/',
     'client_path': '/Users/TomNason/Dropbox/VFiber_code/VFiber/data/circuit/circuitBuyers/',
     'buyer_file_name': 'circuitBuyer_0.txt',
     'seller_file_name': 'circuitSeller.txt',
