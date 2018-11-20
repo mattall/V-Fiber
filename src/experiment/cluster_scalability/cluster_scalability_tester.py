@@ -92,7 +92,7 @@ def main(args):
     
     try:
         # Read some requests
-        with(open("req_files_{}_{}.pkl".format(args.topology, args.reqs_to_send))) as reqFile:
+        with(open("./requests/req_files_{0}_{1}.pkl".format(args.topology, args.reqs_to_send))) as reqFile:
             requests = pickle.load(reqFile)
  
     except IOError:
@@ -106,9 +106,9 @@ def main(args):
                     break
 
         # Save these requests for later tests
-        with(open("req_files_{}_{}.pkl".format(args.topology, args.reqs_to_send), "w+")) as reqFile:
+        with(open("./requests/req_files_{0}_{1}.pkl".format(args.topology, args.reqs_to_send), "w+")) as reqFile:
             pickle.dump(requests, reqFile)
-        with(open("req_files_{}_{}.txt".format(args.topology, args.reqs_to_send), "w+")) as reqFile:
+        with(open("./requests/req_files_{0}_{1}.txt".format(args.topology, args.reqs_to_send), "w+")) as reqFile:
             reqFile.write(str(requests))
 
     # Start up a client thread, and track its time-to-complete
@@ -137,9 +137,9 @@ def main(args):
             print("vFiber shutdown on server '%s' connected at %s" % (s, addr))
 
     # write test to file
-    test_file = "{}_{}_{}_{}.txt".format(\
+    test_file = "./results/{2}/{0}_{1}_{2}_{3}.txt".format(\
                     args.reqs_to_send, args.cluster_size, args.topology, args.time,)
-    with open(test_file, 'w+') as file:
+    with open(test_file, 'a+') as file:
         file.write("{}\n".format(request_time))
 
 if __name__ == "__main__":
