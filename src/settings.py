@@ -23,7 +23,7 @@ CONTEXT = {
     'request_size': 1024,
     'meas_format': "d",
     'meas_to_file': True,
-    'meas_to_location': '/home/matt/vFiber/V-Fiber/src/star_results/'
+    'meas_to_location': '/home/matt/vFiber/V-Fiber/src/mesh_results/'
 }
 
 # Useful parameters for test purposes
