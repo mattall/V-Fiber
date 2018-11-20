@@ -9,7 +9,7 @@ from collections import defaultdict, namedtuple
 from common import get_logger, Timer
 from realdeployment.lab_testbed import addLink
 from realdeployment.torchbearer import light_path, extinguish_path
-from realdeployment.ExperimentOverhead.plotTimeline import *
+#from realdeployment.ExperimentOverhead.plotTimeline import *
 from subprocess import call
 from StringIO import StringIO
 from time import sleep
@@ -281,13 +281,15 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                                 self.__logger.info("Circuit pulled from networks by vFiber from client: {0}".format(item.clientName))
                         val = tCircuitConfigDestruction.printTime("TotalGenerationAndDestruction", tCircuitConfigDestruction, CONTEXT['meas_format'], CONTEXT['meas_to_file'])
                         self.__logger.info("[TCPRequestHandler][handle]Configuration Generation and Circuit Destruction Time {}".format(val))
-                        overheadList.append(val)                    else:
+                        overheadList.append(val)                    
+                    
+                    else:
                         raise ValueError('Wrong configuration parameter in TEST_PARAMS')
 
                 elif (request.name == "MONITOR" and request.code == 102):
                     self.__logger.info("[TCPRequestHandler][handle]Request from Monitor received.")
                     (ip, port) = request.content 
-                    self.__logger.debug("[TCPRequestHandler][handle]Broken Link: {}".format(ip, port))
+                    self.__logger.debug("[TCPRequestHandler][handle]Broken Link: {}".format((ip, port)))
                     try:
                         (x, y, port_pair) = self.__sellerObj.find_edge_from_ip_port_pair((ip, port))                        
                         harzardous_path = self.__sellerObj.update_disconnected_strand(x, y, port_pair)
