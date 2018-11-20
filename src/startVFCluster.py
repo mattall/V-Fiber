@@ -14,7 +14,7 @@ from sys import exit
 
 class VFiber(object):
 
-    def __init__(self, id, cluster_size):
+    def __init__(self, id, cluster_size, topology):
         self.__id = id
         bindings = 'bindings' + str(id)
         self.__logger = get_logger("main")
@@ -48,7 +48,7 @@ class VFiber(object):
         sellerID = server_addr + ':' + SELLER['port']
         sellerPeers = exchangePeers = [ p + ':' + SELLER['port'] for p in peers ]
         try:
-            self.server.sellerObject = Seller(sellerID, sellerPeers)
+            self.server.sellerObject = Seller(sellerID, sellerPeers, topology)
         except Exception as e:
             print(e)
             self.__logger.debug("Server Seller ID: {}".format(SellerID))
@@ -92,8 +92,10 @@ def main():
     parser = ArgumentParser()
     parser.add_argument('server_num', help="number 1,2,3... to distinguish whcih server is to begin running", type=int)
     parser.add_argument('total_servers', help="number 1,2,3... how many servers run in this cluster?", type=int)
+    parser.add_argument('--topology', '-t', help="specify a topology file")
     args = parser.parse_args()
-    vFiber = VFiber(args.server_num, args.total_servers)
+
+    vFiber = VFiber(args.server_num, args.total_servers, args.topology)
 
     if ADEX['status'] == "open":
         vFiber.server.serve_forever()

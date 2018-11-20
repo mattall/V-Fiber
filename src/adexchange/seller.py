@@ -6,7 +6,7 @@ from pysyncobj import SyncObj, replicated_sync, replicated, SyncObjConf
 from pysyncobj.batteries import ReplLockManager
 
 class Seller(SyncObj):
-    def __init__(self, selfAddress, partnerAddresses):
+    def __init__(self, selfAddress, partnerAddresses, topology=None):
         '''
         Initialize seller class
         '''
@@ -19,8 +19,16 @@ class Seller(SyncObj):
                                         cfg, 
                                         consumers=[self.__lockManager],
                                         )
-        self.__rsp = TEST_PARAMS['server_path']
-        self.__sf = TEST_PARAMS['seller_file_name']
+
+        if topology:
+            self.__rsp = TEST_PARAMS['server_path'] + topology+ '/'
+            self.__sf = "{}Seller.txt".format(topology)
+            print(self.__rsp)
+            print(self.__sf)
+        else:
+            self.__rsp = TEST_PARAMS['server_path']
+            self.__sf = TEST_PARAMS['seller_file_name']
+        
         self.__compressed = CONTEXT['compressed_content']
         self.__sellerGraph = nx.Graph()
         self.__logger = get_logger("Seller")
