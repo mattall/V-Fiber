@@ -11,6 +11,14 @@ topology, using the mean activation time from benchmarking tests to
 simulate the link activation time.
 
 results are stored in "./results/{cluster_size}_{topology}_{time}.txt
+
+Every seconds we receive a fixed number of requests, for a variable length of time.
+requests are Poisson of 10 , 20, or 30. 
+
+time lengths are Poisson of 10 seconds
+
+killall -9 python; cd /home/matt/vFiber/V-Fiber/src; source ../../bin/activate; git pull
+
 '''
 #from test_startClient import start_client
 from testClient import TCPClient
@@ -77,9 +85,8 @@ def main(args):
 
     sleep(5)
 
-    buyer_path = "/Users/TomNason/Dropbox/VFiber_code/VFiber/data/star/starBuyers/"
+    buyer_path = "/Users/TomNason/Dropbox/VFiber_code/VFiber/data/mesh/meshBuyers/"
     buyer_files = [f for f in listdir(buyer_path) if isfile(join(buyer_path, f))]
-
     
     vF_severs = SERVER_BINDING['address'][:args.cluster_size]
     
@@ -105,6 +112,7 @@ def main(args):
             reqFile.write(str(requests))
 
     # Start up a client thread, and track its time-to-complete
+
     client_procs = []
     for r in requests:
         p = Process(target = timed_client_thread, args = (vF_severs, buyer_path, r))
@@ -131,7 +139,7 @@ def main(args):
     # write test to file
     test_file = "{}_{}_{}_{}.txt".format(\
                     args.reqs_to_send, args.cluster_size, args.topology, args.time,)
-    with open(test_file, 'a+') as file:
+    with open(test_file, 'w+') as file:
         file.write("{}\n".format(request_time))
 
 if __name__ == "__main__":
