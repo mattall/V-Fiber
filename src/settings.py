@@ -9,7 +9,8 @@ SERVER_BINDING = {
                 '192.168.57.108',
                 '192.168.57.109',
                 '192.168.57.110', 
-                'localhost'],
+                'localhost',
+                ],
     'port': '10000',
     'service_alias': 'VirtualFiber'
 }
@@ -28,9 +29,9 @@ CONTEXT = {
 # Useful parameters for test purposes
 TEST_PARAMS = {
     'server_path': '../data/mesh/',
-    'client_path': '/Users/TomNason/Dropbox/VFiber_code/VFiber/data/star/starBuyers/',
-    'buyer_file_name': 'starBuyer_0.txt',
-    'seller_file_name': 'starSeller.txt',
+    'client_path': '/Users/TomNason/Dropbox/VFiber_code/VFiber/data/mesh/meshBuyers/',
+    'buyer_file_name': 'mestBuyer_0.txt',
+    'seller_file_name': 'meshSeller.txt',
     'client_request_type': 'BUYER',                 # or SDX
     'client_request_code': 100,                     # request a lambda
     #'client_request_code': 101,                     # terminate a lambda
