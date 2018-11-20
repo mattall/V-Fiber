@@ -23,15 +23,15 @@ CONTEXT = {
     'request_size': 1024,
     'meas_format': "d",
     'meas_to_file': True,
-    'meas_to_location': '/home/matt/vFiber/V-Fiber/src/mesh_results/'
+    'meas_to_location': '/home/matt/vFiber/V-Fiber/src/circuit_results//'
 }
 
 # Useful parameters for test purposes
 TEST_PARAMS = {
-    'server_path': '../data/mesh/',
-    'client_path': '/Users/TomNason/Dropbox/VFiber_code/VFiber/data/mesh/meshBuyers/',
-    'buyer_file_name': 'mestBuyer_0.txt',
-    'seller_file_name': 'meshSeller.txt',
+    'server_path': '../data/circuit/',
+    'client_path': '/Users/TomNason/Dropbox/VFiber_code/VFiber/data/circuit/circuitBuyers/',
+    'buyer_file_name': 'circuitBuyer_0.txt',
+    'seller_file_name': 'circuitSeller.txt',
     'client_request_type': 'BUYER',                 # or SDX
     'client_request_code': 100,                     # request a lambda
     #'client_request_code': 101,                     # terminate a lambda
