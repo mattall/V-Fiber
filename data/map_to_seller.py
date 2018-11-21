@@ -56,7 +56,7 @@ with open("./darkStrand/darkStrandMap.txt", 'r') as fob:
 
 with open("./darkStrand/darkStrandSeller.txt", 'w') as sFile:
     for e in edge:
-        sFile.write("{}; {}; 40; 1; DarkStrand; 100; {}; {}\n"\
+        sFile.write("{}; {}; 40; 1; 100; DarkStrand; {}; {}\n"\
             .format(e[0], e[1], str(address[e[0]]), str(address[e[1]])))
         for x in range(40):
             sFile.write("{0}; Gi 0/{0}; Gi 0/{0}\n".format(x))
@@ -65,6 +65,6 @@ clients = []
 i = 0
 for c in combinations(node.values(),2):
     with open("./darkStrand/darkStrandBuyers/darkStrandBuyer_{}.txt".format(i), 'w') as bFile:
-        bFile.write("{0}, {1}, {2}, {3}, {4}, {0}_{1}"\
+        bFile.write("{0}; {1}; {2}; {3}; {4}; {0}_{1}"\
             .format(c[0], c[1], 1, 1, 900))
     i += 1
