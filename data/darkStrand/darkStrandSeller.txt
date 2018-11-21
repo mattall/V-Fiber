@@ -1,4 +1,4 @@
-NewYork; Philadelphia; 40; 1; DarkStrand; 100; 127.0.0.12; 127.0.0.19
+NewYork; Philadelphia; 40; 1; 100; DarkStrand; 127.0.0.12; 127.0.0.19
 0; Gi 0/0; Gi 0/0
 1; Gi 0/1; Gi 0/1
 2; Gi 0/2; Gi 0/2
@@ -39,7 +39,7 @@ NewYork; Philadelphia; 40; 1; DarkStrand; 100; 127.0.0.12; 127.0.0.19
 37; Gi 0/37; Gi 0/37
 38; Gi 0/38; Gi 0/38
 39; Gi 0/39; Gi 0/39
-SanAntonio; ElPaso/LasCruces; 40; 1; DarkStrand; 100; 127.0.0.4; 127.0.0.21
+SanAntonio; ElPaso/LasCruces; 40; 1; 100; DarkStrand; 127.0.0.4; 127.0.0.21
 0; Gi 0/0; Gi 0/0
 1; Gi 0/1; Gi 0/1
 2; Gi 0/2; Gi 0/2
@@ -80,7 +80,7 @@ SanAntonio; ElPaso/LasCruces; 40; 1; DarkStrand; 100; 127.0.0.4; 127.0.0.21
 37; Gi 0/37; Gi 0/37
 38; Gi 0/38; Gi 0/38
 39; Gi 0/39; Gi 0/39
-NewYork; Syracuse; 40; 1; DarkStrand; 100; 127.0.0.12; 127.0.0.13
+NewYork; Syracuse; 40; 1; 100; DarkStrand; 127.0.0.12; 127.0.0.13
 0; Gi 0/0; Gi 0/0
 1; Gi 0/1; Gi 0/1
 2; Gi 0/2; Gi 0/2
@@ -121,7 +121,7 @@ NewYork; Syracuse; 40; 1; DarkStrand; 100; 127.0.0.12; 127.0.0.13
 37; Gi 0/37; Gi 0/37
 38; Gi 0/38; Gi 0/38
 39; Gi 0/39; Gi 0/39
-Pensacola; Jacksonville; 40; 1; DarkStrand; 100; 127.0.0.6; 127.0.0.7
+Pensacola; Jacksonville; 40; 1; 100; DarkStrand; 127.0.0.6; 127.0.0.7
 0; Gi 0/0; Gi 0/0
 1; Gi 0/1; Gi 0/1
 2; Gi 0/2; Gi 0/2
@@ -162,7 +162,7 @@ Pensacola; Jacksonville; 40; 1; DarkStrand; 100; 127.0.0.6; 127.0.0.7
 37; Gi 0/37; Gi 0/37
 38; Gi 0/38; Gi 0/38
 39; Gi 0/39; Gi 0/39
-Tulsa; KansasCity; 40; 1; DarkStrand; 100; 127.0.0.2; 127.0.0.3
+Tulsa; KansasCity; 40; 1; 100; DarkStrand; 127.0.0.2; 127.0.0.3
 0; Gi 0/0; Gi 0/0
 1; Gi 0/1; Gi 0/1
 2; Gi 0/2; Gi 0/2
@@ -203,7 +203,7 @@ Tulsa; KansasCity; 40; 1; DarkStrand; 100; 127.0.0.2; 127.0.0.3
 37; Gi 0/37; Gi 0/37
 38; Gi 0/38; Gi 0/38
 39; Gi 0/39; Gi 0/39
-Syracuse; Cleveland; 40; 1; DarkStrand; 100; 127.0.0.13; 127.0.0.14
+Syracuse; Cleveland; 40; 1; 100; DarkStrand; 127.0.0.13; 127.0.0.14
 0; Gi 0/0; Gi 0/0
 1; Gi 0/1; Gi 0/1
 2; Gi 0/2; Gi 0/2
@@ -244,7 +244,7 @@ Syracuse; Cleveland; 40; 1; DarkStrand; 100; 127.0.0.13; 127.0.0.14
 37; Gi 0/37; Gi 0/37
 38; Gi 0/38; Gi 0/38
 39; Gi 0/39; Gi 0/39
-Pittsburgh; WashingtonDC; 40; 1; DarkStrand; 100; 127.0.0.17; 127.0.0.18
+Pittsburgh; WashingtonDC; 40; 1; 100; DarkStrand; 127.0.0.17; 127.0.0.18
 0; Gi 0/0; Gi 0/0
 1; Gi 0/1; Gi 0/1
 2; Gi 0/2; Gi 0/2
@@ -285,7 +285,7 @@ Pittsburgh; WashingtonDC; 40; 1; DarkStrand; 100; 127.0.0.17; 127.0.0.18
 37; Gi 0/37; Gi 0/37
 38; Gi 0/38; Gi 0/38
 39; Gi 0/39; Gi 0/39
-ElPaso/LasCruces; Phoenix; 40; 1; DarkStrand; 100; 127.0.0.21; 127.0.0.29
+ElPaso/LasCruces; Phoenix; 40; 1; 100; DarkStrand; 127.0.0.21; 127.0.0.29
 0; Gi 0/0; Gi 0/0
 1; Gi 0/1; Gi 0/1
 2; Gi 0/2; Gi 0/2
@@ -326,7 +326,7 @@ ElPaso/LasCruces; Phoenix; 40; 1; DarkStrand; 100; 127.0.0.21; 127.0.0.29
 37; Gi 0/37; Gi 0/37
 38; Gi 0/38; Gi 0/38
 39; Gi 0/39; Gi 0/39
-Atlanta; Raleigh; 40; 1; DarkStrand; 100; 127.0.0.10; 127.0.0.11
+Atlanta; Raleigh; 40; 1; 100; DarkStrand; 127.0.0.10; 127.0.0.11
 0; Gi 0/0; Gi 0/0
 1; Gi 0/1; Gi 0/1
 2; Gi 0/2; Gi 0/2
@@ -367,7 +367,7 @@ Atlanta; Raleigh; 40; 1; DarkStrand; 100; 127.0.0.10; 127.0.0.11
 37; Gi 0/37; Gi 0/37
 38; Gi 0/38; Gi 0/38
 39; Gi 0/39; Gi 0/39
-Boise; SaltLakeCity; 40; 1; DarkStrand; 100; 127.0.0.25; 127.0.0.26
+Boise; SaltLakeCity; 40; 1; 100; DarkStrand; 127.0.0.25; 127.0.0.26
 0; Gi 0/0; Gi 0/0
 1; Gi 0/1; Gi 0/1
 2; Gi 0/2; Gi 0/2
@@ -408,7 +408,7 @@ Boise; SaltLakeCity; 40; 1; DarkStrand; 100; 127.0.0.25; 127.0.0.26
 37; Gi 0/37; Gi 0/37
 38; Gi 0/38; Gi 0/38
 39; Gi 0/39; Gi 0/39
-WashingtonDC; Philadelphia; 40; 1; DarkStrand; 100; 127.0.0.18; 127.0.0.19
+WashingtonDC; Philadelphia; 40; 1; 100; DarkStrand; 127.0.0.18; 127.0.0.19
 0; Gi 0/0; Gi 0/0
 1; Gi 0/1; Gi 0/1
 2; Gi 0/2; Gi 0/2
@@ -449,7 +449,7 @@ WashingtonDC; Philadelphia; 40; 1; DarkStrand; 100; 127.0.0.18; 127.0.0.19
 37; Gi 0/37; Gi 0/37
 38; Gi 0/38; Gi 0/38
 39; Gi 0/39; Gi 0/39
-Portland; SunnyVale; 40; 1; DarkStrand; 100; 127.0.0.23; 127.0.0.24
+Portland; SunnyVale; 40; 1; 100; DarkStrand; 127.0.0.23; 127.0.0.24
 0; Gi 0/0; Gi 0/0
 1; Gi 0/1; Gi 0/1
 2; Gi 0/2; Gi 0/2
@@ -490,7 +490,7 @@ Portland; SunnyVale; 40; 1; DarkStrand; 100; 127.0.0.23; 127.0.0.24
 37; Gi 0/37; Gi 0/37
 38; Gi 0/38; Gi 0/38
 39; Gi 0/39; Gi 0/39
-Seattle; Boise; 40; 1; DarkStrand; 100; 127.0.0.22; 127.0.0.25
+Seattle; Boise; 40; 1; 100; DarkStrand; 127.0.0.22; 127.0.0.25
 0; Gi 0/0; Gi 0/0
 1; Gi 0/1; Gi 0/1
 2; Gi 0/2; Gi 0/2
@@ -531,7 +531,7 @@ Seattle; Boise; 40; 1; DarkStrand; 100; 127.0.0.22; 127.0.0.25
 37; Gi 0/37; Gi 0/37
 38; Gi 0/38; Gi 0/38
 39; Gi 0/39; Gi 0/39
-KansasCity; Denver; 40; 1; DarkStrand; 100; 127.0.0.3; 127.0.0.27
+KansasCity; Denver; 40; 1; 100; DarkStrand; 127.0.0.3; 127.0.0.27
 0; Gi 0/0; Gi 0/0
 1; Gi 0/1; Gi 0/1
 2; Gi 0/2; Gi 0/2
@@ -572,7 +572,7 @@ KansasCity; Denver; 40; 1; DarkStrand; 100; 127.0.0.3; 127.0.0.27
 37; Gi 0/37; Gi 0/37
 38; Gi 0/38; Gi 0/38
 39; Gi 0/39; Gi 0/39
-KansasCity; Chicago; 40; 1; DarkStrand; 100; 127.0.0.3; 127.0.0.15
+KansasCity; Chicago; 40; 1; 100; DarkStrand; 127.0.0.3; 127.0.0.15
 0; Gi 0/0; Gi 0/0
 1; Gi 0/1; Gi 0/1
 2; Gi 0/2; Gi 0/2
@@ -613,7 +613,7 @@ KansasCity; Chicago; 40; 1; DarkStrand; 100; 127.0.0.3; 127.0.0.15
 37; Gi 0/37; Gi 0/37
 38; Gi 0/38; Gi 0/38
 39; Gi 0/39; Gi 0/39
-Seattle; Portland; 40; 1; DarkStrand; 100; 127.0.0.22; 127.0.0.23
+Seattle; Portland; 40; 1; 100; DarkStrand; 127.0.0.22; 127.0.0.23
 0; Gi 0/0; Gi 0/0
 1; Gi 0/1; Gi 0/1
 2; Gi 0/2; Gi 0/2
@@ -654,7 +654,7 @@ Seattle; Portland; 40; 1; DarkStrand; 100; 127.0.0.22; 127.0.0.23
 37; Gi 0/37; Gi 0/37
 38; Gi 0/38; Gi 0/38
 39; Gi 0/39; Gi 0/39
-Tulsa; Dallas; 40; 1; DarkStrand; 100; 127.0.0.2; 127.0.0.5
+Tulsa; Dallas; 40; 1; 100; DarkStrand; 127.0.0.2; 127.0.0.5
 0; Gi 0/0; Gi 0/0
 1; Gi 0/1; Gi 0/1
 2; Gi 0/2; Gi 0/2
@@ -695,7 +695,7 @@ Tulsa; Dallas; 40; 1; DarkStrand; 100; 127.0.0.2; 127.0.0.5
 37; Gi 0/37; Gi 0/37
 38; Gi 0/38; Gi 0/38
 39; Gi 0/39; Gi 0/39
-Pensacola; BatonRouge; 40; 1; DarkStrand; 100; 127.0.0.6; 127.0.0.9
+Pensacola; BatonRouge; 40; 1; 100; DarkStrand; 127.0.0.6; 127.0.0.9
 0; Gi 0/0; Gi 0/0
 1; Gi 0/1; Gi 0/1
 2; Gi 0/2; Gi 0/2
@@ -736,7 +736,7 @@ Pensacola; BatonRouge; 40; 1; DarkStrand; 100; 127.0.0.6; 127.0.0.9
 37; Gi 0/37; Gi 0/37
 38; Gi 0/38; Gi 0/38
 39; Gi 0/39; Gi 0/39
-Cleveland; Pittsburgh; 40; 1; DarkStrand; 100; 127.0.0.14; 127.0.0.17
+Cleveland; Pittsburgh; 40; 1; 100; DarkStrand; 127.0.0.14; 127.0.0.17
 0; Gi 0/0; Gi 0/0
 1; Gi 0/1; Gi 0/1
 2; Gi 0/2; Gi 0/2
@@ -777,7 +777,7 @@ Cleveland; Pittsburgh; 40; 1; DarkStrand; 100; 127.0.0.14; 127.0.0.17
 37; Gi 0/37; Gi 0/37
 38; Gi 0/38; Gi 0/38
 39; Gi 0/39; Gi 0/39
-SaltLakeCity; Denver; 40; 1; DarkStrand; 100; 127.0.0.26; 127.0.0.27
+SaltLakeCity; Denver; 40; 1; 100; DarkStrand; 127.0.0.26; 127.0.0.27
 0; Gi 0/0; Gi 0/0
 1; Gi 0/1; Gi 0/1
 2; Gi 0/2; Gi 0/2
@@ -818,7 +818,7 @@ SaltLakeCity; Denver; 40; 1; DarkStrand; 100; 127.0.0.26; 127.0.0.27
 37; Gi 0/37; Gi 0/37
 38; Gi 0/38; Gi 0/38
 39; Gi 0/39; Gi 0/39
-LosAngeles; SunnyVale; 40; 1; DarkStrand; 100; 127.0.0.20; 127.0.0.24
+LosAngeles; SunnyVale; 40; 1; 100; DarkStrand; 127.0.0.20; 127.0.0.24
 0; Gi 0/0; Gi 0/0
 1; Gi 0/1; Gi 0/1
 2; Gi 0/2; Gi 0/2
@@ -859,7 +859,7 @@ LosAngeles; SunnyVale; 40; 1; DarkStrand; 100; 127.0.0.20; 127.0.0.24
 37; Gi 0/37; Gi 0/37
 38; Gi 0/38; Gi 0/38
 39; Gi 0/39; Gi 0/39
-LosAngeles; Phoenix; 40; 1; DarkStrand; 100; 127.0.0.20; 127.0.0.29
+LosAngeles; Phoenix; 40; 1; 100; DarkStrand; 127.0.0.20; 127.0.0.29
 0; Gi 0/0; Gi 0/0
 1; Gi 0/1; Gi 0/1
 2; Gi 0/2; Gi 0/2
@@ -900,7 +900,7 @@ LosAngeles; Phoenix; 40; 1; DarkStrand; 100; 127.0.0.20; 127.0.0.29
 37; Gi 0/37; Gi 0/37
 38; Gi 0/38; Gi 0/38
 39; Gi 0/39; Gi 0/39
-Houston; BatonRouge; 40; 1; DarkStrand; 100; 127.0.0.8; 127.0.0.9
+Houston; BatonRouge; 40; 1; 100; DarkStrand; 127.0.0.8; 127.0.0.9
 0; Gi 0/0; Gi 0/0
 1; Gi 0/1; Gi 0/1
 2; Gi 0/2; Gi 0/2
@@ -941,7 +941,7 @@ Houston; BatonRouge; 40; 1; DarkStrand; 100; 127.0.0.8; 127.0.0.9
 37; Gi 0/37; Gi 0/37
 38; Gi 0/38; Gi 0/38
 39; Gi 0/39; Gi 0/39
-ElPaso/LasCruces; Albuquerque; 40; 1; DarkStrand; 100; 127.0.0.21; 127.0.0.28
+ElPaso/LasCruces; Albuquerque; 40; 1; 100; DarkStrand; 127.0.0.21; 127.0.0.28
 0; Gi 0/0; Gi 0/0
 1; Gi 0/1; Gi 0/1
 2; Gi 0/2; Gi 0/2
@@ -982,7 +982,7 @@ ElPaso/LasCruces; Albuquerque; 40; 1; DarkStrand; 100; 127.0.0.21; 127.0.0.28
 37; Gi 0/37; Gi 0/37
 38; Gi 0/38; Gi 0/38
 39; Gi 0/39; Gi 0/39
-Dallas; Houston; 40; 1; DarkStrand; 100; 127.0.0.5; 127.0.0.8
+Dallas; Houston; 40; 1; 100; DarkStrand; 127.0.0.5; 127.0.0.8
 0; Gi 0/0; Gi 0/0
 1; Gi 0/1; Gi 0/1
 2; Gi 0/2; Gi 0/2
@@ -1023,7 +1023,7 @@ Dallas; Houston; 40; 1; DarkStrand; 100; 127.0.0.5; 127.0.0.8
 37; Gi 0/37; Gi 0/37
 38; Gi 0/38; Gi 0/38
 39; Gi 0/39; Gi 0/39
-Raton; Denver; 40; 1; DarkStrand; 100; 127.0.0.16; 127.0.0.27
+Raton; Denver; 40; 1; 100; DarkStrand; 127.0.0.16; 127.0.0.27
 0; Gi 0/0; Gi 0/0
 1; Gi 0/1; Gi 0/1
 2; Gi 0/2; Gi 0/2
@@ -1064,7 +1064,7 @@ Raton; Denver; 40; 1; DarkStrand; 100; 127.0.0.16; 127.0.0.27
 37; Gi 0/37; Gi 0/37
 38; Gi 0/38; Gi 0/38
 39; Gi 0/39; Gi 0/39
-Raleigh; WashingtonDC; 40; 1; DarkStrand; 100; 127.0.0.11; 127.0.0.18
+Raleigh; WashingtonDC; 40; 1; 100; DarkStrand; 127.0.0.11; 127.0.0.18
 0; Gi 0/0; Gi 0/0
 1; Gi 0/1; Gi 0/1
 2; Gi 0/2; Gi 0/2
@@ -1105,7 +1105,7 @@ Raleigh; WashingtonDC; 40; 1; DarkStrand; 100; 127.0.0.11; 127.0.0.18
 37; Gi 0/37; Gi 0/37
 38; Gi 0/38; Gi 0/38
 39; Gi 0/39; Gi 0/39
-SanAntonio; Houston; 40; 1; DarkStrand; 100; 127.0.0.4; 127.0.0.8
+SanAntonio; Houston; 40; 1; 100; DarkStrand; 127.0.0.4; 127.0.0.8
 0; Gi 0/0; Gi 0/0
 1; Gi 0/1; Gi 0/1
 2; Gi 0/2; Gi 0/2
@@ -1146,7 +1146,7 @@ SanAntonio; Houston; 40; 1; DarkStrand; 100; 127.0.0.4; 127.0.0.8
 37; Gi 0/37; Gi 0/37
 38; Gi 0/38; Gi 0/38
 39; Gi 0/39; Gi 0/39
-Raton; Albuquerque; 40; 1; DarkStrand; 100; 127.0.0.16; 127.0.0.28
+Raton; Albuquerque; 40; 1; 100; DarkStrand; 127.0.0.16; 127.0.0.28
 0; Gi 0/0; Gi 0/0
 1; Gi 0/1; Gi 0/1
 2; Gi 0/2; Gi 0/2
@@ -1187,7 +1187,7 @@ Raton; Albuquerque; 40; 1; DarkStrand; 100; 127.0.0.16; 127.0.0.28
 37; Gi 0/37; Gi 0/37
 38; Gi 0/38; Gi 0/38
 39; Gi 0/39; Gi 0/39
-Jacksonville; Atlanta; 40; 1; DarkStrand; 100; 127.0.0.7; 127.0.0.10
+Jacksonville; Atlanta; 40; 1; 100; DarkStrand; 127.0.0.7; 127.0.0.10
 0; Gi 0/0; Gi 0/0
 1; Gi 0/1; Gi 0/1
 2; Gi 0/2; Gi 0/2
@@ -1228,7 +1228,7 @@ Jacksonville; Atlanta; 40; 1; DarkStrand; 100; 127.0.0.7; 127.0.0.10
 37; Gi 0/37; Gi 0/37
 38; Gi 0/38; Gi 0/38
 39; Gi 0/39; Gi 0/39
-Cleveland; Chicago; 40; 1; DarkStrand; 100; 127.0.0.14; 127.0.0.15
+Cleveland; Chicago; 40; 1; 100; DarkStrand; 127.0.0.14; 127.0.0.15
 0; Gi 0/0; Gi 0/0
 1; Gi 0/1; Gi 0/1
 2; Gi 0/2; Gi 0/2
