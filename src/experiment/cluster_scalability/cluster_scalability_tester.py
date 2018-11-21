@@ -44,7 +44,7 @@ def timed_client_thread(servers, path, data):
     end = time()
     print(end - start)
 
-def do_ssh(username, address, password, server, cluster_size):
+def do_ssh(username, address, password, server, cluster_size, topo):
     port = 22
     paramiko.util.log_to_file("ssh.log")
     logging.getLogger("paramiko").setLevel(logging.WARNING)
@@ -54,8 +54,8 @@ def do_ssh(username, address, password, server, cluster_size):
     c.connect(hostname = address, username = username, password = password)
     c.exec_command("killall -9 python; cd /home/matt/vFiber/V-Fiber/src;\
                      source ../../bin/activate; \
-                     python startVFCluster.py {0} {1}&>> {2}.log".\
-                     format(server, cluster_size ,time()))
+                     python startVFCluster.py {0} {1} --topology {2} &>> {3}.log".\
+                     format(server, cluster_size ,topo, time()))
     c.close()
 
 def end_a_server(username, address, password, server):
@@ -79,13 +79,13 @@ def main(args):
             user = SERVERS[s]['user']
             addr = SERVERS[s]['address']
             pw = SERVERS[s]['password']
-            p = Process(target = do_ssh, args = (user, addr, pw, s, args.cluster_size))
+            p = Process(target = do_ssh, args = (user, addr, pw, s, args.cluster_size, args.topology))
             p.start()
             server_procs.append(p)
 
     sleep(5)
 
-    buyer_path = "/Users/TomNason/Dropbox/VFiber_code/VFiber/data/mesh/meshBuyers/"
+    buyer_path = "/Users/TomNason/Dropbox/VFiber_code/VFiber/data/{0}/{0}Buyers/".format(args.topology)
     buyer_files = [f for f in listdir(buyer_path) if isfile(join(buyer_path, f))]
     
     vF_severs = SERVER_BINDING['address'][:args.cluster_size]
