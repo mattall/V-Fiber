@@ -1,1 +1,1 @@
-Tulsa, Philadelphia, 1, 1, 900, Tulsa_Philadelphia
+Tulsa; Philadelphia; 1; 1; 900; Tulsa_Philadelphia

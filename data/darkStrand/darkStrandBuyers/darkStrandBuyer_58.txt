@@ -1,1 +1,1 @@
-SanAntonio, Atlanta, 1, 1, 900, SanAntonio_Atlanta
+SanAntonio; Atlanta; 1; 1; 900; SanAntonio_Atlanta

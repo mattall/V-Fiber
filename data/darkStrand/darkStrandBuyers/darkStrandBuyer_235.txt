@@ -1,1 +1,1 @@
-NewYork, Portland, 1, 1, 900, NewYork_Portland
+NewYork; Portland; 1; 1; 900; NewYork_Portland

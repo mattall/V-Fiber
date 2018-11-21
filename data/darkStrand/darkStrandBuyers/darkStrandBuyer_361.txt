@@ -1,1 +1,1 @@
-Portland, Albuquerque, 1, 1, 900, Portland_Albuquerque
+Portland; Albuquerque; 1; 1; 900; Portland_Albuquerque

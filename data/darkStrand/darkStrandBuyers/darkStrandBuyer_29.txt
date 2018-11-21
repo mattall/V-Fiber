@@ -1,1 +1,1 @@
-KansasCity, Pensacola, 1, 1, 900, KansasCity_Pensacola
+KansasCity; Pensacola; 1; 1; 900; KansasCity_Pensacola

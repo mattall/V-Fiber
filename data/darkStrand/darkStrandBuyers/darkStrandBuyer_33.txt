@@ -1,1 +1,1 @@
-KansasCity, Atlanta, 1, 1, 900, KansasCity_Atlanta
+KansasCity; Atlanta; 1; 1; 900; KansasCity_Atlanta

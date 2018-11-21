@@ -1,1 +1,1 @@
-Raton, Philadelphia, 1, 1, 900, Raton_Philadelphia
+Raton; Philadelphia; 1; 1; 900; Raton_Philadelphia

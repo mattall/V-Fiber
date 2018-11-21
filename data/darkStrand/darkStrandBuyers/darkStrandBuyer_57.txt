@@ -1,1 +1,1 @@
-SanAntonio, BatonRouge, 1, 1, 900, SanAntonio_BatonRouge
+SanAntonio; BatonRouge; 1; 1; 900; SanAntonio_BatonRouge

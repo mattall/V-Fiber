@@ -1,1 +1,1 @@
-Cleveland, Boise, 1, 1, 900, Cleveland_Boise
+Cleveland; Boise; 1; 1; 900; Cleveland_Boise

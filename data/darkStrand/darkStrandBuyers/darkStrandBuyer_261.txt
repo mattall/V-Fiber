@@ -1,1 +1,1 @@
-Cleveland, WashingtonDC, 1, 1, 900, Cleveland_WashingtonDC
+Cleveland; WashingtonDC; 1; 1; 900; Cleveland_WashingtonDC

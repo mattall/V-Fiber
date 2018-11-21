@@ -1,1 +1,1 @@
-WashingtonDC, Seattle, 1, 1, 900, WashingtonDC_Seattle
+WashingtonDC; Seattle; 1; 1; 900; WashingtonDC_Seattle

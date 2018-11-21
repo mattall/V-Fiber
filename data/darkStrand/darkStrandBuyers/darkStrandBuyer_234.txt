@@ -1,1 +1,1 @@
-NewYork, Seattle, 1, 1, 900, NewYork_Seattle
+NewYork; Seattle; 1; 1; 900; NewYork_Seattle

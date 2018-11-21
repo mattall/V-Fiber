@@ -1,1 +1,1 @@
-Dallas, Pittsburgh, 1, 1, 900, Dallas_Pittsburgh
+Dallas; Pittsburgh; 1; 1; 900; Dallas_Pittsburgh

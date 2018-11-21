@@ -1,1 +1,1 @@
-KansasCity, Pittsburgh, 1, 1, 900, KansasCity_Pittsburgh
+KansasCity; Pittsburgh; 1; 1; 900; KansasCity_Pittsburgh

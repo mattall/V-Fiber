@@ -1,1 +1,1 @@
-Jacksonville, Houston, 1, 1, 900, Jacksonville_Houston
+Jacksonville; Houston; 1; 1; 900; Jacksonville_Houston

@@ -1,1 +1,1 @@
-Pittsburgh, Philadelphia, 1, 1, 900, Pittsburgh_Philadelphia
+Pittsburgh; Philadelphia; 1; 1; 900; Pittsburgh_Philadelphia

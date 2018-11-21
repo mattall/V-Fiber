@@ -1,1 +1,1 @@
-Jacksonville, Philadelphia, 1, 1, 900, Jacksonville_Philadelphia
+Jacksonville; Philadelphia; 1; 1; 900; Jacksonville_Philadelphia

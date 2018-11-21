@@ -1,1 +1,1 @@
-Chicago, ElPaso/LasCruces, 1, 1, 900, Chicago_ElPaso/LasCruces
+Chicago; ElPaso/LasCruces; 1; 1; 900; Chicago_ElPaso/LasCruces

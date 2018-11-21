@@ -1,1 +1,1 @@
-Syracuse, LosAngeles, 1, 1, 900, Syracuse_LosAngeles
+Syracuse; LosAngeles; 1; 1; 900; Syracuse_LosAngeles

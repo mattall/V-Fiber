@@ -1,1 +1,1 @@
-Syracuse, Boise, 1, 1, 900, Syracuse_Boise
+Syracuse; Boise; 1; 1; 900; Syracuse_Boise

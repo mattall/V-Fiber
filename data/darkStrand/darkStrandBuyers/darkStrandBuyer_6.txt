@@ -1,1 +1,1 @@
-Tulsa, BatonRouge, 1, 1, 900, Tulsa_BatonRouge
+Tulsa; BatonRouge; 1; 1; 900; Tulsa_BatonRouge

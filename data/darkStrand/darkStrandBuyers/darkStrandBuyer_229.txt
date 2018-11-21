@@ -1,1 +1,1 @@
-NewYork, Pittsburgh, 1, 1, 900, NewYork_Pittsburgh
+NewYork; Pittsburgh; 1; 1; 900; NewYork_Pittsburgh

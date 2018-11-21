@@ -1,1 +1,1 @@
-Syracuse, Philadelphia, 1, 1, 900, Syracuse_Philadelphia
+Syracuse; Philadelphia; 1; 1; 900; Syracuse_Philadelphia

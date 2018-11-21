@@ -1,1 +1,1 @@
-Chicago, LosAngeles, 1, 1, 900, Chicago_LosAngeles
+Chicago; LosAngeles; 1; 1; 900; Chicago_LosAngeles

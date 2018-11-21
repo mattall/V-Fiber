@@ -1,1 +1,1 @@
-Pittsburgh, SunnyVale, 1, 1, 900, Pittsburgh_SunnyVale
+Pittsburgh; SunnyVale; 1; 1; 900; Pittsburgh_SunnyVale

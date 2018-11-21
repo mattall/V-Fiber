@@ -1,1 +1,1 @@
-Raton, ElPaso/LasCruces, 1, 1, 900, Raton_ElPaso/LasCruces
+Raton; ElPaso/LasCruces; 1; 1; 900; Raton_ElPaso/LasCruces

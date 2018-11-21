@@ -1,1 +1,1 @@
-Pensacola, Phoenix, 1, 1, 900, Pensacola_Phoenix
+Pensacola; Phoenix; 1; 1; 900; Pensacola_Phoenix

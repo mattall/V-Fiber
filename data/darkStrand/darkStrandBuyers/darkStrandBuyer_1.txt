@@ -1,1 +1,1 @@
-Tulsa, SanAntonio, 1, 1, 900, Tulsa_SanAntonio
+Tulsa; SanAntonio; 1; 1; 900; Tulsa_SanAntonio

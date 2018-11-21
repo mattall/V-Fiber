@@ -1,1 +1,1 @@
-NewYork, WashingtonDC, 1, 1, 900, NewYork_WashingtonDC
+NewYork; WashingtonDC; 1; 1; 900; NewYork_WashingtonDC

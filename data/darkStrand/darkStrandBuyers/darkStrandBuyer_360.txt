@@ -1,1 +1,1 @@
-Portland, Denver, 1, 1, 900, Portland_Denver
+Portland; Denver; 1; 1; 900; Portland_Denver

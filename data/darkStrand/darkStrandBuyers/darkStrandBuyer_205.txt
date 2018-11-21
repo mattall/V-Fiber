@@ -1,1 +1,1 @@
-Atlanta, Albuquerque, 1, 1, 900, Atlanta_Albuquerque
+Atlanta; Albuquerque; 1; 1; 900; Atlanta_Albuquerque

@@ -1,1 +1,1 @@
-Raleigh, Chicago, 1, 1, 900, Raleigh_Chicago
+Raleigh; Chicago; 1; 1; 900; Raleigh_Chicago

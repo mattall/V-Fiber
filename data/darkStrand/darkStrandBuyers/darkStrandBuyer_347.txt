@@ -1,1 +1,1 @@
-ElPaso/LasCruces, Denver, 1, 1, 900, ElPaso/LasCruces_Denver
+ElPaso/LasCruces; Denver; 1; 1; 900; ElPaso/LasCruces_Denver

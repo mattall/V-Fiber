@@ -1,1 +1,1 @@
-BatonRouge, Philadelphia, 1, 1, 900, BatonRouge_Philadelphia
+BatonRouge; Philadelphia; 1; 1; 900; BatonRouge_Philadelphia

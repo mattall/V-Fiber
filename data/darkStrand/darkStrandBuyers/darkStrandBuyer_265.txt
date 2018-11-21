@@ -1,1 +1,1 @@
-Cleveland, Seattle, 1, 1, 900, Cleveland_Seattle
+Cleveland; Seattle; 1; 1; 900; Cleveland_Seattle

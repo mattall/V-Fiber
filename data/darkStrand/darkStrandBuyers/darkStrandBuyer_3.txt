@@ -1,1 +1,1 @@
-Tulsa, Pensacola, 1, 1, 900, Tulsa_Pensacola
+Tulsa; Pensacola; 1; 1; 900; Tulsa_Pensacola

@@ -1,1 +1,1 @@
-Boise, Phoenix, 1, 1, 900, Boise_Phoenix
+Boise; Phoenix; 1; 1; 900; Boise_Phoenix

@@ -1,1 +1,1 @@
-Portland, Boise, 1, 1, 900, Portland_Boise
+Portland; Boise; 1; 1; 900; Portland_Boise

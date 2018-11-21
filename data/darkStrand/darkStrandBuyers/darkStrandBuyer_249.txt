@@ -1,1 +1,1 @@
-Syracuse, ElPaso/LasCruces, 1, 1, 900, Syracuse_ElPaso/LasCruces
+Syracuse; ElPaso/LasCruces; 1; 1; 900; Syracuse_ElPaso/LasCruces

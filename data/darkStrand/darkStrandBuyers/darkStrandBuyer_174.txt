@@ -1,1 +1,1 @@
-BatonRouge, Raton, 1, 1, 900, BatonRouge_Raton
+BatonRouge; Raton; 1; 1; 900; BatonRouge_Raton

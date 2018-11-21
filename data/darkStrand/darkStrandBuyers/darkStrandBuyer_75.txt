@@ -1,1 +1,1 @@
-SanAntonio, Denver, 1, 1, 900, SanAntonio_Denver
+SanAntonio; Denver; 1; 1; 900; SanAntonio_Denver

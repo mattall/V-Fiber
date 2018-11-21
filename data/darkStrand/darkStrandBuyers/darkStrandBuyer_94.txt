@@ -1,1 +1,1 @@
-Dallas, Seattle, 1, 1, 900, Dallas_Seattle
+Dallas; Seattle; 1; 1; 900; Dallas_Seattle

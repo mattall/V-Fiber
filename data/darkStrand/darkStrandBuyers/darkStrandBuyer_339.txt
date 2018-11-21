@@ -1,1 +1,1 @@
-LosAngeles, Denver, 1, 1, 900, LosAngeles_Denver
+LosAngeles; Denver; 1; 1; 900; LosAngeles_Denver

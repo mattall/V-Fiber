@@ -1,1 +1,1 @@
-Raleigh, Cleveland, 1, 1, 900, Raleigh_Cleveland
+Raleigh; Cleveland; 1; 1; 900; Raleigh_Cleveland

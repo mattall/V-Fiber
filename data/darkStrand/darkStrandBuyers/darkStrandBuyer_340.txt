@@ -1,1 +1,1 @@
-LosAngeles, Albuquerque, 1, 1, 900, LosAngeles_Albuquerque
+LosAngeles; Albuquerque; 1; 1; 900; LosAngeles_Albuquerque

@@ -1,1 +1,1 @@
-Pittsburgh, LosAngeles, 1, 1, 900, Pittsburgh_LosAngeles
+Pittsburgh; LosAngeles; 1; 1; 900; Pittsburgh_LosAngeles

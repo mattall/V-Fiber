@@ -1,1 +1,1 @@
-Pensacola, Jacksonville, 1, 1, 900, Pensacola_Jacksonville
+Pensacola; Jacksonville; 1; 1; 900; Pensacola_Jacksonville

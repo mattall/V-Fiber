@@ -1,1 +1,1 @@
-WashingtonDC, LosAngeles, 1, 1, 900, WashingtonDC_LosAngeles
+WashingtonDC; LosAngeles; 1; 1; 900; WashingtonDC_LosAngeles

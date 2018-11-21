@@ -1,1 +1,1 @@
-Pensacola, Chicago, 1, 1, 900, Pensacola_Chicago
+Pensacola; Chicago; 1; 1; 900; Pensacola_Chicago

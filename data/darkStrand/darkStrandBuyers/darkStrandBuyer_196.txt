@@ -1,1 +1,1 @@
-Atlanta, Philadelphia, 1, 1, 900, Atlanta_Philadelphia
+Atlanta; Philadelphia; 1; 1; 900; Atlanta_Philadelphia

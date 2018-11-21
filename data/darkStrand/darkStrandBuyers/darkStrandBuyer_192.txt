@@ -1,1 +1,1 @@
-Atlanta, Chicago, 1, 1, 900, Atlanta_Chicago
+Atlanta; Chicago; 1; 1; 900; Atlanta_Chicago

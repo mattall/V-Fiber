@@ -1,1 +1,1 @@
-Pensacola, Denver, 1, 1, 900, Pensacola_Denver
+Pensacola; Denver; 1; 1; 900; Pensacola_Denver

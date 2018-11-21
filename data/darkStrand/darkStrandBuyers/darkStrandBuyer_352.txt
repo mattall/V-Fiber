@@ -1,1 +1,1 @@
-Seattle, Boise, 1, 1, 900, Seattle_Boise
+Seattle; Boise; 1; 1; 900; Seattle_Boise

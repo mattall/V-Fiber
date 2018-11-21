@@ -1,1 +1,1 @@
-Jacksonville, Denver, 1, 1, 900, Jacksonville_Denver
+Jacksonville; Denver; 1; 1; 900; Jacksonville_Denver

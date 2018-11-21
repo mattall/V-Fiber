@@ -1,1 +1,1 @@
-SanAntonio, Portland, 1, 1, 900, SanAntonio_Portland
+SanAntonio; Portland; 1; 1; 900; SanAntonio_Portland

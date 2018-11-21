@@ -1,1 +1,1 @@
-BatonRouge, NewYork, 1, 1, 900, BatonRouge_NewYork
+BatonRouge; NewYork; 1; 1; 900; BatonRouge_NewYork

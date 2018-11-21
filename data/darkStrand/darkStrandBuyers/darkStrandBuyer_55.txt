@@ -1,1 +1,1 @@
-SanAntonio, Jacksonville, 1, 1, 900, SanAntonio_Jacksonville
+SanAntonio; Jacksonville; 1; 1; 900; SanAntonio_Jacksonville

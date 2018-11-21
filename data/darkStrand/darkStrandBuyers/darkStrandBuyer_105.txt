@@ -1,1 +1,1 @@
-Pensacola, Atlanta, 1, 1, 900, Pensacola_Atlanta
+Pensacola; Atlanta; 1; 1; 900; Pensacola_Atlanta

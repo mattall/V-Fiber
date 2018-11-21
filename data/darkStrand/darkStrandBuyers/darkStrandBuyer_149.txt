@@ -1,1 +1,1 @@
-Houston, Raleigh, 1, 1, 900, Houston_Raleigh
+Houston; Raleigh; 1; 1; 900; Houston_Raleigh

@@ -1,1 +1,1 @@
-SunnyVale, SaltLakeCity, 1, 1, 900, SunnyVale_SaltLakeCity
+SunnyVale; SaltLakeCity; 1; 1; 900; SunnyVale_SaltLakeCity

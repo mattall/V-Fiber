@@ -1,1 +1,1 @@
-Chicago, Raton, 1, 1, 900, Chicago_Raton
+Chicago; Raton; 1; 1; 900; Chicago_Raton

@@ -1,1 +1,1 @@
-Jacksonville, Seattle, 1, 1, 900, Jacksonville_Seattle
+Jacksonville; Seattle; 1; 1; 900; Jacksonville_Seattle

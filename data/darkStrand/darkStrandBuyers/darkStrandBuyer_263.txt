@@ -1,1 +1,1 @@
-Cleveland, LosAngeles, 1, 1, 900, Cleveland_LosAngeles
+Cleveland; LosAngeles; 1; 1; 900; Cleveland_LosAngeles

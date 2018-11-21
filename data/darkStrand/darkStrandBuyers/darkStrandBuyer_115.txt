@@ -1,1 +1,1 @@
-Pensacola, LosAngeles, 1, 1, 900, Pensacola_LosAngeles
+Pensacola; LosAngeles; 1; 1; 900; Pensacola_LosAngeles

@@ -1,1 +1,1 @@
-Houston, LosAngeles, 1, 1, 900, Houston_LosAngeles
+Houston; LosAngeles; 1; 1; 900; Houston_LosAngeles

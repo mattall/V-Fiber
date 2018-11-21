@@ -1,1 +1,1 @@
-SanAntonio, Pittsburgh, 1, 1, 900, SanAntonio_Pittsburgh
+SanAntonio; Pittsburgh; 1; 1; 900; SanAntonio_Pittsburgh

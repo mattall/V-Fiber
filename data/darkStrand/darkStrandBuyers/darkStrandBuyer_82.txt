@@ -1,1 +1,1 @@
-Dallas, Atlanta, 1, 1, 900, Dallas_Atlanta
+Dallas; Atlanta; 1; 1; 900; Dallas_Atlanta

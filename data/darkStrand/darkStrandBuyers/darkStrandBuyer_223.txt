@@ -1,1 +1,1 @@
-Raleigh, Albuquerque, 1, 1, 900, Raleigh_Albuquerque
+Raleigh; Albuquerque; 1; 1; 900; Raleigh_Albuquerque

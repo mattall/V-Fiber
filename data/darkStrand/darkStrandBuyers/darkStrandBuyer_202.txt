@@ -1,1 +1,1 @@
-Atlanta, Boise, 1, 1, 900, Atlanta_Boise
+Atlanta; Boise; 1; 1; 900; Atlanta_Boise

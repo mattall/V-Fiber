@@ -1,1 +1,1 @@
-Cleveland, Philadelphia, 1, 1, 900, Cleveland_Philadelphia
+Cleveland; Philadelphia; 1; 1; 900; Cleveland_Philadelphia

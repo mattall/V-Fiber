@@ -1,1 +1,1 @@
-SanAntonio, SunnyVale, 1, 1, 900, SanAntonio_SunnyVale
+SanAntonio; SunnyVale; 1; 1; 900; SanAntonio_SunnyVale

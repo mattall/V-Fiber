@@ -1,1 +1,1 @@
-KansasCity, Raleigh, 1, 1, 900, KansasCity_Raleigh
+KansasCity; Raleigh; 1; 1; 900; KansasCity_Raleigh

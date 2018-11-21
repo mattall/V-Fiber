@@ -1,1 +1,1 @@
-Pensacola, WashingtonDC, 1, 1, 900, Pensacola_WashingtonDC
+Pensacola; WashingtonDC; 1; 1; 900; Pensacola_WashingtonDC

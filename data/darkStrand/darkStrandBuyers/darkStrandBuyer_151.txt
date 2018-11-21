@@ -1,1 +1,1 @@
-Houston, Syracuse, 1, 1, 900, Houston_Syracuse
+Houston; Syracuse; 1; 1; 900; Houston_Syracuse

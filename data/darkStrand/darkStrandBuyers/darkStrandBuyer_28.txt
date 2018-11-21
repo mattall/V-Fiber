@@ -1,1 +1,1 @@
-KansasCity, Dallas, 1, 1, 900, KansasCity_Dallas
+KansasCity; Dallas; 1; 1; 900; KansasCity_Dallas

@@ -1,1 +1,1 @@
-Syracuse, SaltLakeCity, 1, 1, 900, Syracuse_SaltLakeCity
+Syracuse; SaltLakeCity; 1; 1; 900; Syracuse_SaltLakeCity

@@ -1,1 +1,1 @@
-Pensacola, NewYork, 1, 1, 900, Pensacola_NewYork
+Pensacola; NewYork; 1; 1; 900; Pensacola_NewYork

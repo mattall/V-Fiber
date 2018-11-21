@@ -1,1 +1,1 @@
-Pittsburgh, Boise, 1, 1, 900, Pittsburgh_Boise
+Pittsburgh; Boise; 1; 1; 900; Pittsburgh_Boise

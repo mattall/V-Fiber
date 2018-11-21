@@ -1,1 +1,1 @@
-Tulsa, Atlanta, 1, 1, 900, Tulsa_Atlanta
+Tulsa; Atlanta; 1; 1; 900; Tulsa_Atlanta
