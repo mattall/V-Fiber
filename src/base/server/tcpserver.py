@@ -162,10 +162,12 @@ class TCPRequestHandler(SocketServer.BaseRequestHandler):
                         with Timer() as tCircuitCreation:
                             for item in allocationList:
                                 if item.winnerFlag == 1:
-                                    for ip, port in ip_port_pairs:
-                                        self.__logger.debug("Pushing circuit to {} interface {} * PENDING **".format(ip, port))
-                                        sleep(TEST_PARAMS['install_time']/2)
-                                        self.__logger.debug("Circuite Pushed to {} interface {} *** OKAY ***".format(ip, port))
+                                    for pair in ip_port_pairs:
+                                        self.__logger.info("Pushing circuit to {} interface {} * PENDING **".format(pair[0][0], pair[0][1]))
+                                        self.__logger.info("Pushing circuit to {} interface {} * PENDING **".format(pair[1][0], pair[1][1]))
+                                        sleep(TEST_PARAMS["install_time"])                                        
+                                        self.__logger.info("Circuite Pushed to {} interface {} *** OKAY ***".format(pair[0][0], pair[0][1]))
+                                        self.__logger.info("Circuite Pushed to {} interface {} *** OKAY ***".format(pair[1][0], pair[1][1]))
                                     
                                     capacity = item.capacityPerStrand
                                     self.__logger.info("Circuit pushed into networks by vFiber for winner: {0}".format(item.clientName))
