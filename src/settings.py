@@ -30,7 +30,7 @@ CONTEXT = {
 TEST_PARAMS = {
     'server_path': '../data/',
     'client_path': '/Users/TomNason/Dropbox/VFiber_code/VFiber/data/circuit/circuitBuyers/',
-    'buyer_file_name': 'meshBuyers_0.txt',
+    'buyer_file_name': 'circuitBuyer_0.txt',
     'seller_file_name': 'circuitSeller.txt',
     'client_request_type': 'BUYER',                 # or SDX
     'client_request_code': 100,                     # request a lambda
