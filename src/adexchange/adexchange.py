@@ -140,7 +140,6 @@ class AdExchange(SyncObj):
             # n denotes the number of customers bidding for that conduit
             n = len(v)
             slot_click = [1] * n
-
             try:
                 shortestPath = nx.shortest_path(sellerGraph, source=k1, target=k2)
 
@@ -153,7 +152,6 @@ class AdExchange(SyncObj):
             lIP = self.linksInPath(shortestPath)
             k = len(lIP)
             reserve = max(self.__reserve, gCoP/k)
-
             bids = []
             for item in v:
                 bids.append((item.clientName, item.bidPerStrand))
@@ -175,7 +173,7 @@ class AdExchange(SyncObj):
                     self.__logger.info("could not allocate resources for optical path")
             else:
                 self.__logger.info("Link does not exists between {} and {}. No resource available for request".format(k1, k2))
-                
+
             seller.unlockEdgesOnPath(shortestPath)    
 
         return (self.updateRequestList(reqList, allocationDict), ip_port_pairs)
