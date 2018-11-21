@@ -33,7 +33,7 @@ class TCPClient(threading.Thread):
         self.__bufferdim = int(CONTEXT['client_socket_buffer'])
         # Compression helper
         self.__compression = Utility()
-        self.__resourcepath = TEST_PARAMS['client_path']
+        self.__resourcepath = path_to_data
         self.__buyerFile = buyer_data
         self.__client_request_type = client_request_type
         self.__client_request_code = TEST_PARAMS['client_request_code']
