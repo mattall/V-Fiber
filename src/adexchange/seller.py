@@ -23,8 +23,6 @@ class Seller(SyncObj):
         if topology:
             self.__rsp = TEST_PARAMS['server_path'] + topology+ '/'
             self.__sf = "{}Seller.txt".format(topology)
-            print(self.__rsp)
-            print(self.__sf)
         else:
             self.__rsp = TEST_PARAMS['server_path']
             self.__sf = TEST_PARAMS['seller_file_name']
@@ -75,9 +73,8 @@ class Seller(SyncObj):
                             interface_b = strand_data[2].strip()
                             interfaces.append((interface_a, interface_b))
 
-                    
                     self.__sellerGraph.add_edge(point_A, point_B,
-                                                numberOfStrands = strands, 
+                                                numberOfStrands = strands,
                                                 capacityPerStrand = strand_cap,
                                                 costPerStrand = strand_cost, 
                                                 ISP = provider, 
@@ -144,14 +141,21 @@ class Seller(SyncObj):
     @replicated_sync
     def release_strand(self, u, v, num_to_release):
         # update edge info
-        self.__sellerGraph[u][v]['numberOfStrands'] -= num_to_release
-        buyer_interface = self.__sellerGraph[u][v]['available_interfaces'].pop()
-        self.__sellerGraph[u][v]['allocated_interfaces'].append(buyer_interface)
+        resource = []
+        total_strands = len(self.__sellerGraph[u][v]['available_interfaces'])
+        
+        if total_strands >= num_to_release:
+            for x in range(num_to_release):
+                buyer_interface = self.__sellerGraph[u][v]['available_interfaces'].pop()
+                self.__sellerGraph[u][v]['allocated_interfaces'].append(buyer_interface)
+                # send list of two ip/port pairs for link
+                link_a = (self.__sellerGraph[u][v]['prefixA'], buyer_interface[0])
+                link_b = (self.__sellerGraph[u][v]['prefixB'], buyer_interface[1])
 
-        # send list of two ip/port pairs for link
-        link_a = (self.__sellerGraph[u][v]['prefixA'], buyer_interface[0])
-        link_b = (self.__sellerGraph[u][v]['prefixB'], buyer_interface[1])
-        resource = [link_a, link_b]
+                resource.append((link_a, link_b))
+
+        self.__sellerGraph[u][v]['numberOfStrands'] = len(self.__sellerGraph[u][v]['available_interfaces'])
+        
         return resource
 
     @replicated_sync
@@ -198,7 +202,6 @@ class Seller(SyncObj):
             resource = [link_a, link_b]
             return resource
 
-        
         elif interfaces in self.__sellerGraph[u][v]['available_interfaces']:
             self.__logger.debug("[Seller][update_disconnected_strand] Interface found in available_interfaces")
             self.__sellerGraph[u][v]['available_interfaces'].remove(interfaces)
@@ -211,15 +214,23 @@ class Seller(SyncObj):
         else:
             self.__logger.debug("[Seller][update_disconnected_strand] Interface not found.")
 
-    @replicated_sync
-    def aquire_strand(self, u, v, num_to_release):
-        # update edge info
-        self.__sellerGraph[u][v]['numberOfStrands'] += num_to_release
-        buyer_interface = self.__sellerGraph[u][v]['available_interfaces'].pop()
-        self.__sellerGraph[u][v]['allocated_interfaces'].append(buyer_interface)
+        self.__sellerGraph[u][v]['numberOfStrands'] = len(self.__sellerGraph[u][v]['available_interfaces'])
 
-        # send list of two ip/port pairs for link
-        link_a = (self.__sellerGraph[u][v]['prefixA'], buyer_interface[0])
-        link_b = (self.__sellerGraph[u][v]['prefixB'], buyer_interface[1])
-        resource = [link_a, link_b]
+    @replicated_sync
+    def aquire_strand(self, u, v, num_to_revoke):
+        resource = []
+        working_strands = len(self.__sellerGraph[u][v]['allocated_interfaces'])
+
+        if working_strands >= num_to_revoke:
+            for x in range(num_to_revoke):
+                system_interface = self.__sellerGraph[u][v]['allocated_interfaces'].pop()
+                self.__sellerGraph[u][v]['available_interfaces'].append(system_interface)
+                # send list of two ip/port pairs for link
+                link_a = (self.__sellerGraph[u][v]['prefixA'], system_interface[0])
+                link_b = (self.__sellerGraph[u][v]['prefixB'], system_interface[1])
+
+                resource.append((link_a, link_b))
+
+        self.__sellerGraph[u][v]['numberOfStrands'] = len(self.__sellerGraph[u][v]['available_interfaces'])
+        
         return resource

@@ -149,8 +149,6 @@ class AdExchange(SyncObj):
                 allocationDict = {}
                 break
 
-            seller.lockEdgesOnPath(shortestPath)
-
             gCoP = self.getCostOfPath(shortestPath, sellerGraph)
             lIP = self.linksInPath(shortestPath)
             k = len(lIP)
@@ -160,6 +158,7 @@ class AdExchange(SyncObj):
             for item in v:
                 bids.append((item.clientName, item.bidPerStrand))
 
+            seller.lockEdgesOnPath(shortestPath)
             if nx.has_path(sellerGraph, k1, k2) and self.resourceAvailable(sellerGraph, shortestPath, v):
                 (alloc, payments) = GSP.compute(slot_click, reserve, bids)
                 allocation.extend(zip(alloc, [i * k for i in payments]))
@@ -176,7 +175,7 @@ class AdExchange(SyncObj):
                     self.__logger.info("could not allocate resources for optical path")
             else:
                 self.__logger.info("Link does not exists between {} and {}. No resource available for request".format(k1, k2))
-            
+                
             seller.unlockEdgesOnPath(shortestPath)    
 
         return (self.updateRequestList(reqList, allocationDict), ip_port_pairs)
