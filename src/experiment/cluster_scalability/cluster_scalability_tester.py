@@ -92,13 +92,13 @@ def main(args):
     
     try:
         # Read some requests
-        with(open("./requests/req_files_{0}_{1}.pkl".format(args.topology, args.reqs_to_send))) as reqFile:
+        with(open("./requests/req_files_{0}.pkl".format(args.topology))) as reqFile:
             requests = pickle.load(reqFile)
  
     except IOError:
         # Generate some requests
         requests = []
-        for i in range(args.reqs_to_send):
+        for i in range(100):
             while (1):
                 req_file = "/"+choice(buyer_files)
                 if ".gz" not in req_file:
@@ -106,16 +106,16 @@ def main(args):
                     break
 
         # Save these requests for later tests
-        with(open("./requests/req_files_{0}_{1}.pkl".format(args.topology, args.reqs_to_send), "w+")) as reqFile:
+        with(open("./requests/req_files_{0}.pkl".format(args.topology), "w+")) as reqFile:
             pickle.dump(requests, reqFile)
-        with(open("./requests/req_files_{0}_{1}.txt".format(args.topology, args.reqs_to_send), "w+")) as reqFile:
+        with(open("./requests/req_files_{0}.txt".format(args.topology), "w+")) as reqFile:
             reqFile.write(str(requests))
 
     # Start up a client thread, and track its time-to-complete
 
     client_procs = []
-    for r in requests:
-        p = Process(target = timed_client_thread, args = (vF_severs, buyer_path, r))
+    for r in range(args.reqs_to_send):
+        p = Process(target = timed_client_thread, args = (vF_severs, buyer_path, requests[r]))
         p.start()
         client_procs.append(p)
 
