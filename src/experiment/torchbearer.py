@@ -10,14 +10,16 @@ import argparse
 '''
 Toarchbearer lights an end-to-end path of dark fiber
 '''
-def light_path(ip_port_pairs = [("192.168.57.200", "GigabitEthernet 0/28"), ("192.168.57.201","GigabitEthernet 0/28")],
-                save = False, password = 'cisco', disply_output = True):
+def light_path(ip_port_pairs = [("192.168.57.6", "192.168.57.200", "GigabitEthernet 0/28"), ("192.168.57.4", "192.168.57.201","GigabitEthernet 0/28")],
+                save = False, 
+                password = 'cisco', 
+                disply_output = False):
     switch_pw = password
     verbose = disply_output
 
-    for switch_addr, switch_port in ip_port_pairs:
+    for source, switch_addr, switch_port in ip_port_pairs:
         try:
-            child = pexpect.spawn('telnet %s' % (switch_addr))
+            child = pexpect.spawn('telnet -s {} {}'.format(source, switch_addr))
             if verbose:
                 child.logfile = sys.stdout
             child.timeout = 4
@@ -48,22 +50,22 @@ def light_path(ip_port_pairs = [("192.168.57.200", "GigabitEthernet 0/28"), ("19
                 child.expect('#')
             child.sendline('quit')
         except (pexpect.EOF, pexpect.TIMEOUT), e:
+            print(e)
             child.close()
             raise Exception("Error while trying to move the vlan on the switch.")
 
-def extinguish_path(ip_port_pairs = [("192.168.57.200", "GigabitEthernet 0/25"), ("192.168.57.201","GigabitEthernet 0/25"),\
-                                        ("192.168.57.200", "GigabitEthernet 0/26"), ("192.168.57.201","GigabitEthernet 0/26"),\
-                                        ("192.168.57.200", "GigabitEthernet 0/27"), ("192.168.57.201","GigabitEthernet 0/27"),\
-                                        ("192.168.57.200", "GigabitEthernet 0/28"), ("192.168.57.201","GigabitEthernet 0/28")],\
-                                        save = False, password = "cisco", disply_output = True):
+def extinguish_path(ip_port_pairs = [("192.168.57.6", "192.168.57.200", "GigabitEthernet 0/28"), ("192.168.57.4", "192.168.57.201","GigabitEthernet 0/28")],
+                save = False, 
+                password = 'cisco', 
+                disply_output = False):
     ''' Doesn't write config to memory if save is False '''
 
     switch_pw = password
     verbose = disply_output
 
-    for switch_addr, switch_port in ip_port_pairs:
+    for source, switch_addr, switch_port in ip_port_pairs:
         try:
-            child = pexpect.spawn('telnet %s' % (switch_addr))
+            child = pexpect.spawn('telnet -s {} {}'.format(source, switch_addr))
             if verbose:
                 child.logfile = sys.stdout
             child.timeout = 4
@@ -94,12 +96,13 @@ def extinguish_path(ip_port_pairs = [("192.168.57.200", "GigabitEthernet 0/25"),
                 child.expect('#')
             child.sendline('quit')
         except (pexpect.EOF, pexpect.TIMEOUT), e:
+            print(e)
             child.close()
             raise Exception("Error while trying to move the vlan on the switch.")
 
 if __name__ == "__main__":
         parser = argparse.ArgumentParser()
-        parser.add_argument("-m", "--mode", help="light path (l) or extinguish path (e)", dest="mode", type=str)
+        parser.add_argument("mode", help="light path (l) or extinguish path (e)", type=str)
         parser.add_argument("-a1", "--address_one", help="address for first network device in link", dest="a1", type=str)
         parser.add_argument("-a2", "--address_two", help="address for second network device in link", dest="a2", type=str)
         parser.add_argument("-i1", "--interface_one", help="interface for first network device in link", dest="i1", type=str)
@@ -107,7 +110,7 @@ if __name__ == "__main__":
         parser.add_argument("-s", "--save", help="save configuration to NVM (y or n)", dest="save", type=str)
         parser.add_argument("-v", "--verbose", help="view network device output (y or n)", dest="verbose", type=str)
         parser.add_argument("-p", "--password", help="network device password", dest="pw", type=str)
-
+        parser.add_argument("-n", "--no_args", help="arg free zone", type=bool)
         args = parser.parse_args()
 
         mode=args.mode
@@ -119,15 +122,22 @@ if __name__ == "__main__":
         verbose=True if args.verbose == 'y' else False
         password=args.pw
 
-        if mode == 'l':
-            light_path(ip_port_pairs=[(address_one, interface_one), \
-                                        (address_two, interface_two)],\
-                        save=save, password=password, disply_output=verbose)
-
-        elif mode =='e':
-            extinguish_path(ip_port_pairs=[(address_one, interface_one), \
-                                        (address_two, interface_two)],\
-                        save=save, password=password, disply_output=verbose)
+        if args.no_args:
+            if mode == 'l':
+                light_path()
+            elif mode == 'e':
+                extinguish_path()
 
         else:
-            print("invalid mode command, choose 'l' or 'e'")
+            if mode == 'l':
+                light_path(ip_port_pairs=[(address_one, interface_one), \
+                                            (address_two, interface_two)],\
+                            save=save, password=password, disply_output=verbose)
+
+            elif mode =='e':
+                extinguish_path(ip_port_pairs=[(address_one, interface_one), \
+                                            (address_two, interface_two)],\
+                            save=save, password=password, disply_output=verbose)
+
+            else:
+                print("invalid mode command, choose 'l' or 'e'")
