@@ -122,6 +122,7 @@ def get_time_to_boost(file_names):
     print("average throughput from 1 to 300: {}".format(mean(plot_four[boost_times[0]:boost_times[1]])))
     print("average throughput from 301 to 600: {}".format(mean(plot_four[boost_times[1]:boost_times[2]])))
     print("average throughput from 601 to end: {}".format(mean(plot_four[boost_times[2]:-1])))
+
 def plot_multi_bandwidth_data(file_names):
 
     # OPEN ALL FILES
@@ -181,6 +182,38 @@ def plot_multi_bandwidth_data(file_names):
         plt.plot(plot_four, color='purple', label="4 client/server pairs")
     plt.show()
 
+
+def plot_multi_bandwidth_data_overlay(file_names):
+
+    # OPEN ALL FILES
+    data = []
+    for f in file_names:
+        data.append(load(open(f, 'rb')))
+
+    # Find the shortest set of entries
+    lengths = []
+    for d in data:
+        lengths.append(len(d))
+
+        
+    mpl.rcParams.update({'font.size': 60})
+    mpl.rcParams['axes.linewidth'] = 4
+    plt.rcParams["font.family"] = "Times New Roman"
+    label_size = 60
+    axes = plt.gca()
+    
+    # axes.set_xlim([0,240])
+    axes.tick_params(length=16, width=4)
+    axes.locator_params(nbins=4, axis='y')
+    plt.gcf().subplots_adjust(bottom=0.21, left = 0.18)
+    plt.xlabel('Time (seconds)', fontsize = label_size, labelpad=30)
+    plt.ylabel('Bandwidth (Mb/s)', fontsize = label_size, labelpad=30)
+    for p in data:
+        plt.plot(p[1:60])
+    
+
+    plt.show()
+
 def plot_transfer_data(file_name):
     data = load(file_name)
 
@@ -236,11 +269,14 @@ def main():
     #                 "./get_files/2018-06-25T12:57:22_perf_server_192.168.57.3",\
     #                 "./get_files/2018-06-25T12:56:59_perf_server_192.168.57.6"]
 
-    data_file_names = ["./get_files/2018-07-18T17:12:59_perf_server_192.168.57.6",
-                        "./get_files/2018-07-18T17:13:00_perf_server_192.168.57.4",
-                        "./get_files/2018-07-18T17:13:01_perf_server_192.168.57.3",
-                        "./get_files/2018-07-18T17:13:02_perf_server_192.168.57.7"]
+    # data_file_names = ["./get_files/2018-07-18T17:12:59_perf_server_192.168.57.6",
+    #                     "./get_files/2018-07-18T17:13:00_perf_server_192.168.57.4",
+    #                     "./get_files/2018-07-18T17:13:01_perf_server_192.168.57.3",
+    #                     "./get_files/2018-07-18T17:13:02_perf_server_192.168.57.7"]
 
+
+    data_file_names = ["/Users/TomNason/Dropbox/VFiber_code/VFiber/src/experiment/bandwidth_data/get_files/2018-10-25T10:03:45_perf_server_192.168.57.4",
+            "/Users/TomNason/Dropbox/VFiber_code/VFiber/src/experiment/bandwidth_data/get_files/2018-10-25T10:03:41_perf_server_192.168.57.6"]
 
     bandwidth_files = []
     transfer_files = []
@@ -254,9 +290,9 @@ def main():
     # for f in bandwidth_files:
     #     plot_bandwidth_data(f)
 
-    # plot_multi_bandwidth_data(bandwidth_files)
+    plot_multi_bandwidth_data_overlay(bandwidth_files)
 
-    get_time_to_boost(bandwidth_files)
+    #get_time_to_boost(bandwidth_files)
 
 
 
