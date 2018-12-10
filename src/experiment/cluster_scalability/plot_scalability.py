@@ -12,9 +12,9 @@ def mkGraph(data_in, type_t):
     x = [3, 5, 7, 9]
 
     # plot the cumulative histogram
-    ax.plot(x, data_in[10], label="x = 10")
-    ax.plot(x, data_in[40], label="x = 40")
-    ax.plot(x, data_in[80], label="x = 80")
+    ax.plot(x, data_in[10], label="n = 10")
+    ax.plot(x, data_in[40], label="n = 40")
+    ax.plot(x, data_in[80], label="n = 80")
     
     # tidy up the figure
     ax.grid(True)
@@ -23,7 +23,7 @@ def mkGraph(data_in, type_t):
     #ax.legend(loc='right')
     #ax.set_title('Cumulative step histograms')
     ax.set_xlabel('Cluster Size')
-    ax.set_ylabel("Time (s) to Complete 'x' requests")    
+    ax.set_ylabel("Time (s) to Complete 'n' requests")    
     ax.tick_params(length=16, width=4)
     plt.xticks(x)
     fig.subplots_adjust(bottom = 0.21, left = 0.20, top = 0.8)
@@ -32,8 +32,6 @@ def mkGraph(data_in, type_t):
     legend = ax.legend(loc='upper center', shadow=False, fontsize='small',\
                         bbox_to_anchor=(0.5, 1.22), ncol = 3)
     
-
-
     plt.savefig("./results/clusterData_{}".format(type_t), dpi=166)
 
 def main(args):
